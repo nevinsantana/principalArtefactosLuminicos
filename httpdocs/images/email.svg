@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40px"
+   height="40px"
+   viewBox="0 0 46.000001 46.000002"
+   id="svg3484"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="email.svg">
+  <defs
+     id="defs3486" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="40.455687"
+     inkscape:cy="82.573849"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3489">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(31.571428,-895.07648)">
+    <circle
+       style="opacity:0.98999999;fill:#262626;stroke:#ffffff;stroke-width:2;stroke-opacity:1;fill-opacity:1"
+       id="Oval_21_"
+       cx="-8.5714283"
+       cy="918.07648"
+       r="22" />
+    <path
+       inkscape:connector-curvature="0"
+       id="Shape_22_"
+       d="m -17.218889,914.39514 c 0.3,0.2 1.1,0.7 2.5,1.6 1.4,0.9 2.5,1.6 3.2,2.1 0.1,0.1 0.3,0.2 0.5,0.3 0.3,0.2 0.5,0.3 0.7,0.4 0.2,0.1 0.4000001,0.2 0.6,0.4 0.2,0.1 0.5,0.2 0.7,0.3 0.2,0.1 0.4,0.1 0.6,0.1 l 0,0 0,0 c 0.2,0 0.4,0 0.6,-0.1 0.2,-0.1 0.5,-0.2 0.7,-0.3 0.2,-0.1 0.5,-0.3 0.6,-0.4 0.2,-0.1 0.4,-0.3 0.7,-0.4 0.3,-0.2 0.4,-0.3 0.5,-0.3 0.8,-0.5 2.7,-1.7 5.7,-3.7 0.6,-0.4 1.1,-0.9 1.5,-1.4 0.4,-0.5 0.6,-1.1 0.6,-1.7 0,-0.5 -0.2,-0.9 -0.6,-1.3 -0.4,-0.4 -0.8,-0.5 -1.4,-0.5 l -17.8,0 c -0.6,0 -1.1,0.2 -1.5,0.6 -0.3,0.4 -0.5,0.9 -0.5,1.5 0,0.5 0.2,1 0.7,1.6 0.4,0.5 0.9,0.9 1.4,1.2 z m 18.7,1.2 c -2.7,1.7 -4.7,3 -6.1,3.9 -0.5,0.3 -0.8,0.6 -1.1,0.7 -0.3,0.2 -0.7,0.4 -1.2,0.5 -0.5,0.2 -0.9,0.3 -1.4,0.3 l 0,0 0,0 c -0.4,0 -0.9,-0.1 -1.4,-0.3 -0.5,-0.2 -0.9,-0.4 -1.2,-0.5 -0.3,-0.2 -0.7,-0.4 -1.1,-0.7 -1.1,-0.7 -3.1,-2.1 -6.1,-3.9 -0.5,-0.3 -0.9,-0.6 -1.2,-1 l 0,9 c 0,0.5 0.2,0.9 0.6,1.3 0.4,0.4 0.8,0.5 1.4,0.5 l 18,0 c 0.5,0 1,-0.2 1.4,-0.5 0.4,-0.4 0.6,-0.8 0.6,-1.3 l 0,-9 c -0.4,0.4 -0.8,0.8 -1.2,1 z"
+       style="fill:#ffffff" />
+  </g>
+</svg>

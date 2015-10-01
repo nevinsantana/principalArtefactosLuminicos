@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-ES" lang="es-ES">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Inicio - Mi sitio web</title>
+	<meta name="description" content="La descripción de su sitio web." /><meta name="keywords" content="otro" /><meta name="generator" content="Parallels Web Presence Builder 11.0.14" />
+	<link rel="stylesheet" type="text/css" href="../../css/facebook.css?template=facebook" />
+	<script type="text/javascript" src="../../components/jquery/jquery.min.js?ac=11.0.14_2013012919"></script>
+<script type="text/javascript" src="../../components/jquery/jquery.validate.js?ac=11.0.14_2013012919"></script>
+<script type="text/javascript" src="../../components/jquery/jquery.textarea-expander.js?ac=11.0.14_2013012919"></script>
+<script type="text/javascript" src="../../components/jquery/jquery.validate.localization.js?ac=11.0.14_2013012919"></script>
+
+<!--[if IE]>
+	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT" />
+<![endif]-->
+<script type="text/javascript">var siteBuilderJs = jQuery.noConflict(true);</script><script type="text/javascript">siteBuilderJs(document).ready(function($){
+	$("#widget-58c887ce-63c4-5561-f635-1614486e059c form").validate({
+		submitHandler: function(form) {
+			var validator = this;
+			$.post('../../modules/contact/send.php', $(form).serialize(), function(data) {
+				if (data.result) {
+					form.reset();
+					$("#widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-reload").click();
+					alert(data.message);
+				} else if ('badCaptcha' == data.code) {
+					$("#widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-reload").click();
+					validator.showErrors({'captcha': data.message});
+				}
+		}, 'json');
+		}
+	});
+	$("#widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-reload").click(function() {
+		$("#widget-58c887ce-63c4-5561-f635-1614486e059c-captcha").val('');
+		$("#widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-image").attr('src', '../../components/kcaptcha/?' + (new Date()).getTime());
+		return false;
+	});
+});</script>
+</head>
+<body class="background15-white background">
+	<div class="container-content-inner" id="content-content-inner">
+	<div class="widget widget-navigation" id="widget-b4ebce4b-a5f0-6699-332c-2a448b2db46b">
+			<div class="widget-content"><ul class="navigation" id="navigation-b4ebce4b-a5f0-6699-332c-2a448b2db46b">
+	
+		<li class="selected">
+			<a href="../../fb/inicio/">
+				<span class="navigation-item-bullet">></span>
+				<span class="navigation-item-text">Inicio</span>
+			</a>
+			
+		</li>
+	
+</ul></div>
+		</div>
+
+	<div id="widget-9e7fb364-8dd8-6cbd-314e-d268af0e09be" class="widget widget-pagecontent"><div class="widget-content"><table class="widget-columns-table"><tr><td class="widget-columns-column" style="width: 22.457%"><div class="widget widget-text" id="widget-7489b32a-1ca7-2b3c-a016-45bfee6df213">
+			<div class="widget-content"><p>.</p></div>
+		</div></td><td class="widget-columns-split widget-columns-column"></td><td class="widget-columns-column" style="width: 57.2%"><div id="widget-58c887ce-63c4-5561-f635-1614486e059c" class="widget widget-contact"><div class="widget-content"><form id="widget-58c887ce-63c4-5561-f635-1614486e059c-form" action=""><div class="form-item"><label class="form-item-label" for="widget-58c887ce-63c4-5561-f635-1614486e059c-field-name">Nombre <span class="form-required">*</span></label><input type="text" id="widget-58c887ce-63c4-5561-f635-1614486e059c-field-name" name="name" class="form-item-textfield required" /></div><div class="form-item"><label class="form-item-label" for="widget-58c887ce-63c4-5561-f635-1614486e059c-field-mail">Email <span class="form-required">*</span></label><input type="text" id="widget-58c887ce-63c4-5561-f635-1614486e059c-field-mail" name="mail" class="form-item-textfield required email" /></div><div class="form-item"><label class="form-item-label" for="widget-58c887ce-63c4-5561-f635-1614486e059c-field-message">Mensaje <span class="form-required">*</span></label><textarea id="widget-58c887ce-63c4-5561-f635-1614486e059c-field-message" name="message" class="form-item-textarea expand100-200 required"></textarea></div><div class="form-item"><label class="form-item-label" for="widget-58c887ce-63c4-5561-f635-1614486e059c-captcha">Introduzca los símbolos que puede ver aquí como protección frente a la publicación automatizada. <span class="form-required">*</span></label><div class="form-item-captcha"><img id="widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-image" src="../../components/kcaptcha/" alt="" /><div><input id="widget-58c887ce-63c4-5561-f635-1614486e059c-captcha" type="text" name="captcha" size="6" minlength="5" maxlength="6" class="required" /> <a id="widget-58c887ce-63c4-5561-f635-1614486e059c-captcha-reload" href="#reload_captcha">Volver a cargar Captcha</a></div></div></div><div class="form-note">Los campos marcados con <span class="form-required">*</span> son obligatorios.</div><input type="submit" class="form-submit" value="Enviar" /><input type="hidden" name="uuid" value="58c887ce-63c4-5561-f635-1614486e059c" /></form></div></div></td><td class="widget-columns-split widget-columns-column"></td><td class="widget-columns-column" style="width: 20.343%"><div class="widget widget-text" id="widget-f09f1284-03ab-d48f-db09-d64b15c8f223">
+			<div class="widget-content"><p>.</p></div>
+		</div></td></tr></table></div></div>
+</div>
+
+	<script type="text/javascript" src="../../js/anti_cache.js?ac=11.0.14_2013012919"></script>
+<div style="border-top: 1px solid #EEEEEE; padding: 5px 10px; text-align: right;"><a href="../../inicio/" target="_blank">Abrir Mi sitio web</a></div>
+<div id="fb-root" style="display: none;"></div>
+<script type="text/javascript">window.fbAsyncInit = function() {
+	FB.init({
+		appId: '162438790477380', // App ID
+		status: true, // check login status
+		cookie: true, // enable cookies to allow the server to access the session
+		oauth: true, // enable OAuth 2.0
+		xfbml: true // parse XFBML
+	});
+	FB.Canvas.setSize();
+}</script><script type="text/javascript" src="//connect.facebook.net/en_US/all.js?ac=11.0.14_2013012919"></script>
+
+</body>
+</html>
