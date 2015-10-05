@@ -50,12 +50,26 @@ header {
 }
 
 #search{
-	width: 15.8em;
-	height:0.5em;
-	position:relative;
-	float:right;
+  background-color: #262626;
+  width: 25em;
+  height: 7em;
+  float: right;
+  transition: 0.5s;
+  opacity: 0;
 }
 
+.cerrarBuscador {
+  border: none;
+  border-radius: 2px;
+  background-color: #1F787E;
+  float: right;
+  color: white;
+  padding: 0.5em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
 
 #IconPhone{
 top:1em;
@@ -88,6 +102,13 @@ margin-right:3.3em;
   width: 10em;
   float:right;
   margin-top:-1em;
+}
+
+#DivSearch{
+  height: 2em;
+  width: 3em;
+  float:right;
+  margin:1.8em 4em 0 0 ;
 }
 
 #I{
@@ -890,7 +911,6 @@ float:right;
 }
 /*-----------GALERIA DE VIDEOS*****************/
 /*-----------CONTACTO*****************/
-
 
 
 /*-----------CONTACTO*****************/

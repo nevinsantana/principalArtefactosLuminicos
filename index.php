@@ -18,9 +18,6 @@
   <body onload="alternar_banner()">
     <header>
       <img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /> <br><br><br>
-      <div id="search">
-        <gcse:search></gcse:search>
-      </div>
       <div id="DivPhone">
         <div id="I" class="botonPhoneMail">
           <p>58 72 83 26
@@ -36,8 +33,18 @@
         </div>
         <img id="IconMail" src="images/email.svg" onmouseover="informacion2()" onmouseout="noinformacion2()"/>
       </div>
+      <div id="DivSearch">
+        <img id="IconSearch" src="images/search.svg" onmouseover="buscadorIn()"/>
+        <div id="I2" class="botonPhoneMail">
+          <p>ventas@artefactosluminicos.com</p>
+        </div>
+      </div>
     </header>
     <div id="DownHeader"></div>
+    <div id="search">
+      <input type="button" onclick="buscadorOut()" value="Cerrar" class="cerrarBuscador">
+      <gcse:search></gcse:search><!--Buscador de google-->
+    </div>
     <div class="menuContainer">
       <ul id="nav">
         <li>
@@ -170,18 +177,9 @@
 </html>
 
 <script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/googleSearch.js"></script>
+<script type="text/javascript" src="js/animaciones.js"></script>
 <script>
-  (function() {
-    var cx = '013486087382821800792:pihurugfvgo';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-
   function inicio() {
     location.href="?sec=inicio"
   }
