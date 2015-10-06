@@ -559,7 +559,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
   font-family:Font Century Gothic;
   font-size: 17pt;
 
@@ -604,7 +604,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
    font-family:Font Century Gothic;
   font-size: 17pt;
 }
@@ -647,7 +647,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
  font-family:Font Century Gothic;
   font-size: 17pt;
 }
