@@ -16,17 +16,13 @@
     </section>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
-      <div id="imageGif">
-        <img style="float:right"; src="images/index-alsa_31.gif"/>
-        Contáctanos en los teléfonos:<br>
-        58 72 83 26 <br>
-        58 70 07 71 <br>
-        58 72 21 32 <br>
-        58 72 21 16
-        <br><br>Ver nuestras formas de pago:
-        <img id="Banamex" src="images/Banamex.svg"/>
-        <img id="Bancomer" src="images/BancomerLogo.svg"/>
-      </div>
+        Ver nuestras formas de pago:
+        <img class="banco" src="images/Banamex.svg"/>
+        <img class="banco" src="images/BancomerLogo.svg"/>
+    </section>
+    <div id="separaSeccion"></div>
+    <section class="contenidoSection">
+        <img src="images/index-alsa_31.gif" class="segundoGif"/>
     </section>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
