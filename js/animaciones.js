@@ -50,9 +50,24 @@
      document.getElementById("I2").style.opacity="0";
   }
 
-  function buscadorIn() {
-     document.getElementById("search").style.opacity="1";
+  function mailIn() {
+     document.getElementById("mail").style.opacity="1";
+     document.getElementById("mail").style.zIndex="5";
+     document.getElementById("phone").style.opacity="0";
+     document.getElementById("phone").style.zIndex="-5";
   }
-  function buscadorOut() {
-     document.getElementById("search").style.opacity="0";
+  function mailOut() {
+     document.getElementById("mail").style.opacity="0";
+     document.getElementById("mail").style.zIndex="-5";
+  }
+
+  function phoneIn() {
+    document.getElementById("phone").style.opacity="1";
+    document.getElementById("phone").style.zIndex="5";
+     document.getElementById("mail").style.opacity="0";
+     document.getElementById("mail").style.zIndex="-5";
+  }
+  function phoneOut() {
+     document.getElementById("phone").style.opacity="0";
+     document.getElementById("phone").style.zIndex="-5";
   }

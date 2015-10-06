@@ -19,31 +19,24 @@
     <header>
       <img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /> <br><br><br>
       <div id="DivPhone">
-        <div id="I" class="botonPhoneMail">
-          <p>58 72 83 26
-          </br>58 70 07 71
-          </br>58 72 21 32
-          </br>58 72 21 16</p>
-        </div>
-        <img id="IconPhone" src="images/phone.svg" onmouseover="informacion()" onmouseout="noinformacion()" />
+        <img id="IconPhone" src="images/phone.svg" onmouseover="phoneIn()"/>
       </div>
       <div id="DivMail">
-        <div id="I2" class="botonPhoneMail">
-          <p>ventas@artefactosluminicos.com</p>
-        </div>
-        <img id="IconMail" src="images/email.svg" onmouseover="informacion2()" onmouseout="noinformacion2()"/>
-      </div>
-      <div id="DivSearch">
-        <img id="IconSearch" src="images/search.svg" onmouseover="buscadorIn()"/>
-        <div id="I2" class="botonPhoneMail">
-          <p>ventas@artefactosluminicos.com</p>
-        </div>
+        <img id="IconMail" src="images/email.svg" onmouseover="mailIn()"/>
       </div>
     </header>
     <div id="DownHeader"></div>
-    <div id="search">
-      <input type="button" onclick="buscadorOut()" value="Cerrar" class="cerrarBuscador">
-      <gcse:search></gcse:search><!--Buscador de google-->
+    <div id="mail">
+      <div class="cerrar" onclick="mailOut()">x</div>
+      <div class="circuloVerde"></div>
+      <p>ventas@artefactosluminicos.com</p>
+    </div>
+    <div id="phone">
+      <div class="cerrar" onclick="phoneOut()">x</div>
+      <div class="circuloVerde"></div><p>58 72 83 26</p></br>
+      <div class="circuloVerde"></div><p>58 70 07 71</p></br>
+      <div class="circuloVerde"></div><p>58 72 21 32</p></br>
+      <div class="circuloVerde"></div><p>58 72 21 16</p>
     </div>
     <div class="menuContainer">
       <ul id="nav">
