@@ -127,7 +127,7 @@
               <p>Visitar pág.</p>
             </div>
             <a href="http://www.holophane.com" target="blank">
-              <img src="images/LogoHolophane.svg" onmouseover="visitar1()" onmouseout="novisitar1()" />
+              <img src="images/LogoHolophane.png" onmouseover="visitar1()" onmouseout="novisitar1()" />
             </a>
           </div>
           <div class="contUnLogo">
@@ -135,7 +135,7 @@
               <p>Visitar pág.</p>
             </div>
             <a href="http://www.lithonia.com" target="blank">
-              <img src="images/LogoLithonia.svg" onmouseover="visitar2()" onmouseout="novisitar2()"/>
+              <img src="images/LogoLithonia.png" onmouseover="visitar2()" onmouseout="novisitar2()"/>
             </a>
           </div>
           <div class="contUnLogo">
@@ -143,7 +143,7 @@
               <p>Visitar pág.</p>
             </div>
             <a href="http://www.americanelectriclighting.com/" target="blank">
-              <img src="images/LogoAEL.svg" onmouseover="visitar3()" onmouseout="novisitar3()"/>
+              <img src="images/LogoAEL.png" onmouseover="visitar3()" onmouseout="novisitar3()"/>
             </a>
           </div>
           <div class="contUnLogo">
@@ -151,7 +151,7 @@
               <p>Visitar pág.</p>
             </div>
             <a href="http://hydrel.acuitybrands.com/" target="blank">
-              <img src="images/LogoHYDREL.svg" onmouseover="visitar4()" onmouseout="novisitar4()"/>
+              <img src="images/LogoHYDREL.png" onmouseover="visitar4()" onmouseout="novisitar4()"/>
             </a>
           </div>
           <div class="contUnLogo">
@@ -159,14 +159,14 @@
               <p>Visitar pág.</p>
             </div>
             <a href="http://www.hubbell-killark.com/" target="blank">
-              <img src="images/LogoKILLARK.svg" onmouseover="visitar5()" onmouseout="novisitar5()"/>
+              <img src="images/LogoKILLARK.png" onmouseover="visitar5()" onmouseout="novisitar5()"/>
             </a>
           </div>
         </div>
       </div>
       <div id="footer2" >
         <div id="contenedorCopy">
-          <h4>&copy; 2015 Artefactos Lumínicos es una marca registrada.</h4>
+          <h4>&copy; 2015 Artefa<a class="cotHide"href="Cotizaciones">c</a>tos Lumínicos es una marca registrada.</h4>
           <a href="http://www.artefactosluminicos.com.mx/attachments/File/AvisoPrivacidad.pdf" id="texto9" align="center">
             <h4>Aviso de Privacidad</h4>
           </a>
@@ -175,36 +175,7 @@
     </footer>
   </body>
 </html>
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/googleSearch.js"></script>
 <script type="text/javascript" src="js/animaciones.js"></script>
-<script>
-  function inicio() {
-    location.href="?sec=inicio"
-  }
-  function preguntas() {
-    location.href="?sec=preguntas"
-  }
-  function Objetivo() {
-    location.href="?sec=Objetivo"
-  }
-  function Mision() {
-    location.href="?sec=Mision"
-  }
-  function Vision() {
-    location.href="?sec=Vision"
-  }
-  function QuienesSomos() {
-    location.href="?sec=QuienesSomos"
-  }
-    function FormasPago() {
-    location.href="?sec=FormasPago"
-  }
-  function BibliotecaIlu() {
-    location.href="?sec=BibliotecaIlu"
-  }
-  function Videos() {
-    location.href="?sec=Videos"
-  }
-</script>
+<script type="text/javascript" src="js/menu.js"></script>

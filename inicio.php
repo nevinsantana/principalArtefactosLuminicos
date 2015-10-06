@@ -1,54 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
-        <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
-        <title>Prueba de diseño</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/menu.css" rel="stylesheet" type="text/css" />
-
-    </head>
-    <body onload="alternar_banner()">
-
-
-
-      <script type="text/javascript" src="jquery.js"></script>
-      <title>Rotación de banners con Javascript</title>
-      <script>
-        //creo array de imágenes
-        array_imagen = new Array(2)
-        array_imagen[0] = new Image(905,333)
-        array_imagen[0].src = "images/DSC_0038.JPG"
-        array_imagen[1] = new Image(905,333)
-        array_imagen[1].src = "images/DSC_0040.JPG"
-        array_imagen[2] = new Image(905,333)
-        array_imagen[2].src = "images/DSC_0097.JPG"
-        array_imagen[3] = new Image(905,333)
-        array_imagen[3].src = "images/DSC_0117.JPG"
-        //creo el array de URLs
-        array_url = new Array(4)
-        array_url[0] = "#"
-        array_url[1] = "#"
-        array_url[2] = "#"
-        array_url[3] = "#"
-        //variable para llevar la cuenta de la imagen siguiente
-        contador = 0;
-        //función para rotar el banner
-        function alternar_banner(){
-            window.document["banner"].src = array_imagen[contador].src
-            window.document.links[0].href = array_url[contador]
-            contador ++
-            contador = contador % array_imagen.length
-            setTimeout("alternar_banner()",3000)
-        }
-      </script>
-
+<html class="no-js">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
+      <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
+      <title>Prueba de diseño</title>
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <link href="css/menu.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="alternar_banner()">
+    <section>
       <a href="#">
         <img class="gifProyectos" src="images/modelo.png" name="banner">
       </a>
-      <div id="separaSeccion"></div>
-
+    </section>
+    <div id="separaSeccion"></div>
+    <section class="contenidoSection">
       <div id="imageGif">
         <img style="float:right"; src="images/index-alsa_31.gif"/>
         Contáctanos en los teléfonos:<br>
@@ -60,11 +27,10 @@
         <img id="Banamex" src="images/Banamex.svg"/>
         <img id="Bancomer" src="images/BancomerLogo.svg"/>
       </div>
-
-     <div id="separaSeccion"></div>
-
-      <div id="prueba">
-        <h1 id="PruebaTexto">Biblioteca de iluminación</h1>
+    </section>
+    <div id="separaSeccion"></div>
+    <section class="contenidoSection">
+      <div class="centraEnSection" id="prueba">
         <div class="vista">
           <img src="images/biblioteca.jpg" />
           <div class="mascara"></div>
@@ -75,9 +41,7 @@
           </div>
         </div>
       </div>
-
-      <div id="prueba2">
-        <h1 id="PruebaTexto2">Superpostes</h1>
+      <div class="centraEnSection" id="prueba2">
         <div class="vista">
           <img src="images/superposte.jpg" />
           <div class="mascara"></div>
@@ -88,11 +52,14 @@
           </div>
         </div>
       </div>
-
-      <div id="separaSeccion"></div>
-
-      <div id="video">
-        <iframe width="640" height="435" src="https://www.youtube.com/embed/KNakyTK74Ko" frameborder="0" allowfullscreen></iframe>
-      </div>      
-    </body>
+    </section>
+    <!--<div id="separaSeccion"></div>
+    <section class="contenidoSection">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/KNakyTK74Ko" width="800" height="450" frameborder="0">
+        </iframe>
+      </div>
+    </section>-->
+  </body>
 </html>
+<script type="text/javascript" src="js/alternarBanner.js"></script>

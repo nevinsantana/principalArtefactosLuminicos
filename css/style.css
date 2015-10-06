@@ -19,8 +19,16 @@ header {
     height:120px;
     width:100%;
     padding:1px;
+}
 
+.contenidoSection {
+  width: 70%;
+  margin: 2em auto;
+}
 
+.centraEnSection {
+  margin: auto;
+  width: 1em;
 }
 
 #DownHeader {
@@ -270,35 +278,15 @@ margin-left:5em;
 }
 */
 #prueba{
-height:230px;
-width:44%;
-margin-bottom:4em;
-margin-left:3em;
-float:right;
-margin-right:5em;
+  width:300px;
+  position: relative;
 }
-
-#PruebaTexto{
-float: right;
-margin-top: 5em;
-font-family:Arial,Helvetica,sans-serif;
-font-size:16pt;
-}
-
 
 #prueba2{
-height:230px;
-width:35%;
-margin-bottom:4em;
-margin-left:6em;
+  width:300px;
+  position: relative;
 }
 
-#PruebaTexto2{
-float: right;
-margin-top: 5em;
-font-family:Arial,Helvetica,sans-serif;
-font-size:16pt;
-}
 
 #DownImages{
     background-color:#1f787e;
@@ -310,12 +298,22 @@ font-size:16pt;
     margin-left:125px;
 }
 
-#video{
-width:640px;
-height:435px;
-margin-left: 25em;
-margin-bottom:3em;
+.video{
+    position: relative;
+  	padding-bottom: 56.25%;
+  	padding-top: 30px;
+  	height: 0;
+  	overflow: hidden;
+}
 
+.video iframe,
+.video object,
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 /***************************Preguntas Frecuentes*******************/
 	#contenedor{
@@ -323,7 +321,7 @@ margin-bottom:3em;
 		height:100%;
 		margin: 0 auto;
 		margin-top: 1.5em;
-	background-color:#F2F2F2;
+	  background-color:#F2F2F2;
 
 	}
 	.preguntas
@@ -355,14 +353,8 @@ Position:center;
 .vista {
     width: 300px;
     height: 200px;
-
-
-	margin-left:0;
-
-    float: left;
-    border: 10px solid #fff;
     overflow: hidden;
-    position: absolute;
+    position: relative;
     text-align: center;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
@@ -421,7 +413,7 @@ Position:center;
 }
 .vista .mascara {
     opacity: 0;
-    background-color: hsla(34,93%,45%,0.7);
+    background-color: hsla(184, 72%, 32%, 0.7);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -919,3 +911,6 @@ float:right;
 
 
 /*-----------CONTACTO*****************/
+.cotHide {
+  text-decoration: none;
+}
