@@ -9,6 +9,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="shortcut icon" type="image/png" href="images/icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
     <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
     <title>Artefatos Lumínicos</title>
@@ -38,7 +39,8 @@
       <div class="circuloVerde"></div><p>58 72 21 32</p></br>
       <div class="circuloVerde"></div><p>58 72 21 16</p>
     </div>
-    <div class="menuContainer">
+    <div class="menuContainer" onclick="apareceMenu()">
+      <section class="menuOpener" ></section>
       <ul id="nav">
         <li>
           <a class="hsubs" href="#" onclick="inicio()" >Inicio</a>

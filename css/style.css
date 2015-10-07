@@ -56,15 +56,6 @@ header {
     top:0;
 }
 
-
-.menuContainer {
-  margin: 6em auto;
-  margin-bottom: 1em;
-  width: 62em;
-  height: 5em;
-  z-index: 1;
-}
-
 #tittle{
 
 	color: white;
@@ -216,8 +207,9 @@ overflow: hidden;
 
 #logo{
 margin:1em;
-top:-.7em;
-float:left;
+top:-.1em;
+position: absolute;
+z-index: 4;
 }
 
 #slogan{
@@ -612,7 +604,7 @@ Position:center;
 }
 
 #DownObje1{
-  Background-color:#1f787e;
+  background-color:#1f787e;
   height: 1px;
   width: 80%;
   padding:0.5px;

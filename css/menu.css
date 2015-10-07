@@ -1,3 +1,100 @@
+@media only screen and (max-width: 900px) {
+  .menuContainer {
+    width: 100%;
+    height: 5.3em;
+    z-index: 1;
+    background: #1f787e url('../images/menu.svg') no-repeat 98% 80%;
+    cursor: pointer;
+  }
+
+  #nav,#nav ul {
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+  }
+  #nav {
+    font-size: 12px;
+    height: 20px;
+    padding: 0 0 0 0;
+    width: 100%;
+    position: absolute;
+    top: -9em;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s
+  }
+  #nav ul {
+      background-color: #404040;
+      border:1px solid #404040;
+      border-radius: 0 5px 5px 5px;
+      border-width: 0 1px 1px;
+      left: -9999px;
+      overflow: hidden;
+      position: absolute;
+      top: -9999px;
+      z-index: 2;
+  }
+  #nav li {
+    width: 100%;
+    border-bottom: 1px solid black;
+  }
+
+  #nav li a {
+      color: white;
+      display: block;
+      font-weight: normal;
+      height: 37px;
+      position: relative;
+      padding-top: 0.3em;
+      text-decoration: none;
+      text-align: center;
+      background: #1f787e;
+      font-size: 20px;
+      z-index: 1;
+  }
+  #nav li:hover > a {
+      color: #20b8c1;
+  }
+  #nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+      background: none repeat scroll 0 0 #121212;
+      outline: 0 none;
+  }
+  #nav li:hover ul.subs {
+      left: 0;
+      top: 35px;
+      width: 180px;
+
+  }
+  #nav ul li {
+      background: none;
+      width: 100%;
+  }
+  #nav ul li a {
+      float: none;
+      color:white;
+  }
+  #nav ul li:hover > a {
+      background-color: #121212;
+      color: #20b8c1;
+  }
+
+  .linea_vertical {
+
+      float: left;
+      height: 3.0em;
+      border-right: 0.1em solid #d0d0d0;
+  }
+}
+
+@media only screen and (max-width: 5000px) and (min-width: 901px){
+.menuContainer {
+  margin: 6em auto;
+  margin-bottom: 1em;
+  width: 62em;
+  height: 5em;
+  z-index: 1;
+}
+
 #nav,#nav ul {
     list-style: none outside none;
     margin: 0;
@@ -72,4 +169,5 @@
     float: left;
     height: 3.0em;
     border-right: 0.1em solid #d0d0d0;
+}
 }

@@ -71,3 +71,9 @@
      document.getElementById("phone").style.opacity="0";
      document.getElementById("phone").style.zIndex="-5";
   }
+
+  function apareceMenu() {
+    document.getElementById("nav").style.top="16.5em";
+    document.getElementById("nav").style.zIndex="1";
+    document.getElementById("nav").style.opacity="0.9";
+  }
