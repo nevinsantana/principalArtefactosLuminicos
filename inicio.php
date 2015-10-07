@@ -16,10 +16,13 @@
     </section>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
-        Ver nuestras formas de pago:
-        <img class="banco" src="images/Banamex.svg"/>
-        <img class="banco" src="images/BancomerLogo.svg"/>
+        <div class="centrarContenidoSection">
+        <span class="descripcionBanco">Ver nuestras formas de pago:</span>
+        <img class="banco" src="images/Banamex.svg" onclick="FormasPago()"/>
+        <img class="banco" src="images/BancomerLogo.svg" onclick="FormasPago()"/><br/><br/><br/><br/>
+      </div>
     </section>
+    <div class="break"></div>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
         <img src="images/index-alsa_31.gif" class="segundoGif"/>

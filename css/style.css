@@ -26,6 +26,23 @@ header {
   margin: 2em auto;
 }
 
+.contenidoSectionEnfasis {
+  width: 100%;
+  padding: 1em;
+  margin-top: 3em;
+  background-color: #2b2b2b;
+}
+
+.pagoCentrar {
+  width: 46.5em;
+  margin: auto;
+}
+
+.centrarContenidoSection {
+  margin: auto;
+  max-width: 46.5em;
+}
+
 .centraEnSection {
   margin: auto;
   width: 1em;
@@ -217,12 +234,30 @@ width:26em;
   width: 100%;
 }
 
-.banco{
-float: right;
-margin-right: 3em;
+.descripcionBanco {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-#HSBC{
+.banco {
+  float: left;
+  margin: 1em 1.5em;
+  width: 11em;
+  cursor: pointer;
+}
+
+.bancoFormas {
+  margin-top: 3.5em;
+width: 9em;
+}
+
+.bancoFormas2 {
+width: 9em;
+margin-top: 7em;
+}
+
+#HSBC {
 margin-left:5.3em;
 margin-top:-2.7em;
 }
@@ -559,7 +594,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
   font-family:Font Century Gothic;
   font-size: 17pt;
 
@@ -604,7 +639,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
    font-family:Font Century Gothic;
   font-size: 17pt;
 }
@@ -647,7 +682,7 @@ Position:center;
 
   margin-left:4em;
   float:left;
-  
+
  font-family:Font Century Gothic;
   font-size: 17pt;
 }
@@ -694,10 +729,6 @@ Position:center;
   font-size: 17pt;
 }
 
-
-
-
-
 /*-----------QUIENES SOMOS*****************/
 /*-----------FORMAPAGO*****************/
 #PagoLado{
@@ -709,19 +740,18 @@ Position:center;
   float:left;
 }
 
-#PagoArriba{
-  height: 5em;
-  width: 47em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 10em;
-  float:left;
-}
 
 #LetraPago{
-  font-family:Font Century Gothic;
-  font-size: 17pt;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
 
+#LetraPago2{
+  font-size: 16px;
+  text-align: center;
+  color: #838383;
 }
 
 #LetraCuadro{
@@ -729,30 +759,21 @@ Position:center;
   font-size: 14pt;
 }
 
-#PagoBancos{
+#sectionPago{
   height:25em;
-  width:9em;
-  float:right;
+  width:14em;
   margin-top:1em;
-  margin-right:46em;
+  float: left;
 }
 
 #LineaPagoBan{
   height:25em;
   width:0.1em;
-  margin-top:1em;
-  margin-right:-10em;
+  margin:1em 1em;
+  position: sticky;
   background-color:#1f787e;
-  float:right;
   padding:1px;
-}
-
-#PagoCuenta{
-  height:25em;
-  width:9em;
-  float:right;
-  margin-top:1em;
-  margin-right:-21em;
+  float: left;
 }
 
 #LineaPagoBan2{
@@ -765,12 +786,8 @@ Position:center;
   padding:1px;
 }
 
-#PagoClave{
-  height:25em;
-  widht:9em;
-  float:right;
-  margin-top:1em;
-  margin-right:-38em;
+.break {
+  clear: both;
 }
 
 #PagoCorreo{
