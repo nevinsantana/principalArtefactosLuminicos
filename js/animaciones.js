@@ -2,8 +2,8 @@ var width = (document.body.clientWidth);
 
 function normaliza(){
   var width = (document.body.clientWidth);
-  if(width>=884){
-  document.getElementById("nav").style.top="19em";
+  if(width>1048){
+  document.getElementById("nav").style.top="13em";
   document.getElementById("nav").style.zIndex="1";
   document.getElementById("nav").style.opacity="1";
   }
@@ -89,7 +89,7 @@ function normaliza(){
   }
 
   function apareceMenu() {
-    document.getElementById("nav").style.top="16.5em";
+    document.getElementById("nav").style.top="13em";
     document.getElementById("nav").style.zIndex="1";
     document.getElementById("nav").style.opacity="0.95";
     document.getElementById("closeMenu").style.display="inline";

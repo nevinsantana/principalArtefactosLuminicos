@@ -127,33 +127,21 @@
             </a>
           </div>
           <div class="contUnLogo">
-            <div id="v2" class="botoncito">
-              <p>Visitar pág.</p>
-            </div>
             <a href="http://www.lithonia.com" target="blank">
               <img src="images/LogoLithonia.png" onmouseover="visitar2()" onmouseout="novisitar2()"/>
             </a>
           </div>
           <div class="contUnLogo">
-            <div id="v3" class="botoncito">
-              <p>Visitar pág.</p>
-            </div>
             <a href="http://www.americanelectriclighting.com/" target="blank">
               <img src="images/LogoAEL.png" onmouseover="visitar3()" onmouseout="novisitar3()"/>
             </a>
           </div>
           <div class="contUnLogo">
-            <div id="v4" class="botoncito">
-              <p>Visitar pág.</p>
-            </div>
             <a href="http://hydrel.acuitybrands.com/" target="blank">
               <img src="images/LogoHYDREL.png" onmouseover="visitar4()" onmouseout="novisitar4()"/>
             </a>
           </div>
           <div class="contUnLogo">
-            <div id="v5" class="botoncito">
-              <p>Visitar pág.</p>
-            </div>
             <a href="http://www.hubbell-killark.com/" target="blank">
               <img src="images/LogoKILLARK.png" onmouseover="visitar5()" onmouseout="novisitar5()"/>
             </a>

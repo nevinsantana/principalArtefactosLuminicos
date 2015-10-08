@@ -9,11 +9,12 @@
       <link href="css/menu.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload="alternar_banner()">
-    <section>
+    <section class="gifContainer">
       <a href="#">
         <img class="gifProyectos" src="images/modelo.png" name="banner">
       </a>
     </section>
+    <div class="break"></div>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
         <div class="centrarContenidoSection">
