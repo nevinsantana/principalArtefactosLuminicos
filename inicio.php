@@ -26,10 +26,7 @@
     <div class="break"></div>
     <div id="separaSeccion"></div>
     <section class="contenidoSection">
-        <img src="images/index-alsa_31.gif" class="segundoGif"/>
-    </section>
-    <div id="separaSeccion"></div>
-    <section class="contenidoSection">
+      <div class="divIzq">
       <div class="centraEnSection" id="prueba">
         <div class="vista">
           <img src="images/biblioteca.jpg" />
@@ -41,6 +38,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="divDer">
       <div class="centraEnSection" id="prueba2">
         <div class="vista">
           <img src="images/superposte.jpg" />
@@ -52,6 +51,12 @@
           </div>
         </div>
       </div>
+    </div>
+    </section>
+    <div class="break">
+    <div id="separaSeccion"></div>
+    <section class="gifContainer">
+        <img src="images/index-alsa_31.gif" class="gifProyectos"/>
     </section>
     <!--<div id="separaSeccion"></div>
     <section class="contenidoSection">

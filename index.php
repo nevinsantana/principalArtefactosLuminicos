@@ -119,9 +119,6 @@
       <div id="footer1">
         <div id="contenedorLogos">
           <div class="contUnLogo">
-            <div id="v1" class="botoncito">
-              <p>Visitar pág.</p>
-            </div>
             <a href="http://www.holophane.com" target="blank">
               <img src="images/LogoHolophane.png" onmouseover="visitar1()" onmouseout="novisitar1()" />
             </a>
