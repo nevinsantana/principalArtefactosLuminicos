@@ -16,14 +16,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/menu.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onload="alternar_banner()">
+  <body onresize="normaliza()">
     <header>
       <img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /> <br><br><br>
       <div id="DivPhone">
-        <img id="IconPhone" src="images/phone.svg" onmouseover="phoneIn()"/>
+        <img id="IconPhone" src="images/phone.svg" onclick="phoneIn()"/>
       </div>
       <div id="DivMail">
-        <img id="IconMail" src="images/email.svg" onmouseover="mailIn()"/>
+        <img id="IconMail" src="images/email.svg" onclick="mailIn()"/>
       </div>
     </header>
     <div id="DownHeader"></div>
@@ -39,6 +39,7 @@
       <div class="circuloVerde"></div><p>58 72 21 32</p></br>
       <div class="circuloVerde"></div><p>58 72 21 16</p>
     </div>
+    <div id="closeMenu" onclick="desapareceMenu()"></div>
     <div class="menuContainer" onclick="apareceMenu()">
       <section class="menuOpener" ></section>
       <ul id="nav">

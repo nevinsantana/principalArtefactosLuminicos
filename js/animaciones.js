@@ -1,3 +1,19 @@
+var width = (document.body.clientWidth);
+
+function normaliza(){
+  var width = (document.body.clientWidth);
+  if(width>=884){
+  document.getElementById("nav").style.top="19em";
+  document.getElementById("nav").style.zIndex="1";
+  document.getElementById("nav").style.opacity="1";
+  }
+  else {
+    document.getElementById("nav").style.top="-9em";
+    document.getElementById("nav").style.zIndex="-1";
+    document.getElementById("nav").style.opacity="0";
+  }
+}
+
 
   function visitar1() {
     document.getElementById("v1").style.marginTop="-2.7em";
@@ -75,5 +91,13 @@
   function apareceMenu() {
     document.getElementById("nav").style.top="16.5em";
     document.getElementById("nav").style.zIndex="1";
-    document.getElementById("nav").style.opacity="0.9";
+    document.getElementById("nav").style.opacity="0.95";
+    document.getElementById("closeMenu").style.display="inline";
+  }
+
+  function desapareceMenu() {
+    document.getElementById("nav").style.top="-9em";
+    document.getElementById("nav").style.zIndex="-1";
+    document.getElementById("nav").style.opacity="0";
+    document.getElementById("closeMenu").style.display="none";
   }
