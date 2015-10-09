@@ -89,7 +89,7 @@ function normaliza(){
   }
 
   function apareceMenu() {
-    document.getElementById("nav").style.top="13em";
+    document.getElementById("nav").style.top="16.6em";
     document.getElementById("nav").style.zIndex="1";
     document.getElementById("nav").style.opacity="0.95";
     document.getElementById("closeMenu").style.display="inline";
