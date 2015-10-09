@@ -2,7 +2,7 @@ function normaliza(){
   var width = (document.body.clientWidth);
   if(width>1048){
   document.getElementById("nav").style.top="13em";
-  document.getElementById("nav").style.zIndex="3";
+  document.getElementById("nav").style.zIndex="4";
   document.getElementById("nav").style.opacity="1";
   }
   else {
@@ -90,7 +90,7 @@ function normaliza(){
     var width = document.body.clientWidth;
     if(width<1048) {
     document.getElementById("nav").style.top="16.6em";
-    document.getElementById("nav").style.zIndex="3";
+    document.getElementById("nav").style.zIndex="4";
     document.getElementById("nav").style.opacity="0.95";
     document.getElementById("closeMenu").style.display="inline";
     }

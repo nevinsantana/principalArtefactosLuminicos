@@ -19,7 +19,7 @@
   </head>
   <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
     <header>
-      <img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /> <br><br><br>
+      <a href="../principalArtefactosLuminicos"><img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /></a> <br><br><br>
       <div id="DivPhone">
         <img id="IconPhone" src="images/phone.svg" onclick="phoneIn()"/>
       </div>
