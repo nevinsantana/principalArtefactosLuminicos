@@ -101,3 +101,11 @@ function normaliza(){
     document.getElementById("nav").style.opacity="0";
     document.getElementById("closeMenu").style.display="none";
   }
+
+  function aparecePagina() {
+    document.getElementById("body").style.opacity="1";
+  }
+
+  function desaparecePagina() {
+    document.getElementById("body").style.opacity="0";
+  }

@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .gifContainer {
   width: 74.5em;
   max-width: 100%;

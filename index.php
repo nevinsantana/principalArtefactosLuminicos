@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/menu.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onresize="normaliza()">
+  <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
     <header>
       <img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /> <br><br><br>
       <div id="DivPhone">
