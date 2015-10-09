@@ -5,14 +5,39 @@
       <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
       <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
       <title>Prueba de diseño</title>
-      <link href="css/style.css" rel="stylesheet" type="text/css" />
-      <link href="css/menu.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onload="alternar_banner()">
-    <section class="gifContainer">
-      <a href="#">
-        <img class="gifProyectos" src="images/modelo.png" name="banner">
-      </a>
+  <body>
+    <section class="contenidoSection">
+      <ul class="pgwSlider">
+        <li>
+          <a href="Proyectos/index.html" target="_blank">
+            <img src="images/pgwSlider/inicio/1.jpg"
+            alt="Super vía Santa Fe"
+            data-description="AL-BLM-EG500">
+          </a>
+        </li>
+        <li>
+          <a href="Proyectos/index.html" target="_blank">
+            <img src="images/pgwSlider/inicio/2.jpg"
+            alt="Estacionamiento IPN Hidalgo"
+            data-description="AL-BLM-EG145">
+          </a>
+        </li>
+        <li>
+          <a href="Proyectos/index.html" target="_blank">
+            <img src="images/pgwSlider/inicio/3.jpg"
+            alt="Túnel Santa Fe"
+            data-description="TUNELED">
+          </a>
+        </li>
+        <li>
+          <a href="Proyectos/index.html" target="_blank">
+            <img src="images/pgwSlider/inicio/4.jpg"
+            alt="Circuito Mexiquense"
+            data-description="Poste serie L5">
+          </a>
+        </li>
+      </ul>
     </section>
     <div class="break"></div>
     <div id="separaSeccion"></div>
@@ -67,4 +92,3 @@
     </section>-->
   </body>
 </html>
-<script type="text/javascript" src="js/alternarBanner.js"></script>

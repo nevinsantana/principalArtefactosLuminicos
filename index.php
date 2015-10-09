@@ -15,6 +15,7 @@
     <title>Artefatos Lumínicos</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="css/pgwslider.css" rel="stylesheet" type="text/css" />
   </head>
   <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
     <header>
@@ -154,9 +155,10 @@
         </div>
       </div>
     </footer>
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/animaciones.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="tools/slider/PgwSlider/pgwslider.js"></script>
+    <script type="text/javascript" src="tools/slider/PgwSlider/pgwsliderRunner.js"></script>
   </body>
 </html>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/googleSearch.js"></script>
-<script type="text/javascript" src="js/animaciones.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
