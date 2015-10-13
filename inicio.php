@@ -3,7 +3,7 @@
   <head>
       <meta charset="UTF-8" />
       <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
-      <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
+      <meta name="description" content="Venta de artefactos Luminicos"/>
       <title>Prueba de diseño</title>
   </head>
   <body>

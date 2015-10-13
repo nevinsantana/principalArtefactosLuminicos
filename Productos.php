@@ -36,12 +36,12 @@
       <button class="action filter__item" data-filter=".alto"><i class="icon icon--alto"></i><span class="action__text">Alto Voltaje</span></button>
 		</div>
 		<button class="cart">
-			
+
 		</button>
 	</div>
 	<!-- Main view -->
 	<div class="view">
-	
+
 		<!-- Grid -->
 		<section class="grid grid--loading">
 			<!-- Loader -->
@@ -49,7 +49,7 @@
 			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
 			<div class="grid__sizer"></div>
 			<!-- Grid items -->
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/2AV.jpg" alt="Dummy" /></div>
@@ -59,11 +59,27 @@
 				<div class="meta">
 					<h3 class="meta__title">2AV</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal2">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
+			<div id="modal2" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>2AV</h2>
+					<img src="images/Fluorescente/2AV.jpg" />
+					<P>Un producto excepcional iluminación general que se desempeña bien en grandes espacios con techos </br>
+						altos. Especialmente indicado para las zonas de oficinas abiertas, espacios públicos interiores,</br>
+						bibliotecas y áreas de espera del aeropuerto. La combinación óptima de la luz reflejada de dirección</br>
+						y difusa se combinan para la iluminación equilibrada entre la tarea y las paredes próximas, el </br>
+						confort visual mejorada y sombras reducido al mínimo. Disponible en 2x2 y 2x4, distribuciones</br>
+						 simétricas para los usos generales del área de iluminación.</br></p>
+				</div>
+			</div>
+
+
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/02454.JPG" alt="Dummy" /></div>
@@ -77,7 +93,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/COLONIAL MEXICANO.JPG" alt="Dummy" /></div>
@@ -91,7 +107,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item grid__item--size-a shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/2GT8.jpg" alt="Dummy" /></div>
@@ -105,7 +121,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/ELM-ELM2.jpg" alt="Dummy" /></div>
@@ -119,7 +135,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item grid__item--size-a jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMALUNE.jpg" alt="Dummy" /></div>
@@ -133,7 +149,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
@@ -147,7 +163,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/2PM3N.jpg" alt="Dummy" /></div>
@@ -161,7 +177,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/illumibay.jpg" alt="Dummy" /></div>
@@ -175,7 +191,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/DORCHESTER.jpg" alt="Dummy" /></div>
@@ -189,7 +205,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/ATLANTA.jpg" alt="Dummy" /></div>
@@ -203,7 +219,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/ind.jpg" alt="Dummy" /></div>
@@ -217,7 +233,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMATITE.JPG" alt="Dummy" /></div>
@@ -231,7 +247,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/LOBAY.png" alt="Dummy" /></div>
@@ -245,7 +261,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item grid__item--size-a dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/GRAN VILLE.jpg" alt="Dummy" /></div>
@@ -259,7 +275,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/LQM.jpg" alt="Dummy" /></div>
@@ -273,7 +289,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/PRISMGLO COMPACTA.jpg" alt="Dummy" /></div>
@@ -287,7 +303,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMPACK.JPG" alt="Dummy" /></div>
@@ -301,7 +317,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/AV SM.jpg" alt="Dummy" /></div>
@@ -315,7 +331,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INTERIOR/PRISMGLO ENHANCED.jpg" alt="Dummy" /></div>
@@ -329,7 +345,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/GRAND LEDGE.JPG" alt="Dummy" /></div>
@@ -343,7 +359,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/av smd.jpg" alt="Dummy" /></div>
@@ -357,7 +373,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item grid__item--size-a trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/LRP.jpg" alt="Dummy" /></div>
@@ -371,7 +387,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/CRANELITE.JPG" alt="Dummy" /></div>
@@ -385,7 +401,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/dm-dmw.jpg" alt="Dummy" /></div>
@@ -399,7 +415,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/GRANVILLE PREMIER.jpg" alt="Dummy" /></div>
@@ -413,7 +429,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/ej-ny.jpg" alt="Dummy" /></div>
@@ -427,7 +443,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/LV SERIES.jpg" alt="Dummy" /></div>
@@ -441,7 +457,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/ENDURALUME.JPG" alt="Dummy" /></div>
@@ -455,7 +471,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item grid__item--size-a dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/HOV 16- HOV 25.jpg" alt="Dummy" /></div>
@@ -469,7 +485,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/POWER SENTRY.jpg" alt="Dummy" /></div>
@@ -483,7 +499,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item trousers">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EMERGENCIA/ps.jpg" alt="Dummy" /></div>
@@ -497,7 +513,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/KAD.jpg" alt="Dummy" /></div>
@@ -511,7 +527,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/LIGHT BAT G2.jpg" alt="Dummy" /></div>
@@ -525,8 +541,8 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-        
-                                                                                                   
+
+
 			<div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/kacm.jpg" alt="Dummy" /></div>
@@ -540,7 +556,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/mayfair.jpg" alt="Dummy" /></div>
@@ -554,7 +570,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/MEMPHIS.jpg" alt="Dummy" /></div>
@@ -568,7 +584,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/MINI GRANVILLE.jpg" alt="Dummy" /></div>
@@ -582,7 +598,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/MODULE 600.jpg" alt="Dummy" /></div>
@@ -596,7 +612,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/NMD-MADEIRA.jpg" alt="Dummy" /></div>
@@ -610,7 +626,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/OVUE.jpg" alt="Dummy" /></div>
@@ -624,7 +640,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/parkpack.jpg" alt="Dummy" /></div>
@@ -638,7 +654,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/PECHINA.jpg" alt="Dummy" /></div>
@@ -652,7 +668,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/pgr.jpg" alt="Dummy" /></div>
@@ -666,7 +682,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/PRISMASPHERE.jpg" alt="Dummy" /></div>
@@ -680,7 +696,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/SERIE GLASWERKS.jpg" alt="Dummy" /></div>
@@ -694,7 +710,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/somerset.jpg" alt="Dummy" /></div>
@@ -708,7 +724,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/tfa.jpg" alt="Dummy" /></div>
@@ -722,7 +738,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/TFL.jpg" alt="Dummy" /></div>
@@ -736,7 +752,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/TFR-TFM.jpg" alt="Dummy" /></div>
@@ -750,7 +766,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/tv.jpg" alt="Dummy" /></div>
@@ -764,7 +780,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/twa.jpg" alt="Dummy" /></div>
@@ -778,7 +794,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/twac.jpg" alt="Dummy" /></div>
@@ -792,7 +808,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/twh.jpg" alt="Dummy" /></div>
@@ -806,7 +822,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/TWN-TWP.jpg" alt="Dummy" /></div>
@@ -820,7 +836,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/twp.jpg" alt="Dummy" /></div>
@@ -834,7 +850,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/VENUS.jpg" alt="Dummy" /></div>
@@ -848,7 +864,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item dresses">
 				<div class="slider">
 					<div class="slider__item"><img src="images/EXTERIOR/wallpack iv.jpg" alt="Dummy" /></div>
@@ -862,7 +878,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 			<div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/NEN ENDURALUME.JPG" alt="Dummy" /></div>
@@ -876,7 +892,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PETROLUME.JPG" alt="Dummy" /></div>
@@ -890,7 +906,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PETROLUX II.JPG" alt="Dummy" /></div>
@@ -904,7 +920,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PETROLUX.JPG" alt="Dummy" /></div>
@@ -918,7 +934,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/Prismalume cerrado.JPG" alt="Dummy" /></div>
@@ -932,7 +948,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PRISMALUME.JPG" alt="Dummy" /></div>
@@ -946,7 +962,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PRISMATITE FLUORESCENTE.JPG" alt="Dummy" /></div>
@@ -960,7 +976,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PRISMGLO.JPG" alt="Dummy" /></div>
@@ -974,7 +990,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PRISMPACK CERRADO.JPG" alt="Dummy" /></div>
@@ -988,7 +1004,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/PRISMPACK.JPG" alt="Dummy" /></div>
@@ -1002,7 +1018,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/sh pa22.JPG" alt="Dummy" /></div>
@@ -1016,7 +1032,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/sh pa25.JPG" alt="Dummy" /></div>
@@ -1030,7 +1046,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/th a14.JPG" alt="Dummy" /></div>
@@ -1044,7 +1060,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/th.JPG" alt="Dummy" /></div>
@@ -1058,7 +1074,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/THD.JPG" alt="Dummy" /></div>
@@ -1072,7 +1088,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/THR.JPG" alt="Dummy" /></div>
@@ -1086,7 +1102,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/tx a121-a125.JPG" alt="Dummy" /></div>
@@ -1100,7 +1116,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/txc.JPG" alt="Dummy" /></div>
@@ -1114,7 +1130,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/VANTAGE ALT.JPG" alt="Dummy" /></div>
@@ -1128,7 +1144,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/VANTAGE MINI.JPG" alt="Dummy" /></div>
@@ -1142,7 +1158,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item jackets">
 				<div class="slider">
 					<div class="slider__item"><img src="images/INDUSTRIAL/VANTAGE RTT.JPG" alt="Dummy" /></div>
@@ -1156,7 +1172,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/GDI.jpg" alt="Dummy" /></div>
@@ -1170,8 +1186,8 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
-        
+
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/i-beam.jpg" alt="Dummy" /></div>
@@ -1185,7 +1201,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/mrt retrofit kit.jpg" alt="Dummy" /></div>
@@ -1199,7 +1215,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/NEG-FEG.jpg" alt="Dummy" /></div>
@@ -1213,8 +1229,8 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
-      
+
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/NEP.jpg" alt="Dummy" /></div>
@@ -1228,7 +1244,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/NHW.jpg" alt="Dummy" /></div>
@@ -1242,8 +1258,8 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
-      
+
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/pm3x.jpg" alt="Dummy" /></div>
@@ -1257,7 +1273,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/pmo.jpg" alt="Dummy" /></div>
@@ -1271,7 +1287,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/rt5.jpg" alt="Dummy" /></div>
@@ -1285,8 +1301,8 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
-      
+
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/s.jpg" alt="Dummy" /></div>
@@ -1300,7 +1316,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/sb.jpg" alt="Dummy" /></div>
@@ -1314,7 +1330,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/SP.jpg" alt="Dummy" /></div>
@@ -1328,7 +1344,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/wc-ny.jpg" alt="Dummy" /></div>
@@ -1342,7 +1358,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-     
+
        <div class="grid__item shirts">
 				<div class="slider">
 					<div class="slider__item"><img src="images/Fluorescente/ww.jpg" alt="Dummy" /></div>
@@ -1356,7 +1372,7 @@
 				</div>
         <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-        
+
         <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/ALX.jpg" alt="Dummy" /></div>
@@ -1370,7 +1386,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/GRANDVILLE.jpg" alt="Dummy" /></div>
@@ -1384,7 +1400,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-        
+
 			 <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/LEDGEND.jpg" alt="Dummy" /></div>
@@ -1398,7 +1414,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/LT BEZEL RING.jpg" alt="Dummy" /></div>
@@ -1412,7 +1428,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/LTD.jpg" alt="Dummy" /></div>
@@ -1426,7 +1442,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/SERIE H670.jpg" alt="Dummy" /></div>
@@ -1440,7 +1456,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/teardrop led.jpg" alt="Dummy" /></div>
@@ -1454,7 +1470,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item led">
 				<div class="slider">
 					<div class="slider__item"><img src="images/CON LEDS/WASHINGTON POSTLITE.jpg" alt="Dummy" /></div>
@@ -1468,7 +1484,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/1700-AGUILA.jpg" alt="Dummy" /></div>
@@ -1482,7 +1498,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
        <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/EXPRESS VECTOR.jpg" alt="Dummy" /></div>
@@ -1496,7 +1512,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/HALCON MEDIANO.jpg" alt="Dummy" /></div>
@@ -1510,7 +1526,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
@@ -1524,7 +1540,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/HOV 16-HOV 25.jpg" alt="Dummy" /></div>
@@ -1538,7 +1554,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-		
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/lmst.png" alt="Dummy" /></div>
@@ -1552,7 +1568,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
         <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/MONGOOSE.jpg" alt="Dummy" /></div>
@@ -1566,7 +1582,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
          <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/NHMSC-NHMAO.png" alt="Dummy" /></div>
@@ -1580,7 +1596,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/NHT.jpg" alt="Dummy" /></div>
@@ -1594,7 +1610,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/POSTE SERIE L5.jpg" alt="Dummy" /></div>
@@ -1608,7 +1624,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/PRISMBEAM II.jpg" alt="Dummy" /></div>
@@ -1622,7 +1638,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/SIGN VUE.jpg" alt="Dummy" /></div>
@@ -1636,7 +1652,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="images/SISTEMAS DE ALTO MONTAJE/tunel predator.jpg" alt="Dummy" /></div>
@@ -1650,7 +1666,7 @@
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
-      
+
 		</section>
 		<!-- /grid-->
 	</div>
