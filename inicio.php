@@ -19,7 +19,7 @@
         <li>
           <a href="Proyectos/index.html" target="_blank">
             <img src="images/pgwSlider/inicio/2.jpg"
-            alt="Estacionamiento IPN Hidalgo"
+            alt="Vialidad Ciudad del Conocimiento"
             data-description="AL-BLM-EG145">
           </a>
         </li>

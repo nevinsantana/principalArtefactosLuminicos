@@ -1,7 +1,7 @@
 function normaliza(){
   var width = (document.body.clientWidth);
   if(width>1048){
-  document.getElementById("nav").style.top="13em";
+  document.getElementById("nav").style.top="7.2em";
   document.getElementById("nav").style.zIndex="4";
   document.getElementById("nav").style.opacity="1";
   }
@@ -89,7 +89,7 @@ function normaliza(){
   function apareceMenu() {
     var width = document.body.clientWidth;
     if(width<1048) {
-    document.getElementById("nav").style.top="16.6em";
+    document.getElementById("nav").style.top="10.9em";
     document.getElementById("nav").style.zIndex="4";
     document.getElementById("nav").style.opacity="0.95";
     document.getElementById("closeMenu").style.display="inline";

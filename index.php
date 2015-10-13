@@ -19,7 +19,7 @@
   </head>
   <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
     <header>
-      <a href="../principalArtefactosLuminicos"><img id="logo" src="images/logo ALSA blanquitas.svg" width="200px" /></a> <br><br><br>
+      <a href="http://www.artefactosluminicos.com.mx"><img id="logo" src="images/logoIndex.png"/></a> <br><br><br>
       <div id="DivPhone">
         <img id="IconPhone" src="images/phone.svg" onclick="phoneIn()"/>
       </div>
@@ -56,7 +56,7 @@
             <li><a href="#" onclick="Mision()">Misión</a></li>
             <li><a href="#" onclick="Vision()">Visión</a></li>
             <li><a href="#" onclick="QuienesSomos()">¿Quiénes somos?</a></li>
-            <li><a href="#" onclick="preguntas()">Preguntas Frecuentes</a></li>
+            <li><a href="#" onclick="preguntas()">Preguntas</a></li>
           </ul>
         </li>
         <li>
