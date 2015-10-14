@@ -20,14 +20,15 @@
   <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
     <header>
       <a href="http://www.artefactosluminicos.com.mx"><img id="logo" src="images/logoIndex.png"/></a> <br><br><br>
+
       <div id="DivPhone">
-        <img id="IconPhone" src="images/phone.svg" onclick="phoneIn()"/>
+        <img src="images/phone.svg" onclick="phoneIn()"/>
       </div>
       <div id="DivMail">
-        <img id="IconMail" src="images/email.svg" onclick="mailIn()"/>
+        <img src="images/email.svg" onclick="mailIn()"/>
       </div>
+      <div id="DownHeader"></div>
     </header>
-    <div id="DownHeader"></div>
     <div id="mail">
       <div class="cerrar" onclick="mailOut()">x</div>
       <div class="circuloVerde"></div>

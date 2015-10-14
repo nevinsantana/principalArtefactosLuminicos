@@ -20,7 +20,7 @@
           <a href="Proyectos/index.html" target="_blank">
             <img src="images/pgwSlider/inicio/2.jpg"
             alt="Vialidad Ciudad del Conocimiento"
-            data-description="AL-BLM-EG145">
+            data-description="AL-BLM-EG320">
           </a>
         </li>
         <li>
