@@ -975,7 +975,7 @@ margin-top:6em;
 float:right;
 }
 
-.titlePreguntas{
+.titlePreguntas {
   margin: auto;
   padding: 0.1em;
   width: auto;
@@ -989,3 +989,24 @@ float:right;
 .cotHide {
   text-decoration: none;
 }
+
+
+/*Aside's*/
+@media only screen and (max-width: 5000px) and (min-width: 1300px){
+  .asideIzquierdo {
+    width: 9.3%;
+    height: 10em;
+    margin-top: 6.2em;
+    left: 0;
+    position: fixed;
+  }
+
+  .asideDerecho {
+    width: 9.3%;
+    height: 10em;
+    margin-top: 6.2em;
+    right: 0;
+    position: fixed;
+  }
+}
+/**/

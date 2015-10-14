@@ -41,6 +41,10 @@
       <div class="circuloVerde"></div><p>58 72 21 32</p></br>
       <div class="circuloVerde"></div><p>58 72 21 16</p>
     </div>
+    <aside class="asideIzquierdo">
+    </aside>
+    <aside class="asideDerecho">
+    </aside>
     <div id="closeMenu" onclick="desapareceMenu()"></div>
     <div class="menuContainer" onclick="apareceMenu()">
       <section class="menuOpener" ></section>
