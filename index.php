@@ -46,11 +46,12 @@
       <ul id="nav">
         <li>
           <a class="hsubs" href="#" onclick="inicio()" >Inicio</a>
-          <div class="linea_vertical"></div>
         </li>
+        <div class="linea_vertical"></div>
         <li>
           <a class="hsubs" href="#">Presentación</a>
           <div class="linea_vertical"></div>
+          <!--  Reparar
           <ul class="subs">
             <li><a href="#" onclick="Objetivo()">Objetivo</a></li>
             <li><a href="#" onclick="Mision()">Misión</a></li>
@@ -58,6 +59,7 @@
             <li><a href="#" onclick="QuienesSomos()">¿Quiénes somos?</a></li>
             <li><a href="#" onclick="preguntas()">Preguntas</a></li>
           </ul>
+        -->
         </li>
         <li>
           <a class="hsubs" href="Proyectos/index.html">Proyectos</a>

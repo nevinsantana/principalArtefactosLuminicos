@@ -89,9 +89,28 @@
 				<div class="meta">
 					<h3 class="meta__title">02454</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal3">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal3" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>02454</h2>
+					<img src="images/Interior/02454.jpg" />
+					<P>Especial para tiendas minoristas, oficinas, escuelas, Lobbies y Restaurantes. El sistema de iluminación </br>
+						 de 02454 Holophane constituye el elemento de diseño de la iluminación ideal para aplicaciones que </br>
+						 requieren una nave industrial. Desde 1937 el 02454 ha sido el mejor en bajo brillo, con la iluminación</br>
+						eficiente y uso de la energía. La línea de productos 02454 ofrece dos cubiertas y tres opciones de color </br>
+						para contribuir con el estilo y la función de cualquier entorno de iluminación. La cubierta de cobre opcional</br>
+						 pone de manifiesto la belleza del metal clásico de añadir elegancia al diseño retro-industrial. La familia</br>
+						  de 02454 está disponible en  fluorescentes compactas muy popular, incandescente, aditivos metalicos y pulso </br>
+							para la flexibilidad máxima del diseño. La familia de productos 02454 está disponible con Elite Holophane de</br>
+							 la serie de balastros electrónicos HID, obteniendo una eficiencia excepcional en términos de ahorro de energía.</br>
+							  El matrimonio del control visualmente atractiva óptica precisa, eficiente rendimiento de la opción del</br>
+								 balastro electrónico con un rendimiento superior.</br></p>
+				</div>
 			</div>
 
 			<div class="grid__item dresses">
