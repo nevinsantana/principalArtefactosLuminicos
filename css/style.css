@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.borderPrueba {
+  border: 1px solid black;
+}
+
 body {
   opacity: 0;
   transition: 0.5s;
@@ -193,6 +197,7 @@ header {
 }
 
 footer{
+position: absolute;
 width: 100%;
 bottom: 0;
 }
@@ -1006,7 +1011,7 @@ float:right;
     height: 10em;
     margin-top: 6.2em;
     right: 0;
-    position: fixed;
+    position: fixed;lo
   }
 }
 /**/
