@@ -11,28 +11,38 @@
     </head>
     <body>
 
-        <section class="ContenidoSection">
-          <div class="centrarContenidoSection">
+        <section class="contenidoSection">
         <a href="http://www.youblisher.com/p/98220-Principios-de-iluminacion/" target="_blank">
-				<img src="images/BibliotecaIluminacion.jpg"/></a>
-        <a href="http://www.visuallightingsoftware.com/Tracking/Default.asp?SOURCE=Software_Page&amp;URL=http://www.visual-3d.com/Tools/Download.aspx?file=Visual2012FullSetup" target="_blank">
-			<img src="images/visual.png"/></a>
-      </div>
+				<img src="images/bibliotecaIlu/bibliotecaIlu.jpg" class="imgBanner"/></a>
       </section>
+
        <div id="separaSeccion"> </div>
 
-       <section class="ContenidoSection">
-         <div class="centrarContenidoSection">
-      <a href="http://www.youblisher.com/p/98177-NIVELES-DE-ILUMINACION/" target="_blank">001 SEDE</br></a>
-      <a href="http://www.youblisher.com/p/98177-NIVELES-DE-ILUMINACION/" target="_blank">Niveles de iluminación recomendados en México</br></a>
-      <a href="http://www.youblisher.com/p/202425-NORMA-PARA-LAMPARAS-DE-VAPOR-DE-SODIO/" target="_blank">Norma lamparas de vapor de sodio</br></a>
-      <a href="http://www.youblisher.com/p/202409-NORMA-0003/" target="_blank">NOM-003-SCFI-2000</br></a>
-      <a href="http://www.youblisher.com/p/202413-NOM-007/" target="_blank">NOM-007-ENERO 2004 VIGENTE ABRIL 05</br></a>
-      <a href="http://www.youblisher.com/p/202413-NOM-013/" target="_blank">NOM-013-ENERO 2004 VIGENTE ABRIL 05</br></a>
-      <a href="http://www.youblisher.com/p/202415-NOM-058/" target="_blank">NOM-058-SCFI-1999</br></a>
-      <a href="http://www.youblisher.com/p/202416-NOM-064/" target="_blank">NOM-064-SCF-2000</br></a>
-     </div>
+       <section class="contenidoSection">
+         <a href="http://www.visuallightingsoftware.com/Tracking/Default.asp?SOURCE=Software_Page&amp;URL=http://www.visual-3d.com/Tools/Download.aspx?file=Visual2012FullSetup" target="_blank">
+         <div class="bannerPrograma">
+        <p class="textoBannerPrograma">Descargue el programa de iluminación</p>
+     <img class="logoBannerPrograma" src="images/bibliotecaIlu/visualLogo.png" width="50em"/>
+   </div></a>
    </section>
+
+    <div id="separaSeccion"> </div>
+
+      <section class="contenidoSection">
+      <ul class="documentosBiblioteca">
+        <h4>Normas</h4>
+        <a href="http://www.youblisher.com/p/98177-NIVELES-DE-ILUMINACION/" target="_blank"><li>001 SEDE</li></a>
+        <a href="http://www.youblisher.com/p/98177-NIVELES-DE-ILUMINACION/" target="_blank"><li>Niveles de iluminación recomendados en México</li></a>
+        <a href="http://www.youblisher.com/p/202425-NORMA-PARA-LAMPARAS-DE-VAPOR-DE-SODIO/" target="_blank"><li>Norma lamparas de vapor de sodio</li></a>
+        <a href="http://www.youblisher.com/p/202409-NORMA-0003/" target="_blank"><li>NOM-003-SCFI-2000</li></a>
+        <a href="http://www.youblisher.com/p/202413-NOM-007/" target="_blank"><li>NOM-007-ENERO 2004 VIGENTE ABRIL 05</li></a>
+        <a href="http://www.youblisher.com/p/202413-NOM-013/" target="_blank"><li>NOM-013-ENERO 2004 VIGENTE ABRIL 05</li></a>
+        <a href="http://www.youblisher.com/p/202415-NOM-058/" target="_blank"><li>NOM-058-SCFI-1999</li></a>
+        <a href="http://www.youblisher.com/p/202416-NOM-064/" target="_blank"><li>NOM-064-SCF-2000</li></a>
+      </ul>
+     </section>
+
+   <div id="separaSeccion"> </div>
    <div class="break">
     </body>
 </html>

@@ -18,6 +18,7 @@
     <link href="css/pgwslider.css" rel="stylesheet" type="text/css" />
   </head>
   <body id="body" onresize="normaliza()" onload="aparecePagina()" onunload="desaparecePagina()">
+    <div id="wrapper">
     <header>
       <a href="http://www.artefactosluminicos.com.mx"><img id="logo" src="images/logoIndex.png"/></a> <br><br><br>
 
@@ -162,6 +163,7 @@
         </div>
       </div>
     </footer>
+  </div>
     <script src="jquery/jquery.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/animaciones.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>

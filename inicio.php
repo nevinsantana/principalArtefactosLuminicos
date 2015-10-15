@@ -59,7 +59,7 @@
           <div class="contenido">
             <h2>Biblioteca de iluminación</h2>
             <p>Principios básicos de la iluminación, niveles de iluminación recomendados en México...</p>
-            <a href="#" class="informacion">Ver más</a>
+            <a href="#" class="informacion" onclick="BibliotecaIlu()">Ver más</a>
           </div>
         </div>
       </div>
