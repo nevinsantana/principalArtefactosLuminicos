@@ -22,7 +22,7 @@
          <a href="http://www.visuallightingsoftware.com/Tracking/Default.asp?SOURCE=Software_Page&amp;URL=http://www.visual-3d.com/Tools/Download.aspx?file=Visual2012FullSetup" target="_blank">
          <div class="bannerPrograma">
         <p class="textoBannerPrograma">Descargue el programa de iluminación</p>
-     <img class="logoBannerPrograma" src="images/bibliotecaIlu/visualLogo.png" width="50em"/>
+     <img class="logoBannerPrograma" src="images/bibliotecaIlu/visualLogo.png" width="30em"/>
    </div></a>
    </section>
 
