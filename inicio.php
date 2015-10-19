@@ -78,17 +78,9 @@
       </div>
     </div>
     </section>
-    <div class="break">
     <div id="separaSeccion"></div>
     <section class="gifContainer">
         <img src="images/index-alsa_31.gif" class="gifProyectos"/>
     </section>
-    <!--<div id="separaSeccion"></div>
-    <section class="contenidoSection">
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/KNakyTK74Ko" width="800" height="450" frameborder="0">
-        </iframe>
-      </div>
-    </section>-->
   </body>
 </html>

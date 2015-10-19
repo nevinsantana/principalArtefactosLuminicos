@@ -4,49 +4,15 @@ function normaliza(){
   document.getElementById("nav").style.top="7.2em";
   document.getElementById("nav").style.zIndex="4";
   document.getElementById("nav").style.opacity="1";
+  document.getElementById('main').style.paddingTop="4em";
   }
   else {
     document.getElementById("nav").style.top="-9em";
     document.getElementById("nav").style.zIndex="-1";
     document.getElementById("nav").style.opacity="0";
+    document.getElementById('main').style.paddingTop="0em";
   }
 }
-
-
-  function visitar1() {
-    document.getElementById("v1").style.marginTop="-2.7em";
-  }
-  function novisitar1() {
-    document.getElementById("v1").style.marginTop="0";
-  }
-
-  function visitar2() {
-    document.getElementById("v2").style.marginTop="-4.2em";
-  }
-  function novisitar2() {
-    document.getElementById("v2").style.marginTop="0";
-  }
-
-  function visitar3() {
-    document.getElementById("v3").style.marginTop="-3.7em";
-  }
-  function novisitar3() {
-    document.getElementById("v3").style.marginTop="0";
-  }
-
-  function visitar4() {
-    document.getElementById("v4").style.marginTop="-3.7em";
-  }
-  function novisitar4() {
-    document.getElementById("v4").style.marginTop="0";
-  }
-
-  function visitar5() {
-    document.getElementById("v5").style.marginTop="-3.7em";
-  }
-  function novisitar5() {
-    document.getElementById("v5").style.marginTop="0";
-  }
 
   function informacion() {
 
@@ -89,7 +55,7 @@ function normaliza(){
   function apareceMenu() {
     var width = document.body.clientWidth;
     if(width<1048) {
-    document.getElementById("nav").style.top="10.9em";
+    document.getElementById("nav").style.top="10.5em";
     document.getElementById("nav").style.zIndex="4";
     document.getElementById("nav").style.opacity="0.95";
     document.getElementById("closeMenu").style.display="inline";

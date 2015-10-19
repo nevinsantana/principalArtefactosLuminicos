@@ -1,0 +1,22 @@
+<?php
+  if($seccion==null)
+    require_once("inicio.php");
+  if($seccion=="inicio")
+    require_once("inicio.php");
+  if($seccion=="preguntas")
+    require_once("preguntasFrecuentes.php");
+  if($seccion=="Objetivo")
+    require_once("objetivo.php");
+  if($seccion=="Mision")
+    require_once("mision.php");
+  if($seccion=="Vision")
+    require_once("vision.php");
+  if($seccion=="QuienesSomos")
+    require_once("quienesSomos.php");
+  if($seccion=="FormasPago")
+    require_once("formasPago.php");
+  if($seccion=="BibliotecaIlu")
+    require_once("bibliotecaIlu.php");
+  if($seccion=="Videos")
+    require_once("videos.php");
+?>

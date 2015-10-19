@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
-        <meta name="description" content="Venta de artefactos fotoluminiscentes"/>
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
-        <link href="css/menu.css" rel="stylesheet" type="text/css" />
-
-    </head>
-    <body>
-
-      <div id="ArribaQuienes">
-    <img src="images/QuienesArriba.jpg"/>
-  </div>
-
- <div id="DownObje3"> </div>
-
- <div id="Quienes">
-  <p>
-      Artefactos Luminicos S.A. de C.V. </br>
-      Somos una empresa que se dedica a la distribución, promoción,</br>
-      venta de equipo, accesorios y proyectos de iluminación comercial,</br> industrial,
-      exterior para áreas deportivas, áreas clasificadas</br> (incluyendo
-      Luminarios a prueba de explosión) y para lumbrado </br>público.
-      Alumbrado con sistemas de alto montaje (superpostes), </br>para sistemas
-      viales, complejos carreteros, prisiones, puertos de </br>carga, estacionamientos,
-      etc. Luminarios para áreas clasificadas, </br>para industrias petroquimicas,
-      plataformas, farmacéuticas y almacenaje de productos peligrosos
-      o explosivos. </br>Luminarios especializados para empotrar en </br>piso,
-      iluminación de fachadas, monumentos, fuentes, albercas, todo con
-      fotometria disponible. </br>
-  </p>
- </div>
-
- <div id="ImaQuienes">
-  <img src="images/QuienesIma.png"/>
-  </div>
-
-
-
-    </body>
+<html lang="es_mx">
+  <head>
+  </head>
+  <body>
+    <div id="separaSeccion"> </div>
+    <section class="contenidoSection">
+      <div class="logoMax">
+        <img class="imgBanner" src="images/QuienesIma.png"/>
+      </div>
+    </section>
+    <div id="separaSeccion"> </div>
+    <section class="contenidoSection">
+      <div class="objetivo">
+        <div class="circuloVerde"></div>
+        <p>
+          Artefactos Luminicos S.A. de C.V.<br>
+          Somos una empresa que se dedica a la distribución, promoción, venta de
+          equipo, accesorios y proyectos de iluminación comercial, industrial,
+          exterior para áreas deportivas, áreas clasificadas (incluyendo
+          Luminarios a prueba de explosión) y para lumbrado público. Alumbrado
+          con sistemas de alto montaje (superpostes), para sistemas viales,
+          complejos carreteros, prisiones, puertos de carga, estacionamientos,
+          etc.<br>
+          Luminarios para áreas clasificadas, para industrias petroquimicas,
+          plataformas, farmacéuticas y almacenaje de productos peligrosos o
+          explosivos.<br>
+          Luminarios especializados para empotrar en piso, iluminación de
+          fachadas, monumentos, fuentes, albercas, todo con fotometria
+          disponible.
+        </p>
+    </section>
+  </body>
 </html>
