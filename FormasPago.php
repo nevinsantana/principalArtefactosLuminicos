@@ -1,61 +1,43 @@
 <!DOCTYPE html>
-<html lang="es_mx">
+<html>
     <head></head>
     <body>
-      <p id="LetraPago">Formas de pago</p>
       <section class="contenidoSection">
-        <div class="formaPago fp1">
+        <div class="tFormasPago">
+          <p>Formas de pago</p>
+        </div>
+      </section>
+      <section class="contenidoSection">
+        <div class="formaPago">
           <div class="sFormaPago">
             <div class="aBanco">
-              <img src="images/banamexB.svg" class="banco banco1"/>
+              <img src="images/banamexB.svg" class="banco1"/>
             </div>
           </div>
           <div class="sFormaPago noCuenta">
-            0451-2449-73
+            <p class="tFP">No de cuenta<br>0451-2449-73</p>
           </div>
           <div class="sFormaPago noCuenta">
-            0121 8000 4512 4497 33
+            <p class="tFP">Clave interbancaria<br>0121-8000-4512-4497-33</p>
           </div>
         </div>
       </section>
       <section class="contenidoSection">
-        <div class="formaPago fp2">
-          <div class="sFormaPago">
+        <div class="formaPago">
+          <div class="sFormaPago2">
             <div class="aBanco">
-              <img src="images/banamexB.svg" class="banco banco1"/>
+              <img src="images/BancomerLogo.svg" class="banco2"/>
             </div>
           </div>
-          <div class="sFormaPago noCuenta">
-            0451-2449-73
+          <div class="sFormaPago2 noCuenta2">
+            <p class="tFP">No de cuenta<br>4157-1802-43</p>
           </div>
-          <div class="sFormaPago noCuenta">
-            012 180 004 512 449 733
+          <div class="sFormaPago2 noCuenta2">
+            <p class="tFP">Clave interbancaria<br>0021-8002-4341-5718-04</p>
           </div>
         </div>
       </section>
-      <main class="contenidoSection">
-        <div class="pagoCentrar">
-          <section id="sectionPago">
-            <p id="LetraCuadro"></br>Bancos</p>
-            <img src="images/Banamex.svg" class="banco"/>
-            <img src="images/BancomerLogo.svg" class="banco"/>
-          </section>
-          <div id="LineaPagoBan"></div>
-          <section id="sectionPago">
-            <p id="LetraCuadro"></br>No. de cuentas
-            </br></br></br>0451244 973
-            </br></br></br></br></br></br>4157180 243
-          </section>
-          <div id="LineaPagoBan"></div>
-          <section id="sectionPago">
-            <p id="LetraCuadro"></br>Clave interbancaria
-            </br></br></br>012 180 004 512 449 733
-            </br></br></br></br><br/><br/>002 180 024 341 571 804
-          </section>
-        </div>
-      </main>
-      <div class="break"></div>
-      <section class="contenidoSectionEnfasis">
+      <section class="contenidoSection">
         <p id="LetraPago2">
         Favor de mandar su ficha de deposito y su orden de compra al correo:
         </br>pagos@artefactosluminicos.com.mx

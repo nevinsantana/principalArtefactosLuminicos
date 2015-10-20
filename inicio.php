@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
   <head>
       <meta charset="UTF-8" />
       <meta name="keywords" content="HTML, CSS, PHP, JavaScript" />
@@ -40,17 +40,7 @@
       </ul>
     </section>
     <div class="break"></div>
-    <div id="separaSeccion"></div>
-    <section class="contenidoSection">
-        <div class="centrarContenidoSection">
-        <span class="descripcionBanco">Ver nuestras formas de pago:</span>
-        <img class="banco" src="images/Banamex.svg" onclick="FormasPago()"/>
-        <img class="banco" src="images/BancomerLogo.svg" onclick="FormasPago()"/><br/><br/><br/><br/>
-      </div>
-    </section>
-    <div class="break"></div>
-    <div id="separaSeccion"></div>
-    <section class="contenidoSection">
+    <!--<section class="contenidoSection">
       <div class="divIzq">
       <div class="centraEnSection" id="prueba">
         <div class="vista">
@@ -78,6 +68,7 @@
       </div>
     </div>
     </section>
+    <div class="break"></div>-->
     <div id="separaSeccion"></div>
     <section class="gifContainer">
         <img src="images/index-alsa_31.gif" class="gifProyectos"/>

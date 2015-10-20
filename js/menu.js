@@ -4,24 +4,24 @@ function inicio() {
 function preguntas() {
   location.href="?sec=preguntas"
 }
-function Objetivo() {
-  location.href="?sec=Objetivo"
+function objetivo() {
+  location.href="?sec=objetivo"
 }
-function Mision() {
-  location.href="?sec=Mision"
+function mision() {
+  location.href="?sec=mision"
 }
-function Vision() {
-  location.href="?sec=Vision"
+function vision() {
+  location.href="?sec=vision"
 }
-function QuienesSomos() {
-  location.href="?sec=QuienesSomos"
+function quienesSomos() {
+  location.href="?sec=quienesSomos"
 }
-  function FormasPago() {
-  location.href="?sec=FormasPago"
+  function formasPago() {
+  location.href="?sec=formasPago"
 }
-function BibliotecaIlu() {
-  location.href="?sec=BibliotecaIlu"
+function bibliotecaIlu() {
+  location.href="?sec=bibliotecaIlu"
 }
-function Videos() {
-  location.href="?sec=Videos"
+function videos() {
+  location.href="?sec=videos"
 }

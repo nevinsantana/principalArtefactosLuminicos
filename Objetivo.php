@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es_mx">
+<html>
   <head>
   </head>
   <body>

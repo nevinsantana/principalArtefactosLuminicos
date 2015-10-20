@@ -5,18 +5,18 @@
     require_once("inicio.php");
   if($seccion=="preguntas")
     require_once("preguntasFrecuentes.php");
-  if($seccion=="Objetivo")
+  if($seccion=="objetivo")
     require_once("objetivo.php");
-  if($seccion=="Mision")
+  if($seccion=="mision")
     require_once("mision.php");
-  if($seccion=="Vision")
+  if($seccion=="vision")
     require_once("vision.php");
-  if($seccion=="QuienesSomos")
+  if($seccion=="quienesSomos")
     require_once("quienesSomos.php");
-  if($seccion=="FormasPago")
+  if($seccion=="formasPago")
     require_once("formasPago.php");
-  if($seccion=="BibliotecaIlu")
+  if($seccion=="bibliotecaIlu")
     require_once("bibliotecaIlu.php");
-  if($seccion=="Videos")
+  if($seccion=="videos")
     require_once("videos.php");
 ?>
