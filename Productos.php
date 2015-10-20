@@ -463,7 +463,7 @@
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>GRAN VILLE</h2>
 					<img src="images/EXTERIOR/GRAN VILLE.jpg"/>
-					<P>deal para jardines, camellones, muelles, estacionamientos, calles residenciales. </br>
+					<P>Ideal para jardines, camellones, muelles, estacionamientos, calles residenciales. </br>
 						Luminario exterior decorativo, de alto rendimiento. Cápsula en fundición de aluminio bajo en cobre.</br>
 						 Fabricada con un tratamiento previo para mayor resistencia a la corrosión. Balastro electromagnético</br>
 						  autorregulado con alto factor de potencia. Refractor y reflector prismáticos de cristal Endural de </br>
@@ -482,9 +482,21 @@
 				<div class="meta">
 					<h3 class="meta__title">LQM</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal17">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal17" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LQM</h2>
+					<img src="images/EMERGENCIA/LQM.jpg"/>
+					<P>Letrero de salida, con baterías de níquel-cadmio para una operación de 90 minutos en ausencia de  </br>
+						corriente electrifica. Carcasa de policarbonato, resistente a la decoloración causada por rayos UV.</br>
+						 Fácil y rápida instalación, sin necesidad de herramientas. Bajo consumo de energía gracias al uso de</br>
+						  LED como fuente de luz.</p>
+				</div>
 			</div>
 
 			<div class="grid__item shoes">
@@ -496,9 +508,22 @@
 				<div class="meta">
 					<h3 class="meta__title">PRISMGLO COMPACTA</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal18">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal18" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>PRISMGLO COMPACTA</h2>
+					<img src="images/INTERIOR/PRISMGLO COMPACTA.jpg"/>
+					<P>para su uso en productos alimenticios, biblioteca, oficinas, centros comerciales, Recreación, Escuelas.</br>
+						 La luminaria PrismGlo tiene muchas características distintivas. La forma única, múltiples distribuciones, </br>
+						 bajo brillo y la luz de alto ángulo son sólo algunas características de diseño de la toma de una luminaria PrismGlo</br>
+						  de una clase. Un fondo cónico límites de la visión directa de la luz, una característica especial diseñado </br>
+							para instalaciones de almacenamiento y producción.</p>
+				</div>
 			</div>
 
 			<div class="grid__item jackets">
@@ -510,9 +535,23 @@
 				<div class="meta">
 					<h3 class="meta__title">BANTAM 2000 PRISMPACK</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal19">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal19" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>BANTAM 2000 PRISMPACK</h2>
+					<img src="images/INDUSTRIAL/BANTAM 2000 PRISMPACK.JPG"/>
+					<P>Ideal para áreas de manufactura y ensamble, hangares, bodegas. Reflector de cristal prismático cubierto,</br>
+						 con o sin lente de cristal termotemplado. Cápsula de balastro en diseño de bajo perfil para uso en aplicaciones</br>
+						 de espacio limitado y techos de baja altura. Fundición de aluminio, fabricada con un tratamiento previo</br>
+						  para una mayor resistencia a la corrosión. Balastro autorregulado de alto factor de potencia, con embobinados</br>
+							 de cobre. Luminario compacto que consiste de un reflector de cristal de borosilicato prismático con una cubierta de </br>
+							 aluminio, diseñado para ofrecer un excelente cut-off en aplicaciones de bajas alturas de montaje. </p>
+				</div>
 			</div>
 
 			<div class="grid__item shirts">
@@ -524,9 +563,23 @@
 				<div class="meta">
 					<h3 class="meta__title">AV SM</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal20">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal20" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>AV SM</h2>
+					<img src="images/Fluorescente/AV SM.jpg"/>
+					<P>1''x2 '': Ideal para tareas de iluminación general o en habitaciones, pasillos estrechos y espacios pequeños.</br>
+						  1''x4'': Adecuado para áreas generales o tareas específicas de iluminación  en construcciones nuevas y remodelación.</br>
+ Especialmente indicado para salas de conferencias, áreas de recepción, las instituciones de salud, centros educativos y</br>
+  oficinas. Excelente para  montaje suspendido, proporcionando distribución de la luz directa o semidirecta. Carcasa robusta</br>
+	 de acero de 2, 4 y 8 unidades acoplables. </br>
+Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflectancia,  para la distribución de luz uniforme. </p>
+				</div>
 			</div>
 
 			<div class="grid__item shoes">
@@ -538,10 +591,26 @@
 				<div class="meta">
 					<h3 class="meta__title">PRISMGLO ENHACED</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal21">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
+
+
+						<div id="modal21" class="modalmask">
+							<div class="modalbox rotate">
+								<a href="#close" title="Cerrar" class="close">X</a>
+								<h2>PRISMGLO ENHANCED</h2>
+								<img src="images/INTERIOR/PRISMGLO ENHANCED.jpg"/>
+								<P>para su uso en productos alimenticios, biblioteca, oficinas, centros comerciales, Recreación, Escuelas.</br>
+									 La luminaria PrismGlo tiene muchas características distintivas. La forma única, múltiples distribuciones,</br>
+									  bajo brillo y la luz de alto ángulo son sólo algunas características de diseño de la toma de una luminaria PrismGlo</br>
+										de una clase. Un fondo cónico límites de la visión directa de la luz, una característica especial diseñado </br>
+										para instalaciones de almacenamiento y producción. distribución asimétrica o simétrica junto con una dispersión</br>
+										 del haz estrecho o ancho aumenta la versatilidad de esta luminaria que le permiten cumplir todas las necesidades</br>
+										  de una instalación.</p>
+							</div>
+						</div>
 
 			<div class="grid__item dresses">
 				<div class="slider">
@@ -552,9 +621,22 @@
 				<div class="meta">
 					<h3 class="meta__title">GRAND LEDGE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal22">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal22" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>GRAND LEDGE</h2>
+					<img src="images/EXTERIOR/GRAND LEDGE.jpg"/>
+					<P>Ideal para jardines, camellones, muelles, estacionamientos, calles, avenidas. Luminario exterior decorativo,</br>
+						de alto rendimiento. Cápsula en fundición de aluminio bajo cobre con un tratamiento previo para una mayor</br>
+						resistencia a la corrosión. Balastro electromagnético autorregulado con alto factor de potencia. Refactor prismático </br>
+						de cristal Endural de bajo brillo y alta refractancia, con reflector de cristal prismàtico para brndar luz arriba </br>
+						de los 180º grados. Fácil instalación y mantenimiento.</p>
+				</div>
 			</div>
 
 			<div class="grid__item shirts">
@@ -566,9 +648,23 @@
 				<div class="meta">
 					<h3 class="meta__title">av smd</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal23">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal23" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>av smd</h2>
+					<img src="images/Fluorescente/av smd.jpg"/>
+					<P>Difusor de montaje lateral, alternativa de empotrado directa / indirecta con un rendimiento similar al </br>
+						simetric Avante ®. Especialmente indicado para salas de conferencias, pasillos y áreas de recepción donde se</br>
+						requiere una iluminación suave y distintiva. La combinación óptima de la luz reflejada de dirección y difusa se</br>
+						combinan para la iluminación equilibrada, confort visual mejorado y sombras reducidas al mínimo.</br>
+            Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflectancia,  para la distribución</br>
+						 de luz uniforme, reflectores disponibles. Se puede instalar en línea continua.</p>
+				</div>
 			</div>
 
 			<div class="grid__item grid__item--size-a trousers">
@@ -580,9 +676,22 @@
 				<div class="meta">
 					<h3 class="meta__title">LRP</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal24">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal24" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LRP</h2>
+					<img src="images/EMERGENCIA/LRP.jpg"/>
+					<P>Conveniente para los usos arquitectónicos donde se requieren la estética y un rendimiento superior. Paneles</br>
+						de acrílico moldeado por inyección, soldadura por ultrasonido. La profundidad de las letras moldeadas aumenta hacia</br>
+						la parte inferior del panel para una iluminación más uniforme, indicadores de dirección. LED de larga duración</br>
+						función del consumo de energía muy bajo y la vida nominal de hasta 25 años. En las salidas de emergencia utilice</br>
+						la batería de níquel-cadmio libre de mantenimiento. Montaje empotrado en la pared o el techo.</p>
+				</div>
 			</div>
 
 			<div class="grid__item jackets">
@@ -594,9 +703,23 @@
 				<div class="meta">
 					<h3 class="meta__title">CRANELITE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal25">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal25" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>CRANELITE</h2>
+					<img src="images/INDUSTRIAL/CRANELITE.JPG"/>
+					<P>Ideal para aplicaciones de alta vibración; alta resistencia y balastro remoto Ideal para grúas viajeras,</br>
+						equipos sometidos a vibración. Luminario para aplicaciones de alta vibración; alta resistencia y balastro remoto.</br>
+						Cápsula fabricada en fundición de aluminio, con cuatro soportes que amortiguan el movimiento lateral y vertical</br>
+						eliminando choques destructivos. Balastro autorregulado de alto factor de potencia con embobinados de cobre.</br>
+						Conjunto óptico de cristal de borosilicato prismático Endural resistente al choque térmico. Opción de dos reflectores</br>
+						de cristal cerrado, que reemplazan la iluminación oscurecida por el puente y el motor de la grúa. </p>
+				</div>
 			</div>
 
 			<div class="grid__item shirts">
@@ -608,9 +731,19 @@
 				<div class="meta">
 					<h3 class="meta__title">dm-dmw</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal26">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal26" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>dm-dmw</h2>
+					<img src="images/Fluorescente/dm-dmw.jpg"/>
+					<P>Luminario industrial, compuesto de carcasa de fibra de vidrio reforzada en poliéster, resistencia </br>
+						a impactos y decoloraciones causadas por rayos UV. Opciones de montaje sobrepuesto, con cadenas o varillas.</p>
+				</div>
 			</div>
 
 			<div class="grid__item dresses">
@@ -622,9 +755,23 @@
 				<div class="meta">
 					<h3 class="meta__title">GRANVILLE PREMIER</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal27">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal27" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>GRANVILLE PREMIER</h2>
+					<img src="images/EXTERIOR/GRANVILLE PREMIER.jpg"/>
+					<P>Especial para bulevares urbanos, calles de la ciudad, campus, zonas comerciales, Alquiler, Residencial,
+						y Parques y Recreación El Granville Premier  está diseñado para afrontar los retos de proporcionar la escala
+						 apropiada montado en las alturas del poste superior a doce metros. Muchas aplicaciones urbanas requieren una
+						  altura más alta de montaje para mejorar la arquitectura del sitio. Este producto tiene la flexibilidad para
+							satisfacer los requisitos de escala peatonal y urbano como la luminaria se puede colocar en un poste de tres
+							 metros, así como un conjunto de dieciocho pies y proporciona un sistema de iluminación estética.</p>
+				</div>
 			</div>
 
 			<div class="grid__item shirts">
@@ -636,9 +783,19 @@
 				<div class="meta">
 					<h3 class="meta__title">ej-ny</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal28">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal28" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>ej-ny</h2>
+					<img src="images/Fluorescente/ej-ny.jpg"/>
+					<P>Para las alturas crecientes hasta 16 ' el punto bajo requeridor para niveles medianos. Ideal para la tarea
+						arancelaria ligera, pasillos y el almacenes.</p>
+				</div>
 			</div>
 
 			<div class="grid__item trousers">
@@ -650,9 +807,23 @@
 				<div class="meta">
 					<h3 class="meta__title">LV SERIES</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal29">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal29" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LV SERIES</h2>
+					<img src="images/EMERGENCIA/LV SERIES.jpg"/>
+					<P>Aplicaciones húmedas ubicación, tales como escuelas, zonas de seguridad / prisiones y garajes de aparcamiento.
+						Construcción de aluminio durable fundido. Carcasa resistente .250 "a .525" de espesor. La cubierta de policarbonato
+						 resistente a rayos UV es de .130 " de grueso para impedir quiebres o rupturas. Asegurado con cuatro de acero
+						  inoxidable TORX ® T20 inviolable con el perno de centro. LED de larga duración función del consumo de energía
+							 muy bajo y una vida nominal de hasta 25 años. Las salidas de emergencia contienen baterías de níquel-cadmio,
+							 sin necesidad de mantenimiento y sistema fiable, sólido estado de carga.</p>
+				</div>
 			</div>
 
 			<div class="grid__item jackets">
@@ -664,9 +835,24 @@
 				<div class="meta">
 					<h3 class="meta__title">ENDURALUME</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href=#modal30>Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal30" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>ENDURALUME</h2>
+					<img src="images/INDUSTRIAL/ENDURALUME.JPG"/>
+					<P>Ideal para bodegas, naves industriales, centros comerciales, gimnasios. Refractor de cristal prismático y
+						reflector de aluminio pintado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para una
+						 mayor resistencia a la corrosión. Balastro electromagnético autorregulado con alto factor de potencia y alta
+						  emisión lumínica por watt consumido. Reflector de aluminio cerrado combinado con un refractor de acrílico o
+							cristal de borosilicato. El diseño reflector-refractor brinda un balance simétrico. Distribución con balance
+							 vertical y horizontal de iluminación, con excelente uniformidad y bajo brillo, para crear un ambiente visual
+							  confortable. Fácil instalación. </p>
+				</div>
 			</div>
 
 			<div class="grid__item grid__item--size-a dresses">
@@ -678,9 +864,24 @@
 				<div class="meta">
 					<h3 class="meta__title">HOV 16- HOV 25</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal31">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal31" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>HOV 16- HOV 25</h2>
+					<img src="images/EXTERIOR/HOV 16- HOV 25.jpg"/>
+					<P>Ideal para calles, avenidas, ejes viales, boulevares, periféricos, parques, exhibiciones exteriores.
+						 Luminario tradicional para alumbrado público. Cápsula en fundición de aluminio, compuesta de dos partes
+						  y fabricada con un tratamiento previo para mayor resistencia a la corrosión. Balastro autorregulado de
+							 alto factor de potencia con embobinado de cobre; con opción de balastro de bajas pérdidas. Cristal de
+							  borosilicato con reflector de aluminio de alta reflectancia que proporciona una curva de distribución
+								 Nema tipo II y III. Se puede montar a brazo de poste por medio de abrazaderas y efectuar la conexión
+								  abriendo la puerta del luminario.</p>
+				</div>
 			</div>
 
 			<div class="grid__item trousers">
@@ -692,9 +893,19 @@
 				<div class="meta">
 					<h3 class="meta__title">POWER SENTRY</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal32">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal32" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>POWER SENTRY</h2>
+					<img src="images/EMERGENCIA/POWER SENTRY.jpg"/>
+					<P>Baterías de emergencia para lamparas fluorescentes. Operan las lamparas durante 90 minutos con una
+						salida luminosa inicial que oscila entre el 10 y el 95% del valor nominal del flujo.</p>
+				</div>
 			</div>
 
       <div class="grid__item trousers">
@@ -706,9 +917,22 @@
 				<div class="meta">
 					<h3 class="meta__title">ps</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal33">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal33" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>ps</h2>
+					<img src="images/EMERGENCIA/ps.jpg"/>
+					<P>Fabricadas para funcionar en ambientes exteriores o interiores con un accesorio fluorescente con una
+						 salida inicial de 10% a 95% de los lúmenes de la lámpara nominal, proporcionando una iluminación óptima
+						  sin deslumbramientos por un mínimo de 90 minutos a interrupción de la alimentación normal.
+							Soportes ocultos dentro de canaleta accesorio de aspecto limpio y la protección contra el vandalismo.
+							 El reducido espacio de perfil encaja en el más apretado. </p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -720,9 +944,20 @@
 				<div class="meta">
 					<h3 class="meta__title">KAD</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal34">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal34" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>KAD</h2>
+					<img src="images/EXTERIOR/KAD.jpg"/>
+					<P>Luminario cut-off de lente plano para montaje en brazo. Carcasa de construcción robusta, fabricado en
+						aluminio inyectado a presión; compuerta de vidrio termotemplado plano resistente a impactos, sellada
+						 herméticamente con empaque de silicón y reflector hidroformado y segmentado de aluminio anodizado. </p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -734,9 +969,19 @@
 				<div class="meta">
 					<h3 class="meta__title">LIGHT BAT G2</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal35">Ver más</span>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal35" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LIGHT BAT G2</h2>
+					<img src="images/EXTERIOR/LIGHT BAT G2.jpg"/>
+					<P>Luminario tipo campana autobalastrado para H.I.D. con sensor de presencia para controlar
+						 el nivel y ahorrar energia </p>
+				</div>
 			</div>
 
 
@@ -749,10 +994,26 @@
 				<div class="meta">
 					<h3 class="meta__title">kacm</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal36">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
+
+			<div id="modal36" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>kacm</h2>
+					<img src="images/EXTERIOR/kacm.jpg"/>
+					<P>Para estacionamientos, tiendas, hoteles y pasillos. Para el techo cubierto, montar en hormigón, acero o
+						aluminio. No debe utilizarse en las viviendas. Carcasa robusta, de fundición,  marco de la puerta de fundición
+						de aluminio, óptica prismática de vidrio templado, resistente al impacto,  lente de acrílico o policarbonato
+						lente caída completamente sellado con. de una sola pieza de silicón tubular. Montaje en superficie utilizando
+						 cuatro agujeros de montaje de 0,5 "y un  agujero del cable de entrada de 0.875"(piezas de montaje no incluidos).
+						  acabado en polvo de poliéster resistente a la corrosión.</p>
+				</div>
+			</div>
+
+
 
       <div class="grid__item dresses">
 				<div class="slider">
@@ -763,9 +1024,23 @@
 				<div class="meta">
 					<h3 class="meta__title">mayfair</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal37">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal37" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>mayfair</h2>
+					<img src="images/EXTERIOR/mayfair.jpg"/>
+					<P>Ideal para vialidades, estacionamientos, jardines y andadores. Luminario con cristal termotemplado y cápsula
+						 de aluminio. Cápsula fabricada en aluminio calibre 18, troquelada y soldada. Fabricada con un tratamiento
+						  previo para mayor resistencia a la corrosión. Puerta fabricada en aluminio con bisabra, asegurada con dos
+							 tornillos cautivos y pestillos para facilitar el acceso a la lámpara. Balastro autorregulado de alto factor
+							  de potencia con embobinados de cobre. Reflector de aleación de aluminio hidroformado, químicamente
+								abrillantado y anodizado para un mejor desempeño.</p>
+				</div>
 			</div>
 
        <div class="grid__item dresses">
@@ -777,9 +1052,23 @@
 				<div class="meta">
 					<h3 class="meta__title">MEMPHIS</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal37" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>mayfair</h2>
+					<img src="images/EXTERIOR/mayfair.jpg"/>
+					<P>Ideal para vialidades, estacionamientos, jardines y andadores. Luminario con cristal termotemplado y cápsula
+						 de aluminio. Cápsula fabricada en aluminio calibre 18, troquelada y soldada. Fabricada con un tratamiento
+							previo para mayor resistencia a la corrosión. Puerta fabricada en aluminio con bisabra, asegurada con dos
+							 tornillos cautivos y pestillos para facilitar el acceso a la lámpara. Balastro autorregulado de alto factor
+								de potencia con embobinados de cobre. Reflector de aleación de aluminio hidroformado, químicamente
+								abrillantado y anodizado para un mejor desempeño.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -791,9 +1080,24 @@
 				<div class="meta">
 					<h3 class="meta__title">MINI GRANVILLE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal38">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal38" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>MINI GRANVILLE</h2>
+					<img src="images/EXTERIOR/MINI GRANVILLE.jpg"/>
+					<P>Ideal para calles, estacionamientos, Campus, desarrollos comerciales, plazas, barrios históricos, plazas
+						 de pueblos, zonas residenciales, parques, calzadas bulevares y vías de acceso. La serie de productos Mini
+						  Granville es una pequeña adición a escala de productos complementarios a la serie de productos de
+							Granville. Esta serie consta de dos versiones del producto diseñado para atraer a diferentes públicos.
+							  Además, este producto también se puede utilizar para la iluminación residencial. La luminaria está
+								 disponible en una potencia máxima de 70 vatios de aditivos metálicos y sodio de alta presión, así
+								  como la inducción de 55 vatios y vatios 42 fluorescentes compactas.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -805,9 +1109,23 @@
 				<div class="meta">
 					<h3 class="meta__title">MODULE 600</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal39">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal39" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>MODULE 600</h2>
+					<img src="images/EXTERIOR/MODULE 600.jpg"/>
+					<P>Ideal para estacionamientos, túneles, pasos a desnivel. Luminario para montaje en pared o en poste.
+						Cápsula en fundición de aluminio, fabricada con un tratamiento previo para una mayor ressitencia a la
+						corrosión. Balastro autorregulado de alto factor de potencia, con embobinados de cobre. Refractor de
+						cristal de borosilicato prismático combinado con un reflector de aluminio especular para control
+						 excepcional de deslumbramiento. Puede instalarse tanto en poste como en muro y provee un desempeño
+						 superior en túneles y pasos a desnivel.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -819,9 +1137,23 @@
 				<div class="meta">
 					<h3 class="meta__title">NMD-MADEIRA</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal40">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal40" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NMD-MADEIRA</h2>
+					<img src="images/EXTERIOR/NMD-MADEIRA.jpg"/>
+					<P>Ideal para calles, estacionamientos, Campus, desarrollos comerciales, plazas, barrios históricos,
+						 plazas de pueblos, zonas residenciales, parques, calzadas, bulevares y vías de acceso. Esta luminaria
+						  de estilo único es una reminiscencia de la vuelta del siglo 19, y las mezclas excepcionalmente bien
+							 con la arquitectura tradicional española. La óptica de vidrio prismático junto con las costillas y
+							  la chimenea decorativa réplica proporciona el equilibrio perfecto de la belleza y rendimiento
+								excepcionales.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -833,9 +1165,24 @@
 				<div class="meta">
 					<h3 class="meta__title">OVUE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal41">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal41" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NMD-MADEIRA</h2>
+					<img src="images/EXTERIOR/OVUE.jpg"/>
+					<P>Ideal para las plazas, los distritos urbanos, áreas comunes, Locales Comerciales, Arenas y complejos
+						deportivos. MetroVue se posiciona como un producto de transición dirigido para aplicaciones de iluminación
+						 y zona de paseo. Es una categoría que no es contemporáneo o de estilo tradicional, pero se acerca a un
+						 aspecto moderno con probada atributos tradicionales. La serie MetroVue ofrecer un producto adecuado
+						 funcionamiento familiar para las especificaciones o el usuario final. Tanto el Arco Urbano y luminarias
+						  Urbano yugo se escalan para ser apto para alturas de 18 a 30 pies de montaje La versión del arco es ideal
+							 para la tradicional calle del brazo de montaje en aplicaciones.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -847,9 +1194,23 @@
 				<div class="meta">
 					<h3 class="meta__title">parkpack</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal42">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal42" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>parkpack</h2>
+					<img src="images/EXTERIOR/parkpack.jpg"/>
+					<P>Ideal para estacionamientos techados, áreas interiores y exteriores. Luminario fabricado para soportar
+						 ambientes severos. Cápsula en fundición de aluminio fabricada con un tratamiento previo para una mayor
+						  resistencia a la corrosión. Balastro autorregulado de alto factor de potencia con embobinados de cobre.
+							 Reflector de lámina pintado en blanco de alta reflectancia para optimizar su desempeño. Refractor
+							 prismático fabricado en policarbonato estabilizado con rayos UV para proveer un control preciso de luz.
+							  Disponible en una gran variedad de opciones de instalación para techo y poste.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -861,9 +1222,24 @@
 				<div class="meta">
 					<h3 class="meta__title">PECHINA</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal43">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal43" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>PECHINA</h2>
+					<img src="images/EXTERIOR/PECHINA.jpg"/>
+					<P>Ideal para la ilumnación de areas comerciales, municipios, edificios de oficinas, puertos, transporte
+						publico, estadios y complejos deportivos, escuelas, coleggios y universidades. La Pechina también es
+						ampliamente utilizada para muchas aplicaciones de carretera. El sistema óptico de la Pechina se encuentra
+						 en un cuerpo de aleación de elegante y muy duradero de aluminio. que se adapta a una amplia gama de lamparas
+						  de alta descarga, fabrocada en aluminio resistente a la corrossion acceso para mantenimiento sin herramientas
+							y cierre positivo del conjunto de la puerta del dosel. Junta de silicon que garantiza un grado de protección IP66
+							 de la unidad global</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -875,9 +1251,22 @@
 				<div class="meta">
 					<h3 class="meta__title">pgr</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal44">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal44" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>pgr</h2>
+					<img src="images/EXTERIOR/pgr.jpg"/>
+					<P>Para aplicaciones de estacionamiento. Cubierta superior de aluminio resistente, fundido a presión con
+						 juntas de silicón de una sola pieza. El acabado estándar es de pintura blanca de poliéster en polvo de
+						  resistente a la corrosión. Otros colores disponibles. Ensamble bajo de acrílico inyectado, moldeado
+							de precisión, resistente a los rayos UV acrílico. Sujetado con Bisagras y se fija con cuatro tornillos
+							 de acero inoxidable. disponible en Policarbonato.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -889,9 +1278,22 @@
 				<div class="meta">
 					<h3 class="meta__title">PRISMASPHERE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal45">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal45" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>PRISMASPHERE</h2>
+					<img src="images/EXTERIOR/PRISMASPHERE.jpg"/>
+					<P>Ideal para jardines, camellones, muelles, estacionamientos, calles residenciales. Esfera prismática de
+						 bajo brillo. Cápsula en fundición de aluminio bajo en cobre. Fabricada con un tratamiento previo para
+						 mayor resistencia a la corrosión. La cápsula bote es de lámina tropicalizada y pintada. Balastro
+						 electromagnético autorregulado con alto factor de potencia. Refractor y reflector prismáticos de acrílico
+						  o policarbonato de bajo brillo y alta refractancia.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -903,9 +1305,24 @@
 				<div class="meta">
 					<h3 class="meta__title">SERIE GLASWERKS</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal46">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal46" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SERIE GLASWERKS</h2>
+					<img src="images/EXTERIOR/SERIE GLASWERKS.jpg"/>
+					<P>Ideal para las calles municipales, plazas comerciales, centros comerciales, campus, paseos marítimos, zonas residenciales.
+						 Glasswerks II es una familia contemporánea, el diseño de estilo europeo utilizando ocho estilos diferentes,
+						 combinados con una amplia gama de ópticas de vidrio, hacen de este producto de la familia de productos más amplia
+						  disponible en el mercado. Esta oferta de segunda generación se basa fuera de la serie original Glasswerks, los
+							 puntos fuertes de la variedad de productos importantes y la elección de estilo, brillante actuación de vidrio
+							 de borosilicato prismático, y atractivo perfil sin fisuras, mientras que la adición de un estado totalmente nuevo
+							  de alta tecnología de diseño</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -917,9 +1334,23 @@
 				<div class="meta">
 					<h3 class="meta__title">somerset</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal47">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal47" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>somerset</h2>
+					<img src="images/EXTERIOR/somerset.jpg"/>
+					<P>Ideal para vialidades, estacionamientos, jardines y andadores. Luminario con controlente prismático y
+						cápsula de aluminio. Cápsula fabricada en aluminio calibre 18, troquelada y soldada, resistente a la
+						corrosión. Puerta fabricada en aluminio con bisabra asegurada con dos tornillos cautivos y pestillos para
+						 facilitar el acceso a la lámpara. Con cristal de borosilicato prismático. Balastro autorregulado de
+						 alto factor de potencia. Reflector de aleación de aluminio hidroformado, químicamente abrillantado y
+						 anodizado para un mejor desempeño.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -931,9 +1362,23 @@
 				<div class="meta">
 					<h3 class="meta__title">tfa</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal48">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal48" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>tfa</h2>
+					<img src="images/EXTERIOR/tfa.jpg"/>
+					<P>Excelente para astilleros industriales, estacionamientos, obras de construcción, calles y áreas recreativas.
+             Carcasa de construcción resistente.  Caja de fundición contorneada de aluminio y panel frontal. Bisel con
+						  bisagras y asegurada para un acceso rápido y fácil sin necesidad de herramientas internas de los
+							compartimentos ópticos y eléctricos. La lente es de alta resistencia, térmica y resistente a los golpes,
+							 de vidrio transparente, templado sin metal con el contacto de vidrio.Acabado en poliéster en polvo,
+							  colores disponibles.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -945,9 +1390,22 @@
 				<div class="meta">
 					<h3 class="meta__title">TFL</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href=#modal49>Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal49" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TFL</h2>
+					<img src="images/EXTERIOR/TFL.jpg"/>
+					<P>Proyector pequeño y de apariencia tradicional diseñado para iluminar áreas de recreación, estacionamientos,
+						fachadas de edificios y lotes de autos. con una distribución abierta de alta eficiencia. Carcasa robusta
+						fabricada en fundición de aluminio y reflector de aluminio anodizado.
+            bisel frontal totalmente sellado de una sola pieza,  junta de silicón. La lente es térmica y resistente a
+						los golpes, de vidrio transparente, templado. Disponible en aditivos metálicos y sodio de alta presión.</p>
+				</div>
 			</div>
 
        <div class="grid__item dresses">
@@ -959,9 +1417,21 @@
 				<div class="meta">
 					<h3 class="meta__title">TFR-TFM</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal50">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal50" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TFR-TFM</h2>
+					<img src="images/EXTERIOR/TFR-TFM.jpg"/>
+					<P>Proyectores de uso general; ideales para iluminar áreas recreativas, estacionamientos, fachadas de edificios,
+						 anuncios y paisajes. carcasa compacta fabricada en aluminio inyectado a presión, de contornos suaves para una
+						  apariencia estética.Reflector de aluminio anodizado, con selección de distribuciones de luz para diferentes
+							 aplicaciones de iluminación, disponible en aditivos metálicos, sodio de alta presión y fluorescente.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -973,9 +1443,21 @@
 				<div class="meta">
 					<h3 class="meta__title">tv</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal51">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal51" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>tv</h2>
+					<img src="images/EXTERIOR/tv.jpg"/>
+					<P>Proyector deportivo que proporciona un haz de luz controlado. Ideal para iluminar áreas recreativas,
+						campos deportivos y estacionamientos. La carcasa que contiene el balastros de aluminio hidroformado.
+						El reflector de aluminio anodizado brinda una amplia variedad de distribuciones Nema. El lente , sujeto
+						 por medio de una bisagra, es de vidrio termotemplado resistente a impactos y choques térmicos.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -987,9 +1469,24 @@
 				<div class="meta">
 					<h3 class="meta__title">twa</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal52">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal52" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>twa</h2>
+					<img src="images/EXTERIOR/twa.jpg"/>
+					<P>Excelente para entradas, huecos de escaleras, corredores y otras áreas peatonales. No recomendado para
+						aplicaciones con exposición frecuente a productos químicos rudos o fluidos limpiadores comerciales. Las
+						instalaciones en tales ambientes pueden conducir al fracaso prematuro del luminario y pueden dejar vacía
+						la garantía. Caja trasera de fundición de aluminio resistente. Lente de una sola pieza, resistente a rayos
+						 UV, de policarbonato inyectado, pintado internamente. Resistente a la corrosión incluye ranura hexagonal y
+						  sujetadores a prueba de manipulaciones. Acabado en polvo de poliéster resistente a la corrosión de color
+							bronce oscuro (DDB).</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -1001,9 +1498,24 @@
 				<div class="meta">
 					<h3 class="meta__title">twac</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal53">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal53" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>twac</h2>
+					<img src="images/EXTERIOR/twac.jpg"/>
+					<P>Excelente para entradas, huecos de escaleras, corredores y otras áreas peatonales. No recomendado para
+						 aplicaciones con exposición frecuente a productos químicos rudos o fluidos limpiadores comerciales.
+						 Las instalaciones en tales ambientes pueden conducir al fracaso prematuro del luminario y pueden dejar
+						 vacía la garantía. Caja trasera de fundición de aluminio resistente. Lente de una sola pieza, resistente
+						 a rayos UV, de policarbonato inyectado, pintado internamente. Resistente a la corrosión incluye ranura
+						 hexagonal y sujetadores a prueba de manipulaciones. Acabado en polvo de poliéster resistente a la corrosión
+						 de color bronce oscuro</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -1013,11 +1525,26 @@
 					<div class="slider__item"><img src="images/EXTERIOR/twh.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">twh</h3>
+					<h3 class="meta__title">TWH</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal54">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal54" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TWH</h2>
+					<img src="images/EXTERIOR/twh.jpg"/>
+					<P>Excelente para entradas, huecos de escaleras, corredores y otras áreas peatonales. No recomendado para
+						 aplicaciones con exposición frecuente a productos químicos rudos o fluidos limpiadores comerciales. Las
+						  instalaciones en tales ambientes pueden conducir al fracaso prematuro del luminario y pueden dejar vacía
+							la garantía. Caja trasera de fundición de aluminio resistente. Lente de una sola pieza, resistente a rayos
+							 UV, de policarbonato inyectado, pintado internamente. Resistente a la corrosión incluye ranura hexagonal
+							 y sujetadores a prueba de manipulaciones. Acabado en polvo de poliéster resistente a la corrosión de color
+							  bronce oscuro (DDB).</p>
+				</div>
 			</div>
 
        <div class="grid__item dresses">
@@ -1027,11 +1554,22 @@
 					<div class="slider__item"><img src="images/EXTERIOR/TWN-TWP.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TWN-TWP</h3>
+					<h3 class="meta__title">TWH-TWP</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal55">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal55" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TWH-TWP</h2>
+					<img src="images/EXTERIOR/TWN-TWP.jpg"/>
+					<P>Luminario para montaje en muro. Ideal para áreas de almacenaje, andenes de carga y descarga, rampas de
+						vehículos e iluminación perimetral en general. Carcasa robusta y resistente a la corrosión, fabricada
+						 en aluminio inyectado a presión. Disponible para lamparas de aditivos metálicos y sodio de alta presión.</p>
+				</div>
 			</div>
 
        <div class="grid__item dresses">
@@ -1041,11 +1579,26 @@
 					<div class="slider__item"><img src="images/EXTERIOR/twp.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">twp</h3>
+					<h3 class="meta__title">TWP</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal56">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal56" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TWP</h2>
+					<img src="images/EXTERIOR/twp.jpg"/>
+					<P>Excelente para entradas, huecos de escaleras, corredores y otras áreas peatonales. No recomendado para
+						aplicaciones con exposición frecuente a productos químicos rudos o fluidos limpiadores comerciales. Las
+						instalaciones en tales ambientes pueden conducir al fracaso prematuro del luminario y pueden dejar vacía
+						la garantía. Caja trasera de fundición de aluminio resistente. Lente de una sola pieza, resistente a rayos
+						 UV, de policarbonato inyectado, pintado internamente. Resistente a la corrosión incluye ranura hexagonal y
+						 sujetadores a prueba de manipulaciones. Acabado en polvo de poliéster resistente a la corrosión de color
+						 bronce oscuro</p>
+				</div>
 			</div>
 
        <div class="grid__item dresses">
@@ -1057,9 +1610,23 @@
 				<div class="meta">
 					<h3 class="meta__title">VENUS</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal57">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal57" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>VENUS</h2>
+					<img src="images/EXTERIOR/VENUS.jpg"/>
+					<P>Ideal para vialidades, estacionamientos, andadores, parques, áreas recreativas. Luminario exterior
+						decorativo, de alto rendimiento. Cápsula en fundición de aluminio bajo cobre, fabricada con un tratamiento
+						 previo para una mayor resistencia a la corrosión. Balastro electromagnético autorregulado con alto factor
+						  de potencia. Refractor prismático de cristal Endural de bajo brillo con curva de distribución tipo V.
+							Fácil cableado y conexión por la parte inferior de la cápsula. Fácil acceso al interior de la lámpara,
+							retirando el sombrero.</p>
+				</div>
 			</div>
 
       <div class="grid__item dresses">
@@ -1071,9 +1638,25 @@
 				<div class="meta">
 					<h3 class="meta__title">wallpack iv</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal58">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal58" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>wallpack iv</h2>
+					<img src="images/EXTERIOR/wallpack iv.jpg"/>
+					<P>Ideal para muros, plantas industriales, escuelas, áreas de carga y descarga, pasos a desnivel,
+						 estacionamientos techados. Luminario para montaje en pared para servicio pesado. Cápsula en fundición
+						 de aluminio, fabricada con un tratamiento previo para una mayor resistencia a la corrosión. Puerta
+						 removible asegurada don dos tornillos cautivos y bisagras. El conjunto óptico cuenta con un empaque
+						 que lo mantiene libre de insectos y polvo. Balastro autorregulado de alto factor de potencia con
+						 embobinados de cobre. Reflector de aluminio abrillantado y anodizado para un mejor desempeño;
+						 refractor de cristal de borosilicato prismático. Puerta removible para una fácil instalación de la
+						 base a la pared.</p>
+				</div>
 			</div>
 
 			<div class="grid__item jackets">
@@ -1085,10 +1668,25 @@
 				<div class="meta">
 					<h3 class="meta__title">NEN ENDURALUME</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal59">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
+
+						<div id="modal59" class="modalmask">
+							<div class="modalbox rotate">
+								<a href="#close" title="Cerrar" class="close">X</a>
+								<h2>NEN ENDURALUME</h2>
+								<img src="images/INDUSTRIAL/NEN ENDURALUME.JPG"/>
+								<P>Ideal para bodegas, naves industriales, centros comerciales, gimnasios. Refractor de cristal
+									prismático y reflector de aluminio pintado. Cápsula en fundición de aluminio, fabricada con un
+									tratamiento previo para una mayor resistencia a la corrosión. Balastro electromagnético autorregulado
+									 con alto factor de potencia y alta emisión lumínica por watt consumido. Reflector de aluminio cerrado
+									  combinado con un refractor de acrílico o cristal de borosilicato. El diseño reflector-refractor brinda
+										 un balance simétrico. Distribución con balance vertical y horizontal de iluminación, con excelente
+										  uniformidad y bajo brillo, para crear un ambiente visual confortable. Fácil instalación. </p>
+							</div>
+						</div>
 
       <div class="grid__item jackets">
 				<div class="slider">
