@@ -1697,9 +1697,20 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Petrolume</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal60">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal60" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Petrolume</h2>
+					<img src="images/INDUSTRIAL/PETROLUME.JPG"/>
+					<P>Especial para uso en areas peligrosas. Luminario a prueba de explosión para iluminacion interior y la  al aire libre.
+						 El refractor simétrico es ideal para las áreas generales. El diseño superior del refractor proporciona más luz directa
+						  en el exterior y hacia abajo, reduciendo el número de luminarias necesarias para lograr un nivel de luz dado.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1711,9 +1722,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Petrolux II</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal61">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal61" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Petrolux II</h2>
+					<img src="images/INDUSTRIAL/PETROLUX II.JPG"/>
+					<P>Ideal para industria petroquímica, proceso de metales, silos, pinturas. Luminario de especialidad Clase I,
+						División 2; Clase II, Divisiones 1 y 2; Clase III, Divisiones 1 y 2; Cápsula en fundición de aluminio, fabricada
+						con un tratamiento previo para una mayor resistencia a la corrosión. Balastro autorregulado de alto factor de
+						potencia, con embobinados de cobre. Conjunto óptico de cristal borosilicato prismático Endural resistente al choque
+						 térmico. Disponible en dos refractores (con tres distribuciones: simétrica, larga y angosta o asimétrica) o un
+						 refflector</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1725,9 +1750,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Petrolux</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal62">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal62" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Petrolux</h2>
+					<img src="images/INDUSTRIAL/PETROLUX.JPG"/>
+					<P>Ideal para bodegas, plantas generadoras de energía, plantas tratadoras de agua, industria. Luminario para áreas no
+						clasificadas, equipado con refractor de cristal prismático y cristal termotemplado plano. Cápsula en fundición de
+						aluminio con diferentes tipos de montaje. Balastro de alto factor de potencia, autorregulable con un alto nivel de
+						eficiencia. Cuatro conjuntos ópticos con cinco curvas de distribución. Los dos refractores ofrecen tres distribuciónes:
+						curva larga y angosta, simetrica y asimétrica. Los diferentes montajes ofrecen gran versatilidad para su instalación.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1739,9 +1777,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismalume cerrado</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal63">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal63" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismalume cerrado</h2>
+					<img src="images/INDUSTRIAL/Prismalume cerrado.JPG"/>
+					<P>Uso industrial pesado, comercial, almacenamiento, gimnasios, plantas de ensamble. Optica cerrada. El  Prismalume
+						 Cerrado es la solución perfecta para una variedad de usos. El  Prismalume cerrado es la solución perfecta para una
+						 variedad de zonas industriales de servicio pesado. Holophane también sella la parte superior del reflector para incluir
+						  el conjunto óptico completo. Tecnología de supercristal DSI™ da a Prismalume cerrado  una gran uniformidad y ahorro de
+							 energía.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1753,9 +1804,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismalume</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal64">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal64" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismalume</h2>
+					<img src="images/INDUSTRIAL/PRISMALUME.JPG"/>
+					<P>Uso industrial, comercial, almacenamiento, escuelas, almacenes.  Prismalume es un luminario de alta resistencia de
+						gran altura con un equilibrio único de iluminación hacia arriba y abajo. Prismalume Tiene el brillo y durabilidad de
+						vidrio de borosilicato, los reflectores son de auto-limpieza para proporcionar la eficacia a largo plazo y de ahorro de
+						 energía. Reflectores nunca libres de mantenimiento. Una amplia selección de tecnologías de iluminación potencia, opciones
+						  y accesorios disponibles.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1767,9 +1831,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismatite Fluorescente</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal65">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal65" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismatite Fluorescente</h2>
+					<img src="images/INDUSTRIAL/PRISMATITE FLUORESCENTE.JPG"/>
+					<P>Ideal para áreas de mantenimiento, plantas de ensamble, almacenes, lavanderías, manufactura de alimentos. Luminario
+						con desempeño óptico y mecánico excepcionales. Gabinete compuesto por tres secciones de aluminio extruído selladas entre
+						si para formar un cuerpo rígido. Balastro estándar - electrónico, encendido instantáneo, bajo consumo de energía, alto factor
+						 de potencia. Otras opciones de balastro disponibles: de bajas distorsiones armónicas, de emergencia y dimeables. El lente
+						 prismático de policargonato resistente a la luz ustravioleta y moldeados por inyeccion a presión, proporcionan un excelente
+						  confort visual. </p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1781,9 +1859,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismglo</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal66">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal66" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismglo</h2>
+					<img src="images/INDUSTRIAL/PRISMGLO.JPG"/>
+					<P>Ideal para plantas de ensamble, lavanderías, tiendas. Ópticas prismáticas suspendidas que proveen iluminación hacia
+						 arriba. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para una mayor resistencia a la
+						 corrosión. Balastro autorregulado de alto factor de potencia, con embobinados de cobre para dar la emisión lumínica
+						 completa de la lámpara con menor consumo de energía. Cinco diferentes formas de refractores de cristal de borosilicato
+						  prismático proveen una óptima visibilidad de bajo brillo. Variedad de métodos de montaje que hacen la instalación rápida
+							, fácil y enonómica. </p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1795,9 +1887,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismpack Cerrado</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal67">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal67" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismpack Cerrado</h2>
+					<img src="images/INDUSTRIAL/PRISMPACK CERRADO.JPG"/>
+					<P>Ideal para hangares, plantas de ensamble, plantas industriales. Reflectores de cristal prismático; balastro integral
+						para lámparas de alta intensidad de descarga; ensamble óptico cerrado. Cápsula en fundición de aluminio fabricada con
+						 un tratamiento previo para mayor resistencia a la corrosión. Balastro autorregulado de alto factor de potencia con
+						  embobinados de cobre. Conjunto óptico de cristal de borosilicato prismático Endural resistente al choque térmico,
+							 sellado con una cubierta de aluminio anodizado. El reflector de cristal cubierto minimiza la depreciación de lúmenes
+							  al reducir el polvo acumulado en la superficie interna del reflector.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1809,9 +1915,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Prismpack</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal68">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal68" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Prismpack</h2>
+					<img src="images/INDUSTRIAL/PRISMPACK.JPG"/>
+					<P>Ideal para hangares, plataformas de ensamble, gimnasios, áreas de galvanizado y almacenes.Reflectores de cristal
+						prismático, balastro integral para lámparas de descarga de alta intensidad, ensamble óptico de auto limpieza.
+						Cápsula en fundición de aluminio fabricada con un tratamiento previo para una mayor resistencia a la corrosión.
+						 Balastro autorregulado de alto factor de potencia con embobinados de cobre. Conjunto óptico de cristal borosilicato
+						  prismático Endural resistente al choque térmico. Opción de cinco medidas de reflectores disponibles que cumplen
+							eficientemente con los requerimientos de diseño para distribución de luz.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1823,9 +1943,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">SH PA22</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal69">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal69" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SH PA22</h2>
+					<img src="images/INDUSTRIAL/sh pa22.JPG"/>
+					<P>Para las alturas altas de montaje que requieren eficiencias superiores, la alta iluminación horizontal y vertical y
+						 control de contraste premium. Ideal para las áreas ligeras de manufactura, almacenes y pasillos. Para su uso en las
+						  áreas con contaminantes aerotransportados mínimos. Ciertos contaminantes aerotransportados pueden disminuir la
+							integridad del acrílico. Fabricado en acero, terminado en pintura de poliéster en polvo blanca. Todos los componentes
+							eléctricos son situados para asegurar la unidad en su montaje pendiente. Está ventilado para la actuación termal
+							 óptima.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1837,9 +1971,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">SH PA25</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal70">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal70" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SH PA25</h2>
+					<img src="images/INDUSTRIAL/sh pa25.JPG"/>
+					<P>Para las alturas altas de montaje que requieren eficiencias superiores, la alta iluminación horizontal y vertical
+						y control de contraste premium. Ideal para las áreas ligeras de manufactura, almacenes y pasillos. Para su uso en las
+						 áreas con contaminantes aerotransportados mínimos. Ciertos contaminantes aerotransportados pueden disminuir la
+						  integridad del acrílico. Fabricado en acero, terminado en pintura de poliéster en polvo blanca. Todos los componentes
+							eléctricos son situados para asegurar la unidad en su montaje pendiente. Está ventilado para la actuación termal óptima</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1851,9 +1998,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">TH A14</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal71">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal71" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TH A14</h2>
+					<img src="images/INDUSTRIAL/th a14.JPG"/>
+					<P>Use en las grandes alturas de montaje que requieren eficiencias altas, iluminación horizontal e iluminación
+						 vertical alta. Ideal para áreas de confección y pasillos del almacén donde el color es crítico. Carcasa robusta
+						  para servicio pesado, fabricada en aluminio inyectado a presión y con acabado en pintura blanca de poliéster
+							en polvo.los componentes eléctricos son de calentamiento lento y horizontalmente opuestos para la operación más
+							 fresca. </p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1865,9 +2025,24 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">TH</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal72">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal72" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TH</h2>
+					<img src="images/INDUSTRIAL/th.JPG"/>
+					<P>A14: Excelente para la iluminación vertical.Montaje en alturas de: 18 - 35 ft.
+A15: Excelente para la iluminación horizontal. Montaje en alturas de: 18 - 25 ft.
+A16: Provee eficiencias altas; El control de resplandor. Montaje en alturas de: 18 - 35 ft.
+A17, A22: Para blindaje óptimo de la lámpara; El control de resplandor. Montaje en alturas de: 18 - 40 ft.
+PA16, PA22, PA22E, PA22L: Provee eficiencias altas; La iluminación vertical y horizontal; El control de resplandor. Montaje en alturas de: 18 - 35 ft.
+PA22N, PA22SP, PA25: Para la eficiencia alta arriba de luz; El control de resplandor; Las distribuciones más estrechas para las alturas más altas de montaje. Montaje en alturas de: 20 - 40 ft.
+Balasto modular para opticas high bay. Las piernas pre regulables adjuntas aceptan una selección ancha de aluminio anodizado y reflectores high bay acrílicos prismáticos. Una colección variada de patrones de distribución en las alturas más altas de montaje pueden ser logrados. Estos sistemas proveen claridad mínima y brillo intenso y eficiencia superior de energía.  </p>
+				</div>
 			</div>
 
        <div class="grid__item jackets">
@@ -1877,11 +2052,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="images/INDUSTRIAL/THD.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">THD</h3>
+					<h3 class="meta__title">THS</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal73">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal73" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>THS</h2>
+					<img src="images/INDUSTRIAL/THD.JPG"/>
+					<P>Luminario industrial con reflector abierto o cerrado. Diseñado para instalarse en áreas con grandes alturas de
+						montaje, donde se requiere iluminación horizontal con altos niveles de eficiencia. Ideal para áreas de manufactura,
+						almacenes y pasillos de bodegas. Carcasa robusta, fabricada en aluminio inyectado a presión, acabado en pintura blanca
+						 de poliéster en polvo. Reflector facetado de alta eficiencia, fabricado en aluminio anodizado.  </p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1893,9 +2080,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">THR</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal74">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal74" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>THR</h2>
+					<img src="images/INDUSTRIAL/THR.JPG"/>
+					<P>Luminario industrial con refractor de acrílico abierto. diseñado para instalarse en áreas con grandes alturas de
+						 montaje, donde se requiere iluminación horizontal y vertical con altos niveles de eficiencia y un optimo control
+						  del contraste de luz. Ideal para iluminar áreas de manufactura ligera, almacenas y pasillos de tiendas detallistas.
+							 Carcasa robusta, fabricada en aluminio inyectado a presión, acabado en pintura blanca de poliéster en polvo.
+							 El refractor de acrílico de alta eficiencia es resistente a las decoloraciones causadas por los rayos UV, brinda
+							  altos niveles de iluminación en el plano vertical y mantiene al mismo tiempo un bajo nivel de brillo.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1907,9 +2108,22 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">TX A121/A125</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal75">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal75" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TX A121/A125</h2>
+					<img src="images/INDUSTRIAL/tx a121-a125.JPG"/>
+					<P>Para las áreas que requieren iluminación vertical alta y los espaciamientos anchos. Ideal para pasillos, zonas de
+						 servicios y garajes del estacionamiento. Ciertos contaminantes aerotransportados pueden disminuir integridad de
+						 acrílico. Carcasa de servicio pesado, fabricada en aluminio a presión. El balasto y los componentes eléctricos son
+						  de calentamiento lento y horizontalmente opuestos para la operación más fresca. La brida integral de montaje de la
+							 caja del empalme asegura integridad estructural. Pintura blanca de polvo de poliéster aplicada electrostaticamente.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">
@@ -1921,9 +2135,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">TXC</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal76">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal76" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>TXC</h2>
+					<img src="images/INDUSTRIAL/txc.JPG"/>
+					<P>Luminario industrial cerrado para distribuciones abiertas. Diseñado para utilizarse en áreas donde se requiere
+						 iluminación vertical y control de brillo en bajas alturas de montaje. Ideal para iluminar áreas abiertas, tiendas
+						  detallistas y pasillos. Carcasa robusta para servicio pesado, fabricada en aluminio inyectado a presión y con
+							acabado en pintura blanca de poliéster en polvo. La óptica esta compuesta por un reflector pintado con pintura
+							de poliéster en polvo blanca que proporciona una alta reflectancia y un lente de acrílico virgen inyectado a
+							presión.</p>
+				</div>
 			</div>
 
        <div class="grid__item jackets">
@@ -1935,9 +2163,24 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Vantage Alt</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal77">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal77" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Vantage Alt</h2>
+					<img src="images/INDUSTRIAL/VANTAGE ALT.JPG"/>
+					<P>Ideal para areas de almacenamiento de alimentos. La luminaria Vantage ALT es una luminaria de acrílico-con lentes
+						 diseñados para la industria alimentaria y otras áreas. Disponible con una cubierta de aluminio con refractor de
+						  acrílico para una caida de luz centrada, o un reflector/refractor combinación de acrílico de iluminación hacia
+							 arriba hasta 15%, esta luminaria se puede utilizar en múltiples aplicaciones en una lista de lugares húmedos es
+							  aceptable. Excelente distribución fotométrica permite que esta luminaria pueda ser montada en una variedad de
+								 alturas de montaje. Vantage ALT está disponible de 250 a 400W aditivo metalico o sodio de alta presion.
+								  Ciertos contaminantes del aire pueden disminuir la integridad de acrílico</p>
+				</div>
 			</div>
 
        <div class="grid__item jackets">
@@ -1949,9 +2192,23 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				<div class="meta">
 					<h3 class="meta__title">Vantage Mini</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal78">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal78" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Vantage Mini</h2>
+					<img src="images/INDUSTRIAL/VANTAGE MINI.JPG"/>
+					<P>Ideal para plantas de ensamble, plantas de procesamiento de alimentos, almacenamiento refrigerado o frío, viveros y
+						 estacionamientos. Ciertos contaminantes del aire pueden disminuir la integridad de acrílico.
+            El bajo perfil de la luminaria Vantage Mini es la solución óptima en el mantenimiento, saneamiento y conservación de
+						 la energía son temas clave en ambientes extremos como el de Alimentos y Bebidas. La construcción duradera está diseñado
+						  para una larga vida y facilidad de mantenimiento. Disponible en dos configuraciones ópticas, el Mini Vantage satisface
+							 las necesidades diferentes de iluminación.</p>
+				</div>
 			</div>
 
       <div class="grid__item jackets">

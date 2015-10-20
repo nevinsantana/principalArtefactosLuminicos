@@ -87,11 +87,11 @@ a:link {
 
 img.imgBanner {
   width: 100%;
-  transition: 0.5s;
+
 }
 
 .imgBanner:hover {
-  opacity: 0.9;
+  
 }
 
 .textoBanner {
