@@ -18,9 +18,9 @@
           Somos una empresa que se dedica a la distribución, promoción, venta de
           equipo, accesorios y proyectos de iluminación comercial, industrial,
           exterior para áreas deportivas, áreas clasificadas (incluyendo
-          Luminarios a prueba de explosión) y para lumbrado público. Alumbrado
+          Luminarios a prueba de explosión) y para Alumbrado público. Iluminación
           con sistemas de alto montaje (superpostes), para sistemas viales,
-          complejos carreteros, prisiones, puertos de carga, estacionamientos,
+          complejos carreteros, centros penitenciarios, puertos de carga, estacionamientos,
           etc.<br>
           Luminarios para áreas clasificadas, para industrias petroquimicas,
           plataformas, farmacéuticas y almacenaje de productos peligrosos o

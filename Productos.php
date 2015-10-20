@@ -2220,9 +2220,26 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">Vantage RTT</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal79">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal79" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>Vantage RTT</h2>
+					<img src="images/INDUSTRIAL/VANTAGE RTT.JPG"/>
+					<P>Ideal para plantas de ensamble, Plantas de Procesamiento de Alimentos, Almacenamiento Refrigerado o frío, viveros y
+						 estacionamientos. Ciertos contaminantes del aire pueden disminuir la integridad de acrílico. El Vantage RTT es una
+						 luminaria empotrable 2x2 HID diseñado específicamente para satisfacer las necesidades de la industria alimentaria.
+						  El RTT es lo suficientemente resistente para soportar el medio ambiente, al tiempo que ofrece un rendimiento de
+							 iluminación superior y la eficiencia. El resultado de la RTT Vantage será de larga vida y durabilidad. El
+							 rendimiento de la iluminación superior de la RTT se logra mediante la combinación de los materiales de calidad
+							 superior. Esta luminaria está diseñada con un reflector de alto brillo ofreciendo mayores eficiencias. El RTT es
+							  de acero laminado en frío y acabado con tratamiento previo Holopane de siete pasos y el proceso de pintura. La
+								 luminaria se accede desde la base para mantener la integridad del sello.</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2234,9 +2251,23 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">GDI</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal80">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal80" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>GDI</h2>
+					<img src="images/Fluorescente/GDI.jpg"/>
+					<P>Ideal para instituciones educativas, oficinas privadas, vestíbulos, hospitales. Luminario para iluminación
+						semi-directa. Cuerpo con desarrollo estructural para máxima rigidez. Fabricado con un tratamiento previo para una
+						 mayor resistencia a la corrosión. Balastro estándar - electrónico, encendido instantáneo, bajo consumo de energía
+						  y alto factor de potencia. Otros balastros disponibles: de bajas distorsiones armónicas, de emergencia y dimeables.
+							 Luminario de alta eficiencia de difusor perforado y pantalla mylar. Luminario para plafòn reticular o fijo. Fácil
+							  mantenimiento.</p>
+				</div>
 			</div>
 
 
@@ -2249,9 +2280,20 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">i-beam</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal81">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal81" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>i-beam</h2>
+					<img src="images/Fluorescente/i-beam.jpg"/>
+					<P>El primer sistema fluorescente T5HO de alto montaje aprobado por UL para operar en ambientes con temperaturas
+						hasta 55º C y tiene 5 años de garantía. Utiliza un avanzado control óptico que proporciona calidad visual superior,
+						 sin sacrificar eficiencia y confiabilidad.</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2263,9 +2305,25 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">mrt retrofit kit</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal82">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal82" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>mrt retrofit kit</h2>
+					<img src="images/Fluorescente/mrt retrofit kit.jpg"/>
+					<P>El kit Troffer MRT  de actualización está diseñado para caber fácilmente en la mayoría de troffers fluorescentes
+						comerciales para proporcionar la máxima eficiencia y completa, incluso por debajo de la proyección de imagen de la
+						 lámpara. Esta serie ofrece altos niveles de luz para las modificaciones de iluminación general de una separación
+						  entre sí 2''x4'',''2''x2 y 1''x4'' empotrados. Las aplicaciones típicas incluyen aulas, oficinas, hospitales y
+							áreas comerciales. Los reflectores son aluminio formado en precisión para la actuación óptima. Los reflectores
+							segmentados están disponibles en una colección variada de finales con elección de reflectancias . La oferta de
+							óptica del reflector variando distribuciones fotométricas y espaciando criterios requisitos de aplicación mejor
+							conveniente y de presupuesto.</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2277,9 +2335,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">NEG-FEG</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal83">Ver más</span>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal83" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NEG-FEG</h2>
+					<img src="images/Fluorescente/NEG-FEG.jpg"/>
+					<P>Ideal para oficinas, instituciones educativas, pasillos, centros comerciales, hospitales. Luminario de bajo perfil
+						 con controlente. Cuerpo con desarrollo estructural para máxima rigidez. Con ceja para empotrar en plafón fijo o sin
+						  ceja para plafón reticular. Con tratamiento previo para mayor ressistencia a la corrosión. Balastro estándar -
+							electrónico, encendido instantáneo; otros balastros disponibles: de bajas distorsiones armónicas, de emergencia y
+							dimeables. Luminario de alta eficiencia con dos diferentes de tipos de controlentes. Reflector con acabado blanco
+							poliéster de 92% de reflectancia. Puerta abatible sobre bisagras y con cambio de posición izquierda o derecha.
+							 Fácil instalación y mantenimiento.</p>
+				</div>
 			</div>
 
 
@@ -2292,9 +2365,23 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">NEP</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal84">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal84" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NEP</h2>
+					<img src="images/Fluorescente/NEP.jpg"/>
+					<P>Ideal para instituciones educativas, oficinas, pasillos, bibliotecas, librerías, hospitales. Luminario con louver
+						 parabólico. Cuerpo con desarrollo estructural para máxima rigidez. Con ceja para empotrar en plafón fijo o sin ceja
+						  para plafón reticular. Fabricado con un tratamiento previo para mayor resistencia a la corrosión. Balastro estándar
+							 - electrónico, encendido instantáneo. Otras opciones de balastro disponibles: de bajas distorsiones armónicas, de
+							 emergencia y dimeables. Luminario de alta eficiencia con louver parabólico. Fácil instalación y mantenimiento.
+							  Función de aire disponible para suministro de aire acondicionado.</p>
+				</div>
 			</div>
 
       <div class="grid__item shirts">
@@ -2306,9 +2393,23 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">NHW</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal85">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal85" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NHW</h2>
+					<img src="images/Fluorescente/NHW.jpg"/>
+					<P>Ideal para iluminación general de industrias, instituciones educativas, tiendas detallistas. Luminario envolvente
+						con controlente de acrílico. Cuerpo con desarrollo estructural para máxima rigidez. Fabricado con un tratamiento
+						previo para mayor resistencia a la corrosión. Balastro estándar - electrónico, encendido instantáneo. Otros balastros
+						 disponibles: de bajas distorsiones armónicas, de emergencia y dimeables. Luminario de alta eficiencia con controlente
+						  envolvente de bajo brillo, fabricado en inyección de acrílico con terminales soldadas por ultrasonido. Luminario de
+							sobreponer o colgar. Fácil instalación y mantenimiento.</p>
+				</div>
 			</div>
 
 
@@ -2321,9 +2422,22 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">pm3x</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal86">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal86" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>pm3x</h2>
+					<img src="images/Fluorescente/pm3x.jpg"/>
+					<P>Luminarias de alto rendimiento para montaje en superficie parabólica para el control de la luz superior, confort
+						 visual de luz cutoff, para aplicaciones de interior abierto. Gabinete de acero con Paramax ® 3", gabinete de aluminio
+						  de primera calidad. Un compañero perfecto para luminarias empotradas Paramax ®. Elección del tamaño, la lampara,
+							 la configuración de la celda y el acabado del gabinete. El acabado estándar exterior es blanco brillante. cobertura
+							 superior completa disponible.</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2335,9 +2449,21 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">pmo</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal87">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal87" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>pmo</h2>
+					<img src="images/Fluorescente/pmo.jpg"/>
+					<P>Completa familia de Luminarios parabólicos de control de luz diseñadas para evitar el deslumbramiento de la pantalla
+						 VDT, para su uso en ambientes abiertos de oficina. Rejilla parabólica compuesta que proporciona un control optimo de
+						  la luz. Diseño optimizado para su uso con lámparas T8 y balastos electrónicos. El acabado del reflector en aluminio
+							iridiscente minimiza rejilla. Ideal para uso con lámparas trifósforo.  </p>
+				</div>
 			</div>
 
       <div class="grid__item shirts">
@@ -2349,9 +2475,21 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">rt5</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal88">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal88" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>rt5</h2>
+					<img src="images/Fluorescente/rt5.jpg"/>
+					<P>El primer luminario que ofrece iluminación volumétrica llenando realmente el espacio con luz, entregando la cantidad
+						 ideal de luz de una manera eficiente y económica. Refractor de dos piezas utiliza una combinación de una película
+						  difusa y prismas extrudidos para difundir y distribuir, eficiente y suavemente la luz. El reflector utiliza pintura
+							 de alta reflexión y microfacetas especialmente diseñadas para trabajar en conjunto con los prismas.  </p>
+				</div>
 			</div>
 
 
@@ -2364,9 +2502,21 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">s</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal89">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal89" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>s</h2>
+					<img src="images/Fluorescente/s.jpg"/>
+					<P>Para aplicaciones que requieren niveles medianos de iluminación y la construcción estrecha. Adecuado para tareas
+						 generales de alumbrado. El canal delgado para el manejo fácil en unidad o en fila, montaje en muro o pared. Acabado
+						  de esmalte horneado Reflector especular blanco disponible. Cubierta del canal retenida por sujetador de cuarto de
+							 vuelta.  </p>
+				</div>
 			</div>
 
       <div class="grid__item shirts">
@@ -2378,9 +2528,19 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">sb</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal90">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal90" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>sb</h2>
+					<img src="images/Fluorescente/sb.jpg"/>
+					<P>Luminario envolvente para sobreponer con difusor de acrílico prismático. las cabeceras pintadas en esmalte
+						 blanco realzan su apariencia. Disponible en dos o cuatro lamparas. </p>
+				</div>
 			</div>
 
       <div class="grid__item shirts">
@@ -2392,9 +2552,22 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">SP</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal91">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal91" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SP</h2>
+					<img src="images/Fluorescente/SP.jpg"/>
+					<P>Completa selección de luminarias de especificación premium, recomendado para todas las aplicaciones empotradas.
+						 Marcos de puertas de aluminio disponibles, control del flujo de aire con opción de damppers de eliminación de
+						  calor. Clips de seguridad T-bar estándar en 1'x4 ', 2'x2' y accesorios de 2'x4 '. No es necesario instalar los
+							clips por separado. Compatible con prácticamente todos los tipos de techo. modificación de campo trim kits también
+							 están disponibles</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2406,9 +2579,22 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">wc-ny</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal92">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal92" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>wc-ny</h2>
+					<img src="images/Fluorescente/wc-ny.jpg"/>
+					<P>Para muro o techo montaje vertical u horizontal. Ideal para huecos de la escalera, corredores, lavatorios o cualquier
+						 aplicación de utilidad. Diseño de fácil de mantenimiento individual o en fila . Construido para acceder con la ciudad
+						  de Nueva York código eléctrico. Hecho en EEUU. Las partes de metal son moldeadas.
+             Acabado de pretratamiento de fosfato de hierro de cinco etapas asegura resistencia de pintura de superior adhesión
+						  y de oxidación. Acabado final high-gloss estándar, esmalte blanco horneado.</p>
+				</div>
 			</div>
 
        <div class="grid__item shirts">
@@ -2420,9 +2606,21 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">ww</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más</span>
+					<a class="meta__price" href="#modal93">Ver más</a>
 				</div>
         <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal93" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>ww</h2>
+					<img src="images/Fluorescente/ww.jpg"/>
+					<P>Provee iluminación de pared de alto rendimiento, uniforme para resaltar trabajo de arte y señalización. Los
+						despliegues destacan en ambientes de reventa o de la oficina. Provee máxima iluminación de la pared de claridad
+						 mínima. Elimina situaciones críticas. 92 % de salida ligera ilumina pared. 12 " El ensamblaje ancho fácilmente
+						  se adapta a los sistemas comunes de techo.</p>
+				</div>
 			</div>
 
         <div class="grid__item led">
@@ -2434,9 +2632,26 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">ALX</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal94">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal94" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>ALX</h2>
+					<img src="images/CON LEDS/ALX.jpg"/>
+					<P>Calles, aceras, estacionamientos y áreas circundantes. Robusto, de fundición, de aluminio de una sola pieza. de
+						flujo único a través del diseño de optimización de la gestión térmica. El diseño modular permite la facilidad de
+						 mantenimiento y el potencial de futuras actualizaciones del sistema. brazo Integral proporciona una fácil instalación
+						  de un poste o pared (ALX1 solamente). pantalla metálica cubre la parte superior de la cubierta para evitar la
+							 acumulación de residuos al tiempo que permite que circule el aire. Vivienda completamente sellados contra la
+							  humedad o contaminantes ambientales. Bajo el perfil del diseño minimiza la carga del viento. montaje de la puerta:
+								 marco de la puerta de fundición adjuntando cámaras conductor. Marco de la puerta está completamente sellada con
+								  silicona de una sola pieza tubular. El acabado estándar es de bronce oscuro (DDB) capa de polvo de poliéster
+									resistente a la corrosión. otros colores disponibles</p>
+				</div>
 			</div>
 
        <div class="grid__item led">
