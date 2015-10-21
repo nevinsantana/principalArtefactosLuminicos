@@ -10,7 +10,6 @@
     <title>Artefatos Lumínicos</title>
     <link rel="icon" type="image/png" href="images/icono.png" sizes="64x64">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/pgwslider.css">
   </head>
   <body onresize="normaliza()">
@@ -47,7 +46,7 @@
         <div class="menuContainer" onclick="apareceMenu()">
           <ul id="nav">
             <li><a href="#" onclick="inicio()">Inicio</a></li>
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li>
               <a href="#">Presentación</a>
               <ul class="subs">
@@ -60,27 +59,27 @@
                 <li><a href="#" onclick="preguntas()">Preguntas</a></li>
               </ul>
             </li>
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li><a href="Proyectos/index.html">Proyectos</a></li>
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li>
               <a href="http://iluminacion.mex.tl/915364_Productos.html">
                 Productos
               </a>
             </li>
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li>
               <a href="#" onclick="bibliotecaIlu()">
                 Biblioteca de Iluminación
               </a>
             </li>
-            <!--<div class="linea_vertical"></div>
+            <!--<div class="lineaVertical"></div>
             <li>
               <a href="#" onclick="videos()">Galeria de videos</a>
             </li>-->
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li><a href="#" onclick="formasPago()">Formas de Pago</a></li>
-            <div class="linea_vertical"></div>
+            <div class="lineaVertical"></div>
             <li>
               <a href='
                 http://www.emailmeform.com/builder/form/8be2f9dIJbs52cl6gEvU'
@@ -125,10 +124,10 @@
         </div>
         <div id="footer2">
           <p>
-            &copy; 2015 Artefa<a class="cotHide"href="Cotizaciones">c</a>tos
+            &copy; 2015 Artefa<a class="cotHide" href="Cotizaciones">c</a>tos
             Lumínicos es una marca registrada.
           </p>
-          <p id="texto9">
+          <p id="avisoFooter">
             <a href="attachments/File/AvisoPrivacidad.pdf">
               Aviso de Privacidad
             </a>
