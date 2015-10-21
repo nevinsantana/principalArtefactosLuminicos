@@ -38,6 +38,7 @@
         </div>
       </div>
     </section>
+    <div class="break"></div>
     <section class="contenidoSection">
       <p id="LetraPago2">
         Favor de mandar su ficha de deposito y su orden de compra al correo:<br>
