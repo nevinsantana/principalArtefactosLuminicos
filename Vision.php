@@ -5,7 +5,7 @@
     <section class="contenidoSection">
       <img class="imgBanner" src="images/VisionIma.png" alt="Imágen visión">
     </section>
-    <div id="separaSeccion"></div>
+    <div class="separaSeccion"></div>
     <section class="contenidoSection">
       <div class="cPresentacion">
         <div class="circuloVerde"></div>

@@ -10,7 +10,6 @@
     <title>Artefatos Lumínicos</title>
     <link rel="icon" type="image/png" href="images/icono.png" sizes="64x64">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/pgwslider.css">
   </head>
   <body onresize="normaliza()">
     <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->

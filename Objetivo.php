@@ -6,7 +6,7 @@
       <img class="imgBanner" src="images/OjetivoIma.png"
         alt="Imágen de objetivo">
     </section>
-    <div id="separaSeccion"></div>
+    <div class="separaSeccion"></div>
     <section class="contenidoSection">
       <div class="cPresentacion">
         <div class="circuloVerde"></div>
