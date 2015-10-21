@@ -2663,9 +2663,26 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">GRANDVILLE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#Modal95">Ver más<a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal95" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>GRANDVILLE</h2>
+					<img src="images/CON LEDS/GRANDVILLE.jpg"/>
+					<P>Granville LED es ideal para los bulevares urbanos, calles, Campus, Estacionamientos, Uso Residencial, y Parques.
+						Se aplica tanto a las nuevas instalaciones y modernización de las instalaciones existentes Granville.  Holophane
+						ha tomado gran cuidado en el diseño de esta luminaria nueva y emocionante ya que sabía que el Granville tenía una
+						 reputación seria para mantener y los clientes que se tienen grandes expectativas para el Granville LED. Estamos
+						 seguros de que no se arrepentirá y se encuentra que el Granville LED que proporciona toda la alta calidad, alto
+						 rendimiento y alta fiabilidad que hemos acostumbrado a los productos Holophane.  El Granville LED combina la
+						 tecnología LED de Holophane y la óptica de vidrio de primera clase para producir el mejor rendimiento en su tipo.
+						  Además de nuestra gestión de alta ingeniería térmica y de construcción de calidad, haran que usted este seguro de
+							 tener una duradera y confiable, nueva luminaria de alta calidad.</p>
+				</div>
 			</div>
 
 			 <div class="grid__item led">
