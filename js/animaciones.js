@@ -4,13 +4,13 @@ function normaliza(){
   document.getElementById("nav").style.top="7.2em";
   document.getElementById("nav").style.zIndex="4";
   document.getElementById("nav").style.opacity="1";
-  document.getElementById('main').style.paddingTop="4em";
+  document.getElementsByTagName('main').style.paddingTop="4em";
   }
   else {
     document.getElementById("nav").style.top="-9em";
     document.getElementById("nav").style.zIndex="-1";
     document.getElementById("nav").style.opacity="0";
-    document.getElementById('main').style.paddingTop="0em";
+    document.getElementsByTagName('main').style.paddingTop="0em";
   }
 }
 

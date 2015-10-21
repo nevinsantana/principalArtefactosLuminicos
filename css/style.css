@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+.sangriaFinesPreguntasFrecuentes {
+  margin-left: 3%;
+}
+
+.mapaPreguntasFrecuentes {
+  width: 100%;
+  height: 250px;
+  border: 0;
+}
+
 .noCuenta {
   color: white;
   font-weight: bold;
@@ -91,7 +101,7 @@ img.imgBanner {
 }
 
 .imgBanner:hover {
-  
+
 }
 
 .textoBanner {
@@ -191,7 +201,7 @@ footer{
   margin: auto;
 }
 
-.gifProyectos {
+.gifProductos {
   width: 100%;
   height: auto;
 }
@@ -369,8 +379,8 @@ header {
 #texto9{
  font-family: Arial,Helvetica,sans-serif;
  font-size: 8pt;
- color: white;
  text-align: center;
+ text-decoration: underline;
 }
 
 .logoMax {
@@ -403,7 +413,7 @@ overflow: auto;
   margin: 0;
 }
 
-#footer2 h4{
+#footer2 p{
   font-size: 9px;
   color: #808080;
   font-weight: normal;
@@ -740,7 +750,7 @@ Position:center;
 
 /*-----------OBJETIVO*****************/
 
-.objetivo {
+.cPresentacion {
   height: auto;
   width: 100%;
   padding: 2em;
