@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
 
     //
 
-    $email_to = "david@artefactosluminicos.com.mx";
+    $email_to = "digl_david23933@hotmail.com";
 
     $email_subject = "Contacto desde Web";
 
