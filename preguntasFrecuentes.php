@@ -72,10 +72,6 @@
           </p>
         </dd>
       </dl>
-    </section>
-    <script type="text/javascript"
-      src="http://code.jquery.com/jquery-latest.js">
-    </script>
-    <script type="text/javascript" src="js/mapaGoogle.js"></script>
+    </section>    
   </body>
 </html>

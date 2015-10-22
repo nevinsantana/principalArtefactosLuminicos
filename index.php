@@ -134,13 +134,9 @@
         </div>
       </footer>
     </div>
-    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/acciones.js"></script>
     <script type="text/javascript" src="js/animaciones.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="tools/slider/PgwSlider/pgwslider.js">
-    </script>
-    <script type="text/javascript"
-      src="tools/slider/PgwSlider/pgwsliderRunner.js">
-    </script>
+    <script type="text/javascript" src="js/externo.js"></script>
   </body>
 </html>
