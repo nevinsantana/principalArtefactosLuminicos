@@ -619,8 +619,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/GRAND LEDGE.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">GRAND LEDGE</h3>
-					<a class="meta__brand" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2099.pdf" Target="_blank">Ficha Técnica</a>
+					<a class="meta__title"  href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2099.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">GRAND LEDGE</span>
 					<a class="meta__price" href="#modal22">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -646,8 +646,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/Fluorescente/av smd.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">av smd</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/2AV.PDF" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">av smd</span>
 					<a class="meta__price" href="#modal23">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -674,8 +674,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EMERGENCIA/LRP.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LRP</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/LRP.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LRP</span>
 					<a class="meta__price" href="#modal24">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -701,8 +701,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/CRANELITE.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">CRANELITE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2029.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">CRANELITE</span>
 					<a class="meta__price" href="#modal25">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -729,8 +729,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/Fluorescente/dm-dmw.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">dm-dmw</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/ll/documents/psg/DMW.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">dm-dmw</span>
 					<a class="meta__price" href="#modal26">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -753,8 +753,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/GRANVILLE PREMIER.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">GRANVILLE PREMIER</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2095.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">GRANVILLE PREMIER</span>
 					<a class="meta__price" href="#modal27">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -781,8 +781,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/Fluorescente/ej-ny.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ej-ny</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="#">Ficha Técnica</a>
+					<span class="meta__brand">ej-ny</span>
 					<a class="meta__price" href="#modal28">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -805,8 +805,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EMERGENCIA/LV SERIES.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LV SERIES</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/LV%20Series.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LV SERIES</span>
 					<a class="meta__price" href="#modal29">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -833,8 +833,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/ENDURALUME.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ENDURALUME</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2030.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ENDURALUME</span>
 					<a class="meta__price" href=#modal30>Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
