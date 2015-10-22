@@ -55,7 +55,7 @@
                 <li>
                   <a href="#" onclick="quienesSomos()">¿Quiénes somos?</a>
                 </li>
-                <li><a href="#" onclick="preguntas()">Preguntas</a></li>
+                <li><a href="#" onclick="preguntas()">Preguntas frecuentes</a></li>
               </ul>
             </li>
             <div class="lineaVertical"></div>

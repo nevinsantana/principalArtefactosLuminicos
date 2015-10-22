@@ -57,8 +57,8 @@
 					<div class="slider__item"><img src="images/Fluorescente/2AV.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">2AV</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/2AV.PDF" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">2AV</span>
 					<a class="meta__price" href="#modal2">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -87,8 +87,8 @@
 					<div class="slider__item"><img src="images/INTERIOR/02454.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">02454</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2010.pdf" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">02454</span>
 					<a class="meta__price" href="#modal3">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -117,8 +117,8 @@
 					<div class="slider__item"><img src="images/EXTERIOR/COLONIAL MEXICANO.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">COLONIAL MEXICANO</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2091.pdf" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">COLONIAL MEXICANO</span>
 					<a class="meta__price" href="#modal4">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -143,8 +143,8 @@
 					<div class="slider__item"><img src="images/Fluorescente/2GT8.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">2GT8</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/GT8.pdf" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">2GT8</span>
 					<a class="meta__price" href="#modal5">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -169,8 +169,8 @@
 					<div class="slider__item"><img src="images/EMERGENCIA/ELM-ELM2.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ELM-ELM2</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/ELM6-12.pdf" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ELM-ELM2</span>
 					<a class="meta__price" href="#modal6">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -194,8 +194,8 @@
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMALUNE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">BANTAM 2000 PRISMALUNE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2025.pdf" target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">BANTAM 2000 PRISMALUNE</span>
 					<a class="meta__price" href="#modal7">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -223,8 +223,8 @@
 					<div class="slider__item"><img src="images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">CIS-ILUMINARE (GRANDE Y PEQUEÑO)</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/Illuminaire.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">CIS-ILUMINARE (GRANDE Y PEQUEÑO)</span>
 					<a class="meta__price" href="#modal8">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -253,8 +253,8 @@
 					<div class="slider__item"><img src="images/Fluorescente/2PM3N.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">2PMN3</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/PM3N.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">2PMN3</span>
 					<a class="meta__price" href=#modal9>Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -280,8 +280,8 @@
 					<div class="slider__item"><img src="images/INTERIOR/illumibay.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">illumibay</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/Illumibay.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">illumibay</span>
 					<a class="meta__price" href="#modal10">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -309,8 +309,8 @@
 					<div class="slider__item"><img src="images/EXTERIOR/DORCHESTER.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">DORCHESTER</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%20100.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">DORCHESTER</span>
 					<a class="meta__price" href="#modal11">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -336,8 +336,8 @@
 					<div class="slider__item"><img src="images/Fluorescente/ATLANTA.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ATLANTA</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2081.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ATLANTA</span>
 					<a class="meta__price" href="#modal12">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -363,8 +363,8 @@
 					<div class="slider__item"><img src="images/EMERGENCIA/ind.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ind</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/IND.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ind</span>
 					<a class="meta__price" href="#modal13">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -392,8 +392,8 @@
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMATITE.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">BANTAM 2000 PRISMATITE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2025.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">BANTAM 2000 PRISMATITE</span>
 					<a class="meta__price" href="#modal14">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -422,8 +422,8 @@
 					<div class="slider__item"><img src="images/INTERIOR/LOBAY.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LOBAY</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2050.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LOBAY</span>
 					<a class="meta__price" href="#modal15">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -451,8 +451,8 @@
 					<div class="slider__item"><img src="images/EXTERIOR/GRAN VILLE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">GRAN VILLE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2092.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">GRAN VILLE</span>
 					<a class="meta__price" href="#modal16">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -480,8 +480,8 @@
 					<div class="slider__item"><img src="images/EMERGENCIA/LQM.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LQM</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/LQM.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LQM</span>
 					<a class="meta__price" href="#modal17">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -506,8 +506,8 @@
 					<div class="slider__item"><img src="images/INTERIOR/PRISMGLO COMPACTA.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">PRISMGLO COMPACTA</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%205.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">PRISMGLO COMPACTA</span>
 					<a class="meta__price" href="#modal18">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -533,8 +533,8 @@
 					<div class="slider__item"><img src="images/INDUSTRIAL/BANTAM 2000 PRISMPACK.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">BANTAM 2000 PRISMPACK</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.pcdingenieria.com.mx/pdfs/industrial/25.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">BANTAM 2000 PRISMPACK</span>
 					<a class="meta__price" href="#modal19">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -561,8 +561,8 @@
 					<div class="slider__item"><img src="images/Fluorescente/AV SM.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">AV SM</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/AVSM.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">AV SM</span>
 					<a class="meta__price" href="#modal20">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -589,8 +589,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="images/INTERIOR/PRISMGLO ENHANCED.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">PRISMGLO ENHACED</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%206.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">PRISMGLO ENHACED</span>
 					<a class="meta__price" href="#modal21">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -620,7 +620,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 				</div>
 				<div class="meta">
 					<h3 class="meta__title">GRAND LEDGE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__brand" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2099.pdf" Target="_blank">Ficha Técnica</a>
 					<a class="meta__price" href="#modal22">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
@@ -2663,7 +2663,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">GRANDVILLE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<a class="meta__price" href="#Modal95">Ver más<a>
+						<a class="meta__price" href="#modal95">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
 			</div>
@@ -2673,17 +2673,21 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>GRANDVILLE</h2>
 					<img src="images/CON LEDS/GRANDVILLE.jpg"/>
-					<P>Granville LED es ideal para los bulevares urbanos, calles, Campus, Estacionamientos, Uso Residencial, y Parques.
-						Se aplica tanto a las nuevas instalaciones y modernización de las instalaciones existentes Granville.  Holophane
-						ha tomado gran cuidado en el diseño de esta luminaria nueva y emocionante ya que sabía que el Granville tenía una
-						 reputación seria para mantener y los clientes que se tienen grandes expectativas para el Granville LED. Estamos
-						 seguros de que no se arrepentirá y se encuentra que el Granville LED que proporciona toda la alta calidad, alto
-						 rendimiento y alta fiabilidad que hemos acostumbrado a los productos Holophane.  El Granville LED combina la
-						 tecnología LED de Holophane y la óptica de vidrio de primera clase para producir el mejor rendimiento en su tipo.
-						  Además de nuestra gestión de alta ingeniería térmica y de construcción de calidad, haran que usted este seguro de
-							 tener una duradera y confiable, nueva luminaria de alta calidad.</p>
+					<P>Granville LED es ideal para los bulevares urbanos, calles, Campus, Estacionamientos, Uso
+						 Residencial, y Parques.Se aplica tanto a las nuevas instalaciones y modernización de las
+						 instalaciones existentes Granville.  Holophane ha tomado gran cuidado en el diseño de esta
+						 luminaria nueva y emocionante ya que sabía que el Granville tenía una reputación seria para
+						 mantener y los clientes que se tienen grandes expectativas para el Granville LED. Estamos
+						 seguros de que no se arrepentirá y se encuentra que el Granville LED que proporciona toda
+						 la alta calidad, alto rendimiento y alta fiabilidad que hemos acostumbrado a los productos
+						  Holophane.  El Granville LED combina la tecnología LED de Holophane y la óptica de vidrio
+							de primera clase para producir el mejor rendimiento en su tipo. Además de nuestra gestión
+							de alta ingeniería térmica y de construcción de calidad, haran que usted este seguro de
+							tener una duradera y confiable, nueva luminaria de alta calidad.</p>
 				</div>
 			</div>
+
+
 
 			 <div class="grid__item led">
 				<div class="slider">
@@ -2694,9 +2698,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">LEDGEND</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal96">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal96" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LEDGEND</h2>
+					<img src="images/CON LEDS/LEDGEND.jpg"/>
+					<P>El Ledgend Holophane incluye una  óptica de vidrio prismático para proteger el LED a la vez
+						que el control de distribución de la luz y la reducción del deslumbramiento. Mantiene un sistema
+						 de gestión térmica de ingeniería en el Ledgend para un máximo rendimiento y larga vida util.
+						  El preciso control óptico Ledgend para aplicaciones de alta eficacia y varios paquetes luz
+							ofrecen una flexibilidad de diseño que lo convierte en un ajuste perfecto para la mayoría de
+							las carreteras. El Ledgend es un diseño respetuoso del medio ambiente con cero iluminación
+							 hacia arriba para ayudar a prevenir la contaminación lumínica.</p>
+				</div>
 			</div>
 
       <div class="grid__item led">
@@ -2708,9 +2727,26 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">LT BEZEL RING</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal97">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal97" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LT BEZEL RING</h2>
+					<img src="images/CON LEDS/LT BEZEL RING.jpg"/>
+					<P>Especial para la iluminación arquitectónica, orientación peatonal, iluminación de acento,
+						e iluminación de paisajes. utiliza los LEDs Luxeon premiados de alta potencia de Lumileds, que
+						 ofrecen ventajas sobre los LEDs de 5 mm, incluyendo la salida de la luz superior y mantenimiento
+						  del flujo luminoso. Ubicado en un cuerpo de aluminio fundido con una puerta de acero inoxidable
+							cuadrado, estos LED revolucionarios están disponibles en seis colores - blanco cálido, blanco frío,
+							azul, verde, rojo y ámbar, y con lentes de acrílico para dar una opción de ángulos de haz. La baja
+							temperatura de la lente hace que sean adecuadas para su uso en las zonas públicas, donde existe la
+							posibilidad de las personas tocarlos. Pueden estar en el suelo o empotrada en la pared, así como
+							estribo de montaje y mejorar la apariencia de una multitud de aplicaciones arquitectónicas.</p>
+				</div>
 			</div>
 
       <div class="grid__item led">
@@ -2722,9 +2758,27 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">LTD</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal98">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal98" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>LTD</h2>
+					<img src="images/CON LEDS/LTD.jpg"/>
+					<P>Ideal para la iluminación arquitectónica, orientación peatonal, iluminación de acento e
+						 iluminación del paisaje utiliza los LEDs Luxeon premiados de alta potencia de Lumileds,
+						  que ofrecen ventajas sobre los LEDs de 5 mm, incluyendo la salida superior de la luz y
+							mantenimiento del flujo luminoso. Ubicado en un cuerpo de aluminio fundido con una puerta
+							 de acero inoxidable cuadrado, estos LED revolucionarios están disponibles en seis colores
+							  - blanco cálido, blanco frío, azul, verde, rojo y ámbar, y con lentes de acrílico para dar
+								 una opción de ángulos de haz. La temperatura de la lente hace que sean adecuadas para su
+								  uso en las zonas públicas, donde existe la posibilidad de las personas tocarlos. Pueden
+									ser suelo o pared empotrado, así como estribo de montaje y mejorar la apariencia de una
+									multitud de aplicaciones arquitectónicas.</p>
+				</div>
 			</div>
 
       <div class="grid__item led">
@@ -2736,9 +2790,23 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">SERIE H670</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal99">Ver más<a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal99" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SERIE H670</h2>
+					<img src="images/CON LEDS/SERIE H670.jpg"/>
+					<P>Ideal para fachadas de edificios, parques, esculturas, proyectos de arquitectura, señalizacion,
+						 areas secas y humedas. montaje empotrado. La serie de luminarias H670: Sellado para aplicaciones
+						 de usos múltiples al aire libre. El H670 está diseñado para montaje empotrado en áreas de siembra o
+						  de hormigón para la construcción de fachadas, iluminación, muros, árboles y otras aplicaciones
+							similares, donde una fuente de luz ajustable controlada es deseable. La serie H670 ofrece un alto
+							 rendimiento y durabilidad en una luminaria de calidad.</p>
+				</div>
 			</div>
 
       <div class="grid__item led">
@@ -2750,9 +2818,28 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">teardrop led</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal100">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal100" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>teardrop led</h2>
+					<img src="images/CON LEDS/teardrop led.jpg"/>
+					<P>Ideal para: calles, estacionamientos, Campus, desarrollos comerciales, plazas, barrios
+						 históricos, plazas de pueblos, zonas residenciales, parques, calzadas, bulevares, vías de
+						 acceso. Diseñado para replicar las luminarias de estilo lágrima, que iluminó avenidas durante
+						  la primera mitad del siglo, el Holophane Tear Drop LED ofrece alternativas a la cabeza de
+							cobra utilitarios y unidades de caja de zapatos mientras que proporciona una energía sostenible,
+							 eficiente y confiable, EFECTIVA luminaria LED para su necesidades de iluminación. Los siguientes
+							  son los atributos de las luminarias de la serie lágrima: Clásico, aspecto elegante, de estilo
+								urbano de avenidas  Permanente, diseño duradero refractor de vidrio, control de luz prismático,
+								 vidrio múltiples estilos óptica; distribución asimétrica de luz; IESNA, ccutoff y fullcutoff,
+								 sistema de gestión térmica de alta ingeniería, acceso sin herramientas a los LEDs y componentes
+								  eléctricos; Facilidad de mantenimiento y de instalación.</p>
+				</div>
 			</div>
 
       <div class="grid__item led">
@@ -2764,9 +2851,28 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">WASHINGTON POSTLITE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price">Ver más<>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal100" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>teardrop led</h2>
+					<img src="images/CON LEDS/teardrop led.jpg"/>
+					<P>Ideal para: calles, estacionamientos, Campus, desarrollos comerciales, plazas, barrios
+						 históricos, plazas de pueblos, zonas residenciales, parques, calzadas, bulevares, vías de
+						 acceso. Diseñado para replicar las luminarias de estilo lágrima, que iluminó avenidas durante
+							la primera mitad del siglo, el Holophane Tear Drop LED ofrece alternativas a la cabeza de
+							cobra utilitarios y unidades de caja de zapatos mientras que proporciona una energía sostenible,
+							 eficiente y confiable, EFECTIVA luminaria LED para su necesidades de iluminación. Los siguientes
+								son los atributos de las luminarias de la serie lágrima: Clásico, aspecto elegante, de estilo
+								urbano de avenidas  Permanente, diseño duradero refractor de vidrio, control de luz prismático,
+								 vidrio múltiples estilos óptica; distribución asimétrica de luz; IESNA, ccutoff y fullcutoff,
+								 sistema de gestión térmica de alta ingeniería, acceso sin herramientas a los LEDs y componentes
+									eléctricos; Facilidad de mantenimiento y de instalación.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2778,9 +2884,23 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">1700-AGUILA</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal101">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal101" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>1700-AGUILA</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/1700-AGUILA.jpg"/>
+					<P>Ideal para áreas deportivas, patios de maniobra, puertos, astilleros, monumentos. Proyector de
+						 alta especificación con cápsula en fundición de aluminio con bajo contenido de cobre. Balastro
+						  electromagnético autorregulado. Configuración interna del reflector especular facetado de alta
+							 reflectancia que ofrece curvas de distribución tipo NEMA 6X6 conjugado con un cristal
+							 termotemplado GS-1700. La conexión de la unidad de potencia se efectua retirando la tapa de
+							  conexiones.</p>
+				</div>
 			</div>
 
        <div class="grid__item alto">
@@ -2792,9 +2912,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">EXPRESS VECTOR</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal102">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal102" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>EXPRESS VECTOR</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/EXPRESS VECTOR.jpg"/>
+					<P>Ideal para autopistas, avenidas, boulevares, áreas de seguridad, complejos industriales.
+						 Luminario con gran espaciamiento interpostal. Cápsula en fundición de aluminio, fabricada con
+						  un tratamiento previo para mayor resistencia a la corrosión. Balastro autorregulado de alto
+							factor de potencia con embobinados de cobre. Los componentes eléctricos se colocan en una
+							 puerta removible intdependiente que permite retirarlos y cambiarlos como una unidad integral.
+							  Refractor de cristal de borosilicato prismático y reflector de aluminio anodizado para curvas
+								 tipo II y III. Tres opciones de montaje: horquilla, rótula y horquilla para punta de poste.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2806,9 +2941,25 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">HALCON MEDIANO</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal103">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal103" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>HALCON MEDIANO</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/HALCON MEDIANO.jpg"/>
+					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
+						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
+						  mayor resistencia a la corrosión. Todos los componentes expuestos son de acero inoxidable.
+							 Balastro autorregulado de alto factor de potencia, con embobinados de cobre. Los componentes
+							  eléctricos se colocan en una puerta removible independientemente. Reflector de aluminio
+								anodizado formado con precisión para maximizar la salidad e luz por watt de entrada con una
+								 uniformidad óptima. Disponible en distribuciones angosta, abierta y concentrada. Tres opciones
+								  de montaje: horquilla, rótula y horquilla para punta de poste.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2820,9 +2971,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">HALCON PEQUEÑO</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal104">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal104" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>HALCON PEQUEÑO</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg"/>
+					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
+						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
+						  mayor resistencia a la corrosión. Balastro autorregulado del alto factor de potencia con
+							 embobinados de cobre.Los componentes eléctricos se colocan en una puerta removible independiente
+							  que permite retirarlos y cambiarlos como una unidad integral. Reflector de aluminio anodizado
+								 formado con precisión para maximizar la salida de luz por watt de entrada con una uniformidad
+						 óptima. Dos opciones de montaje disponibles: horquilla sencilla y horquilla para punta de poste.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2834,9 +3000,25 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">HOV 16-HOV 25</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal105">Ver más<a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal105" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>HOV 16-HOV 25</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/HOV 16-HOV 25.jpg"/>
+					<P>Ideal para calles, avenidas, ejes viales, boulevares, periféricos, parques, exhibiciones
+						 exteriores. Luminario tradicional para alumbrado público. Cápsula en fundición de aluminio,
+						  compuesta de dos partes y fabricada con un tratamiento previo para mayor resistencia a la
+							corrosión. Balastro autorregulado de alto factor de potencia con embobinado de cobre; con
+							 opción de balastro de bajas pérdidas. Cristal de borosilicato con reflector de aluminio
+							  de alta reflectancia que proporciona una curva de distribución Nema tipo II y III. Se
+								 puede montar a brazo de poste por medio de abrazaderas y efectuar la conexión abriendo
+								  la puerta del luminario.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2848,9 +3030,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">lmst</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal106">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal106" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>lmst</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/lmst.png"/>
+					<P>Áreas de estacionamiento, aeropuertos, centros comerciales, instituciones educativas.
+            Equipos ascensores para sistemas de bajo montaje. Existe una gran variedad de luminarios
+						disponibles. El sistema ascensor de bajo montaje, utiliza un malacate en la base de cada poste
+						 y un ensamble de motor portátil. Recomendado para todo tipo de aplicaciones y terrenos. Los
+						 seguros de la parte superior al operar brindan confianza y seguridad a los instaladores para
+						 montar, retirar o dar mantenimiento a los luminarios. El equipo puede contar con cables de acero
+						  inoxidable para ambientes altamente corrosivos.</p>
+				</div>
 			</div>
 
         <div class="grid__item alto">
@@ -2862,9 +3059,27 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">MONGOOSE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal107">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal107" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>MONGOOSE</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/MONGOOSE.jpg"/>
+					<P>Ideal para calles, avenidas, ejes viales, boulevares, periféricos, parques, exhibiciones
+						 exteriores. Luminario de diseño arquitectónico para alumbrado público. Cápsula compacta,
+						  de estilo arquitectónico, fabricada en fundición de aluminio con un tratamiento previo para
+							mayor resistencia a la corrosión. El broche de cierre externo de acero inoxidable. Balastro
+							 autorregulado de alto factor de potencia, con embobinado de cobre que suministra toda la
+							 capacidad de potenica de la lámpara. Reflectores segmentados o parabólicos hidroformados
+							  combinados con un lente plano termotemplado, sencillo o refractores de cristal borosilicato
+								 prismático para distribuciones Tipo III. Brazos disponibles: arquitectónico, vertical y
+								  horizontal. El luminario puede montarse en punta de poste. El mantenimiento y cambio de
+									 lámparas se realiza sin herramientas</p>
+				</div>
 			</div>
 
          <div class="grid__item alto">
@@ -2876,9 +3091,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">NHMSC-NHMAO</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal108">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal108" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NHMSC-NHMAO</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/NHMSC-NHMAO.png"/>
+					<P>Distribuidores viales, estacionamientos y grandes áreas.
+Luminario de alto y medio montaje; balastro integral para lámparas de alta intensidad de descarga. Cápsula
+ en fundición de aluminio, fabricada con un tratamiento previo. Balastro de alto factor de potencia con
+ embobinado de cobre que proporciona la potencia total requerida por la lámpara. Arranca confiablemente a
+  temperaturas tan bajas como los 5º C. El arillo multiperforado contra intemperie permite el paso de
+	 corriente de aire por el interior del conjunto óptico para efectos de autolimpieza sin permitir el
+	  paso de lluvia, nieve o hielo.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2890,9 +3120,26 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">NHT</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal109">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal109" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>NHMSC-NHMAO</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/NHT.jpg"/>
+					<P>Ideal para distribuidores viales, estacionamientos y grandes áreas. Luminario de alto y medio
+						 montaje; balastro integral para lámparas de alta intensidad de descarga. Cápsula en fundición
+						 de aluminio. Balastro autorregulado de alto factor de potencia con embobinado de cobre que
+						 proporciona la potencia total requerida por la lámpara. Las distribuciones asimétricas,
+						 simétricas, largas y angostas son proporcionadas por un reflector de cristal de borosilicato
+						 prismático que lleva una cubierta de tipo abierto de aluminio rechazado. En todos los casos la
+						  posición de la lámpara es vertical. El herraje de fijación al poste es de tipo deslizante y
+							acepta brazo tubular. El arillo multiperforado contra intemperie permite el paso de corriente
+							 de aire por el interior del conjunto óptico para efectos de autolimpieza.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2904,9 +3151,27 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">POSTE SERIE L5</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal110">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal110" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>POSTE SERIE L5</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/POSTE SERIE L5.jpg"/>
+					<P>Ideal para autopistas, carreteras, aeropuertos, puertos marítimos, áreas de estacionamiento,
+						 complejos petroquímicos. Ideal para usar de dos a doce luminarios por poste. Equipos ascensores
+						  para sistemas de alto montaje. Poste: la serie L5 utiliza un malacate en la base de cada poste
+							 y un ensamble de motor portátil. Varias opciones de luminarios: Halcón, NHT, Prismbeam II,
+							  Express Vector, Mongoose. Los seguros de acoplamiento de la parte superior, brindan confianza
+								 y seguridad a los instaladores para montar, retirar o dar mantenimiento a los luminarios.
+								 El arillo ascensor de gran estabilidad, incluye tres seguros superiores con brazos guìa,
+								  autocentrados, tipo iris de contacto continuo para mantener el arhillo con luminarios
+									 nivelado y centrado durante el ascenso o descenso en el poste. El equipo cuenta con cables
+									  de acero inoxidable para ambientes altamente corrosivos.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2918,9 +3183,27 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">PRISMBEAM II</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal111">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal111" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>PRISMBEAM II</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/PRISMBEAM II.jpg"/>
+					<P>Proyector con balastro integral para lámparas de alta intensidad de descarga. Cápsula en
+						fundición de aluminio fabricada con un tratamiento previo para mayor resistencia a la corrosión.
+						 El acabado cumple con lo establecido en la Norma Oficial Mexicana en cámara salina y prueba de
+						  adhesión. Todo el herraje externo es de acero inoxidable. Adecuados para uso a la orilla del
+							 mar así como condisiones de severos ambientes industriales. Balastro autorregulado de alto
+							  factor de potencia con embobinado de cobre. Reflectores de aluminio rechazado, conjugados
+								 con refractores de cristal de borosilicato prismático para patrones de luz asimétricos o
+								 con lentes de cristal termotemplado claro para patrones de luz simétricos. La reposición de
+								  las lámparas sin necesidad de herramientas se logra por medio de cuatro cerrojos, de acero
+									 inoxidable, de operación manueal.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2932,9 +3215,27 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">SIGN VUE</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal112">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal112" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>SIGN VUE</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/SIGN VUE.jpg"/>
+					<P>Para aplicaciones de iluminación de vallas publicitarias, carteles en concreto más grande.
+             Regístrate-Vue II Óptica - El de una sola pieza se contornea reflector de aluminio
+						 hidroformado para distribuir la luz a través del telescopio refractor de vidrio borosilicato.
+						  Con un corte preciso prismas dirigir la luz en la cartelera de la máxima eficiencia y
+							uniformidad. fundido resistente carcasa de aluminio contiene el reflector diseñado con
+							precisión, altamente eficiente integrante de lastre, Super lámpara de aditivos metálicos y
+							 el zócalo, dispone de interruptor on / off, y la puerta de fundición de alta resistencia,
+							  sellado con juntas elemento resistente duras.
+								Montaje - Conducciones (1 1 / 4 "redondo o 1 1 / 2" tubo cuadrado) encaja perfectamente en la
+								 luminaria, medidas drásticas para impedir la rotación.</p>
+				</div>
 			</div>
 
       <div class="grid__item alto">
@@ -2946,9 +3247,24 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="meta">
 					<h3 class="meta__title">tunel predator</h3>
 					<span class="meta__brand">Artefactos Luminicos</span>
-					<span class="meta__price">Ver más<span>
+					<a class="meta__price" href="#modal113">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+			</div>
+
+			<div id="modal113" class="modalmask">
+				<div class="modalbox rotate">
+					<a href="#close" title="Cerrar" class="close">X</a>
+					<h2>tunel predator</h2>
+					<img src="images/SISTEMAS DE ALTO MONTAJE/tunel predator.jpg"/>
+					<P>Proyector para iluminación de túneles. Cápsula en fundición de aluminio, fabricada con un
+						 tratamiento previo. Balastro auto-regulado de alto factor de potencia (superior a 90%),
+						 con embobinados de cobre, 100% probados para dar la emisión lumínica completa de la lámpara
+						  con menor consumo de energía. Los componentes eléctricos se colocan en una puerta removible
+							 independiente que permite retirarlos y cambiarlos como una unidad integral. Reflector de
+							 aluminio anodizado formado con precisión para maximizar la salida de luz por watt de entrada
+							 con una uniformidad óptima.</p>
+				</div>
 			</div>
 
 		</section>

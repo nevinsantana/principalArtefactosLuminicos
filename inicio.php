@@ -61,7 +61,7 @@
     </div>
     </section>
     <div class="break"></div>-->
-    <div class="separaSeccion"></div>
+    <div class="separaSection"></div>
     <section class="gifContainer">
         <img src="images/index-alsa_31.gif" class="gifProductos"
           alt="Productos">

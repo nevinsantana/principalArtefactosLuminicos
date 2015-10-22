@@ -9,7 +9,7 @@
           alt="Biblioteca de iluminación">
       </a>
     </section>
-    <div class="separaSeccion"></div>
+    <div class="separaSection"></div>
     <section class="contenidoSection">
       <a href="http://www.visuallightingsoftware.com/Tracking/Default.asp?SOURCE=Software_Page&amp;URL=http://www.visual-3d.com/Tools/Download.aspx?file=Visual2012FullSetup"
         target="_blank">
@@ -23,7 +23,7 @@
         </div>
       </a>
     </section>
-    <div class="separaSeccion"></div>
+    <div class="separaSection"></div>
     <section class="contenidoSection">
       <ul class="documentosBiblioteca">
         <h4>Normas</h4>

@@ -2,13 +2,13 @@
 <html>
   <head></head>
   <body>
-    <div class="separaSeccion"></div>
+    <div class="separaSection"></div>
     <section class="contenidoSection">
       <div class="logoMax">
         <img class="imgBanner" src="images/QuienesIma.png" alt="Logo ALSA"/>
       </div>
     </section>
-    <div class="separaSeccion"></div>
+    <div class="separaSection"></div>
     <section class="contenidoSection">
       <div class="cPresentacion">
         <div class="circuloVerde"></div>

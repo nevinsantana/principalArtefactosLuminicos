@@ -1,3 +1,5 @@
+  /*start********************************************************************/
+
 /*tags*************************************************************************/
 * {
   margin: 0;
@@ -267,16 +269,15 @@ dt.activo:before { content: "▾"; }
   }
 
   #nav ul {
-    background-color: #404040;
-    border:1px solid #404040;
-    border-radius: 0 5px 5px 5px;
+    background-color: #d6d6d6;
     border-width: 0 1px 1px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px #000000;
+    opacity: 0.97;
     left: -9999px;
     overflow: hidden;
     position: absolute;
     top: -9999px;
-    z-index: 2;
+    z-index: 4;
   }
 
   #nav ul li {
@@ -285,11 +286,10 @@ dt.activo:before { content: "▾"; }
   }
   #nav ul li a {
     float: none;
-    color:white;
+    color: #000000;
   }
   #nav ul li:hover > a {
-    background-color: #121212;
-    color: #20b8c1;
+    color: #178991;
   }
 
   #nav li {
@@ -313,18 +313,14 @@ dt.activo:before { content: "▾"; }
   }
 
   #nav li:hover > a {
-    color: #20b8c1;
-  }
-
-  #nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
-    background: none repeat scroll 0 0 #121212;
-    outline: 0 none;
+    color: #008c95;
   }
 
   #nav li:hover ul.subs {
-    left: 0;
+    left: -1.5px;
     top: 35px;
-    width: 180px;
+    width: auto;
+    white-space: nowrap;
   }
 
   .menuContainer {
@@ -334,7 +330,7 @@ dt.activo:before { content: "▾"; }
   }
   .lineaVertical {
     float: left;
-    height: 2.5em;
+    height: 2.2em;
     border-right: 0.1em solid #d0d0d0;
   }
 }
@@ -354,7 +350,7 @@ dt.activo:before { content: "▾"; }
   margin: auto;
 }
 
-.separaSeccion {
+.separaSection {
   background-color: #1f787e;
   height: 2px;
   width: 74em;
@@ -385,7 +381,11 @@ img.imgBanner {
   width: 100%;
   padding: 2em;
   font-size: 17pt;
-  background: rgb(161, 161, 161);
+  background: #a1a1a1;
+}
+
+.borderPrueba {
+  border: 1px solid black;
 }
 /*fUtilsGeneral****************************************************************/
 
@@ -601,7 +601,8 @@ Imágenes para biblioteca y productos
     position: absolute;
     width: 100%;
     padding: 12px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #000000;
+    opacity: 0.7;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
       endColorstr=#99000000);
     left: 0;
@@ -648,7 +649,8 @@ ul.pgwSlider > li span,
     position: absolute;
     bottom: 0;
     padding: 5px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #000000;
+    opacity: 0.7;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,
       endColorstr=#99000000);
     overflow: hidden;
@@ -684,7 +686,8 @@ ul.pgwSlider > li img,
 }
 
 .pgwSlider .ps-current .ps-prev {
-    background: rgba(0, 0, 0, 0.5);
+    background: #000000;
+    opacity: 0.5;
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,
       startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,
@@ -700,7 +703,8 @@ ul.pgwSlider > li img,
 }
 
 .pgwSlider .ps-current .ps-next {
-    background: rgba(0, 0, 0, 0.5);
+    background: #000000;
+    opacity: 0.5;
     filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,
       startColorstr='#99000000', endColorstr='#99000000');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,
@@ -766,7 +770,7 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
 }
   /*fPgwSlider*/
   /*imgsHover*/
-.vista {
+/*.vista {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -915,7 +919,7 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
   -o-transition-delay: 0.2s;
   -ms-transition-delay: 0.2s;
   transition-delay: 0.2s;
-}
+}*/
   /*fImgsHover*/
   /*gifProductos*/
 .gifContainer {
@@ -932,10 +936,30 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
 /*fInicio.php******************************************************************/
 
 /*objetivo.php*****************************************************************/
-/******************************************************************************/
+/*fObjetivo.php****************************************************************/
 
-.sangriaFinesPreguntasFrecuentes {
-  margin-left: 3%;
+/*mision.php*******************************************************************/
+/*fMision.php******************************************************************/
+
+/*vision.php*******************************************************************/
+/*fVision.php******************************************************************/
+
+/*quienesSomos.php*************************************************************/
+.logoMax {
+  max-width: 40em;
+  padding: 2em;
+  margin: auto;
+}
+/*fQuienesSomos.php************************************************************/
+
+/*preguntasFrecuentes.php******************************************************/
+.titlePreguntas {
+  background: #1d767c;
+  color: white;
+  margin: auto;
+  padding: 1em;
+  width: auto;
+  text-align: center;
 }
 
 .mapaPreguntasFrecuentes {
@@ -944,69 +968,23 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
   border: 0;
 }
 
-.noCuenta {
-  color: white;
-  font-weight: bold;
-  text-align: center;
+.sangriaFinesPreguntasFrecuentes {
+  margin-left: 3%;
 }
+/*fPreguntasFrecuentes.php*****************************************************/
 
-.noCuenta2 {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-.tFP {
-  margin-top: 1.7em;
-}
-
-.banco1 {
-  width: 10em;
-  margin-top: 1.7em;
-}
-
-.banco2 {
-  width: 10em;
-  margin-top: 2em;
-}
-
-.aBanco {
-  margin: auto;
-  width: 10em;
-}
-
-.formaPago{
-  width: 100%;
-  height: 8em;
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.formaPago:hover {
-  opacity: 0.9:
-}
-
-.textoBanner {
-  font-size: 20px;
-  color: rgb(222, 222, 222);
-  right: 0;
-}
-
+/*bibliotecaIlu.php************************************************************/
 .bannerPrograma {
   width: 100%;
   height: 8em;
   padding: 2.5em 0.5em;
   cursor: pointer;
-  background-color: rgb(45, 45, 45);
+  background-color: #2d2d2d;
   transition: 0.5s;
 }
 
 .bannerPrograma:hover {
-  background-color: rgb(69, 69, 69);
-}
-
-.logoBannerPrograma {
-  float: right;
+  background-color: #454545;
 }
 
 .textoBannerPrograma {
@@ -1017,9 +995,13 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
   margin-top: 1em;
 }
 
+.logoBannerPrograma {
+  float: right;
+}
+
 .documentosBiblioteca h4 {
   width: 100%;
-  background-color: rgb(102, 102, 102);
+  background-color: #666666;
   color: white;
   padding: 1em;
   font-size: 20px;
@@ -1035,22 +1017,24 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
 }
 
 .documentosBiblioteca li:hover {
-  background-color: rgb(41, 147, 161);
+  background-color: #2993a1;
+}
+/*fBibliotecaIlu.php***********************************************************/
+
+/*formasPago.php***************************************************************/
+.banco1 {
+  width: 10em;
+  margin-top: 1.7em;
 }
 
-.borderPrueba {
-  border: 1px solid black;
-}
-
-.contenidoSectionEnfasis {
-  width: 100%;
-  padding: 1em;
-  background-color: #2b2b2b;
+.banco2 {
+  width: 10em;
+  margin-top: 2em;
 }
 
 .tFormasPago {
   background-color: #2b2b2b;
-  color: rgb(228, 228, 228);
+  color: #e4e4e4;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
@@ -1058,530 +1042,44 @@ ul.pgwSlider.narrow.listOnTheLeft > li,
   height: 4em;
 }
 
-.pagoCentrar {
-  width: 46.5em;
+.formaPago{
+  width: 100%;
+  height: 8em;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.formaPago:hover {
+  opacity: 0.9:
+}
+
+.aBanco {
   margin: auto;
+  width: 10em;
 }
 
-.centrarContenidoSection {
-  margin: auto;
-  max-width: 46.5em; /*1065px*/
-}
-
-#tittle{
-
-	color: white;
-  align:center;
-  margin:0 auto;
-  float:left;
-
-}
-
-#I{
-
-  transition: 0.2s;
-  opacity:0;
-}
-
-#I2{
-
-  transition: 0.2s;
-  opacity:0;
-}
-
-.logoMax {
-  max-width: 40em;
-  padding: 2em;
-  margin: auto;
-}
-#slogan{
-color:white;
-float:left;
-}
-
-#cTitulo{
-margin:0.5em auto;
-width:26em;
-}
-
-.descripcionBanco {
-  float: left;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#HSBC {
-margin-left:5.3em;
-margin-top:-2.7em;
-}
-
-#Provider{
-width: 100%;
-height: 5em;
-background:gray;
-}
-
-#ProviderText{
-font-family: Arial,Helvetica,sans-serif;
-font-size: 9pt;
-color: white;
-margin-top:-1.1em;
-margin-left:2em;
-}
-/*
-#Holophane{
-margin-left:5em;
-margin-bottom:2.2em;
-}
-
-#Lithonia{
-margin-bottom:2.8em;
-margin-left:5em;
-}
-
-#AEL{
-margin-bottom:2.3em;
-margin-left:5em;
-}
-
-#HYDREL{
-margin-top:-1.1em;
-margin-left:5em;
-}
-
-#Killark{
-margin-top:-1.1em;
-margin-left:5em;
-}
-*/
-
-
-#DownImages{
-    background-color:#1f787e;
-    height:1px;
-    width:80%;
-    padding:0.5px;
-    margin-top: 15px;
-    margin-bottom:15px;
-    margin-left:125px;
-}
-
-.video{
-    position: relative;
-  	padding-bottom: 56.25%;
-  	padding-top: 30px;
-  	height: 0;
-  	overflow: hidden;
-}
-
-.video iframe,
-.video object,
-.video embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-/***************************Preguntas Frecuentes*******************/
-	#contenedor{
-		width: 64em;
-		height:100%;
-		margin: 0 auto;
-		margin-top: 1.5em;
-	  background-color:#F2F2F2;
-
-	}
-	.preguntas
-	{
-		font-size:2.6em;
-		FONT FACE="impact" SIZE=6 COLOR="red";
-		float:left;
-		font-style:oblique;
-		font-weight:bold;
-	}
-/*******************************************************************/
-
-
-#PreguntasF{
-Color:black;
-Position:center;
-}
-
-.botoncito {
-  padding: 0.3em;
-  background-color: #cccccc;
-  color: #909090;
-  width: 5.08em;
-  position: absolute;
-  margin-left: 1.6em;
-  transition: 0.2s;
-  z-index: -1;
-}
-
-/*-----------MISIÓN*****************/
-#ArribaMis{
-    height: 28em;
-  width: 67em;
-  margin-top: 0.1em;
-  margin-bottom: 12em;
-  margin:auto;
-}
-
-#DownObje1{
-  background-color:#1f787e;
-  height: 1px;
-  width: 80%;
-  padding:0.5px;
-  margin-top:60px;
-  margin-bottom:15px;
-  margin-left:125px;
-}
-
-#ImaMision{
-  height: 17.2em;
-  width:56.5em;
-  margin-top: 3em;
-  margin-bottom:4em;
-  margin-left:0.1em;
-  margin-right:1em;
-  float:right;
-}
-
-#Misi{
-  height: 10em;
-  width:17em;
-  margin-top:3em;
-  margin-bottom:4em;
-
-  margin-left:4em;
-  float:left;
-
-   font-family:Font Century Gothic;
-  font-size: 17pt;
-}
-/*-----------MISIÓN*****************/
-
-/*-----------VISIÓN*****************/
-#ArribaVis{
-    height: 28em;
-  width: 67em;
-  margin-top: 0.1em;
-  margin-bottom: 9em;
-  margin:auto;
-}
-
-#DownObje2{
-  Background-color:#1f787e;
-  height: 1px;
-  width: 80%;
-  padding:0.5px;
-  margin-top:60px;
-  margin-bottom:15px;
-  margin-left:125px;
-}
-
-#ImaVision{
-  height: 17.2em;
-  width:56.5em;
-  margin-top: 3em;
-  margin-bottom:4em;
-  margin-left:0.1em;
-  margin-right:1em;
-  float:right;
-}
-
-#Visi{
-  height: 10em;
-  width:17em;
-  margin-top:3em;
-  margin-bottom:4em;
-
-  margin-left:4em;
-  float:left;
-
- font-family:Font Century Gothic;
-  font-size: 17pt;
-}
-/*-----------VISIÓN*****************/
-/*-----------QUIENES SOMOS*****************/
-#ArribaQuienes{
-    height: 28em;
-  width: 67em;
-  margin-top: 0.1em;
-  margin-bottom: 9em;
-  margin:auto;
-}
-
-#DownObje3{
-  Background-color:#1f787e;
-  height: 1px;
-  width: 80%;
-  padding:0.5px;
-  margin-top:60px;
-  margin-bottom:15px;
-  margin-left:125px;
-}
-
-#ImaQuienes{
-  height: 23em;
-  width:30em;
-  margin-top: 7em;
-  margin-bottom:2em;
-  margin-left:0.1em;
-  margin-right:1em;
-  float:right;
-}
-
-#Quienes{
-  height: 23em;
-  width:30em;
-  margin-top:3em;
-  margin-bottom:2em;
-
-  margin-left:4em;
-  float:left;
-  margin-bottom:1em;
- font-family:Font Century Gothic;
-  font-size: 17pt;
-}
-
-/*-----------QUIENES SOMOS*****************/
-/*-----------FORMAPAGO*****************/
-#PagoLado{
-  height: 47em;
-  width:27.9em;
-  margin-top:1em;
-  margin-bottom:2em;
-  margin-left:4em;
-  float:left;
-}
-
-
-#LetraPago{
-  font-size: 16px;
+.noCuenta {
+  color: white;
   font-weight: bold;
   text-align: center;
-  color: black;
 }
 
-#LetraPago2{
+.noCuenta2 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tFormaPago {
+  margin-top: 1.7em;
+}
+
+.letraPago{
   margin-top: 2em;
   font-size: 16px;
   text-align: center;
   color: #838383;
 }
+/*fFormasPago.php**************************************************************/
 
-#LetraCuadro{
-  font-family:Font Century Gothic;
-  font-size: 14pt;
-}
-
-#sectionPago{
-  height:25em;
-  width:14em;
-  margin-top:1em;
-  float: left;
-}
-
-#LineaPagoBan{
-  height:25em;
-  width:0.1em;
-  margin:1em 1em;
-  position: sticky;
-  background-color:#1f787e;
-  padding:1px;
-  float: left;
-}
-
-#LineaPagoBan2{
-  height:25em;
-  width:0.1em;
-  margin-top:1em;
-  margin-right:-22em;
-  background-color:#1f787e;
-  float:right;
-  padding:1px;
-}
-
-#PagoCorreo{
-  height:21em;
-  width:55em;
-  margin-top:45em;
-  margin-bottom:2em;
-  margin-left:35em;
-}
-
-
-/*-----------FORMAPAGO*****************/
-/*-----------BIBLIOTECA ILUMINACION*****************/
-#ArribaBiblio{
-    height: 22em;
-  width: 16.7em;
-  margin-top: 10em;
-  margin-bottom: 9em;
-  margin-left: 25em;
-  float:left;
-
-}
-
-#VisualBiblio{
-  height: 12.5em;
-  width: 9em;
-  margin-top: 15em;
-  margin-bottom: 9em;
-  margin-right: 25em;
-  float:right;
-}
-
-#DownBiblio{
-  Background-color:#1f787e;
-  height: 1px;
-  width: 80%;
-  padding:0.5px;
-  margin-top:45em;
-  margin-bottom:1em;
-  margin-left:125px;
-}
-
-#Biblio{
-  height: 12em;
-  width:33em;
-  margin-top:0.5em;
-  margin-bottom:2em;
-  margin-left:17em;
-  margin-bottom:1em;
- font-family:Font Century Gothic;
-  font-size: 17pt;
-}
-
-/*-----------BIBLIOTECA ILUMINACION*****************/
-/*-----------GALERIA DE VIDEOS*****************/
-#GVideo1{
-position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:6em;
-float:left;
-}
-
-#GVideo2{
-position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:6em;
-float:right;
-}
-
-#GVideo3{
-  position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:2em;
-float:left;
-}
-
-#GVideo4{
-  position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:2em;
-float:right;
-}
-
-#GVideo5{
-  position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:2em;
-float:left;
-}
-
-#GVideo6{
-  position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:2em;
-float:right;
-}
-
-#GVideo7{
-position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:6em;
-float:left;
-}
-
-#GVideo8{
-position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:6em;
-float:right;
-}
-
-#GVideo9{
-position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:6em;
-float:left;
-}
-
-#GVideo10{
-position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:6em;
-float:right;
-}
-
-#GVideo11{
-position:relative;
-width:470px;
-height:265px;
-margin-left: 10em;
-margin-bottom:3em;
-margin-top:6em;
-float:left;
-}
-
-#GVideo12{
-position:relative;
-width:470px;
-height:265px;
-margin-right: 18em;
-margin-bottom:3em;
-margin-top:6em;
-float:right;
-}
-
-.titlePreguntas {
-  background: #1d767c;
-  color: white;
-  margin: auto;
-  padding: 1em;
-  width: auto;
-  text-align: center;
-}
+  /*end**********************************************************************/

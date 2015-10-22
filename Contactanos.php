@@ -4,6 +4,6 @@
   <body>
     <section class="contenidoSection">
     </section>
-    <div id="separaSeccion"> </div>
+    <div class="separaSection"> </div>
   </body>
 </html>
