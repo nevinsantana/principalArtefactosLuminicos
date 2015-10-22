@@ -1,15 +1,15 @@
 <?php
 if(isset($_POST['email'])) {
 
-    // Edita las dos líneas siguientes con tu dirección de correo y asunto personalizados
+    //
 
     $email_to = "david@artefactosluminicos.com.mx";
 
-    $email_subject = "Contacto Artefactos Luminicos";
+    $email_subject = "Contacto desde Web";
 
     function died($error) {
 
-        // si hay algún error, el formulario puede desplegar su mensaje de aviso
+        // mensajes de error
 
         echo "Lo sentimos, hubo un error en sus datos y el formulario no puede ser enviado en este momento. ";
 
@@ -33,10 +33,10 @@ if(isset($_POST['email'])) {
 
         !isset($_POST['message'])) {
 
-        died('Lo sentimos pero parece haber un problema con los datos enviados.');
+        die('Lo sentimos pero parece haber un problema con los datos enviados.');
 
     }
- //En esta parte el valor "name" nos sirve para crear las variables que recolectaran la información de cada campo
+ //En esta parte el valor "name"  sirve para crear las variables que recolectaran la información de cada campo
 
     $first_name = $_POST['first_name']; // requerido
 
@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
 
     $message = $_POST['message']; // requerido
 
-    $error_message = "Error";
+    $error_message = "";//Linea numero 52;
 
 //En esta parte se verifica que la dirección de correo sea válida
 
@@ -84,11 +84,11 @@ if(isset($_POST['email'])) {
 
   if(strlen($error_message) > 0) {
 
-    died($error_message);
+    die($error_message);
 
   }
 
-//A partir de aqui se contruye el cuerpo del mensaje tal y como llegará al correo
+//Este es el cuerpo del mensaje tal y como llegará al correo
 
     $email_message = "Contenido del Mensaje.\n\n";
 
@@ -129,11 +129,9 @@ $headers = 'From: '.$email_from."\r\n".
 
 
 
-<!-- incluye aqui tu propio mensaje de Éxito-->
+<!-- Mensaje de que fue enviado-->
 
-Gracias por contactar a Artefactos Luminicos S.A. de C.V.
-Nos pondremos en contacto contigo a la brevedad
-
+Gracias! Nos pondremos en contacto contigo a la brevedad
 
 <?php
 
