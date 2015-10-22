@@ -42,7 +42,7 @@
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Enviar">   <a href="http://www.tufelicidadvacacional.com.ve/email_form.php"></a>
+  <input type="submit" value="Enviar">   <a href="http://www.artefactosluminicos.com.mx/email_form.php"></a>
  </td>
 </tr>
 </table>
