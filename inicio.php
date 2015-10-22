@@ -63,8 +63,11 @@
     <div class="break"></div>-->
     <div class="separaSection"></div>
     <section class="gifContainer">
-        <img src="images/index-alsa_31.gif" class="gifProductos"
-          alt="Productos">
+        <a href="http://iluminacion.mex.tl/915364_Productos.html"
+          target="_blank">
+          <img src="images/index-alsa_31.gif" class="gifProductos"
+            alt="Productos">
+        </a>
     </section>
   </body>
 </html>
