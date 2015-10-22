@@ -891,8 +891,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EMERGENCIA/POWER SENTRY.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">POWER SENTRY</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/PSSD.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">POWER SENTRY</span>
 					<a class="meta__price" href="#modal32">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
