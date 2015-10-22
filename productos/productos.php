@@ -862,8 +862,8 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/HOV 16- HOV 25.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">HOV 16- HOV 25</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/hov%2016%20-%20%20hov%2025.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">HOV 16- HOV 25</span>
 					<a class="meta__price" href="#modal31">Ver más</a>
 				</div>
 				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
