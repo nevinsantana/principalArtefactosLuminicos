@@ -2,31 +2,31 @@
 
 /*menuIndex.php****************************************************************/
 function inicio() {
-  location.href="?sec=inicio";
+  location.href="?sec=inicio"
 }
 function preguntas() {
-  location.href="?sec=preguntas";
+  location.href="?sec=preguntas"
 }
 function objetivo() {
-  location.href="?sec=objetivo";
+  location.href="?sec=objetivo"
 }
 function mision() {
-  location.href="?sec=mision";
+  location.href="?sec=mision"
 }
 function vision() {
-  location.href="?sec=vision";
+  location.href="?sec=vision"
 }
 function quienesSomos() {
-  location.href="?sec=quienesSomos";
+  location.href="?sec=quienesSomos"
 }
-  function formasPago() {
-  location.href="?sec=formasPago";
+function formasPago() {
+  location.href="?sec=formasPago"
 }
 function bibliotecaIlu() {
-  location.href="?sec=bibliotecaIlu";
+  location.href="?sec=bibliotecaIlu"
 }
 function videos() {
-  location.href="?sec=videos";
+  location.href="?sec=videos"
 }
 /*fMenuIndex.php***************************************************************/
 

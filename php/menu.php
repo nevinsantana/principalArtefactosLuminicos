@@ -6,17 +6,17 @@
   if($seccion=="preguntas")
     require_once("preguntasFrecuentes.php");
   if($seccion=="objetivo")
-    require_once("objetivo.php");
+    require_once("Objetivo.php");
   if($seccion=="mision")
-    require_once("mision.php");
+    require_once("Mision.php");
   if($seccion=="vision")
-    require_once("vision.php");
+    require_once("Vision.php");
   if($seccion=="quienesSomos")
-    require_once("quienesSomos.php");
+    require_once("QuienesSomos.php");
   if($seccion=="formasPago")
-    require_once("formasPago.php");
+    require_once("FormasPago.php");
   if($seccion=="bibliotecaIlu")
-    require_once("bibliotecaIlu.php");
+    require_once("BibliotecaIlu.php");
   if($seccion=="videos")
     require_once("videos.php");
 ?>
