@@ -28,6 +28,8 @@ function apareceMenu() {
   document.getElementById("nav").style.opacity="0.95";
   document.getElementById("closeMenu").style.display="inline";
   }
+
+  else {}
 }
 
 function desapareceMenu() {
