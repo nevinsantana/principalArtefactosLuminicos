@@ -81,7 +81,7 @@
             <div class="lineaVertical"></div>
             <li>
               <a href='
-                http://www.emailmeform.com/builder/form/8be2f9dIJbs52cl6gEvU'
+                http://www.artefactosluminicos.com.mx/Contactanos/index.php'
                 target='_blank'>
                 Contáctanos
               </a>

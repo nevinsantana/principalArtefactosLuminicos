@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
 
     //
 
-    $email_to = "david@artefactosluminicos.com";
+    $email_to = "marcovillar@artefactosluminicos.com.mx";
 
     $email_subject = "Contacto desde Web";
 
@@ -131,7 +131,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- Mensaje de que fue enviado-->
 
-Gracias! Nos pondremos en contacto contigo a la brevedad
+¡Gracias! Nos pondremos en contacto contigo a la brevedad
 
 <?php
 
