@@ -124,7 +124,8 @@
         <div id="footer2">
           <p>
             &copy; 2015 Artefa<a class="cotHide" href="Cotizaciones">c</a>tos
-            Lumínicos es una marca registrada.
+            Lumíni<a class="cotHide" href="consecutivoProyectos">c</a>os es una
+            marca registrada.
           </p>
           <p id="avisoFooter">
             <a href="attachments/File/AvisoPrivacidad.pdf">
