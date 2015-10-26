@@ -210,16 +210,16 @@
                         </table>
                         <br><br>
 
-                        <table border=0 cellspacing="2px" width="90%">                  												
-                            <tr> <td id="bordet">              
-                                    <div align="center"><div class="h7">Datos del cliente</div> 
-                                        <textarea class="cajaa" align="Center" name="datos_cliente" rows="3" cols="28"><?php echo "$empresa " . "$calle " . "$num_int," . " $num_ext, " . "$colonia, " . "C.P. $cp" . ",$municipio " . "$estado"; ?> </textarea>     
+                        <table border=0 cellspacing="2px" width="90%">
+                            <tr> <td id="bordet">
+                                    <div align="center"><div class="h7">Datos del cliente</div>
+                                        <textarea class="cajaa" align="Center" name="datos_cliente" rows="3" cols="28"><?php echo "$empresa " . "$calle " . "$num_int," . " $num_ext, " . "$colonia, " . "C.P. $cp" . ",$municipio " . "$estado"; ?> </textarea>
 
                                     </div><br>
                                 </td>
 
                                 <td id="bordet">
-                                    <div align="center"><div class="h7">Datos de contacto</div> 
+                                    <div align="center"><div class="h7">Datos de contacto</div>
                                         <textarea  class="cajaa" align="Center" name="datos_contacto" rows="3" cols="28" ><?php echo "$nombre_c\n" . "Departamento de $departamento\n" . "Tels: $telefono1, " . "$telefono2\n" . "$e_mail_c"; ?></textarea></div><br>
                                 </td>
                                 <td id="bordet">
@@ -315,7 +315,7 @@
                                     <table border="3px" width="500px" id="margen">
                                         <thead>
                                             <tr>
-                                                <th width="20%" align="center" colspan="2" id="sin_borde">Notas</th>						
+                                                <th width="20%" align="center" colspan="2" id="sin_borde">Notas</th>
                                             </tr>
                                             <tr>
                                                 <th width="20%" align="center">No de nota</th>
@@ -347,19 +347,19 @@ while ($campo = mysql_fetch_array($resultado)) {
 
                                     <br>
 
-                                    <div class="h7" style="font-size: 15px;"> <?php echo 'Divisa'; ?></div> <HR width=100% align="left">
-                                    <div class="h7" style="font-size: 15px;"> <?php echo 'Subtotal'; ?></div> <HR width=100% align="left">
+                                    <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'Divisa'; ?></div> <HR width=100% align="left">
+                                    <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'Subtotal'; ?></div> <HR width=100% align="left">
 <?php if ($descuento > 0) { ?>
-                                        <div class="h7" style="font-size: 15px;"> <?php echo 'Descuento'; ?></div> <HR width=100% align="left">
-                                        <div class="h7" style="font-size: 15px;"> <?php echo 'Subt. c/desc.'; ?></div> <HR width=100% align="left">
+                                        <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'Descuento'; ?></div> <HR width=100% align="left">
+                                        <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'C/desc.'; ?></div> <HR width=100% align="left">
 <?php } ?>
-                                    <div class="h7" style="font-size: 15px;"> <?php echo 'I.V.A.'; ?></div> <HR width=100% align="left">
-                                    <div class="h7" style="font-size: 15px;"> <?php echo 'Total'; ?></div> 
+                                    <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'I.V.A.'; ?></div> <HR width=100% align="left">
+                                    <div class="h7" style="font-size: 15px; height: 16.66%;"> <?php echo 'Total'; ?></div>
                                 </td>
 
 
                                 <td>
-                                    <br><div align="right">   
+                                    <br><div align="right">
                                         <select id="select1" name="divisa">
                                             <option  value="M.N." name="mn">M.N</option>
                                             <option value="Dolar" name="dolar">Dolares</option>

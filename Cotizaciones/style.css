@@ -9,7 +9,7 @@ body {
     padding-bottom: 20px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: #F4F2F3;
-    background: #F4F2F3;	
+    background: #F4F2F3;
 }
 
 
@@ -63,7 +63,7 @@ ul {
 }
 
 #page p{
-	align: center;
+	line-height: 13px;
 }
 
 #page table{
@@ -156,7 +156,7 @@ ul {
     line-height: 28px;
     text-align: center;
     text-decoration: none;
-    color: White;  
+    color: White;
     background: rgba(248,80,50,1);
     background: rgba(255,38,0,1);
     background: -moz-linear-gradient(left, rgba(255,38,0,1) 0%, rgba(255,76,48,1) 15%, rgba(255,117,117,1) 26%, rgba(255,76,48,1) 38%, rgba(255,30,0,1) 51%, rgba(255,76,48,1) 64%, rgba(255,117,117,1) 77%, rgba(255,76,48,1) 88%, rgba(255,21,0,1) 100%);
@@ -184,15 +184,15 @@ ul {
 }
 #nosub {
     text-decoration: none;
-}   
+}
 
-#ven a img:hover {  
+#ven a img:hover {
     -moz-box-shadow:20px 20px 20px #0B173B;
     -webkit-box-shadow:20px 20px 20px #0B173B;
     box-shadow:20px 20px 20px #0B173B;
 }
 
-#ven a img:active {  
+#ven a img:active {
     -moz-box-shadow:5px 5px 20px #0B173B;
     -webkit-box-shadow:5px 5px 20px #0B173B;
     box-shadow:5px 5px 20px #0B173B;
@@ -226,7 +226,7 @@ ul {
 #sidebar h3 {
     font-weight: normal;
     font-size: 70px;
-    color: #0B2161;	
+    color: #0B2161;
 }
 
 .formfield {
@@ -290,7 +290,7 @@ ul {
     margin-right:35px;
     margin-left:20px;
     margin-top:30px;
-    font-size:16px; 
+    font-size:16px;
     font-weight: bold;
     color: #FAAC58;
 
@@ -351,11 +351,11 @@ input {
     padding: 0 15px 2px;
     font-size: 17px;
     border: 2px solid #ebebeb;
-    border-radius: 15px;  
+    border-radius: 15px;
 }
 
 
-.sign-up-button {  
+.sign-up-button {
     vertical-align: top;
     width: 200px;
     height: 50px;
@@ -390,10 +390,10 @@ input {
     box-shadow: inset 0px 0px 54px -21px rgba(49,83,97,1);
 }
 
-z.sign-up-button:hover {  
-    -moz-box-shadow:10px 10px 20px #000000; 
+z.sign-up-button:hover {
+    -moz-box-shadow:10px 10px 20px #000000;
     -webkit-box-shadow:10px 10px 20px #000000;
-    box-shadow:10px 10px 20px #000000; 
+    box-shadow:10px 10px 20px #000000;
 }
 
 
@@ -408,7 +408,7 @@ z.sign-up-button:hover {
 
 #list8 p {
     margin-left: -10px;
-    font-size:20px; 
+    font-size:20px;
     margin-top: 20px;
     color:#bfe1f1;
 }
@@ -426,7 +426,7 @@ z.sign-up-button:hover {
     margin-top: 15px;
     margin-bottom:10px;
     margin-left:5px;
-    font-size:19px; 
+    font-size:19px;
     color: #F4F2F3;
     font-weight: bold;
 	text-align: center;
@@ -438,7 +438,7 @@ z.sign-up-button:hover {
     margin-top: -20px;
     margin-bottom: 40px;
     margin-left:100px;
-    font-size:20px; 
+    font-size:20px;
     color:#bfe1f1;
     font-weight: bold;
 }
@@ -449,7 +449,7 @@ z.sign-up-button:hover {
     margin-top: 35px;
     margin-bottom: 40px;
     margin-left:100px;
-    font-size:20px; 
+    font-size:20px;
 
     color:#bfe1f1;
     font-weight: bold;
@@ -461,7 +461,7 @@ z.sign-up-button:hover {
 #titulo{
     margin-bottom: 40px;
     text-align: center;
-    font-size:20px; 
+    font-size:20px;
     color:#262626;
     font-weight: bold;
 }
@@ -473,7 +473,7 @@ z.sign-up-button:hover {
     margin-top: -20px;
     margin-bottom: 40px;
     margin-left:233px;
-    font-size:20px; 
+    font-size:20px;
 
     color:#262626;
     font-weight: bold;
@@ -489,11 +489,11 @@ z.sign-up-button:hover {
     width: 250px;
     height: 40px;
     margin-bottom: 25px;
-    margin-left: 10px;  
+    margin-left: 10px;
     padding: 5px 10px 5px 10px;
     font-size: 16px;
     border: none;
-    border-radius: 15px;  
+    border-radius: 15px;
 	color: #262626;
 }
 
@@ -569,40 +569,40 @@ z.sign-up-button:hover {
 /* Boton Regresar Form_Cotizacion.php */
 #regresar {  }
 
-#regresar ul { 
-    list-style:none; 
+#regresar ul {
+    list-style:none;
 }
 
 #regresar p {
     margin-left: -3px;
-    font-size:15px; 
+    font-size:15px;
     margin-top: 20px;
     color:#bfe1f1;
 }
 
-#regresar ul li a { 
-    display:block; 
-    width:100px; 
-    height:20px; 
-    background-color:#0B173B; 
-    border-left:10px solid #045FB4; 
-    border-right:10px solid #045FB4; 
+#regresar ul li a {
+    display:block;
+    width:100px;
+    height:20px;
+    background-color:#0B173B;
+    border-left:10px solid #045FB4;
+    border-right:10px solid #045FB4;
     padding-left:30px;
-    text-decoration:none; 
-    color:#bfe1f1; 
+    text-decoration:none;
+    color:#bfe1f1;
     border-radius: 15px;
 }
 
-#regresar ul li a:hover {  
-    -moz-transform:rotate(-3deg); 
+#regresar ul li a:hover {
+    -moz-transform:rotate(-3deg);
     -moz-box-shadow:20px 20px 20px #070719;
-    -webkit-transform:rotate(-5deg); 
+    -webkit-transform:rotate(-5deg);
     -webkit-box-shadow:20px 20px 20px #070719;
-    transform:rotate(-5deg); 
+    transform:rotate(-5deg);
     box-shadow:20px 20px 20px #070719;
 }
 
-#regresar ul li a:active {  
+#regresar ul li a:active {
     -moz-box-shadow:5px 5px 20px #070719;
     -webkit-box-shadow:5px 10px 20px #070719;
     box-shadow:5px 5px 20px #070719;
@@ -613,8 +613,8 @@ z.sign-up-button:hover {
 #cambioselect{
     margin-bottom:30px;
     margin-left:10px;
-    font-size: 17px; 
-    color: black; 
+    font-size: 17px;
+    color: black;
     background-color: #F2F5A9;
     width: 550px;
     border-radius: 5px;
@@ -624,9 +624,9 @@ z.sign-up-button:hover {
 /* Select baja.php */
 #bajaselect{
     margin-bottom:30px;
-    margin-left:10px; 
-    font-size: 17px; 
-    color: white; 
+    margin-left:10px;
+    font-size: 17px;
+    color: white;
     background-color: #f0776c;
     width: 550px;
     border-radius: 5px;
@@ -636,15 +636,15 @@ z.sign-up-button:hover {
 #cotizarselect{
     margin-bottom:30px;
     margin-left:10px;
-    font-size: 17px; 
-    color: white; 
+    font-size: 17px;
+    color: white;
     background-color: #0B4C5F;
     width: 550px;
     border-radius: 5px;
 }
 
 
-#modificar { 
+#modificar {
     margin-left: 50px;
 }
 
@@ -780,7 +780,7 @@ regresar.button {
     background: url(images/button.gif);
 }
 
-regresar.button:hover {  
+regresar.button:hover {
     -moz-box-shadow:20px 20px 20px #090C12;
     -webkit-box-shadow:20px 20px 20px #090C12;
     box-shadow:20px 10px 20px #090C12;
@@ -801,17 +801,17 @@ regresar.button:active{
 
 
 /*fomr_cotizacion.php*/
-#bordet{    
+#bordet{
     border-top: solid #FFFFFF;
 }
 
 /*fomr_cotizacion.php*/
-#total{    
+#total{
     margin-left: 50px;
 }
 
 /*fomr_cotizacion.php*/
-.divisa{    
+.divisa{
     font-size: 50px;
 }
 
@@ -821,15 +821,15 @@ regresar.button:active{
 }
 
 #barra{
-    height:35em; 
-    width:39.7em; 
+    height:35em;
+    width:39.7em;
     max-height:700px;
     overflow:scroll;
 	overflow-x: hidden;
     margin-left: -2.8em;
 	background: #B1DAD4;
 	padding: 0.5em;
-	
+
 
 }
 
@@ -876,21 +876,21 @@ regresar.button:active{
 
 
 
-#noborde { 
+#noborde {
     border: none;
     background-color: transparent;
     text-align: center;
     font-size: 12px;
     color: #E0F8F7;
-} 
+}
 
-#noborde1 { 
+#noborde1 {
     border: none;
     background-color: transparent;
     text-align: right;
     font-size: 12px;
     color: #E0F8F7;
-} 
+}
 
 #aligder{
     text-align: right;
@@ -898,7 +898,7 @@ regresar.button:active{
 
 h5 {
     font-weight: normal;
-    font-size: 13px;    
+    font-size: 13px;
     color: #D4DBF1;
 }
 
@@ -924,7 +924,7 @@ select {
 
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: black;      
+    color: black;
     -webkit-appearance: none;
 }
 
@@ -933,7 +933,7 @@ select {
     text-align: left;
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: black;      
+    color: black;
     -webkit-appearance: none;
     width:100px;
 }
@@ -961,12 +961,11 @@ select {
 
 
 #margen{
-    margin-left:100px;
-    margin-bottom:30px;
+    margin: auto;
 }
 
 #botonp{
-    margin-right:15px;	
+    margin-right:15px;
     width: 110px;
     height: 40px;
     padding: 0;
@@ -987,7 +986,7 @@ select {
     font-size: 13px;
     color: white;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(black, .25);  
+    text-shadow: 0 1px 2px rgba(black, .25);
     background: rgba(240,119,108,1);
     background: -moz-linear-gradient(left, rgba(240,119,108,1) 0%, rgba(247,193,188,1) 50%, rgba(240,119,108,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,119,108,1)), color-stop(50%, rgba(247,193,188,1)), color-stop(100%, rgba(240,119,108,1)));
@@ -1001,7 +1000,7 @@ select {
 }
 
 #botonq{
-    margin-left:890px;	
+    margin-left:890px;
     width: 110px;
     height: 40px;
     padding: 0;
@@ -1015,14 +1014,14 @@ select {
 }
 
 #botonq:active{
-    margin-left:890px;	
+    margin-left:890px;
     width: 109px;
     height: 39px;
     padding: 0;
     font-size: 13px;
     color: white;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(black, .25);  
+    text-shadow: 0 1px 2px rgba(black, .25);
     background: rgba(240,119,108,1);
     background: -moz-linear-gradient(left, rgba(240,119,108,1) 0%, rgba(247,193,188,1) 50%, rgba(240,119,108,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,119,108,1)), color-stop(50%, rgba(247,193,188,1)), color-stop(100%, rgba(240,119,108,1)));
@@ -1036,7 +1035,7 @@ select {
 }
 
 #botonr{
-    margin-left:390px;	
+    margin-left:390px;
     width: 110px;
     height: 40px;
     padding: 0;
@@ -1056,7 +1055,7 @@ select {
     font-size: 13px;
     color: white;
     text-align: center;
-    text-shadow: 0 1px 2px rgba(black, .25);  
+    text-shadow: 0 1px 2px rgba(black, .25);
     background: rgba(240,119,108,1);
     background: -moz-linear-gradient(left, rgba(240,119,108,1) 0%, rgba(247,193,188,1) 50%, rgba(240,119,108,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,119,108,1)), color-stop(50%, rgba(247,193,188,1)), color-stop(100%, rgba(240,119,108,1)));
@@ -1075,7 +1074,7 @@ select {
     margin-right:35px;
     margin-left:20px;
     margin-top:30px;
-    font-size:15px; 
+    font-size:15px;
     font-weight: bold;
     color: #FAAC58;
 }
@@ -1089,7 +1088,7 @@ select {
     padding: 0 15px 2px;
     font-size: 17px;
     border: 2px solid #ebebeb;
-    border-radius: 15px;  
+    border-radius: 15px;
 }
 
 
@@ -1121,7 +1120,7 @@ select {
     margin-right:35px;
     margin-left:20px;
     margin-top:30px;
-    font-size:14px; 
+    font-size:14px;
     font-weight: bold;
     color: #FAAC58;
 }
@@ -1131,25 +1130,25 @@ select {
     width: 520px;
     height: 75px;
     margin-bottom: 25px;
-    margin-left: 10px;  
+    margin-left: 10px;
     padding: 0 5px 2px;
     font-size: 15px;
     border: 2px solid #ebebeb;
-    border-radius: 15px;  
-}  
+    border-radius: 15px;
+}
 
 #addproducto{
     margin-top:20px;
     margin-bottom:10px;
     margin-left:65px;
-    font-size:19px; 
+    font-size:19px;
     color:#bfe1f1;
     font-weight: bold;
 }
 
 #producto {
     margin-bottom: 3px;
-    font-size:14px; 
+    font-size:14px;
     font-weight: bold;
     color: #FAAC58;
 }
@@ -1158,9 +1157,9 @@ select {
 #errorlog
 {
     margin-left: 215px;
-    display:block; 
-    width:80px; 
-    height:20px; 
+    display:block;
+    width:80px;
+    height:20px;
     background: rgba(246,41,12,1);
     background: -moz-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(165,172,175,1) 0%, rgba(82,112,127,1) 25%, rgba(40,98,127,1) 46%, rgba(14,89,127,1) 64%, rgba(14,89,127,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,41,12,1)), color-stop(0%, rgba(165,172,175,1)), color-stop(25%, rgba(82,112,127,1)), color-stop(46%, rgba(40,98,127,1)), color-stop(64%, rgba(14,89,127,1)), color-stop(100%, rgba(14,89,127,1)));
@@ -1171,8 +1170,8 @@ select {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#0e597f', GradientType=0 );
     padding-left:25px;
     padding-top: 5px;
-    text-decoration:none; 
-    color:#bfe1f1; 
+    text-decoration:none;
+    color:#bfe1f1;
     border: 2px solid #3A3C3D;
     border-radius: 5px;
 }
@@ -1182,11 +1181,11 @@ select {
     width: 500px;
     height: 200px;
     margin-bottom: 25px;
-    margin-left: 10px;  
+    margin-left: 10px;
     padding: 0 5px 2px;
     font-size: 14px;
     border: 2px solid #ebebeb;
-    border-radius: 15px;  
+    border-radius: 15px;
 }
 
 #mover ul li a:active{
@@ -1218,7 +1217,7 @@ select {
     margin-right:35px;
     margin-left:35px;
     margin-top:30px;
-    font-size:14px; 
+    font-size:14px;
     font-weight: bold;
     color: #FAAC58;
 }
@@ -1247,7 +1246,7 @@ select {
 
 #estilo2 {
     color: #000000;
-} 
+}
 
 #boton_cerrar{
 
@@ -1283,7 +1282,7 @@ select {
     font-size: 12;
     padding: 5;
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #seleccion{
@@ -1310,15 +1309,15 @@ select {
 
 hr.raya {
     border: 0;
-    height: 0; /* Firefox... */ 
+    height: 0; /* Firefox... */
     box-shadow: 0 0 10px 1px black;
-} 
-hr.raya:after { /* Not really supposed to work, but does */ 
-    content: "\00a0"; /* Prevent margin collapse */ } 
+}
+hr.raya:after { /* Not really supposed to work, but does */
+    content: "\00a0"; /* Prevent margin collapse */ }
 
 
 #adouser{
-    font-size:19px; 
+    font-size:19px;
     color:#bfe1f1;
     font-weight: bold;
 }
@@ -1443,7 +1442,7 @@ hr.raya:after { /* Not really supposed to work, but does */
 	color: #FFFFFF;
 	background: #F0776C;
 	border-radius: 10px 10px 10px 10px;
-	font-weight: bold;	
+	font-weight: bold;
     margin: 0 auto;
 }
 
@@ -1476,7 +1475,7 @@ hr.raya:after { /* Not really supposed to work, but does */
 .centrar {
   text-align: center;
   margin: auto;
-  width: 85.43%; 
+  width: 85.43%;
 }
 
 .centrarV {
@@ -1561,7 +1560,7 @@ section input, section select {
 
 section input[type='submit'], select{
     margin: 0 6em;
-    width: 5em;
+    width: auto;
     border: 0;
     padding: 0.5em;
     border-radius: 0.25em;
@@ -1606,4 +1605,14 @@ form span{
   border-radius: 0.5em;
   border-radius: 0.5em;
   transition: 1s;
+}
+
+.textoPartidas {
+  color: black;
+}
+
+
+.noStyle {
+  margin: 0;
+  padding: 0;
 }

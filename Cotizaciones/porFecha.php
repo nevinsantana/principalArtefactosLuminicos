@@ -1,8 +1,8 @@
-<div id="barra">    
+<div id="barra">
         <div class="CSSTableGenerator" >
           <table border=2 align="center">
             <tr>
-                <td width="10%">No</td>                        
+                <td width="10%">No</td>
                 <td width="10%">Fecha</td>
                 <td width="43%">Cliente</td>
                 <td width="25%">Vendedor</td>
@@ -42,7 +42,7 @@
 
 
 
-                $id_num_cliente = $campo['id_num_cliente'];
+                $id_num_cliente = $campo['id_cliente'];
 
                 $sql2 = "SELECT * FROM `Clientes` WHERE id_num_cliente = '$id_cliente'";
                 $resultado2 = query($sql2, $conexion);

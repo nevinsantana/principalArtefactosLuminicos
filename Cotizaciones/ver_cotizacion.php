@@ -16,12 +16,12 @@
 
         $id_cotizacion = $_GET['id_cotizacion'];
 
-        $sql = "SELECT* FROM Cotizaciones WHERE id_cotizacion = '$id_cotizacion'";
+        $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion = '$id_cotizacion'";
         $resultado = query($sql, $conexion);
         $campo = mysql_fetch_array($resultado);
 
         $fecha = $campo['fecha'];
-        $id_num_cliente = $campo['id_num_cliente'];
+        $id_num_cliente = $campo['id_cliente'];
         $id_usuario = $campo['id_usuario'];
         $vigencia = $campo['vigencia'];
         $no_partidas = $campo['no_partidas'];
@@ -145,7 +145,7 @@
                                             <tr><td width="50%" align=right class="h7">
                                                     No. de Cotizaci&oacute;n:</td><td align=center width="50px" class="h7"><?php echo $id_cotizacion; ?></td></tr>
 
-                                            <tr><td width="50%" align=right class="h7">	      
+                                            <tr><td width="50%" align=right class="h7">
                                                     Fecha: </td><td align=center width="50px"><?php echo $fecha; ?> </td></tr>
 
                                             <tr><td width="50%" align=right class="h7">
@@ -163,7 +163,7 @@
                             <tr>
 
                                 <td id="bordet" valign="top" class="h7"><div align="center" >
-                                        <br><br> <h3>Artefactos Lumínicos S.A. de C.V. </h3>		
+                                        <br><br> <h3>Artefactos Lumínicos S.A. de C.V. </h3>
                                         <h5 class="h7">Av. Juárez No. 9-2, Col. San Mateo Ixtacalco,
                                             <br>Cuautitlán Izcalli, Estado de México, C.P. 54713
                                             <br>ventas@artefactosluminicos.com.mx
@@ -184,14 +184,14 @@
                         <br><br>
                         <table border=0 cellspacing="2px" width="90%">
                             <tr>
-                                <td id="bordet" valign="top" class="h7">              
-                                    <div align="center" class="h7"><div  class="h7" >Datos del cliente</div> 
+                                <td id="bordet" valign="top" class="h7">
+                                    <div align="center" class="h7"><div  class="h7" >Datos del cliente</div>
                                         <div id="datos_coti" >   <?php echo $cliente; ?>  </div>
                                     </div><br>
                                 </td>
 
                                 <td id="bordet" valign="top" class="h7">
-                                    <div align="center"><div class="h7"  >Datos de contacto</div> 
+                                    <div align="center"><div class="h7"  >Datos de contacto</div>
                                         <div id="datos_coti" ><?php echo $contacto; ?>  </div></div><br>
                                 </td>
                                 <td id="bordet"  valign="top" class="h7">
@@ -269,7 +269,7 @@
                                     <table border="3px" width="500px" id="margen" class="h7">
                                         <thead>
                                             <tr>
-                                                <th width="20%" align="center" colspan="2" id="sin_borde"  >Notas<br></th>		
+                                                <th width="20%" align="center" colspan="2" id="sin_borde"  >Notas<br></th>
                                             </tr>
                                             <tr>
                                                 <th width="20%" align="center">No de nota</th>
@@ -363,16 +363,15 @@ while ($campo = mysql_fetch_array($resultado)) {
                                     </table>
                                     </div><br><br>
                                     </div>
-									
+
                                     </div>
                                     <div align="center">
-										
+
                                         <a href="index.php">  <input type="button" value="Regresar" class="formu-button6"></a>
                                         <button onclick="imprimir();" class="formu-button6">Imprimir</button>
-										
+
                                     </div>
 									<?php
-									echo $empresa;
 									echo "<br><a href='orden_venta.php?id_cotizacion=".$id_cotizacion."' class='botoncirri'>Generar orden de venta</a><br><br>";
 									?>
 

@@ -1,0 +1,95 @@
+  /*start********************************************************************/
+
+/*tags*************************************************************************/
+* {
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+/*fTags************************************************************************/
+
+/*enConstrucción***************************************************************/
+.enConstruccion {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 25%;
+  background: #16868a;
+}
+
+.tConstruccion {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 25%;
+  top: 5%;
+}
+
+.tConstruccion h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.bConstruccion a {
+  padding: 10px;
+  color: white;
+  background: #000000;
+  bottom: 10%;
+  position: absolute;
+  width: auto;
+  text-align: center;
+}
+
+.bConstruccion a:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.bConstruccion a:first-child {
+  left: 10%;
+}
+
+.bConstruccion a:last-child {
+  right: 10%;
+}
+/*fEnConstrucción**************************************************************/
+
+/*media************************************************************************/
+@media only screen and (max-width: 500px) {
+  .enConstruccion {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #16868a;
+  }
+
+  .bConstruccion a {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .bConstruccion a:first-child{
+    bottom: 30%;
+    left: 0;
+  }
+
+  .bConstruccion a:last-child{
+    bottom: 5%;
+    right: 0;
+  }
+}
+/*fMedia***********************************************************************/
+
+  /*end**********************************************************************/

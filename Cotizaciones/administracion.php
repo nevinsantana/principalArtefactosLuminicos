@@ -99,7 +99,7 @@ while ($campo = mysql_fetch_array($resultado)) {
         }
         function ver_p() {
             location.href = "cat_prod.php";
-        }        
+        }
         function agregar_pro() {
             location.href = "?sec=alta_pro";
         }
@@ -156,14 +156,14 @@ while ($campo = mysql_fetch_array($resultado)) {
                                     if ($seccion == "alta" || $seccion == "baja" || $seccion == "cambio") {
                                         echo "</div>";
                                     }
-                                    ?></span> 
+                                    ?></span>
                                 <ul>
                                     <li onclick="agregar_c()"><img src="images/2anadir.svg" width="20px"><span >Agregar cliente</span> </li>
                                     <li onclick="eliminar_c()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar cliente</span></li>
                                     <li onclick="modificar_c()"><img src="images/1modificar.svg" width="20px"><span>Modificar cliente</span></li>
                                     <li onclick="visualizar_c()"><img src="images/1ver.svg" width="20px"><span>Visualizar clientes</span></li>
-                                </ul>               
-                            </li> 
+                                </ul>
+                            </li>
 
 
                             <li onclick="cotizaciones()"><img src="images/1cotizaciones.svg" width="20px"><span><?php
@@ -175,7 +175,7 @@ while ($campo = mysql_fetch_array($resultado)) {
                                         echo "</div>";
                                     }
                                     ?></span></li>
-									
+
 							<li onclick="orden()"><img src="images/1shop.svg" width="20px"><span><?php
                                     if ($seccion == "orden") {
                                         echo "<div id=seleccion>";
@@ -210,7 +210,7 @@ while ($campo = mysql_fetch_array($resultado)) {
                                     <li onclick="agregar_u()"><img src="images/2anadir.svg" width="20px"><span>Agregar usuario</span></li>
                                     <li onclick="eliminar_u()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar usuario</span></li>
                                     <li onclick="modificar_u()"><img src="images/1modificar.svg" width="20px"><span>Modificar usuario</span></li>
-                                </ul>       
+                                </ul>
                             </li>
 
                             <li><img src="images/1productos.svg" width="17px"><span> <?php
@@ -227,16 +227,10 @@ while ($campo = mysql_fetch_array($resultado)) {
                                     <li onclick="eliminar_p()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar producto</span></li>
                                     <li onclick="modificar_p()"><img src="images/1modificar.svg" width="20px"><span>Modificar producto</span></li>
                                     <li onclick="ver_p()"><img src="images/1ver.svg" width="20px"><span>Visualizar productos</span></li>
-                                </ul>       
+                                </ul>
                             </li>
                             <li>
-                              <img src="images/1proyectos.svg" width="17px"><span>Proyectos</span>
-                              <ul>
-                                <li onclick="agregar_pro()"><img src="images/2anadir.svg" width="20px"><span>Agregar proyecto</span></li>
-                                <li onclick="eliminar_pro()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar proyecto</span></li>
-                                <li onclick="modificar_pro()"><img src="images/1modificar.svg" width="20px"><span>Modificar proyecto</span></li>
-                                <li onclick="ver_pro()"><img src="images/1ver.svg" width="20px"><span>Visualizar proyectos</span></li>
-                              </ul> 
+                              <a href="../consecutivoProyectos/" style="padding: 0;"><img src="images/1proyectos.svg" width="17px"><span>Proyectos</span></a>
                             </li>
                         </ul>
                     </div>
@@ -275,7 +269,7 @@ while ($campo = mysql_fetch_array($resultado)) {
                         if ($seccion == "cotizaciones") {
                             require_once("cotizaciones-admin.php");
                         }
-						
+
 						if ($seccion == "orden") {
 							require_once("ordenes_admin.php");
 						}
@@ -302,8 +296,8 @@ while ($campo = mysql_fetch_array($resultado)) {
                         }
                         if ($seccion == "cambio_p") {
                             require_once("cambio_p.php");
-                        }                        
-                        
+                        }
+
                         if ($seccion == "alta_pro") {
                             require_once("alta_pro.php");
                         }
@@ -323,7 +317,7 @@ while ($campo = mysql_fetch_array($resultado)) {
                         if ($seccion == "version") {
                             require_once("version.php");
                         }
-                        ?>    		
+                        ?>
 
                     </div>
                 </div>
@@ -333,16 +327,16 @@ while ($campo = mysql_fetch_array($resultado)) {
 
 
 
-                <div class="clearing">&nbsp;</div>                
+                <div class="clearing">&nbsp;</div>
             </div>
             <!-- FIN main -->
 
         </div><!--FIN page -->
-    
-    
+
+
     <div align="center">
         <div  class="foot">
-            <br />Hecho en M&eacute;xico, todos los derechos reservados a Artefactos Lum&iacute;nicos S.A. de C.V. 2015<br> 
+            <br />Hecho en M&eacute;xico, todos los derechos reservados a Artefactos Lum&iacute;nicos S.A. de C.V. 2015<br>
             <a href="?sec=creditos" id="boton_creditos">Cr&eacute;ditos</a><br><br>
         </div>
     </div>
@@ -351,7 +345,7 @@ while ($campo = mysql_fetch_array($resultado)) {
 <?php
 if ($id_usuario == 'sistemas') {
     ?>
-        
+
 
 <?php }
 ?>

@@ -13,14 +13,21 @@
                             $cancelar = 0;
                         }
 
+                        if (isset($_SESSION['usuario'])) {
+                            $id_usuario = $_SESSION['usuario'];
+                        } else {
+                            $cancelar = 0;
+                        }
+
+
                         header('Content-Type: text/html; charset=UTF-8');
-						
-						if (isset($_SESSION['empresa'])) 
+
+						if (isset($_SESSION['empresa']))
 							{
                                 $empresa = $_SESSION['empresa'];
                             }
 
-							else 
+							else
 							{
                                 $empresa = $_POST['empresa'];
                                 $_SESSION['empresa'] = $empresa;
@@ -94,12 +101,12 @@
 								$telefono2 = $campo['telefono2'];
 								$e_mail_c = $campo['e_mail_c'];
 							}
-							
-							if (isset($_SESSION['cotiz_usuario'])) 
+
+							if (isset($_SESSION['cotiz_usuario']))
 							{
                                 $cotiz_usuario = $_SESSION['cotiz_usuario'];
                             }
-							
+
 							$sql = "SELECT nombre, apellido_p, apellido_m, e_mail FROM Usuarios WHERE id_usuario='$cotiz_usuario'";
 							$resultado = query($sql, $conexion);
 							while ($campo = mysql_fetch_array($resultado)) {
@@ -107,66 +114,66 @@
 								$apellido_p = $campo['apellido_p'];
 								$apellido_m = $campo['apellido_m'];
 								$e_mail = $campo['e_mail'];
-							}						
-							
+							}
+
 
 							$nombre = "$nombre " . "$apellido_p " . "$apellido_m";
-							
+
 							$datos_cliente= $empresa . " " . $num_int . " " .  $num_ext . " " . $colonia . " C.P" . $cp . " " . $municipio . " " . $estado;
 							$datos_contacto= $nombre_c . "\n" . "Departamento de" . $departamento . "\n" . "Tels: ". $telefono1 . ", " . $telefono2 . "\n" . $e_mail_c;
-							$datos_vendedor= $nombre . "\n" . $e_mail ;						
-							
-							
-							
-						if (isset($_SESSION['empresa'])) 
+							$datos_vendedor= $nombre . "\n" . $e_mail ;
+
+
+
+						if (isset($_SESSION['empresa']))
 							{
                                 $empresa = $_SESSION['empresa'];
                             }
 
-							else 
+							else
 							{
                                 $empresa = $_POST['empresa'];
                                 $_SESSION['empresa'] = $empresa;
                             }
-                       
-						
-						if (!isset($_SESSION['usuario'])) {							
+
+
+						if (!isset($_SESSION['usuario'])) {
 							$_SESSION['cotizacion'] = 'algo';
                             header('Location: log_in.php');
                         }
 						else{
-						
+
 						 if (isset($_SESSION['cotizacion'])) {
                             $id_cotizacion = $_SESSION['cotizacion'];
 							 $_SESSION['cotizacion'] = $id_cotizacion;
-                        } 
-						
-						else 
+                        }
+
+						else
 						{
-							
-							
-						
+
+
+
                         $id_usuario = $_SESSION['usuario'];
-						
+
                             $sql = "SELECT `id_cotizacion` FROM Cotizaciones ORDER BY `id_cotizacion` DESC LIMIT 1";
                             $resultado = query($sql, $conexion);
 
                             $campo = mysql_fetch_row($resultado);
                             $id_cotizacion = $campo[0] + 1;
 
-                            if ($id_cotizacion == "") 
+                            if ($id_cotizacion == "")
 							{
                                 $id_cotizacion = 1;
                             }
 
                             $_SESSION['cotizacion'] = $id_cotizacion;
-							
+
                             $fecha = date('y.m.d');
 
 
-                            
-                            
-                            
+
+
+
 //Obtener el id_num_cliente por medio de empresa
                             $sql = "SELECT * FROM `Clientes` WHERE `empresa` = '$empresa'";
                             $resultado = query($sql, $conexion);
@@ -179,14 +186,14 @@
                             $sql = "INSERT INTO Cotizaciones (id_cotizacion, fecha, id_cliente, id_usuario) VALUES ('$id_cotizacion','$fecha','$id_num_cliente','$id_usuario')";
                             $resultado = query($sql, $conexion);
                         }}
-						
+
 						$sql = "SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$id_cotizacion'";
 							$resultado = query($sql, $conexion);
 							while ($campo = mysql_fetch_array($resultado)) {
 								$prueba = $campo['id_cotizacion'];
 							}
 
-												
+
 						if(!isset($prueba)){
 							$sqla = "INSERT INTO `Datos_Cotizacion` (id_cotizacion, datos_cliente, datos_contacto, datos_vendedor) values ('$id_cotizacion', '$datos_cliente', '$datos_contacto', '$datos_vendedor')";
 							$resultadoa = query($sqla, $conexion);}
@@ -216,7 +223,7 @@
                     window.location = union;
                 }
             }
-        </script>   
+        </script>
 
 
     </head>
@@ -231,8 +238,8 @@
             <div id="modificar">
 
                 <div id="titulo2">Generador de partidas para la cotización.</div>
-                <?php echo "Cliente actual: $empresa";echo '<br>'; echo "Cotizaci&oacute;n No: $id_cotizacion" ?>
-                <div align="center">Favor de no modificar la columna "Contador"</div><br>
+                <?php echo "<p class='textoPartidas'>Cliente actual: $empresa";echo '<br>'; echo "Cotizaci&oacute;n No: $id_cotizacion</p>" ?>
+                <div align="center" class="textoPartidas">Favor de no modificar la columna "Contador"</div><br>
                 <div class="Tabla_Partidas">
                     <table  class="tablesorter" width="1000">
 
@@ -245,11 +252,11 @@
                             <td width="40%">Descripción</td>
                             <td width="9%">Precio unitario</td>
                             <td width="8%">Precio total</td>
-                            <td width="8%">Utilidades</td>                            
+                            <td width="8%">Utilidades</td>
                             <td width="5%">Contador</td>
                         </tr>
 
-                        
+
                         <form action="ordenar.php" method="POST">
                             <?php
                             $siguiente = 0;
@@ -262,7 +269,7 @@
                                 $j = $campo['precio_total'];
                                 $id_partida = $campo['id_partida'];
                                 if ($i == 0 || $j == 0) {
-                                    
+
                                 } else {
                                     $precio_unit = number_format("$i", 2);
                                     $precio_total = number_format("$j", 2);
@@ -281,7 +288,7 @@
                                 echo
                                 "<td>" . $campo['unidad'] . "</td>" .
                                 "<td>" . $campo['catalogo'] . "</td>" .
-                                "<td> " . $campo['descripcion'] . "</td>";
+                                "<td> <pre style='white-space: normal;'>" . $campo['descripcion'] . "</pre></td>";
                                 if ($i == 0 || $j == 0) {
                                     echo
                                     "<td align='right'> </td>" .
@@ -312,11 +319,11 @@
 
                         </td>
                         <td>
-                            <input type="button" value="C&aacute;talogo"  onclick="javascript:window.open('catalogo_productos.php', '', 'width=screen.width,height=screen.height,scrollbars=yes');" 
+                            <input type="button" value="C&aacute;talogo"  onclick="javascript:window.open('catalogo_productos.php', '', 'width=screen.width,height=screen.height,scrollbars=yes');"
                                    id="botonp">
                         </td>
 
-                        <td> 
+                        <td>
                             <?php if ($siguiente > 0) { ?>
                                 <a href="notas.php"><input type="button" value="Siguiente" id="botonp"></a>
 <?php } ?>
@@ -339,17 +346,6 @@
 <?php } ?>
                 </div>
                 <br><br><br>
-				
+
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
