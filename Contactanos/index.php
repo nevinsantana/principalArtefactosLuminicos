@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-</script>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,7 +8,6 @@
     <meta name="description" content="Contacto con Artefactos Luminicos">
     <title>Contacto Artefatos Lumínicos</title>
   </head>
-
   <style>
   #caja
   {

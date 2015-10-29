@@ -4,10 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blueprint: Filterable Product Grid</title>
-	<meta name="description" content="Blueprint: A responsive product grid layout with touch-friendly Flickity galleries and Isotope-powered filter functionality." />
-	<meta name="keywords" content="blueprint, template, layout, grid, responsive, products, store, filter, isotope, flickity" />
-	<meta name="author" content="Codrops" />
+	<title>Catálogo de productos</title>
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -34,6 +31,7 @@
 			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Interior</span></button>
 		<button class="action filter__item" data-filter=".led"><i class="icon icon--led"></i><span class="action__text">Con LEDS</span></button>
       <button class="action filter__item" data-filter=".alto"><i class="icon icon--alto"></i><span class="action__text">Alto Voltaje</span></button>
+			<a href="http://www.artefactosluminicos.com.mx/" class="filter__label">Regresar </a>
 		</div>
 		<button class="cart">
 
@@ -61,7 +59,7 @@
 					<span class="meta__brand">2AV</span>
 					<a class="meta__price" href="#modal2">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal2" class="modalmask">
@@ -91,7 +89,7 @@
 					<span class="meta__brand">02454</span>
 					<a class="meta__price" href="#modal3">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal3" class="modalmask">
@@ -121,7 +119,7 @@
 					<span class="meta__brand">COLONIAL MEXICANO</span>
 					<a class="meta__price" href="#modal4">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal4" class="modalmask">
@@ -147,7 +145,7 @@
 					<span class="meta__brand">2GT8</span>
 					<a class="meta__price" href="#modal5">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal5" class="modalmask">
@@ -173,7 +171,7 @@
 					<span class="meta__brand">ELM-ELM2</span>
 					<a class="meta__price" href="#modal6">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal6" class="modalmask">
@@ -198,7 +196,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMALUNE</span>
 					<a class="meta__price" href="#modal7">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal7" class="modalmask">
@@ -227,7 +225,7 @@
 					<span class="meta__brand">CIS-ILUMINARE (GRANDE Y PEQUEÑO)</span>
 					<a class="meta__price" href="#modal8">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal8" class="modalmask">
@@ -257,7 +255,7 @@
 					<span class="meta__brand">2PMN3</span>
 					<a class="meta__price" href=#modal9>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal9" class="modalmask">
@@ -284,7 +282,7 @@
 					<span class="meta__brand">illumibay</span>
 					<a class="meta__price" href="#modal10">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal10" class="modalmask">
@@ -313,7 +311,7 @@
 					<span class="meta__brand">DORCHESTER</span>
 					<a class="meta__price" href="#modal11">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal11" class="modalmask">
@@ -340,7 +338,7 @@
 					<span class="meta__brand">ATLANTA</span>
 					<a class="meta__price" href="#modal12">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal12" class="modalmask">
@@ -367,7 +365,7 @@
 					<span class="meta__brand">ind</span>
 					<a class="meta__price" href="#modal13">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal13" class="modalmask">
@@ -396,7 +394,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMATITE</span>
 					<a class="meta__price" href="#modal14">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal14" class="modalmask">
@@ -426,7 +424,7 @@
 					<span class="meta__brand">LOBAY</span>
 					<a class="meta__price" href="#modal15">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal15" class="modalmask">
@@ -455,7 +453,7 @@
 					<span class="meta__brand">GRAN VILLE</span>
 					<a class="meta__price" href="#modal16">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal16" class="modalmask">
@@ -484,7 +482,7 @@
 					<span class="meta__brand">LQM</span>
 					<a class="meta__price" href="#modal17">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal17" class="modalmask">
@@ -510,7 +508,7 @@
 					<span class="meta__brand">PRISMGLO COMPACTA</span>
 					<a class="meta__price" href="#modal18">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal18" class="modalmask">
@@ -537,7 +535,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMPACK</span>
 					<a class="meta__price" href="#modal19">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal19" class="modalmask">
@@ -565,7 +563,7 @@
 					<span class="meta__brand">AV SM</span>
 					<a class="meta__price" href="#modal20">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal20" class="modalmask">
@@ -593,7 +591,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PRISMGLO ENHACED</span>
 					<a class="meta__price" href="#modal21">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 
@@ -623,7 +621,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">GRAND LEDGE</span>
 					<a class="meta__price" href="#modal22">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal22" class="modalmask">
@@ -650,7 +648,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">av smd</span>
 					<a class="meta__price" href="#modal23">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal23" class="modalmask">
@@ -678,7 +676,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LRP</span>
 					<a class="meta__price" href="#modal24">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal24" class="modalmask">
@@ -705,7 +703,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">CRANELITE</span>
 					<a class="meta__price" href="#modal25">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal25" class="modalmask">
@@ -733,7 +731,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">dm-dmw</span>
 					<a class="meta__price" href="#modal26">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal26" class="modalmask">
@@ -757,7 +755,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">GRANVILLE PREMIER</span>
 					<a class="meta__price" href="#modal27">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal27" class="modalmask">
@@ -785,7 +783,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ej-ny</span>
 					<a class="meta__price" href="#modal28">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal28" class="modalmask">
@@ -809,7 +807,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LV SERIES</span>
 					<a class="meta__price" href="#modal29">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal29" class="modalmask">
@@ -837,7 +835,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ENDURALUME</span>
 					<a class="meta__price" href=#modal30>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal30" class="modalmask">
@@ -866,7 +864,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">HOV 16- HOV 25</span>
 					<a class="meta__price" href="#modal31">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal31" class="modalmask">
@@ -895,7 +893,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">POWER SENTRY</span>
 					<a class="meta__price" href="#modal32">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal32" class="modalmask">
@@ -919,7 +917,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ps</span>
 					<a class="meta__price" href="#modal33">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal33" class="modalmask">
@@ -946,7 +944,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">KAD</span>
 					<a class="meta__price" href="#modal34">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal34" class="modalmask">
@@ -971,7 +969,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LIGHT BAT G2</span>
 					<a class="meta__price" href="#modal35">Ver más</span>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal35" class="modalmask">
@@ -996,7 +994,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">kacm</span>
 					<a class="meta__price" href="#modal36">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal36" class="modalmask">
@@ -1026,7 +1024,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">mayfair</span>
 					<a class="meta__price" href="#modal37">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal37" class="modalmask">
@@ -1054,7 +1052,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MEMPHIS</span>
 					<a class="meta__price">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal37" class="modalmask">
@@ -1082,7 +1080,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MINI GRANVILLE</span>
 					<a class="meta__price" href="#modal38">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal38" class="modalmask">
@@ -1111,7 +1109,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MODULE 600</span>
 					<a class="meta__price" href="#modal39">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal39" class="modalmask">
@@ -1139,7 +1137,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">NMD-MADEIRA</span>
 					<a class="meta__price" href="#modal40">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal40" class="modalmask">
@@ -1167,7 +1165,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">OVUE</span>
 					<a class="meta__price" href="#modal41">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal41" class="modalmask">
@@ -1196,7 +1194,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">parkpack</span>
 					<a class="meta__price" href="#modal42">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal42" class="modalmask">
@@ -1224,7 +1222,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PECHINA</span>
 					<a class="meta__price" href="#modal43">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal43" class="modalmask">
@@ -1253,7 +1251,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">pgr</span>
 					<a class="meta__price" href="#modal44">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal44" class="modalmask">
@@ -1280,7 +1278,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PRISMASPHERE</span>
 					<a class="meta__price" href="#modal45">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal45" class="modalmask">
@@ -1307,7 +1305,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">SERIE GLASWERKS</span>
 					<a class="meta__price" href="#modal46">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal46" class="modalmask">
@@ -1336,7 +1334,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">somerset</span>
 					<a class="meta__price" href="#modal47">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal47" class="modalmask">
@@ -1364,7 +1362,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">tfa</span>
 					<a class="meta__price" href="#modal48">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal48" class="modalmask">
@@ -1392,7 +1390,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TFL</span>
 					<a class="meta__price" href=#modal49>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal49" class="modalmask">
@@ -1419,7 +1417,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TFR-TFM</span>
 					<a class="meta__price" href="#modal50">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal50" class="modalmask">
@@ -1445,7 +1443,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">tv</span>
 					<a class="meta__price" href="#modal51">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal51" class="modalmask">
@@ -1467,11 +1465,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/twa.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">twa</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TWA.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">twa</span>
 					<a class="meta__price" href="#modal52">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal52" class="modalmask">
@@ -1496,11 +1494,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/twac.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">twac</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TWAC.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">twac</span>
 					<a class="meta__price" href="#modal53">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal53" class="modalmask">
@@ -1525,11 +1523,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/twh.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TWH</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TWH.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TWH</span>
 					<a class="meta__price" href="#modal54">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal54" class="modalmask">
@@ -1554,11 +1552,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/TWN-TWP.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TWH-TWP</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TWH.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TWH-TWP</span>
 					<a class="meta__price" href="#modal55">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal55" class="modalmask">
@@ -1579,11 +1577,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/twp.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TWP</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TWP.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TWP</span>
 					<a class="meta__price" href="#modal56">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal56" class="modalmask">
@@ -1608,11 +1606,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/VENUS.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">VENUS</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2055.pdf" Target="_blank">Ficha Ténica</a>
+					<span class="meta__brand">VENUS</span>
 					<a class="meta__price" href="#modal57">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal57" class="modalmask">
@@ -1636,11 +1634,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/EXTERIOR/wallpack iv.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">wallpack iv</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2060.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">wallpack IV<span>
 					<a class="meta__price" href="#modal58">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal58" class="modalmask">
@@ -1666,11 +1664,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/NEN ENDURALUME.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NEN ENDURALUME</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2030.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NEN ENDURALUME</span>
 					<a class="meta__price" href="#modal59">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 						<div id="modal59" class="modalmask">
@@ -1695,11 +1693,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PETROLUME.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Petrolume</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2035.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Petrolume</span>
 					<a class="meta__price" href="#modal60">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal60" class="modalmask">
@@ -1720,11 +1718,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PETROLUX II.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Petrolux II</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://pcdingenieria.com.mx/pdfs/industrial/30.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Petrolux II</span>
 					<a class="meta__price" href="#modal61">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal61" class="modalmask">
@@ -1748,11 +1746,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PETROLUX.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Petrolux</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2034.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Petrolux</span>
 					<a class="meta__price" href="#modal62">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal62" class="modalmask">
@@ -1775,11 +1773,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/Prismalume cerrado.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismalume cerrado</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.pcdingenieria.com.mx/pdfs/industrial/20.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Prismalume cerrado</span>
 					<a class="meta__price" href="#modal63">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal63" class="modalmask">
@@ -1802,11 +1800,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PRISMALUME.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismalume</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.pcdingenieria.com.mx/pdfs/industrial/19.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Prismalume</span>
 					<a class="meta__price" href="#modal64">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal64" class="modalmask">
@@ -1829,11 +1827,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PRISMATITE FLUORESCENTE.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismatite Fluorescente</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2033.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Prismatite Fluorescente</span>
 					<a class="meta__price" href="#modal65">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal65" class="modalmask">
@@ -1857,11 +1855,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PRISMGLO.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismglo</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2044.pdf" Target="_blank">Ficah Técnica</a>
+					<span class="meta__brand">Prismglo</span>
 					<a class="meta__price" href="#modal66">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal66" class="modalmask">
@@ -1885,11 +1883,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PRISMPACK CERRADO.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismpack Cerrado</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2042.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Prismpack Cerrado</span>
 					<a class="meta__price" href="#modal67">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal67" class="modalmask">
@@ -1913,11 +1911,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/PRISMPACK.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Prismpack</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.pcdingenieria.com.mx/pdfs/industrial/21.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Prismpack</span>
 					<a class="meta__price" href="#modal68">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal68" class="modalmask">
@@ -1941,11 +1939,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/sh pa22.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">SH PA22</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/SH%20PA22.pdf" Target="_blank">Ficha Técnica</a>
+					<a class="meta__brand">SH PA22</a>
 					<a class="meta__price" href="#modal69">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal69" class="modalmask">
@@ -1969,11 +1967,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/sh pa25.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">SH PA25</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/SH%20PA25.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">SH PA25</span>
 					<a class="meta__price" href="#modal70">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal70" class="modalmask">
@@ -1996,11 +1994,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/th a14.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TH A14</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TH%20A14.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TH A14</span>
 					<a class="meta__price" href="#modal71">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal71" class="modalmask">
@@ -2023,11 +2021,11 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<div class="slider__item"><img src="../images/INDUSTRIAL/th.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TH</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TH.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TH</span>
 					<a class="meta__price" href="#modal72">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal72" class="modalmask">
@@ -2052,11 +2050,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/THD.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">THS</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TH%20A16.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">THS</span>
 					<a class="meta__price" href="#modal73">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal73" class="modalmask">
@@ -2078,11 +2076,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/THR.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">THR</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TH%20PA22.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">THR</span>
 					<a class="meta__price" href="#modal74">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal74" class="modalmask">
@@ -2106,11 +2104,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/tx a121-a125.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TX A121/A125</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TX%20A121-A125.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TX A121/A125</span>
 					<a class="meta__price" href="#modal75">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal75" class="modalmask">
@@ -2133,11 +2131,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/txc.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">TXC</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/TX%20A23.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">TXC</span>
 					<a class="meta__price" href="#modal76">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal76" class="modalmask">
@@ -2161,11 +2159,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/VANTAGE ALT.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Vantage Alt</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/VantageALT.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Vantage Alt</span>
 					<a class="meta__price" href="#modal77">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal77" class="modalmask">
@@ -2190,11 +2188,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/VANTAGE MINI.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Vantage Mini</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/VantageMini.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Vantage Mini</span>
 					<a class="meta__price" href="#modal78">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal78" class="modalmask">
@@ -2218,11 +2216,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/INDUSTRIAL/VANTAGE RTT.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">Vantage RTT</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/VantageRTT.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">Vantage RTT</span>
 					<a class="meta__price" href="#modal79">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal79" class="modalmask">
@@ -2249,11 +2247,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/GDI.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">GDI</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2083.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">GDI</span>
 					<a class="meta__price" href="#modal80">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal80" class="modalmask">
@@ -2278,11 +2276,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/i-beam.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">i-beam</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/ll/documents/psg/fluorescent%20high%20bays.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">i-beam</span>
 					<a class="meta__price" href="#modal81">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal81" class="modalmask">
@@ -2303,11 +2301,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/mrt retrofit kit.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">mrt retrofit kit</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/ll/documents/psg/MRT%20Retrofit%20Kit.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">mrt retrofit kit</span>
 					<a class="meta__price" href="#modal82">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal82" class="modalmask">
@@ -2333,11 +2331,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/NEG-FEG.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NEG-FEG</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2084.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NEG-FEG</span>
 					<a class="meta__price" href="#modal83">Ver más</span>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal83" class="modalmask">
@@ -2363,11 +2361,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/NEP.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NEP</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2085.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NEP</span>
 					<a class="meta__price" href="#modal84">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal84" class="modalmask">
@@ -2391,11 +2389,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/NHW.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NHW</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2082.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NHW</span>
 					<a class="meta__price" href="#modal85">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal85" class="modalmask">
@@ -2420,11 +2418,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/pm3x.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">pm3x</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/PM3X.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">pm3x</span>
 					<a class="meta__price" href="#modal86">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal86" class="modalmask">
@@ -2447,11 +2445,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/pmo.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">pmo</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/PMO.pdf" Target="_blank">Ficha Técnia</a>
+					<span class="meta__brand">PMO</span>
 					<a class="meta__price" href="#modal87">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal87" class="modalmask">
@@ -2473,11 +2471,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/rt5.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">rt5</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/RT5.PDF" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">rt5</span>
 					<a class="meta__price" href="#modal88">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal88" class="modalmask">
@@ -2500,11 +2498,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/s.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">s</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2047%20(S).pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">s</span>
 					<a class="meta__price" href="#modal89">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal89" class="modalmask">
@@ -2526,11 +2524,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/sb.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">sb</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/SB.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">sb</span>
 					<a class="meta__price" href="#modal90">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal90" class="modalmask">
@@ -2550,11 +2548,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/SP.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">SP</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/SP.PDF">Ficha Técnica</a>
+					<span class="meta__brand">SP</span>
 					<a class="meta__price" href="#modal91">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal91" class="modalmask">
@@ -2577,11 +2575,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/wc-ny.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">wc-ny</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="#" >Ficha Técnica</a>
+					<span class="meta__brand">wc-ny</span>
 					<a class="meta__price" href="#modal92">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal92" class="modalmask">
@@ -2604,11 +2602,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/Fluorescente/ww.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ww</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/LL/documents/PSG/WW.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ww</span>
 					<a class="meta__price" href="#modal93">Ver más</a>
 				</div>
-        <button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+        <button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal93" class="modalmask">
@@ -2630,11 +2628,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/ALX.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">ALX</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/ll/documents/psg/ALX.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">ALX</span>
 					<a class="meta__price" href="#modal94">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal94" class="modalmask">
@@ -2661,11 +2659,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/GRANDVILLE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">GRANDVILLE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2088.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">GRANDVILLE</span>
 						<a class="meta__price" href="#modal95">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal95" class="modalmask">
@@ -2696,11 +2694,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/LEDGEND.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LEDGEND</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.abl-internationalsales.com/" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LEDGEND</span>
 					<a class="meta__price" href="#modal96">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal96" class="modalmask">
@@ -2725,11 +2723,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/LT BEZEL RING.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LT BEZEL RING</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/LED%20Trailblazer.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LT BEZEL RING</span>
 					<a class="meta__price" href="#modal97">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal97" class="modalmask">
@@ -2756,11 +2754,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/LTD.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">LTD</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/LED%20Trailblazer.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">LTD</span>
 					<a class="meta__price" href="#modal98">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal98" class="modalmask">
@@ -2788,11 +2786,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/SERIE H670.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">SERIE H670</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="#" >Ficha Técnica</a>
+					<span class="meta__brand">SERIE H670</span>
 					<a class="meta__price" href="#modal99">Ver más<a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal99" class="modalmask">
@@ -2816,11 +2814,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/teardrop led.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">teardrop led</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/documents/OtherDocuments/TearDrop_LED_OpChar.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand" >teardrop led</span>
 					<a class="meta__price" href="#modal100">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal100" class="modalmask">
@@ -2849,11 +2847,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/CON LEDS/WASHINGTON POSTLITE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">WASHINGTON POSTLITE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/HL-2442.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">WASHINGTON POSTLITE</span>
 					<a class="meta__price">Ver más<>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal100" class="modalmask">
@@ -2882,11 +2880,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/1700-AGUILA.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">1700-AGUILA</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2064.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">1700-AGUILA</span>
 					<a class="meta__price" href="#modal101">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal101" class="modalmask">
@@ -2910,11 +2908,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/EXPRESS VECTOR.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">EXPRESS VECTOR</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2065.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">EXPRESS VECTOR</span>
 					<a class="meta__price" href="#modal102">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal102" class="modalmask">
@@ -2939,11 +2937,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON MEDIANO.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">HALCON MEDIANO</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2067.pdf" Target="_blank"> Ficha Técnica</a>
+					<span class="meta__brand">HALCON MEDIANO</span>
 					<a class="meta__price" href="#modal103">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal103" class="modalmask">
@@ -2969,11 +2967,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">HALCON PEQUEÑO</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2068.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">HALCON PEQUEÑO</span>
 					<a class="meta__price" href="#modal104">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal104" class="modalmask">
@@ -2998,11 +2996,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HOV 16-HOV 25.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">HOV 16-HOV 25</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.pcdingenieria.com.mx/pdfs/especiales_exteriores/56.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">HOV 16-HOV 25</span>
 					<a class="meta__price" href="#modal105">Ver más<a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal105" class="modalmask">
@@ -3028,11 +3026,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/lmst.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">lmst</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2066.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">lmst</span>
 					<a class="meta__price" href="#modal106">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal106" class="modalmask">
@@ -3057,11 +3055,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/MONGOOSE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">MONGOOSE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2070.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">MONGOOSE</span>
 					<a class="meta__price" href="#modal107">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal107" class="modalmask">
@@ -3089,11 +3087,11 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/NHMSC-NHMAO.png" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NHMSC-NHMAO</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2074.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NHMSC-NHMAO</span>
 					<a class="meta__price" href="#modal108">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal108" class="modalmask">
@@ -3118,11 +3116,11 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/NHT.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">NHT</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/NTH.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">NHT</span>
 					<a class="meta__price" href="#modal109">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal109" class="modalmask">
@@ -3149,11 +3147,11 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/POSTE SERIE L5.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">POSTE SERIE L5</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2072.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">POSTE SERIE L5</span>
 					<a class="meta__price" href="#modal110">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal110" class="modalmask">
@@ -3181,11 +3179,11 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/PRISMBEAM II.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">PRISMBEAM II</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2076.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">PRISMBEAM II</span>
 					<a class="meta__price" href="#modal111">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal111" class="modalmask">
@@ -3213,11 +3211,11 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/SIGN VUE.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">SIGN VUE</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2078.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">SIGN VUE</span>
 					<a class="meta__price" href="#modal112">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal112" class="modalmask">
@@ -3245,11 +3243,11 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/tunel predator.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
-					<h3 class="meta__title">tunel predator</h3>
-					<span class="meta__brand">Artefactos Luminicos</span>
+					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2069.pdf" Target="_blank">Ficha Técnica</a>
+					<span class="meta__brand">tunel predator</span>
 					<a class="meta__price" href="#modal113">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i class="fa fa-shopping-cart"></i><span class="text-hidden">Add to cart</span></button>
+				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
 			</div>
 
 			<div id="modal113" class="modalmask">
