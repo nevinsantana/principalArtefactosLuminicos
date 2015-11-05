@@ -915,7 +915,8 @@ header::before {
 .tableContainer {
 	width: 100%;
 	height: auto;
-	overflow: overlay;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	padding-top: 64px;
 	padding-bottom: 17px;
 }
