@@ -12,6 +12,10 @@ function proyectos() {
 function clientes() {
   location.href="?sec=clientes"
 }
+
+function cotizaciones() {
+  location.href="?sec=cotizaciones"
+}
 /*fMenuIndex.php***************************************************************/
 
   /*end**********************************************************************/

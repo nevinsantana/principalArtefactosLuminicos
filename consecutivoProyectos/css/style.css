@@ -44,6 +44,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#signup .text:focus{
+	outline:0px;
+}
 /*fReset***********************************************************************/
 
 /*fonts************************************************************************/
@@ -109,6 +113,8 @@ Primary style
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+	font-size: 1.6rem;
+  font-family: quicksand, sans-serif;
 }
 
 html {
@@ -116,7 +122,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
   font-family: quicksand, sans-serif;
   color: #33414a;
   background-color: #f2f2f2;
@@ -651,7 +657,6 @@ header::before {
 .sectionContainer section:hover {
 	transition: 0.3s;
 	opacity: 0.9;
-	cursor: pointer;
 }
 
 .sectionContainer section div {
@@ -803,6 +808,7 @@ header::before {
 	width: 50%;
 	height: 50%;
 }
+
 /*colores*/
 .blanco {
 	background-color: #eeeeee;
@@ -836,7 +842,40 @@ header::before {
 /*fColores*/
 /*fDivideSections**************************************************************/
 
-/*principal.php*******************************************************************/
+/*filter***********************************************************************/
+.filterArea {
+	width: 100%;
+	height: 64px;
+	background-color: #4a4a4a;
+	position: fixed;
+	z-index: 5;
+}
+
+.inputFilterContainer {
+	width: 95%;
+	margin: auto;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inputFilterContainer input {
+	width: 100%;
+	height: 29px;
+	text-align: center;
+	border: none;
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+.inputFilterContainer input:focus {
+	height: 30px;
+	border: none;
+	outline-color: #36989e;
+}
+/*fFilter**********************************************************************/
+
+/*principal.php****************************************************************/
 .contenedorLogoInicio {
 	width: 50%;
 	max-width: 2024px;
@@ -868,5 +907,111 @@ header::before {
 
 /*proyectos.php****************************************************************/
 /*fProyectos.php***************************************************************/
+
+/*clientes.php*****************************************************************/
+/*fClientes.php****************************************************************/
+
+/*cotizaciones.php*************************************************************/
+.tableContainer {
+	width: 100%;
+	height: auto;
+	overflow: overlay;
+	padding-top: 64px;
+	padding-bottom: 17px;
+}
+
+.sectionContainer table {
+	position: relative;
+	width: 100%;
+}
+
+.sectionContainer table thead tr{
+	height: 50px;
+}
+
+.sectionContainer table thead tr th{
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	background: #4c8ca3;
+}
+
+.sectionContainer table thead tr th:first-child {
+	width: 4%;
+	min-width: 40px;
+}
+
+.sectionContainer table thead tr th:nth-child(2) {
+	width: 10%;
+	min-width: 100px;
+}
+
+.sectionContainer table thead tr th:nth-child(3),
+.sectionContainer table thead tr th:nth-child(4) {
+	width: 33%;
+	min-width: 250px;
+}
+
+.sectionContainer table thead tr th:last-child {
+	width: 20%;
+	min-width: 200px;
+}
+
+.sectionContainer table tbody td table tr td {
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sectionContainer table tbody tr:nth-child(odd){
+	background-color: #599a9a;
+	color: black;
+}
+
+.sectionContainer table tbody tr:nth-child(even){
+	background-color: #365757;
+	color: white;
+}
+
+.sectionContainer table tbody tr td div {
+	cursor: pointer;
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+.sectionContainer table tbody tr td div span {
+	position: relative;
+  top: 25%;
+  transform: translateY(-25%);
+}
+
+.sectionContainer table tbody tr:nth-child(odd) td div:first-child {
+	background: #62c18e;
+}
+.sectionContainer table tbody tr:nth-child(odd) td div:last-child {
+	background: #db7979;
+}
+
+.sectionContainer table tbody tr:nth-child(even) td div:first-child {
+	background: #347853;
+	color: white;
+}
+.sectionContainer table tbody tr:nth-child(even) td div:last-child {
+	background: #873333;
+	color: white;
+}
+
+.sectionContainer table tbody tr td{
+	height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.sectionContainer table tr th:hover, .sectionContainer table tr td:hover {
+	transition: 0.5s;
+	opacity: 0.9;
+}
+/*fCotizaciones.php************************************************************/
 
   /*end**********************************************************************/

@@ -21,7 +21,7 @@
 			<ul class="cd-main-nav">
 				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
 				<li><a href="#" onclick="clientes()">Clientes</a></li>
-				<li><a href="#">Cotizaciones</a></li>
+				<li><a href="#" onclick="cotizaciones()">Cotizaciones</a></li>
 				<li>
 					<a class="cd-subnav-trigger"><span>Usuario</span></a>
 					<ul>
@@ -41,9 +41,10 @@
     <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
     <?php include 'php/menu.php' ?><!--Contenido de la página-->
 	</main>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="js/main.js"></script> <!-- Resource jQuery -->
-<script type="text/javascript" src="js/acciones.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/acciones.js"></script>
+<script src="js/livePage.js"></script>
 </body>
 </html>

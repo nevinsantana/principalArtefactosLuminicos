@@ -7,4 +7,6 @@
     require_once("proyectos.php");
   if($seccion=="clientes")
       require_once("clientes.php");
+  if($seccion=="cotizaciones")
+      require_once("cotizaciones.php");
 ?>
