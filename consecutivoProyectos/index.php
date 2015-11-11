@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 	<title>Consecutivo de Proyectos</title>
 </head>
-<body>
+<body onresize="javascript: normalAbreNP(); normalAbrePE()">
 	<header>
 		<div class="cd-brand">
       <a href="#" onclick="principal()"><p>Consecutivo de proyectos</p></a>
@@ -39,11 +39,15 @@
 
 	<main class="cd-main-content">
     <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
+    <div id="botonRegresar" class="cerrarSection noOpacity"
+      onclick="cierraSection()">
+      x
+    </div>
     <?php include 'php/menu.php' ?><!--Contenido de la página-->
 	</main>
 <script src="js/modernizr.js"></script>
 <script src="../js/jquery.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script>
 <script src="js/acciones.js"></script>
 <script src="js/livePage.js"></script>
 </body>
