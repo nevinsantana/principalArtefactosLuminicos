@@ -671,6 +671,18 @@ header::before {
 	transition: 1s;
 }
 
+.sectionContainer section .iconoSectionNC {
+	width: 5%;
+	max-width: 64px;
+	height: auto;
+	max-height: 64px;
+	margin: auto;
+	position: relative;
+  top: 55%;
+  transform: translateY(-55%);
+	transition: 1s;
+}
+
 .sectionContainer .horizontalVertical4 div {
 	width: 8%;
 }

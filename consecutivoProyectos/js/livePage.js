@@ -4,13 +4,24 @@
 var sectionAbierta, sectionIs,
 idProyectosExistentes= document.getElementById('proyectosExistentes'),
 idNuevoProyecto= document.getElementById('nuevoProyecto'),
+idNuevoCliente= document.getElementById('nuevoCliente'),
+idEliminarCliente= document.getElementById('eliminarCliente'),
+idModificarCliente= document.getElementById('modificarCliente'),
+idListaClientes= document.getElementById('listaClientes'),
 idTituloNuevoProyecto= document.getElementById('tituloNuevoProyecto'),
 idTituloProyectosExistentes=
   document.getElementById('tituloProyectosExistentes'),
+idTituloNuevoCliente= document.getElementById('tituloNuevoCliente'),
+idTituloEliminarCliente= document.getElementById('tituloEliminarCliente'),
+idTituloModificarCliente= document.getElementById('tituloModificarCliente'),
+idTituloListaClientes= document.getElementById('tituloListaClientes'),
 idIconoNuevoProyecto= document.getElementById('iconoNuevoProyecto'),
 idIconoProyectosExistentes= document.getElementById('iconoProyectosExistentes'),
-idBotonRegresar= document.getElementById('botonRegresar'),
-idNuevoCliente= document.getElementById('nuevoCliente');
+idIconoNuevoCliente= document.getElementById('iconoNuevoCliente'),
+idIconoEliminarCliente= document.getElementById('iconoEliminarCliente'),
+idIconoModificarCliente= document.getElementById('iconoModificarCliente'),
+idIconoListaClientes= document.getElementById('iconoListClientes'),
+idBotonRegresar= document.getElementById('botonRegresar');
 /*fGlobalVariables*************************************************************/
 
 /*index.php********************************************************************/
@@ -182,11 +193,41 @@ function normalAbrePE() {
 
 /*clientes.php*****************************************************************/
 function abreNC() {
-  idBotonRegresar.style.height="100%";
-  idBotonRegresar.style.width="100%";
-  idBotonRegresar.style.position="absolute";
-  idBotonRegresar.style.top="0";
-  idBotonRegresar.style.left="0";
+  sectionAbierta = true;
+  sectionIs = "cNC";
+  var width = (document.body.clientWidth);
+  idEliminarCliente.style.height="0%";
+  idEliminarCliente.style.display="none";
+  idModificarCliente.style.height="0%";
+  idModificarCliente.style.display="none";
+  idListaClientes.style.height="0%";
+  idListaClientes.style.display="none";
+  idNuevoCliente.style.position="absolute";
+  idNuevoCliente.style.top="0";
+  idNuevoCliente.style.height="100%";
+  idNuevoCliente.style.width="100%";
+  idNuevoCliente.style.cursor="default";
+  if(width>950) {
+    idTituloNuevoCliente.style.top="12.5%";
+    idTituloNuevoCliente.style.transform= "translateY(-12.5%)";
+    idIconoNuevoCliente.style.marginLeft="3%";
+    idIconoNuevoCliente.style.top="7.5%";
+    idIconoNuevoCliente.style.transform=
+      "translateY(-7.5%)";
+    idBotonRegresar.style.top="15%";
+    idBotonRegresar.style.opacity="1";
+  }
+  else {
+    idTituloNuevoCliente.style.top="7.5%";
+    idTituloNuevoCliente.style.transform=
+      "translateY(-7.5%)";
+    idIconoNuevoCliente.style.marginLeft="3%";
+    idIconoNuevoCliente.style.top="3.5%";
+    idIconoNuevoCliente.style.transform=
+      "translateY(-3.5%)";
+    idBotonRegresar.style.top="5.5%";
+    idBotonRegresar.style.opacity="1";
+  }
 }
 /*fClientes.php****************************************************************/
 
