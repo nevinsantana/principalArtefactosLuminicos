@@ -1,5 +1,9 @@
   /*start********************************************************************/
 
+/*globalVar's******************************************************************/
+var user;
+/*fGlobalVar's*****************************************************************/
+
 /*menuIndex.php****************************************************************/
 if(logeado == 1) { /*var logeado viene de ../php/funciones.php*/
   document.getElementById('usuarioInicia').innerHTML = user;
@@ -8,15 +12,16 @@ else {
   document.getElementById('usuarioInicia').innerHTML = "Accesar";
 }
 
-if(logeado == 1) { /*var logeado viene de ../php/funciones.php*/
-  document.getElementById('cerrarIniciar').innerHTML = "Cerrar Sesión";
-}
-else {
-  document.getElementById('cerrarIniciar').innerHTML = "Iniciar Sesión";
-}
-
 function login() {
   location.href="?sec=login"
+}
+
+function logout() {
+  location.href="?sec=login&logout=true"
+}
+
+function cerrarSesion() {
+  location.href="?sec=login&cerrarSesion=true"
 }
 
 function principal() {

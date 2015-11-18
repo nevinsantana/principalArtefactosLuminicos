@@ -20,7 +20,7 @@
       </div>
   		<nav class="cd-main-nav-wrapper">
   			<ul class="cd-main-nav">
-          <?php if(isset($_SESSION['logeado'])) { ?>
+          <?php if(isset($_SESSION['user'])) { ?>
     				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
     				<li><a href="#" onclick="clientes()">Clientes</a></li>
     				<li><a href="#" onclick="cotizaciones()">Cotizaciones</a></li>
@@ -29,7 +29,12 @@
   					<a class="cd-subnav-trigger"><span id="usuarioInicia"></span></a>
   					<ul>
   						<li class="go-back"><a href="#">Regresa</a></li>
-  						<li><a href="#" onclick="login()" id="cerrarIniciar"></a></li>
+              <?php if(!isset($_SESSION['user'])) { ?>
+  						<li><a href="#" onclick="login()">Iniciar sesión</a></li>
+              <?php } ?>
+              <?php if(isset($_SESSION['user'])) { ?>
+  						<li><a href="#" onclick="logout()">Cerrar sesión</a></li>
+              <?php } ?>
   						<li><a href="#" class="placeholder">Placeholder</a></li>
   					</ul>
   				</li>

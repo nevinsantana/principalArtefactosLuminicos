@@ -18,44 +18,33 @@
   }
   /*fConexiónDB****************************************************************/
 
-  /*index.php******************************************************************/
-  if(isset($_SESSION['permiso'])) {
-    $logeado = 1;
-  }
-
-  else {
-    $logeado = 0;
-  }
-  /*fIndex.php*****************************************************************/
-
   /*login.php******************************************************************/
   function loginin() {
     if(isset($_GET['loginin'])) {
+      $conexion = conectar();
       $_SESSION['user'] = $_POST['user'];
       $_SESSION['pass'] = $_POST['pass'];
       $user = $_SESSION['user'];
       $pass = $_SESSION['pass'];
-      $usuario = 0;
-      $pass = 0;
-      $query = "SELECT id_usuario, password FROM Log_In WHERE
+      $userTest = 1;
+      $sql = "SELECT id_usuario, password FROM Log_In WHERE
         id_usuario = '$user' and password = '$pass'";
-      $result = mysql_query($query);
-      while ($row = mysql_fetch_assoc($result)) {
-        if ($row['id_usuario'] == $user) {
-          $usuario = $row['id_usuario'];
-          $pass = $row['password'];
-        }
+      $result = query($sql, $conexion);
+      $campo = mysql_fetch_array($result);
+      if ($campo['id_usuario'] == $user) {
+        $userTest = $campo['id_usuario'];
       }
-      if ($usuario == 0 || $pass == 0) {
+      if ($userTest == 1) {
         session_destroy();
         header("Location: ?sec=login&errorLogin=true");
       }
       else {
-        $query= "SELECT permiso, activo FROM Usuarios WHERE id_usuario='$user'";
-        if ($row = mysql_fetch_assoc($result)) {
-          $permiso = $row['permiso'];
-          $activo = $row['activo'];
-        }
+        $sql=
+          "SELECT permiso, activo FROM Usuarios WHERE id_usuario='$userTest'";
+        $result = query($sql, $conexion);
+        $campo = mysql_fetch_array($result);
+        $permiso = $campo['permiso'];
+        $activo = $campo['activo'];
         if ($permiso == '1' && $activo == '1') {
           $_SESSION['permiso'] = '1';
         }
@@ -66,13 +55,31 @@
           session_destroy();
           header("Location: ?sec=login&errorLogin2=true");
         }
+        header("Location: ?sec=principal");
       }
     }
   }
   /*fLogin.php*****************************************************************/
+
+  /*index.php******************************************************************/
+  if(isset($_SESSION['permiso'])) {
+    $logeado = 1;
+  }
+  else {
+    $logeado = 2;
+  }
+
+  if(isset($_GET['cerrarSesion'])){
+    session_destroy();
+    header("Location: index.php");
+  }
+  /*fIndex.php*****************************************************************/
 ?>
 <!--index.php------------------------------------------------------------------>
 <script>
-var logeado = <?php echo $logeado; ?>;
+  var logeado = <?php echo $logeado; ?>;
+  if(logeado == 1) {
+    var user = "<?php if(isset($_SESSION['user']))echo $_SESSION['user'];?>";
+  }
 </script>
 <!--fIndex.php----------------------------------------------------------------->

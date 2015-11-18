@@ -964,6 +964,54 @@ header::before {
 	transition: 0.5s;
 }
 
+.formuLogin aside {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.formuLogin span {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.formuLogin button {
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formuLogin button:first-child {
+	float: left;
+}
+
+.formuLogin button:last-child {
+	float: right;
+}
+
+@media only screen and (max-width: 700px) {
+	.formuLogin aside {
+		text-align: center;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.formuLogin span {
+		font-size: 20px;
+		width: 100%;
+		font-weight: bold;
+	}
+
+	.formuLogin button {
+		border: none;
+		padding: 10px;
+	}
+
+	.formuLogin button {
+		float: none;
+		width: 100%;
+		margin: 20px 0;
+	}
+}
 .formuLogin h1 {
 	font-size: 45px;
 	font-weight: bold;
