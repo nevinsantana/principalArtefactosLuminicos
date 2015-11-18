@@ -49,8 +49,16 @@ table {
 	outline:0px;
 }
 
+input:focus{
+      outline: none;
+}
+
 .noOpacity {
 	opacity: 0;
+}
+
+.break {
+	clear: both;
 }
 /*fReset***********************************************************************/
 
@@ -811,6 +819,11 @@ header::before {
 /*fSecondarySlidingNavigation**************************************************/
 
 /*divideSections***************************************************************/
+.unaSection {
+	width: 100%;
+	height: 100%;
+}
+
 .vertical2 {
 	width: 100%;
 	height: 50%;
@@ -867,8 +880,8 @@ header::before {
 }
 
 .verde {
-	background-color: #26963A;
-	color: #eeeeee;
+	background-color: #5eac6c;
+	color: #000000;
 }
 /*fColores*/
 /*fDivideSections**************************************************************/
@@ -934,7 +947,130 @@ header::before {
 	}
 }
 /*f@media*/
-/*fInicio.php******************************************************************/
+/*fPrincipal.php***************************************************************/
+
+/*login.php********************************************************************/
+.formuLogin {
+	width: 50%;
+	height: auto;
+	padding: 10px;
+	position: relative;
+	top: 40%;
+	transform: translateY(-40%);
+	margin: auto;
+}
+
+.formuLogin * {
+	transition: 0.5s;
+}
+
+.formuLogin h1 {
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.formuLogin h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.formuLogin input[type='text'], .formuLogin input[type='password'] {
+	float: right;
+	border: none;
+	padding: 3px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.formuLogin input[type='text']:focus, .formuLogin input[type='password']:focus {
+	border-color: #00ff5e;
+	box-shadow: 0px 0px 8px 3px #23b057;
+}
+
+.formuLogin input[type='text'], .formuLogin input[type='password'] {
+	border-radius: 10px;
+}
+
+.formuLogin input[type='submit'] {
+	position: relative;
+	width: 20%;
+	min-width: 80px;
+	height: auto;
+	padding: 5px;
+	background-color: #af392d;
+	color: white;
+	border: none;
+	margin-left: 40%;
+	cursor: pointer;
+}
+
+.errorLogin {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	padding: 15px;
+	transition: 0.5s;
+	font-size: 16px;
+}
+
+.errorLogin:hover {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+	.formuLogin {
+		width: 50%;
+		height: auto;
+		padding: 5px;
+		position: relative;
+		top: 20%;
+		transform: translateY(-20%);
+		margin: auto;
+	}
+
+	.formuLogin h1 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	.formuLogin h2 {
+		font-size: 15px;
+		margin-bottom: 10px;
+		float: none;
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.formuLogin input[type='text'], .formuLogin input[type='password'] {
+		position: relative;
+		float: none;
+		width: 100%;
+	}
+
+	.formuLogin input[type='text']:focus, .formuLogin input[type='password']:focus
+	{
+		outline:0px;
+	}
+
+	.formuLogin input[type='submit'] {
+		margin: 30px 0 0 0;
+		width: 100%;
+	}
+
+	.errorLogin {
+		padding: 8px;
+		font-size: 14px;
+	}
+}
+
+.errorLogin p {
+	text-align: center;
+}
+/*fLogin.php*******************************************************************/
 
 /*proyectos.php****************************************************************/
 /*fProyectos.php***************************************************************/

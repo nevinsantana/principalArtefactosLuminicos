@@ -25,8 +25,18 @@ idBotonRegresar= document.getElementById('botonRegresar');
 /*fGlobalVariables*************************************************************/
 
 /*index.php********************************************************************/
+function animaciones() {
+  errorLogin();
+}
+
+function acomodarTituloIcono() {
+  normalAbreNP();
+  normalAbrePE();
+  normalAbreNC();
+}
+
 function cierraSection() {
-  if(sectionAbierta == true && sectionIs == "pNP") {
+  if(sectionAbierta === true && sectionIs == "pNP") {
     idNuevoProyecto.style.position="absolute";
     idNuevoProyecto.style.zIndex="2";
     idNuevoProyecto.style.top="0";
@@ -46,8 +56,26 @@ function cierraSection() {
     idProyectosExistentes.style.bottom="0";
     idProyectosExistentes.style.zIndex="1";
   }
-
-  if(sectionAbierta == true && sectionIs == "pPE") {
+  if(sectionAbierta === true && sectionIs == "pPE") {
+    idProyectosExistentes.style.position="absolute";
+    idProyectosExistentes.style.zIndex="2";
+    idProyectosExistentes.style.bottom="0";
+    idProyectosExistentes.style.height="50%";
+    idProyectosExistentes.style.cursor="pointer";
+    idTituloProyectosExistentes.style.top="45%";
+    idTituloProyectosExistentes.style.transform= "translateY(-45%)";
+    idIconoProyectosExistentes.style.marginLeft="47.5%";
+    idIconoProyectosExistentes.style.top="55%";
+    idIconoProyectosExistentes.style.transform= "translateY(-55%)";
+    idBotonRegresar.style.top="3.5%";
+    idBotonRegresar.style.opacity="0";
+    sectionAbierta = false;
+    idNuevoProyecto.style.height="50%";
+    idNuevoProyecto.style.display="block";
+    idNuevoProyecto.style.top="0";
+    idNuevoProyecto.style.zIndex="1";
+  }
+  if(sectionAbierta === true && sectionIs == "cNC" && sectionColor === true) {
     idProyectosExistentes.style.position="absolute";
     idProyectosExistentes.style.zIndex="2";
     idProyectosExistentes.style.bottom="0";
@@ -69,6 +97,9 @@ function cierraSection() {
 }
 /*fIndex.php*******************************************************************/
 
+/*login.php********************************************************************/
+/*fLogin.php*******************************************************************/
+
 /*proyectos.php****************************************************************/
 function abreNP() {
   sectionAbierta = true;
@@ -87,7 +118,7 @@ function abreNP() {
     idIconoNuevoProyecto.style.top="7.5%";
     idIconoNuevoProyecto.style.transform=
       "translateY(-7.5%)";
-    idBotonRegresar.style.top="15%";
+    idBotonRegresar.style.top="10%";
     idBotonRegresar.style.opacity="1";
   }
   else {
@@ -105,7 +136,7 @@ function abreNP() {
 
 function normalAbreNP() {
   var width = (document.body.clientWidth);
-  if (sectionAbierta == true) {
+  if (sectionAbierta === true) {
     if(width>950) {
       idTituloNuevoProyecto.style.top="12.5%";
       idTituloNuevoProyecto.style.transform=
@@ -115,7 +146,7 @@ function normalAbreNP() {
       idIconoNuevoProyecto.style.top="7.5%";
       idIconoNuevoProyecto.style.transform=
         "translateY(-7.5%)";
-      idBotonRegresar.style.top="15%";
+      idBotonRegresar.style.top="10%";
     }
     else {
       idTituloNuevoProyecto.style.top="7.5%";
@@ -165,7 +196,7 @@ function abrePE() {
 
 function normalAbrePE() {
   var width = (document.body.clientWidth);
-  if (sectionAbierta == true) {
+  if (sectionAbierta === true) {
     if(width>950) {
       idTituloProyectosExistentes.style.top="12.5%";
       idTituloProyectosExistentes.style.transform=
@@ -175,7 +206,7 @@ function normalAbrePE() {
       idIconoProyectosExistentes.style.top="7.5%";
       idIconoProyectosExistentes.style.transform=
         "translateY(-7.5%)";
-      idBotonRegresar.style.top="15%";
+      idBotonRegresar.style.top="%";
     }
     else {
       idTituloProyectosExistentes.style.top="7.5%";
@@ -195,6 +226,7 @@ function normalAbrePE() {
 function abreNC() {
   sectionAbierta = true;
   sectionIs = "cNC";
+  sectionColor = true;
   var width = (document.body.clientWidth);
   idEliminarCliente.style.height="0%";
   idEliminarCliente.style.display="none";
@@ -207,6 +239,7 @@ function abreNC() {
   idNuevoCliente.style.height="100%";
   idNuevoCliente.style.width="100%";
   idNuevoCliente.style.cursor="default";
+  idBotonRegresar.style.color="#262626";
   if(width>950) {
     idTituloNuevoCliente.style.top="12.5%";
     idTituloNuevoCliente.style.transform= "translateY(-12.5%)";
@@ -214,7 +247,7 @@ function abreNC() {
     idIconoNuevoCliente.style.top="7.5%";
     idIconoNuevoCliente.style.transform=
       "translateY(-7.5%)";
-    idBotonRegresar.style.top="15%";
+    idBotonRegresar.style.top="10%";
     idBotonRegresar.style.opacity="1";
   }
   else {
@@ -229,6 +262,33 @@ function abreNC() {
     idBotonRegresar.style.opacity="1";
   }
 }
+
+function normalAbreNC() {
+  var width = (document.body.clientWidth);
+  if (sectionAbierta === true) {
+    if(width>950) {
+      idTituloProyectosExistentes.style.top="12.5%";
+      idTituloProyectosExistentes.style.transform=
+        "translateY(-12.5%)";
+      idIconoProyectosExistentes.style.marginLeft="50%";
+      idIconoProyectosExistentes.style.marginLeft="3%";
+      idIconoProyectosExistentes.style.top="7.5%";
+      idIconoProyectosExistentes.style.transform=
+        "translateY(-7.5%)";
+      idBotonRegresar.style.top="%";
+    }
+    else {
+      idTituloProyectosExistentes.style.top="7.5%";
+      idTituloProyectosExistentes.style.transform=
+        "translateY(-7.5%)";
+      idIconoProyectosExistentes.style.marginLeft="3%";
+      idIconoProyectosExistentes.style.top="3.5%";
+      idIconoProyectosExistentes.style.transform=
+        "translateY(-3.5%)";
+      idBotonRegresar.style.top="5.5%";
+    }
+  }
+}
 /*fClientes.php****************************************************************/
 
 /*filtradorDatos***************************************************************/
@@ -238,7 +298,7 @@ window.onload=function() {
     var data = this.value.split(" ");
     //create a jquery object of the rows
     var jo = $("#fbody").find("tr");
-    if (this.value == "") {
+    if (this.value === "") {
       jo.show();
       return;
     }

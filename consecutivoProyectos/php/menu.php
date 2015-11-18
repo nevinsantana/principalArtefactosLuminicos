@@ -3,6 +3,8 @@
     require_once("principal.php");
   if($seccion=="principal")
     require_once("principal.php");
+  if($seccion=="login")
+    require_once("login.php");
   if($seccion=="proyectos")
     require_once("proyectos.php");
   if($seccion=="clientes")
