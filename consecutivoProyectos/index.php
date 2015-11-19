@@ -20,6 +20,7 @@
       </div>
   		<nav class="cd-main-nav-wrapper">
   			<ul class="cd-main-nav">
+            <li><a href="../Cotizaciones">Sistema de Cotizaciones</a></li>
           <?php if(isset($_SESSION['user'])) { ?>
     				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
     				<li><a href="#" onclick="clientes()">Clientes</a></li>
@@ -48,12 +49,12 @@
       <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
       <?php if(isset($_GET['errorLogin'])) { ?>
       <div class="errorLogin rojo">
-        <p>Error, usuario y/o contraseña incorrectos</p>
+        <p>Error, usuario y/o contraseña incorrectos.</p>
       </div>
       <?php } ?>
       <?php if(isset($_GET['errorLogin2'])) { ?>
       <div class="errorLogin rojo">
-        <p>Usuario desactivado</p>
+        <p>Usuario desactivado, consulte a un administrador.</p>
       </div>
       <?php } ?>
       <div id="botonRegresar" class="cerrarSection noOpacity"

@@ -11,4 +11,8 @@
       require_once("clientes.php");
   if($seccion=="cotizaciones")
       require_once("cotizaciones.php");
+  if($seccion=="verCotizacion")
+      require_once("verCotizacion.php");
+  if($seccion=="eliminarCotizacion")
+      require_once("eliminarCotizacion.php");
 ?>

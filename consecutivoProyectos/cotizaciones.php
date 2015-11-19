@@ -16,26 +16,7 @@
         </tr>
       </thead>
       <tbody id="fbody">
-        <tr>
-          <td>1</td>
-          <td>04/11/1998</td>
-          <td>Artefactos Lumínicos S.A. de C.V.</td>
-          <td>Marco Antonio Villar Romo</td>
-          <td>
-            <div><span>Ver</span></div>
-            <div><span>Eliminar</span></div>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>05/11/2015</td>
-          <td>SOLA Basic S.A. de C.V.</td>
-          <td>Aarón Masetto</td>
-          <td>
-            <div><span>Ver</span></div>
-            <div><span>Eliminar</span></div>
-          </td>
-        </tr>
+        <?php generaTablaCotizaciones(); // php/funciones.php ?>
       </tbody>
     </table>
   </div>

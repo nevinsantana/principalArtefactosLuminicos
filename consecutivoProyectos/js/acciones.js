@@ -41,4 +41,14 @@ function cotizaciones() {
 }
 /*fMenuIndex.php***************************************************************/
 
+/*cotizaciones.php*************************************************************/
+function verCotizacion(noCotizacion) {
+  location.href="?sec=verCotizacion&cotizacion="+noCotizacion;
+}
+
+function eliminarCotizacion(noCotizacion) {
+  location.href="?sec=eliminarCotizacion&cotizacion="+noCotizacion;
+}
+/*fCotizaciones.php************************************************************/
+
   /*end**********************************************************************/

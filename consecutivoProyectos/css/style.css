@@ -184,7 +184,7 @@ header::before {
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   header {
     height: 80px;
   }
@@ -219,7 +219,7 @@ header::before {
   margin-top: 14px;
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-logo {
     position: absolute;
     z-index: 2;
@@ -252,7 +252,7 @@ header::before {
   max-width: 100%;
   margin-top: 19px;
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-brand {
 		font-size: 25px;
     position: absolute;
@@ -340,7 +340,7 @@ header::before {
   -o-transform: translateY(0) rotate(45deg);
   transform: translateY(0) rotate(45deg);
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-nav-trigger {
     display: none;
   }
@@ -467,7 +467,7 @@ header::before {
 	.cd-subnav-trigger */
   display: none;
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-main-nav {
     position: static;
     visibility: visible;
@@ -631,7 +631,7 @@ header::before {
   display: none;
   content: 'mobile';
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-main-content::before {
     content: 'desktop';
   }
@@ -723,7 +723,7 @@ header::before {
   -o-transform: translateX(-260px);
   transform: translateX(-260px);
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .cd-main-content {
     padding-top: 80px;
   }
@@ -787,7 +787,7 @@ header::before {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .no-js .cd-main-nav {
     height: 80px;
   }
@@ -811,7 +811,7 @@ header::before {
 .no-js .cd-main-content {
   padding-top: 0;
 }
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1125px) {
   .no-js .cd-main-content {
     padding-top: 80px;
   }
