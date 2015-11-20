@@ -1203,6 +1203,13 @@ header::before {
 	float: left;
 }
 
+.sectionContainer table tbody tr td .verP2 {
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+
 .sectionContainer table tbody tr td div span {
 	position: relative;
   top: 25%;
@@ -1212,6 +1219,7 @@ header::before {
 .sectionContainer table tbody tr:nth-child(odd) td div:first-child {
 	background: #62c18e;
 }
+
 .sectionContainer table tbody tr:nth-child(odd) td div:last-child {
 	background: #db7979;
 }
@@ -1220,8 +1228,18 @@ header::before {
 	background: #347853;
 	color: white;
 }
+
 .sectionContainer table tbody tr:nth-child(even) td div:last-child {
 	background: #873333;
+	color: white;
+}
+
+.sectionContainer table tbody tr:nth-child(odd) td .verP2:last-child {
+	background: #62c18e;
+}
+
+.sectionContainer table tbody tr:nth-child(even) td .verP2:last-child {
+	background: #347853;
 	color: white;
 }
 
@@ -1236,5 +1254,13 @@ header::before {
 	opacity: 0.9;
 }
 /*fCotizaciones.php************************************************************/
+
+/*verCotizacion.php************************************************************/
+.backVerCotizacion {
+	width: 100%;
+	height: 100%;
+	background-color: #d4cda9;
+}
+/*fVerCotizacion.php***********************************************************/
 
   /*end**********************************************************************/

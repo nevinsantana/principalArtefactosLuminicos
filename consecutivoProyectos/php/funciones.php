@@ -15,10 +15,13 @@
     return $link;
   }
 
+  $conexion = conectar();
+
   function query($sql, $con) {
     $result = mysql_query($sql, $con);
     return $result;
   }
+
 ?>
 <!--fConexiónDB---------------------------------------------------------------->
 
@@ -50,11 +53,19 @@
 ?>
 <!--fVerificaSesionIniciada---------------------------------------------------->
 
+<!--extractorDatosDB----------------------------------------------------------->
+<?php
+  function eCotizaciones() {
+
+  }
+?>
+<!--fExtractorDatosDB---------------------------------------------------------->
+
 <!--login.php------------------------------------------------------------------>
 <?php
   function loginin() { //Realizada al presionar boton Entrar en login
     if(isset($_GET['loginin'])) {
-      $conexion = conectar(); //conexiónDB
+      global $conexion;
       $_SESSION['user'] = $_POST['user']; //Inicia sesion
       $user = $_SESSION['user'];
       $pass = $_POST['pass'];
@@ -114,7 +125,7 @@
 <!--cotizaciones.php----------------------------------------------------------->
 <?php
   function generaTablaCotizaciones() {
-    $conexion = conectar(); //conexiónDB
+    global $conexion;
     if($_SESSION['permiso'] == 1) {
       $sql = "SELECT * FROM `Cotizaciones` ORDER BY id_cotizacion DESC";
       $resultado = query($sql, $conexion);
@@ -184,11 +195,9 @@
           <td><?php echo $empresa; ?></td>
           <td><?php echo $vendedor; ?></td>
           <td>
-            <div onclick="verCotizacion(<?php echo $noCotizacion; ?>)">
+            <div class="verP2"
+              onclick="verCotizacion(<?php echo $noCotizacion; ?>)">
               <span>Ver</span>
-            </div> <!--acciones.js-->
-            <div onclick="eliminarCotizacion(<?php echo $noCotizacion; ?>)">
-              <span>Eliminar</span>
             </div> <!--acciones.js-->
           </td>
         </tr>

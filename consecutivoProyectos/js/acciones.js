@@ -43,11 +43,13 @@ function cotizaciones() {
 
 /*cotizaciones.php*************************************************************/
 function verCotizacion(noCotizacion) {
-  location.href="?sec=verCotizacion&cotizacion="+noCotizacion;
+  var url = '?sec=verCotizacion&cotizacion='+noCotizacion,
+      win = window.open(url, '_blank');
+  win.focus();
 }
 
 function eliminarCotizacion(noCotizacion) {
-  location.href="?sec=eliminarCotizacion&cotizacion="+noCotizacion;
+  location.href="?sec=cotizaciones&cotizacion="+noCotizacion;
 }
 /*fCotizaciones.php************************************************************/
 
