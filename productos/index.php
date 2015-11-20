@@ -96,7 +96,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>02454</h2>
-					<img src="../images/Interior/02454.JPG" />
+					<img src="../images/Interior/02454.jpg" />
 					<P>Especial para tiendas minoristas, oficinas, escuelas, Lobbies y Restaurantes. El sistema de iluminación </br>
 						 de 02454 Holophane constituye el elemento de diseño de la iluminación ideal para aplicaciones que </br>
 						 requieren una nave industrial. Desde 1937 el 02454 ha sido el mejor en bajo brillo, con la iluminación</br>
@@ -126,7 +126,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>Colonial Mexicano</h2>
-					<img src="../images/Exterior/COLONIAL MEXICANO.JPG" />
+					<img src="../images/Exterior/COLONIAL MEXICANO.jpg" />
 					<P>deal para vialidades, estacionamientos, jardines, parques, áreas recreativas. Luminario exterior decorativo,</br>
 						 de alto rendimiento. Cápsula en fundición de aluminio bajo en cobre. Fabricada con un tratamiento previo para</br>
 						  una mayor resistencia a la corrosión. Balastro electromagnético autorregulado con un alto factor de potencia.</br>
@@ -216,7 +216,7 @@
 
 			<div class="grid__item shoes">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
 					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
 					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
 				</div>
@@ -232,7 +232,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>CIS-ILUMINARE (GRANDE Y PEQUEÑO)</h2>
-					<img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" />
+					<img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" />
 					<P>ideal para el comercios minoristas, aeropuertos, vestíbulos, escuelas. La línea Illuminaire</br>
 						incluye cinco nuevos estilos atractivos: el huevo, Crest, Tri huevo-, tri-Cresta y el cuádruple.</br>
 						Cada nueva forma (excepto la Quad) está disponible en un tamaño grande o compacto para dar cabida</br>
@@ -2962,7 +2962,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 
       <div class="grid__item alto">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
 				</div>
@@ -2978,7 +2978,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>HALCON PEQUEÑO</h2>
-					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg"/>
+					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO..JPG"/>
 					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
 						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
 						  mayor resistencia a la corrosión. Balastro autorregulado del alto factor de potencia con
