@@ -8,8 +8,6 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<!-- Pixel Fabric clothes icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/pixelfabric-clothes/style.css" />
 	<!-- General demo styles & header -->
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	 <!-- Flickity gallery styles -->
@@ -43,7 +41,7 @@
 		<!-- Grid -->
 		<section class="grid grid--loading">
 			<!-- Loader -->
-			<img class="grid__loader" src="images/grid.svg" width="60" alt="Loader image" />
+			<img class="grid__loader" src="../images/grid.svg" width="60" alt="Loader image" />
 			<!-- Grid sizer for a fluid Isotope (Masonry) layout -->
 			<div class="grid__sizer"></div>
 			<!-- Grid items -->
@@ -2962,9 +2960,9 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 
       <div class="grid__item alto">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/halconChico.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/halconChico.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/halconChico.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2068.pdf" Target="_blank">Ficha Técnica</a>
@@ -2978,7 +2976,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>HALCON PEQUEÑO</h2>
-					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg"/>
+					<img src="../images/SISTEMAS DE ALTO MONTAJE/halconChico.jpg"/>
 					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
 						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
 						  mayor resistencia a la corrosión. Balastro autorregulado del alto factor de potencia con
