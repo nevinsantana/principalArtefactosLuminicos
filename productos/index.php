@@ -232,7 +232,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>CIS-ILUMINARE (GRANDE Y PEQUEÑO)</h2>
-					<img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" />
+					<img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" />
 					<P>ideal para el comercios minoristas, aeropuertos, vestíbulos, escuelas. La línea Illuminaire</br>
 						incluye cinco nuevos estilos atractivos: el huevo, Crest, Tri huevo-, tri-Cresta y el cuádruple.</br>
 						Cada nueva forma (excepto la Quad) está disponible en un tamaño grande o compacto para dar cabida</br>
@@ -2963,8 +2963,8 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
       <div class="grid__item alto">
 				<div class="slider">
 					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2068.pdf" Target="_blank">Ficha Técnica</a>
@@ -2978,7 +2978,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>HALCON PEQUEÑO</h2>
-					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG"/>
+					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg"/>
 					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
 						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
 						  mayor resistencia a la corrosión. Balastro autorregulado del alto factor de potencia con
