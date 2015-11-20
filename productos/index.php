@@ -96,7 +96,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>02454</h2>
-					<img src="../images/Interior/02454.jpg" />
+					<img src="../images/Interior/02454.JPG" />
 					<P>Especial para tiendas minoristas, oficinas, escuelas, Lobbies y Restaurantes. El sistema de iluminación </br>
 						 de 02454 Holophane constituye el elemento de diseño de la iluminación ideal para aplicaciones que </br>
 						 requieren una nave industrial. Desde 1937 el 02454 ha sido el mejor en bajo brillo, con la iluminación</br>
@@ -126,7 +126,7 @@
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>Colonial Mexicano</h2>
-					<img src="../images/Exterior/COLONIAL MEXICANO.jpg" />
+					<img src="../images/Exterior/COLONIAL MEXICANO.JPG" />
 					<P>deal para vialidades, estacionamientos, jardines, parques, áreas recreativas. Luminario exterior decorativo,</br>
 						 de alto rendimiento. Cápsula en fundición de aluminio bajo en cobre. Fabricada con un tratamiento previo para</br>
 						  una mayor resistencia a la corrosión. Balastro electromagnético autorregulado con un alto factor de potencia.</br>
@@ -216,9 +216,9 @@
 
 			<div class="grid__item shoes">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/Illuminaire.pdf" Target="_blank">Ficha Técnica</a>
@@ -2962,9 +2962,9 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 
       <div class="grid__item alto">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.artefactosluminicos.com.mx/Fichas_Tecnicas/Pagina%20No%2068.pdf" Target="_blank">Ficha Técnica</a>
