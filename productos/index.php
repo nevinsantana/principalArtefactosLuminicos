@@ -217,8 +217,8 @@
 			<div class="grid__item shoes">
 				<div class="slider">
 					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).JPG" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/Illuminaire.pdf" Target="_blank">Ficha Técnica</a>
@@ -2978,7 +2978,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>HALCON PEQUEÑO</h2>
-					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO..JPG"/>
+					<img src="../images/SISTEMAS DE ALTO MONTAJE/HALCON PEQUEÑO.JPG"/>
 					<P>Ideal para áreas deportivas y recreativas, estacionamientos, fachadas, aeropuertos. Proyector
 						 para servicio pesado. Cápsula en fundición de aluminio, fabricada con un tratamiento previo para
 						  mayor resistencia a la corrosión. Balastro autorregulado del alto factor de potencia con
