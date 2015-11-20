@@ -62,7 +62,7 @@
             <li><a href="Proyectos/index.html">Proyectos</a></li>
             <div class="lineaVertical"></div>
             <li>
-              <a href="http://iluminacion.mex.tl/915364_Productos.html">
+              <a href="productos">
                 Productos
               </a>
             </li>
