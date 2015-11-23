@@ -129,20 +129,27 @@
 
 .action {
 	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	font-size: 1.05em;
+	font-size: 13px;
 	position: relative;
-	overflow: hidden;
 	margin: 0;
-	padding: .25em;
+	padding: 0;
 	cursor: pointer;
-
 	color: #fff;
 	border: none;
 	background: none;
 }
 
+@media only screen and (max-width: 1250px) {
+	.action {
+		font-size: 11px;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+	}
+}
+
 .action:focus {
 	outline: none;
+	border-bottom: 2px solid inherit;
 }
 
 .action--button {
@@ -159,28 +166,6 @@
 	top: 200%;
 }
 
-/* Add to cart button */
-
-.action--buy {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 1.85em 2.35em;
-	-webkit-transition: opacity .3s, -webkit-transform .3s;
-	transition: opacity .3s, transform .3s;
-	-webkit-transform: translate3d(-5px, 0, 0);
-	transform: translate3d(-5px, 0, 0);
-}
-
-.no-touch .action--buy {
-	opacity: 0;
-}
-
-.no-touch .grid__item:hover .action--buy {
-	opacity: 1;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
 
 /* Fixed bottom bar */
 
@@ -195,6 +180,15 @@
 	background: #191a1b;
 	-webkit-transform: translate3d(0, 0, 0);
 	/* Fix for Chrome flicker on Mac ...party like we're in 2012! */
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+@media only screen and (max-width: 1250px) {
+	.bar {
+		height: 125px;
+		padding: 3.5em 7em;
+	}
 }
 
 .flexbox .filter {
@@ -210,8 +204,7 @@
 
 .filter__label {
 	font-size: .85em;
-	display: inline-block;
-	margin: 0 2%;
+	margin: 10px 2%;
 	font-weight: bold;
 	color: #393A3F;
 }
@@ -240,12 +233,13 @@
 .cart {
 	font-size: 1.5em;
 	position: absolute;
+	z-index: -99999;
 	top: 0;
 	right: 0;
 	overflow: hidden;
+	opacity: 0;
 	height: 100%;
 	padding: 0 1.195em;
-	cursor: pointer;
 	color: #abacae;
 	border: none;
 	background-color: #131415;
@@ -370,20 +364,9 @@
 	.grid__item--size-a {
 		width: 50%;
 	}
-	.bar {
-		padding-left: 0;
-		text-align: left;
-	}
 }
 
 @media screen and (max-width: 40em) {
-	.bar {
-		padding: .5em 4.5em .5em 0;
-	}
-	.flexbox .filter {
-		-webkit-justify-content: space-around;
-		justify-content: space-around;
-	}
 	.filter__item {
 		height: 100%;
 		padding: .5em .1em;
@@ -391,13 +374,6 @@
 	}
 	.filter__item .icon {
 		display: inline-block;
-	}
-	.filter__label,
-	.action__text {
-		display: none;
-	}
-	.cart {
-		padding: 0 1em;
 	}
 }
 

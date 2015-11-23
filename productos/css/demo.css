@@ -244,6 +244,9 @@ h1{
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+	max-height: 100%;
+	overflow: auto;
+	overflow-x: hidden;
 }
 .modalmask:target {
 	opacity:1;
@@ -280,7 +283,8 @@ h1{
 }
 .modalmask:target .rotate{
 	transform: rotate(360deg) scale(1,1);
-    -webkit-transform: rotate(360deg) scale(1,1);
+  -webkit-transform: rotate(360deg) scale(1,1);
+	max-width: 100%;
 }
 
 .modalmask:target .resize{

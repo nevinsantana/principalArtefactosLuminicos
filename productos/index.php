@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Catálogo de productos</title>
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="../images/icono.png">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!-- General demo styles & header -->
@@ -28,7 +28,7 @@
 			<button class="action filter__item" data-filter=".trousers"><i class="icon icon--trousers"></i><span class="action__text">De Emergencia</span></button>
 			<button class="action filter__item" data-filter=".shoes"><i class="icon icon--shoe"></i><span class="action__text">Interior</span></button>
 		<button class="action filter__item" data-filter=".led"><i class="icon icon--led"></i><span class="action__text">Con LEDS</span></button>
-      <button class="action filter__item" data-filter=".alto"><i class="icon icon--alto"></i><span class="action__text">Alto Voltaje</span></button>
+      <button class="action filter__item" data-filter=".alto"><i class="icon icon--alto"></i><span class="action__text">Alto Montaje</span></button>
 			<a href="http://www.artefactosluminicos.com.mx/" class="filter__label">Regresar </a>
 		</div>
 		<button class="cart">
@@ -57,7 +57,7 @@
 					<span class="meta__brand">2AV</span>
 					<a class="meta__price" href="#modal2">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal2" class="modalmask">
@@ -87,14 +87,14 @@
 					<span class="meta__brand">02454</span>
 					<a class="meta__price" href="#modal3">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal3" class="modalmask">
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>02454</h2>
-					<img src="../images/Interior/02454.jpg" />
+					<img src="../images/INTERIOR/02454.jpg" />
 					<P>Especial para tiendas minoristas, oficinas, escuelas, Lobbies y Restaurantes. El sistema de iluminación </br>
 						 de 02454 Holophane constituye el elemento de diseño de la iluminación ideal para aplicaciones que </br>
 						 requieren una nave industrial. Desde 1937 el 02454 ha sido el mejor en bajo brillo, con la iluminación</br>
@@ -117,14 +117,14 @@
 					<span class="meta__brand">COLONIAL MEXICANO</span>
 					<a class="meta__price" href="#modal4">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal4" class="modalmask">
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>Colonial Mexicano</h2>
-					<img src="../images/Exterior/COLONIAL MEXICANO.jpg" />
+					<img src="../images/EXTERIOR/COLONIAL MEXICANO.jpg" />
 					<P>deal para vialidades, estacionamientos, jardines, parques, áreas recreativas. Luminario exterior decorativo,</br>
 						 de alto rendimiento. Cápsula en fundición de aluminio bajo en cobre. Fabricada con un tratamiento previo para</br>
 						  una mayor resistencia a la corrosión. Balastro electromagnético autorregulado con un alto factor de potencia.</br>
@@ -143,7 +143,7 @@
 					<span class="meta__brand">2GT8</span>
 					<a class="meta__price" href="#modal5">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal5" class="modalmask">
@@ -169,7 +169,7 @@
 					<span class="meta__brand">ELM-ELM2</span>
 					<a class="meta__price" href="#modal6">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal6" class="modalmask">
@@ -194,7 +194,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMALUNE</span>
 					<a class="meta__price" href="#modal7">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal7" class="modalmask">
@@ -214,23 +214,23 @@
 
 			<div class="grid__item shoes">
 				<div class="slider">
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
-					<div class="slider__item"><img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/cisIluminareGrandePequenio.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/cisIluminareGrandePequenio.jpg" alt="Dummy" /></div>
+					<div class="slider__item"><img src="../images/INTERIOR/cisIluminareGrandePequenio.jpg" alt="Dummy" /></div>
 				</div>
 				<div class="meta">
 					<a class="meta__title" href="http://www.acuitybrandslighting.com/library/HLP/Documents/otherdocuments/Illuminaire.pdf" Target="_blank">Ficha Técnica</a>
 					<span class="meta__brand">CIS-ILUMINARE (GRANDE Y PEQUEÑO)</span>
 					<a class="meta__price" href="#modal8">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal8" class="modalmask">
 				<div class="modalbox rotate">
 					<a href="#close" title="Cerrar" class="close">X</a>
 					<h2>CIS-ILUMINARE (GRANDE Y PEQUEÑO)</h2>
-					<img src="../images/INTERIOR/CIS-ILUMINARE (GRANDE Y PEQUEÑO).jpg" />
+					<img src="../images/INTERIOR/cisIluminareGrandePequenio.jpg" />
 					<P>ideal para el comercios minoristas, aeropuertos, vestíbulos, escuelas. La línea Illuminaire</br>
 						incluye cinco nuevos estilos atractivos: el huevo, Crest, Tri huevo-, tri-Cresta y el cuádruple.</br>
 						Cada nueva forma (excepto la Quad) está disponible en un tamaño grande o compacto para dar cabida</br>
@@ -253,7 +253,7 @@
 					<span class="meta__brand">2PMN3</span>
 					<a class="meta__price" href=#modal9>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal9" class="modalmask">
@@ -280,7 +280,7 @@
 					<span class="meta__brand">illumibay</span>
 					<a class="meta__price" href="#modal10">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal10" class="modalmask">
@@ -309,7 +309,7 @@
 					<span class="meta__brand">DORCHESTER</span>
 					<a class="meta__price" href="#modal11">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal11" class="modalmask">
@@ -336,7 +336,7 @@
 					<span class="meta__brand">ATLANTA</span>
 					<a class="meta__price" href="#modal12">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal12" class="modalmask">
@@ -363,7 +363,7 @@
 					<span class="meta__brand">ind</span>
 					<a class="meta__price" href="#modal13">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal13" class="modalmask">
@@ -392,7 +392,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMATITE</span>
 					<a class="meta__price" href="#modal14">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal14" class="modalmask">
@@ -422,7 +422,7 @@
 					<span class="meta__brand">LOBAY</span>
 					<a class="meta__price" href="#modal15">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+				
 			</div>
 
 			<div id="modal15" class="modalmask">
@@ -451,7 +451,7 @@
 					<span class="meta__brand">GRAN VILLE</span>
 					<a class="meta__price" href="#modal16">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal16" class="modalmask">
@@ -480,7 +480,7 @@
 					<span class="meta__brand">LQM</span>
 					<a class="meta__price" href="#modal17">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal17" class="modalmask">
@@ -506,7 +506,7 @@
 					<span class="meta__brand">PRISMGLO COMPACTA</span>
 					<a class="meta__price" href="#modal18">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal18" class="modalmask">
@@ -533,7 +533,7 @@
 					<span class="meta__brand">BANTAM 2000 PRISMPACK</span>
 					<a class="meta__price" href="#modal19">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal19" class="modalmask">
@@ -561,7 +561,7 @@
 					<span class="meta__brand">AV SM</span>
 					<a class="meta__price" href="#modal20">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal20" class="modalmask">
@@ -589,7 +589,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PRISMGLO ENHACED</span>
 					<a class="meta__price" href="#modal21">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 
@@ -619,7 +619,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">GRAND LEDGE</span>
 					<a class="meta__price" href="#modal22">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal22" class="modalmask">
@@ -646,7 +646,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">av smd</span>
 					<a class="meta__price" href="#modal23">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal23" class="modalmask">
@@ -674,7 +674,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LRP</span>
 					<a class="meta__price" href="#modal24">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal24" class="modalmask">
@@ -701,7 +701,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">CRANELITE</span>
 					<a class="meta__price" href="#modal25">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal25" class="modalmask">
@@ -729,7 +729,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">dm-dmw</span>
 					<a class="meta__price" href="#modal26">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal26" class="modalmask">
@@ -753,7 +753,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">GRANVILLE PREMIER</span>
 					<a class="meta__price" href="#modal27">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal27" class="modalmask">
@@ -781,7 +781,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ej-ny</span>
 					<a class="meta__price" href="#modal28">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal28" class="modalmask">
@@ -805,7 +805,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LV SERIES</span>
 					<a class="meta__price" href="#modal29">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal29" class="modalmask">
@@ -833,7 +833,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ENDURALUME</span>
 					<a class="meta__price" href=#modal30>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal30" class="modalmask">
@@ -862,7 +862,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">HOV 16- HOV 25</span>
 					<a class="meta__price" href="#modal31">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal31" class="modalmask">
@@ -891,7 +891,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">POWER SENTRY</span>
 					<a class="meta__price" href="#modal32">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal32" class="modalmask">
@@ -915,7 +915,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">ps</span>
 					<a class="meta__price" href="#modal33">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal33" class="modalmask">
@@ -942,7 +942,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">KAD</span>
 					<a class="meta__price" href="#modal34">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal34" class="modalmask">
@@ -967,7 +967,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">LIGHT BAT G2</span>
 					<a class="meta__price" href="#modal35">Ver más</span>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal35" class="modalmask">
@@ -992,7 +992,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">kacm</span>
 					<a class="meta__price" href="#modal36">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal36" class="modalmask">
@@ -1022,7 +1022,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">mayfair</span>
 					<a class="meta__price" href="#modal37">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal37" class="modalmask">
@@ -1050,7 +1050,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MEMPHIS</span>
 					<a class="meta__price">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal37" class="modalmask">
@@ -1078,7 +1078,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MINI GRANVILLE</span>
 					<a class="meta__price" href="#modal38">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal38" class="modalmask">
@@ -1107,7 +1107,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">MODULE 600</span>
 					<a class="meta__price" href="#modal39">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal39" class="modalmask">
@@ -1135,7 +1135,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">NMD-MADEIRA</span>
 					<a class="meta__price" href="#modal40">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal40" class="modalmask">
@@ -1163,7 +1163,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">OVUE</span>
 					<a class="meta__price" href="#modal41">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal41" class="modalmask">
@@ -1192,7 +1192,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">parkpack</span>
 					<a class="meta__price" href="#modal42">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal42" class="modalmask">
@@ -1220,7 +1220,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PECHINA</span>
 					<a class="meta__price" href="#modal43">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal43" class="modalmask">
@@ -1249,7 +1249,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">pgr</span>
 					<a class="meta__price" href="#modal44">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal44" class="modalmask">
@@ -1276,7 +1276,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">PRISMASPHERE</span>
 					<a class="meta__price" href="#modal45">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal45" class="modalmask">
@@ -1303,7 +1303,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">SERIE GLASWERKS</span>
 					<a class="meta__price" href="#modal46">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal46" class="modalmask">
@@ -1332,7 +1332,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">somerset</span>
 					<a class="meta__price" href="#modal47">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal47" class="modalmask">
@@ -1360,7 +1360,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">tfa</span>
 					<a class="meta__price" href="#modal48">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal48" class="modalmask">
@@ -1388,7 +1388,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TFL</span>
 					<a class="meta__price" href=#modal49>Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal49" class="modalmask">
@@ -1415,7 +1415,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TFR-TFM</span>
 					<a class="meta__price" href="#modal50">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal50" class="modalmask">
@@ -1441,7 +1441,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">tv</span>
 					<a class="meta__price" href="#modal51">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal51" class="modalmask">
@@ -1467,7 +1467,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">twa</span>
 					<a class="meta__price" href="#modal52">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal52" class="modalmask">
@@ -1496,7 +1496,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">twac</span>
 					<a class="meta__price" href="#modal53">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal53" class="modalmask">
@@ -1525,7 +1525,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TWH</span>
 					<a class="meta__price" href="#modal54">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal54" class="modalmask">
@@ -1554,7 +1554,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TWH-TWP</span>
 					<a class="meta__price" href="#modal55">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal55" class="modalmask">
@@ -1579,7 +1579,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TWP</span>
 					<a class="meta__price" href="#modal56">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal56" class="modalmask">
@@ -1608,7 +1608,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">VENUS</span>
 					<a class="meta__price" href="#modal57">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal57" class="modalmask">
@@ -1636,7 +1636,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">wallpack IV<span>
 					<a class="meta__price" href="#modal58">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal58" class="modalmask">
@@ -1666,7 +1666,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">NEN ENDURALUME</span>
 					<a class="meta__price" href="#modal59">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 						<div id="modal59" class="modalmask">
@@ -1695,7 +1695,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Petrolume</span>
 					<a class="meta__price" href="#modal60">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal60" class="modalmask">
@@ -1720,7 +1720,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Petrolux II</span>
 					<a class="meta__price" href="#modal61">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal61" class="modalmask">
@@ -1748,7 +1748,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Petrolux</span>
 					<a class="meta__price" href="#modal62">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal62" class="modalmask">
@@ -1775,7 +1775,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismalume cerrado</span>
 					<a class="meta__price" href="#modal63">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal63" class="modalmask">
@@ -1802,7 +1802,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismalume</span>
 					<a class="meta__price" href="#modal64">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal64" class="modalmask">
@@ -1829,7 +1829,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismatite Fluorescente</span>
 					<a class="meta__price" href="#modal65">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal65" class="modalmask">
@@ -1857,7 +1857,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismglo</span>
 					<a class="meta__price" href="#modal66">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal66" class="modalmask">
@@ -1885,7 +1885,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismpack Cerrado</span>
 					<a class="meta__price" href="#modal67">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal67" class="modalmask">
@@ -1913,7 +1913,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">Prismpack</span>
 					<a class="meta__price" href="#modal68">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal68" class="modalmask">
@@ -1941,7 +1941,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<a class="meta__brand">SH PA22</a>
 					<a class="meta__price" href="#modal69">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal69" class="modalmask">
@@ -1969,7 +1969,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">SH PA25</span>
 					<a class="meta__price" href="#modal70">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal70" class="modalmask">
@@ -1996,7 +1996,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TH A14</span>
 					<a class="meta__price" href="#modal71">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal71" class="modalmask">
@@ -2023,7 +2023,7 @@ Reflector terminado en pintura poliéster en polvo mate en blanco de alta reflec
 					<span class="meta__brand">TH</span>
 					<a class="meta__price" href="#modal72">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal72" class="modalmask">
@@ -2052,7 +2052,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">THS</span>
 					<a class="meta__price" href="#modal73">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal73" class="modalmask">
@@ -2078,7 +2078,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">THR</span>
 					<a class="meta__price" href="#modal74">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal74" class="modalmask">
@@ -2106,7 +2106,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">TX A121/A125</span>
 					<a class="meta__price" href="#modal75">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal75" class="modalmask">
@@ -2133,7 +2133,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">TXC</span>
 					<a class="meta__price" href="#modal76">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal76" class="modalmask">
@@ -2161,7 +2161,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">Vantage Alt</span>
 					<a class="meta__price" href="#modal77">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal77" class="modalmask">
@@ -2190,7 +2190,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">Vantage Mini</span>
 					<a class="meta__price" href="#modal78">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal78" class="modalmask">
@@ -2218,7 +2218,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">Vantage RTT</span>
 					<a class="meta__price" href="#modal79">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal79" class="modalmask">
@@ -2249,7 +2249,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">GDI</span>
 					<a class="meta__price" href="#modal80">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal80" class="modalmask">
@@ -2278,7 +2278,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">i-beam</span>
 					<a class="meta__price" href="#modal81">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal81" class="modalmask">
@@ -2303,7 +2303,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">mrt retrofit kit</span>
 					<a class="meta__price" href="#modal82">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal82" class="modalmask">
@@ -2333,7 +2333,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">NEG-FEG</span>
 					<a class="meta__price" href="#modal83">Ver más</span>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal83" class="modalmask">
@@ -2363,7 +2363,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">NEP</span>
 					<a class="meta__price" href="#modal84">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal84" class="modalmask">
@@ -2391,7 +2391,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">NHW</span>
 					<a class="meta__price" href="#modal85">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal85" class="modalmask">
@@ -2420,7 +2420,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">pm3x</span>
 					<a class="meta__price" href="#modal86">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal86" class="modalmask">
@@ -2447,7 +2447,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">PMO</span>
 					<a class="meta__price" href="#modal87">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal87" class="modalmask">
@@ -2473,7 +2473,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">rt5</span>
 					<a class="meta__price" href="#modal88">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal88" class="modalmask">
@@ -2500,7 +2500,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">s</span>
 					<a class="meta__price" href="#modal89">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal89" class="modalmask">
@@ -2526,7 +2526,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">sb</span>
 					<a class="meta__price" href="#modal90">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal90" class="modalmask">
@@ -2550,7 +2550,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">SP</span>
 					<a class="meta__price" href="#modal91">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal91" class="modalmask">
@@ -2577,7 +2577,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">wc-ny</span>
 					<a class="meta__price" href="#modal92">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal92" class="modalmask">
@@ -2604,7 +2604,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">ww</span>
 					<a class="meta__price" href="#modal93">Ver más</a>
 				</div>
-        <button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal93" class="modalmask">
@@ -2630,7 +2630,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">ALX</span>
 					<a class="meta__price" href="#modal94">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal94" class="modalmask">
@@ -2661,7 +2661,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">GRANDVILLE</span>
 						<a class="meta__price" href="#modal95">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal95" class="modalmask">
@@ -2696,7 +2696,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">LEDGEND</span>
 					<a class="meta__price" href="#modal96">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal96" class="modalmask">
@@ -2725,7 +2725,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">LT BEZEL RING</span>
 					<a class="meta__price" href="#modal97">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal97" class="modalmask">
@@ -2756,7 +2756,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">LTD</span>
 					<a class="meta__price" href="#modal98">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal98" class="modalmask">
@@ -2788,7 +2788,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">SERIE H670</span>
 					<a class="meta__price" href="#modal99">Ver más<a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal99" class="modalmask">
@@ -2816,7 +2816,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand" >teardrop led</span>
 					<a class="meta__price" href="#modal100">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal100" class="modalmask">
@@ -2849,7 +2849,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">WASHINGTON POSTLITE</span>
 					<a class="meta__price">Ver más<>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal100" class="modalmask">
@@ -2882,7 +2882,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">1700-AGUILA</span>
 					<a class="meta__price" href="#modal101">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal101" class="modalmask">
@@ -2910,7 +2910,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">EXPRESS VECTOR</span>
 					<a class="meta__price" href="#modal102">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal102" class="modalmask">
@@ -2939,7 +2939,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">HALCON MEDIANO</span>
 					<a class="meta__price" href="#modal103">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal103" class="modalmask">
@@ -2969,7 +2969,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">HALCON PEQUEÑO</span>
 					<a class="meta__price" href="#modal104">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal104" class="modalmask">
@@ -2998,7 +2998,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">HOV 16-HOV 25</span>
 					<a class="meta__price" href="#modal105">Ver más<a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal105" class="modalmask">
@@ -3028,7 +3028,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">lmst</span>
 					<a class="meta__price" href="#modal106">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal106" class="modalmask">
@@ -3057,7 +3057,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">MONGOOSE</span>
 					<a class="meta__price" href="#modal107">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal107" class="modalmask">
@@ -3089,7 +3089,7 @@ Balasto modular para opticas high bay. Las piernas pre regulables adjuntas acept
 					<span class="meta__brand">NHMSC-NHMAO</span>
 					<a class="meta__price" href="#modal108">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal108" class="modalmask">
@@ -3118,7 +3118,7 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<span class="meta__brand">NHT</span>
 					<a class="meta__price" href="#modal109">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal109" class="modalmask">
@@ -3149,7 +3149,7 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<span class="meta__brand">POSTE SERIE L5</span>
 					<a class="meta__price" href="#modal110">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal110" class="modalmask">
@@ -3181,7 +3181,7 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<span class="meta__brand">PRISMBEAM II</span>
 					<a class="meta__price" href="#modal111">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal111" class="modalmask">
@@ -3213,7 +3213,7 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<span class="meta__brand">SIGN VUE</span>
 					<a class="meta__price" href="#modal112">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal112" class="modalmask">
@@ -3245,7 +3245,7 @@ Luminario de alto y medio montaje; balastro integral para lámparas de alta inte
 					<span class="meta__brand">tunel predator</span>
 					<a class="meta__price" href="#modal113">Ver más</a>
 				</div>
-				<button class="action action--button action--buy"><i></i><span class="text-hidden">Add to cart</span></button>
+
 			</div>
 
 			<div id="modal113" class="modalmask">

@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2015, Codrops
  * http://www.codrops.com
  */
@@ -114,11 +114,6 @@
 			recalcFlickities()
 			iso.layout();
 		}, 50));
-
-		// add to cart
-		[].slice.call(grid.querySelectorAll('.grid__item')).forEach(function(item) {
-			item.querySelector('.action--buy').addEventListener('click', addToCart);
-		});
 	}
 
 	function addToCart() {
