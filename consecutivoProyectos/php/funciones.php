@@ -242,7 +242,7 @@
     $result = query($sql, $conexion);
     $campo = mysql_fetch_array($result);
     $idCliente = $campo['id_cliente']; //TerminaCotizaciones
-    $sql = "SELECT * FROM Datos_cotizacion WHERE id_cotizacion='$idCotizacion'";
+    $sql = "SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$idCotizacion'";
     $result = query($sql, $conexion);
     $campo = mysql_fetch_array($result);
     $dCliente = $campo['datos_cliente'];
@@ -265,7 +265,7 @@
     global $conexion;
     $idCotizacion = $_GET['cotizacion'];
     $sql = "SELECT * FROM Partidas WHERE id_cotizacion = '$idCotizacion'
-      ORDER BY no_partida DESC";
+      ORDER BY no_partida ASC";
     $resultado = query($sql, $conexion);
     while ($campo = mysql_fetch_array($resultado)) {
       $partida = $campo['no_partida'];
