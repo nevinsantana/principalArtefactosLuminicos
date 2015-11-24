@@ -208,6 +208,81 @@
 ?>
 <!--fCotizaciones.php---------------------------------------------------------->
 
+<!--verCotizacion.php---------------------------------------------------------->
+<?php
+  function generaDatosCotizacion() {
+    global $conexion;
+    $idCotizacion = $_GET['cotizacion'];
+    $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion = '$idCotizacion'";
+    $result = query($sql, $conexion);
+    $campo = mysql_fetch_array($result);
+    $idCotizacion = $campo['id_cotizacion'];
+    $fecha = $campo['fecha'];
+    $vigencia = $campo['vigencia'];
+    $noPartidas = $campo['no_partidas'];
+    ?>
+    <h3>No Cotizacion:</h3>
+    <span class="noCotizacion"><?php echo $idCotizacion; ?></span>
+    <div class="break space20px"></div>
+    <h3>Fecha:</h3>
+    <span><?php echo $fecha; ?></span>
+    <div class="break space20px"></div>
+    <h3>Vigencia:</h3>
+    <span><?php echo $vigencia; ?></span>
+    <div class="break space20px"></div>
+    <h3>Partidas:</h3>
+    <span><?php echo $noPartidas; ?></span>
+    <?php
+  }
+
+  function generaDatosVenClien() {
+    global $conexion;
+    $idCotizacion = $_GET['cotizacion'];
+    $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion = '$idCotizacion'";
+    $result = query($sql, $conexion);
+    $campo = mysql_fetch_array($result);
+    $idCliente = $campo['id_cliente']; //TerminaCotizaciones
+    $sql = "SELECT * FROM Datos_cotizacion WHERE id_cotizacion='$idCotizacion'";
+    $result = query($sql, $conexion);
+    $campo = mysql_fetch_array($result);
+    $dCliente = $campo['datos_cliente'];
+    $dContacto = $campo['datos_contacto'];
+    $dVendedor = $campo['datos_vendedor'];
+    ?>
+    <h3>Cliente:</h3>
+    <span><?php echo $dCliente; ?></span>
+    <div class="break space20px"></div>
+    <h3>Datos de contacto:</h3>
+    <span><?php echo $dContacto; ?></span>
+    <div class="break space20px"></div>
+    <h3>Datos del vendedor:</h3>
+    <span><?php echo $dVendedor; ?></span>
+    <div class="break space20px"></div>
+    <?php
+  }
+
+  function generaTablaPartidas() {
+    global $conexion;
+    $idCotizacion = $_GET['cotizacion'];
+    $sql = "SELECT * FROM Partidas WHERE id_cotizacion = '$idCotizacion'
+      ORDER BY no_partida DESC";
+    $resultado = query($sql, $conexion);
+    while ($campo = mysql_fetch_array($resultado)) {
+      $partida = $campo['no_partida'];
+      $cantidad = $campo['cantidad'];
+      $catalogo = $campo['catalogo'];
+      ?>
+      <tr>
+        <td><?php echo $partida; ?></td>
+        <td><?php echo $cantidad; ?></td>
+        <td><?php echo $catalogo; ?></td>
+      </tr>
+      <?php
+    }
+  }
+?>
+<!--fVerCotizacion.php--------------------------------------------------------->
+
 <!--index.php------------------------------------------------------------------>
 <script>
   var logeado = <?php echo $logeado; ?>;

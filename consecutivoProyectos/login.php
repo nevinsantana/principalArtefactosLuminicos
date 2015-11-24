@@ -4,7 +4,7 @@
       <?php loginin(); if(!isset($_GET['logout'])) { ?>
       <form action="?sec=login&loginin=true" method="post">
         <h1>Inicia sesión</h1>
-        <h2>Usuario</h2><input type="text" name="user" required>
+        <h2>Usuario</h2><input type="text" name="user" autofocus required>
         <br><br>
         <div class="break"></div>
         <br>
