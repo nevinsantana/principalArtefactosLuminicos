@@ -4,6 +4,16 @@
 var user;
 /*fGlobalVar's*****************************************************************/
 
+/*globalFunctions**************************************************************/
+
+/*fGlobalFunctions*************************************************************/
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
 /*menuIndex.php****************************************************************/
 if(logeado == 1) { /*var logeado viene de ../php/funciones.php*/
   document.getElementById('usuarioInicia').innerHTML = user;

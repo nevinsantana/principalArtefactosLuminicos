@@ -13,14 +13,18 @@
   	<title>Consecutivo de Proyectos</title>
     <?php include 'php/funciones.php'; ?>
   </head>
-  <body onload="animaciones()">
+  <body onresize="onresizeAnimaciones()">
   	<header>
   		<div class="cd-brand">
         <a href="#" onclick="principal()"><p>Consecutivo de proyectos</p></a>
       </div>
   		<nav class="cd-main-nav-wrapper">
   			<ul class="cd-main-nav">
-            <li><a href="../Cotizaciones">Sistema de Cotizaciones</a></li>
+            <li>
+              <a href="../Cotizaciones" target="_blank">
+                Sistema de Cotizaciones
+              </a>
+            </li>
           <?php if(isset($_SESSION['user'])) { ?>
     				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
     				<li><a href="#" onclick="clientes()">Clientes</a></li>

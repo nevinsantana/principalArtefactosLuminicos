@@ -5,14 +5,16 @@
       <img src="images/iconoNuevoProyecto.png" width="254px" height="254px"
         alt="Ícono nuevo proyecto">
     </div>
-    <section class="nuevoProyectoHidde">
+    <section id="sectionAbierta" class="sectionAbierta">
+      <article class="contentSectionAbierta">
+      </article>
     </section>
   </section>
   <section id="proyectosExistentes" class="vertical2 rojo" onclick="abrePE()">
     <p id="tituloProyectosExistentes">Proyectos existentes</p>
     <div id="iconoProyectosExistentes" class="iconoSection">
       <img src="images/iconoProyectosExistentes.png" width="254px"
-        height="254px" alt="Ícono proyectos existentes">        
+        height="254px" alt="Ícono proyectos existentes">
     </div>
   </section>
 </section>
