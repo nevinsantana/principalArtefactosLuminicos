@@ -9,7 +9,30 @@
       <article id="topBar" class="topBar"></article>
       <article id="contentSectionAbierta" class="contentSectionAbierta">
         <div class="contentContent">
-
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
+          <div class="contextForm blanco">No. Cotizacion</div>
+          <div class="form negro"><input type="text" class="formInput"></div>
         </div>
       </article>
     </section>

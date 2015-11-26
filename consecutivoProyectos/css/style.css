@@ -65,6 +65,10 @@ input:focus{
 .space20px {
 	height: 20px
 }
+
+.centrar {
+	margin: auto;
+}
 /*fReset***********************************************************************/
 
 /*fonts************************************************************************/
@@ -919,7 +923,7 @@ header::before {
 }
 
 .contentContent {
-	padding: 10%;
+	padding: 5%;
 	width: 80%;
 	min-width: 80%;
 	height: 100%;
@@ -927,6 +931,52 @@ header::before {
 	border-radius: 10px;
 	background: #24426c;
 	overflow: auto;
+}
+
+.contextForm, .form {
+	height: 50px;
+	padding-top: 13px;
+	box-sizing: border-box;
+	width: 50%;
+	transition: 1s;
+	margin: 10px 0;
+}
+
+.contextForm {
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	z-index: -10;
+	border-radius: 10px 0 0 10px;
+}
+
+.form {
+	width: 50%;
+	float: right;
+	z-index: -9;
+	border-radius: 0 10px 10px 0;
+}
+
+.formInput {
+	width: 50%;
+	margin-left: 25%;
+}
+
+@media only screen and (max-width: 1124px) {
+	.contextForm, .form {
+		width: 100%;
+		min-width: 100%;
+	}
+
+	.contextForm {
+		margin: 0;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.form {
+		margin: 0 0 30px 0;
+		border-radius: 0 0 10px 10px;
+	}
 }
 /*fIntoSections****************************************************************/
 
