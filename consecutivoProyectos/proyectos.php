@@ -6,7 +6,11 @@
         alt="Ícono nuevo proyecto">
     </div>
     <section id="sectionAbierta" class="sectionAbierta">
-      <article class="contentSectionAbierta">
+      <article id="topBar" class="topBar"></article>
+      <article id="contentSectionAbierta" class="contentSectionAbierta">
+        <div class="contentContent">
+
+        </div>
       </article>
     </section>
   </section>

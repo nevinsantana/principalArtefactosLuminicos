@@ -3,6 +3,8 @@
 /*globalVariables**************************************************************/
 var sectionAbierta, sectionIs,
 idSectionAbierta= document.getElementById('sectionAbierta'),
+idTopBar= document.getElementById('topBar'),
+idCSA= document.getElementById('contentSectionAbierta'),
 idProyectosExistentes= document.getElementById('proyectosExistentes'),
 idNuevoProyecto= document.getElementById('nuevoProyecto'),
 idNuevoCliente= document.getElementById('nuevoCliente'),
@@ -39,7 +41,20 @@ if(width<500 &&
 
 /*index.php********************************************************************/
 function onresizeAnimaciones() {
+  normalSectionElements();
   normalAbreNP();
+}
+
+function normalSectionElements() {
+  var width = (document.body.clientWidth);
+  if(width>1124) {
+    idTopBar.style.marginTop="170px";
+    idCSA.style.padding="210px 0 20px 0";
+  }
+  else {
+    idTopBar.style.marginTop="120px";
+    idCSA.style.padding="160px 0 20px 0";
+  }
 }
 
 function cierraSection() {
@@ -64,6 +79,15 @@ function cierraSection() {
     idProyectosExistentes.style.zIndex="1";
     idSectionAbierta.style.zIndex="-999";
     idSectionAbierta.style.opacity="0";
+    var width = (document.body.clientWidth);
+    if(width<500 &&
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent)) {
+      idTituloNuevoProyecto.style.fontSize="22px";
+      idTituloProyectosExistentes.style.fontSize="22px";
+      idIconoNuevoProyecto.style.marginLeft="43%";
+      idIconoProyectosExistentes.style.marginLeft="43%";
+    }
   }
   if(sectionAbierta === true && sectionIs == "pPE") {
     idProyectosExistentes.style.position="absolute";
@@ -118,6 +142,7 @@ if (proyectosSec=="NP"){
 function abreNP() {
   if(sectionAbierta!=true) {
     var width = (document.body.clientWidth);
+    normalSectionElements()
     idTituloNuevoProyecto.style.transform= "none";
     idProyectosExistentes.style.position="absolute";
     idProyectosExistentes.style.zIndex="-899";
@@ -132,14 +157,12 @@ function abreNP() {
     idSectionAbierta.style.zIndex="999";
     idSectionAbierta.style.opacity="1";
     if(width>1124) {
-      idSectionAbierta.style.marginTop="80px";
       idTituloNuevoProyecto.style.top="110px";
       idIconoNuevoProyecto.style.top="68px";
       idBotonRegresar.style.top="105px";
       idBotonRegresar.style.opacity="1";
     }
     else {
-      idSectionAbierta.style.marginTop="40px";
       idTituloNuevoProyecto.style.top="70px";
       idIconoNuevoProyecto.style.top="30px";
       idBotonRegresar.style.top="60px";
@@ -154,14 +177,12 @@ function normalAbreNP() {
   var width = (document.body.clientWidth);
   if (sectionAbierta === true) {
     if(width>1124) {
-      idSectionAbierta.style.marginTop="80px";
       idTituloNuevoProyecto.style.top="110px";
       idIconoNuevoProyecto.style.top="68px";
       idBotonRegresar.style.top="105px";
       idBotonRegresar.style.opacity="1";
     }
     else {
-      idSectionAbierta.style.marginTop="40px";
       idTituloNuevoProyecto.style.top="70px";
       idIconoNuevoProyecto.style.top="30px";
       idBotonRegresar.style.top="60px";
