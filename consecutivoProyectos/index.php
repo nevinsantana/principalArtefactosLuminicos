@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="64x64">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.min.css">
   	<title>Consecutivo de Proyectos</title>
     <?php include 'php/funciones.php'; ?>
   </head>
@@ -65,12 +66,15 @@
         onclick="cierraSection()">
         x
       </div>
-      <?php include 'php/menu.php' ?><!--Contenido de la página-->
+      <?php include 'php/menu.php'; ?><!--Contenido de la página-->
   	</main>
   <script src="js/modernizr.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="js/main.js"></script>
   <script src="js/acciones.js"></script>
   <script src="js/livePage.js"></script>
+  <script>
+
+  </script>
   </body>
 </html>

@@ -67,7 +67,7 @@ input:focus{
 }
 
 .centrar {
-	margin: auto;
+	margin: inherit auto;
 }
 /*fReset***********************************************************************/
 
@@ -121,8 +121,206 @@ input:focus{
 	font-weight: bold;
 	font-style: italic;
 }
+
+.redFont {
+	color: #a62a2a;
+}
+
+.blueFont {
+	color: #24426c;
+}
 /*fQuicksand*/
 /*fFonts***********************************************************************/
+
+/*kohanaInputs*****************************************************************/
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 10px 0;
+	width: 32.9%;
+	vertical-align: top;
+	transition: 0.5s;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 1125px) {
+	.input {
+		width: 49.5%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.input {
+		width: 100%;
+	}
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	background: #d4d8e6;
+	color: #aaa;
+	font-weight: 400;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: #24426c;
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 10px 0 0 32px;
+	font-size: 15px;
+	width: 100%;
+}
+
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+.icon {
+	color: #24426c;
+	font-size: 200%;
+}
+
+.input--kohana {
+	overflow: hidden;
+	background: #fff;
+}
+
+.input__field--kohana {
+	width: 100%;
+	background: transparent;
+	padding-left: 40px;
+	color: #6a7989;
+	font-weight: bold;
+}
+
+.input__label--kohana {
+	position: absolute;
+	width: 100%;
+	text-align: left;
+	pointer-events: none;
+	color: #506d96;
+}
+
+.input__label-content--kohana {
+	display: inline-block;
+	width: auto;
+	-webkit-transform: translate3d(-1.75em, 0, 0);
+	transform: translate3d(-1.75em, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.icon--kohana {
+	display: inline-block;
+	margin-top: 0.9em;
+	-webkit-transform: translate3d(-2.5em, 0, 0);
+	transform: translate3d(-2.5em, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__field--kohana:focus + .input__label--kohana .input__label-content--kohana,
+.input--filled .input__label-content--kohana {
+	opacity: 0;
+	-webkit-transform: translate3d(100px, 0, 0);
+	transform: translate3d(100px, 0, 0);
+}
+
+.input__label-content--kohana,
+.icon--kohana,
+.input__field--kohana:focus + .input__label--kohana .input__label-content--kohana,
+.input--filled .input__label-content--kohana {
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.input__field--kohana:focus + .input__label--kohana .icon--kohana,
+.input--filled  .icon--kohana {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/*fKohanaInputs****************************************************************/
+
+/*botonesCrear.php*************************************************************/
+.ubicarBotones1, .ubicarBotones2 {
+	position: absolute;
+	width: 10%;
+	height: 100%;
+	bottom: 0;
+	z-index: 999;
+}
+
+.ubicarBotones1 { left: 0; }
+
+.ubicarBotones2 {	right: 0; }
+
+.gBoton {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	border-radius: 10px;
+	background: #a13333;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.gBoton i {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+	color: #e7e7e7;
+}
+
+.botonAtras {
+	bottom: 30%;
+	background: #c18c26;
+}
+
+.botonCancelar {
+	bottom: 10%;
+	background: #992828;
+}
+
+.botonContinuar {
+	bottom: 10%;
+	background: #38a44d;
+	height: 70px;
+}
+/*fBotonesCrear.php************************************************************/
 
 /*secondarySlidingNavigation***************************************************/
 /* --------------------------------
@@ -134,8 +332,6 @@ Primary style
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-	font-size: 1.6rem;
-  font-family: quicksand, sans-serif;
 }
 
 html {
@@ -144,9 +340,10 @@ html {
 
 body {
 	font-size: 1.6rem;
-  font-family: quicksand, sans-serif;
   color: #33414a;
   background-color: #f2f2f2;
+	font-family: quicksand, sans-serif;
+	font-size: 1.6rem;
 }
 
 a {
@@ -923,7 +1120,7 @@ header::before {
 }
 
 .contentContent {
-	padding: 5%;
+	padding: 2% 4%;
 	width: 80%;
 	min-width: 80%;
 	height: 100%;
@@ -939,7 +1136,7 @@ header::before {
 	box-sizing: border-box;
 	width: 50%;
 	transition: 1s;
-	margin: 10px 0;
+	margin: 0 0 20px 0;
 }
 
 .contextForm {
@@ -977,6 +1174,23 @@ header::before {
 		margin: 0 0 30px 0;
 		border-radius: 0 0 10px 10px;
 	}
+}
+
+.dividerBar {
+	width: 100%;
+	min-width: 100%;
+	background: #2d2d2d;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px 0;
+}
+
+ .dividerBar i {
+	 margin-left: 49.3%;
+ }
+
+.dividerBar h1 {
+	margin: 0;
 }
 /*fIntoSections****************************************************************/
 
