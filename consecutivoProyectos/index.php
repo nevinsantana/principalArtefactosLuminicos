@@ -10,7 +10,10 @@
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="64x64">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="css/fonts/font-awesome/css/font-awesome.min.css">
+    <link href="js/datepicker/styles/glDatePicker.default.css" rel="stylesheet"
+      type="text/css">
   	<title>Consecutivo de Proyectos</title>
     <?php include 'php/funciones.php'; ?>
   </head>
@@ -73,8 +76,7 @@
   <script src="js/main.js"></script>
   <script src="js/acciones.js"></script>
   <script src="js/livePage.js"></script>
-  <script>
-
-  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/datepicker/glDatePicker.js"></script>
   </body>
 </html>

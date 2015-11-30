@@ -2,6 +2,8 @@
 
 /*globalVariables**************************************************************/
 var sectionAbierta, sectionIs,
+idUbicarBotones1= document.getElementById('ubicarBotones1'),
+idUbicarBotones2= document.getElementById('ubicarBotones2'),
 idSectionAbierta= document.getElementById('sectionAbierta'),
 idTopBar= document.getElementById('topBar'),
 idCSA= document.getElementById('contentSectionAbierta'),
@@ -14,6 +16,8 @@ idListaClientes= document.getElementById('listaClientes'),
 idTituloNuevoProyecto= document.getElementById('tituloNuevoProyecto'),
 idTituloProyectosExistentes=
   document.getElementById('tituloProyectosExistentes'),
+idNPGeneral= document.getElementById('nPGeneral'),
+idNPUbicacion= document.getElementById('nPUbicacion'),
 idTituloNuevoCliente= document.getElementById('tituloNuevoCliente'),
 idTituloEliminarCliente= document.getElementById('tituloEliminarCliente'),
 idTituloModificarCliente= document.getElementById('tituloModificarCliente'),
@@ -175,6 +179,10 @@ function normalSectionElements() {
 }
 
 function cierraSection() {
+  idUbicarBotones1.style.zIndex="-999";
+  idUbicarBotones2.style.zIndex="-999";
+  idUbicarBotones1.style.opacity="0";
+  idUbicarBotones2.style.opacity="0";
   if(sectionAbierta === true && sectionIs == "pNP") {
     idNuevoProyecto.style.position="relative";
     idNuevoProyecto.style.zIndex="2";
@@ -273,6 +281,10 @@ function abreNP() {
     idIconoNuevoProyecto.style.transform= "none";
     idSectionAbierta.style.zIndex="999";
     idSectionAbierta.style.opacity="1";
+    idUbicarBotones1.style.zIndex="999";
+    idUbicarBotones2.style.zIndex="999";
+    idUbicarBotones1.style.opacity="1";
+    idUbicarBotones2.style.opacity="1";
     if(width>1124) {
       idTituloNuevoProyecto.style.top="110px";
       idIconoNuevoProyecto.style.top="68px";
@@ -367,6 +379,14 @@ function normalAbrePE() {
         "translateY(-3.5%)";
     }
   }
+}
+
+function showGeneral() {
+  idNPGeneral.style.display="inline";
+}
+
+function showUbicacion() {
+  idNPUbicacion.style.display="inline";
 }
 /*fProyectos.php***************************************************************/
 

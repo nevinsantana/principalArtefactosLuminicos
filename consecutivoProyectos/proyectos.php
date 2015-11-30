@@ -9,9 +9,10 @@
       <article id="topBar" class="topBar"></article>
       <article id="contentSectionAbierta" class="contentSectionAbierta">
         <div class="contentContent">
-          <div class="dividerBar">
+          <div class="dividerBar" onclick="showGeneral()">
             <i class="fa fa-dot-circle-o"></i><h1>General</h1>
           </div>
+          <div id="nPGeneral">
     				<span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
                 value="1 (ejemplo)" disabled />
@@ -33,7 +34,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                 required/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-home icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -42,7 +44,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                id="fechaDP" onclick="abreDP()" />
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-calendar icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -50,9 +53,11 @@
                 </span>
     					</label>
     				</span>
-            <div class="dividerBar">
+          </div>
+            <div class="dividerBar" onclick="showUbicacion()">
               <i class="fa fa-map-marker"></i><h1>Ubicación</h1>
             </div>
+            <div id="nPUbicacion">
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"/>
     					<label class="input__label input__label--kohana" for="input-29">
@@ -116,6 +121,7 @@
                 </span>
     					</label>
     				</span>
+          </div>
         </div>
       </article>
     </section>
