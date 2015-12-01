@@ -14,8 +14,11 @@ return vars;
 }
 
 function abreDP() {
-  $('#fechaDP').glDatePicker({
-  });
+  $('#fechaDP').glDatePicker({});
+}
+
+function cierraDP() {
+  $(window).unload(abreDP());
 }
 /*fGlobalFunctions*************************************************************/
 

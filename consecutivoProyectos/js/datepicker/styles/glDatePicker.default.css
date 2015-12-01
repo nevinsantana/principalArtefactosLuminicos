@@ -15,8 +15,24 @@
 	font-size: 14px;
 	text-align: center;
 	cursor: pointer;
-	color: #ededed;
+	color: #414141;
 	background: #323232;
+}
+
+.gldp-default .core:first-child {
+	border-radius: 10px 0 0 0;
+}
+
+.gldp-default .core:nth-child(3) {
+	border-radius: 0 10px 0 0;
+}
+
+.gldp-default .core:nth-child(46) {
+	border-radius: 0 0 0 10px;
+}
+
+.gldp-default .core:last-child {
+	border-radius: 0 0 10px 0;
 }
 
 /* Cell border */
@@ -31,6 +47,8 @@
 .gldp-default .monyear select {
 	font-size: 16px !important;
 	font-weight: bold;
+	color: white;
+	background: #323232;
 }
 
 /* Month/Year text */
@@ -42,7 +60,6 @@
 .gldp-default .prev-arrow,
 .gldp-default .next-arrow {
 	color: #222;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .gldp-default .prev-arrow:active,
@@ -60,33 +77,24 @@
 .gldp-default .dow {
 	color: #fff;
 	font-weight: bold;
-	cursor: wait !important;
-	background: #ff0000;
-	background: -moz-linear-gradient(top,  #ff0000 0%, #ffcccc 1%, #ff0000 2%, #aa0000 98%, #dd4444 99%, #880000 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff0000), color-stop(1%,#dd4444), color-stop(2%,#ff0000), color-stop(98%,#aa0000), color-stop(99%,#ffcccc), color-stop(100%,#880000));
-	background: -webkit-linear-gradient(top,  #ff0000 0%,#ffcccc 1%,#ff0000 2%,#aa0000 98%,#dd4444 99%,#880000 100%);
-	background: -o-linear-gradient(top,  #ff0000 0%,#ffcccc 1%,#ff0000 2%,#aa0000 98%,#dd4444 99%,#880000 100%);
-	background: -ms-linear-gradient(top,  #ff0000 0%,#ffcccc 1%,#ff0000 2%,#aa0000 98%,#dd4444 99%,#880000 100%);
-	background: linear-gradient(to bottom,  #ff0000 0%,#ffcccc 1%,#ff0000 2%,#aa0000 98%,#dd4444 99%,#880000 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#880000',GradientType=0 );
+	cursor: default !important;
+	background: #9f2626;
 }
 
 /* Weekdays */
+.gldp-default .sun,
+.gldp-default .sat {
+	font-weight: bold;
+}
+
+/* Weekend days */
 .gldp-default .mon,
 .gldp-default .tue,
 .gldp-default .wed,
 .gldp-default .thu,
 .gldp-default .fri {
+	color: #8c8c8c;
 	font-weight: bold;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
-}
-
-/* Weekend days */
-.gldp-default .sat,
-.gldp-default .sun {
-	color: #3858a8;
-	font-weight: bold;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 /* Selectable days that are outside of current month being shown */

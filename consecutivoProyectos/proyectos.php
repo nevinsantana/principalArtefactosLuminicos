@@ -45,7 +45,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                id="fechaDP" onclick="abreDP()" />
+                id="fechaDP" onfocus="abreDP()" onblur="cierraDP()"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-calendar icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
