@@ -78,5 +78,6 @@
   <script src="js/livePage.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="js/datepicker/glDatePicker.js"></script>
+  <script src="../resources/js-cookie-2.0.4/src/js.cookie.js"></script>
   </body>
 </html>

@@ -68,7 +68,7 @@ function classReg( className ) {
 }
 
 // classList support for class management
-// altho to be fair, the api sucks because it won't accept multiple classes at once
+// altho to be fair, the api sucks because it won't accept multiple classes at
 var hasClass, addClass, removeClass;
 
 if ( 'classList' in document.documentElement ) {
@@ -126,7 +126,8 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 (function() {
-  // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+  // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/
+  //Reference/Global_Objects/String/Trim
   if (!String.prototype.trim) {
     (function() {
       // Make sure we trim BOM and NBSP
@@ -137,7 +138,8 @@ if ( typeof define === 'function' && define.amd ) {
     })();
   }
 
-  [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+  [].slice.call( document.querySelectorAll( 'input.input__field' ) )
+  .forEach( function( inputEl ) {
     // in case the input is already filled..
     if( inputEl.value.trim() !== '' ) {
       classie.add( inputEl.parentNode, 'input--filled' );
@@ -383,10 +385,12 @@ function normalAbrePE() {
 
 function showGeneral() {
   idNPGeneral.style.display="inline";
+  idNPUbicacion.style.display="none";
 }
 
 function showUbicacion() {
   idNPUbicacion.style.display="inline";
+  idNPGeneral.style.display="none";
 }
 /*fProyectos.php***************************************************************/
 

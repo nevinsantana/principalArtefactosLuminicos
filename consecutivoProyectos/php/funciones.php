@@ -81,6 +81,8 @@
         header("Location: ?sec=login&errorLogin=true");
       } //Si no, destruye sesión y manda error
       else {
+        ?>
+        <?php
         $sql= "SELECT * FROM Usuarios WHERE id_usuario='$userTest'";
         $result = query($sql, $conexion);
         $campo = mysql_fetch_array($result);
