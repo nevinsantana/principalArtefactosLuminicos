@@ -2,13 +2,11 @@
 <html lang="es-mx" class="no-js">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="html, css, php, javascript">
     <meta name="description" content="Sistema de consecutivo de proyectos">
     <meta name="author" content="Nevin Santana">
     <link rel="icon" type="image/png" href="images/favicon.png" sizes="64x64">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
       href="css/fonts/font-awesome/css/font-awesome.min.css">
@@ -76,7 +74,6 @@
   <script src="js/main.js"></script>
   <script src="js/acciones.js"></script>
   <script src="js/livePage.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="js/datepicker/glDatePicker.js"></script>
   <script src="../resources/js-cookie-2.0.4/src/js.cookie.js"></script>
   </body>
