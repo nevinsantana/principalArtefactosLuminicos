@@ -1,3 +1,4 @@
+<?php include 'php/funciones.php'; ?>
 <!doctype html>
 <html lang="es-mx" class="no-js">
   <head>
@@ -13,7 +14,6 @@
     <link href="js/datepicker/styles/glDatePicker.default.css" rel="stylesheet"
       type="text/css">
   	<title>Consecutivo de Proyectos</title>
-    <?php include 'php/funciones.php'; ?>
   </head>
   <body onresize="onresizeAnimaciones()">
   	<header>

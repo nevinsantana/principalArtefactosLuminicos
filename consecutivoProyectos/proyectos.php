@@ -1,3 +1,4 @@
+<?php /*guardaForm();*/ ?>
 <section class="sectionContainer">
   <section id="nuevoProyecto" class="vertical2 azul" onclick="abreNP()">
     <p id="tituloNuevoProyecto">Nuevo proyecto</p>
@@ -13,6 +14,7 @@
             <i class="fa fa-dot-circle-o"></i><h1>General</h1>
           </div>
           <div id="nPGeneral">
+            <form method="post" action="?sec=proyectos" id="npForm">
     				<span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
                 value="1 (ejemplo)" disabled />
@@ -35,7 +37,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                 required/>
+                 name="proyecto" required/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-home icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -121,6 +123,7 @@
                 </span>
     					</label>
     				</span>
+          </form>
           </div>
         </div>
       </article>

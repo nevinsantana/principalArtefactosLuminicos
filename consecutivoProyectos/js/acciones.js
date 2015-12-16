@@ -59,6 +59,12 @@ function cotizaciones() {
 }
 /*fMenuIndex.php***************************************************************/
 
+/*botonesCrear.php*************************************************************/
+function convert2Submit() {
+  document.getElementById('npForm').submit();
+}
+/*fBotonesCrear.php************************************************************/
+
 /*cotizaciones.php*************************************************************/
 function verCotizacion(noCotizacion) {
   var url = '?sec=verCotizacion&cotizacion='+noCotizacion,

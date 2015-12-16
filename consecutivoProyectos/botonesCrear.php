@@ -4,6 +4,8 @@
     <div class="gBoton botonCancelar"><i class="fa fa-times"></i></div>
   </section>
   <section id="ubicarBotones2">
-    <div class="gBoton botonContinuar"><i class="fa fa-arrow-right"></i></div>
+    <div class="gBoton botonContinuar" onclick="convert2Submit()">
+      <i class="fa fa-arrow-right"></i>
+    </div>
   </section>
 </div>
