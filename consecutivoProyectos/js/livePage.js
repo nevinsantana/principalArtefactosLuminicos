@@ -41,6 +41,10 @@ if(width<500 &&
   idIconoNuevoProyecto.style.marginLeft="43%";
   idIconoProyectosExistentes.style.marginLeft="43%";
 }
+
+var heightIcono = idIconoNuevoProyecto.offsetWidth;
+idIconoNuevoProyecto.style.height=heightIcono + "px";
+idIconoProyectosExistentes.style.height=heightIcono + "px";
 /*fGlobal**********************************************************************/
 
 /*kohanaInputs*****************************************************************/
@@ -166,6 +170,7 @@ if ( typeof define === 'function' && define.amd ) {
 function onresizeAnimaciones() {
   normalSectionElements();
   normalAbreNP();
+  ajustaHeight();
 }
 
 function normalSectionElements() {
@@ -391,6 +396,11 @@ function showGeneral() {
 function showUbicacion() {
   idNPUbicacion.style.display="inline";
   idNPGeneral.style.display="none";
+}
+
+function ajustaHeight() {
+  var heightIcono = idIconoNuevoProyecto.offsetWidth;
+  idIconoNuevoProyecto.style.height=heightIcono + "px"
 }
 /*fProyectos.php***************************************************************/
 

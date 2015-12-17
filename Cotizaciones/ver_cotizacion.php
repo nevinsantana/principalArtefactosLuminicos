@@ -171,7 +171,9 @@
                                 </td>
                                 <td id="bordet"  align="left" class="h7"><br><h3><div class="h7">Condiciones de venta</div></h3><h5 class="h7">
                                         *Precios sujetos a cambio sin previo aviso.
-                                        <br>*Cuenta 0451244973 CLABE 012180004512449814 de Bancomer.
+                                        <br>*Cta 4157180243 CLABE 002180024341571804 de Banamex (mx)
+                                        <br>*Cta 0451244973 CLABE 012180004512449733 de Bancomer (mx)
+                                        <br>*Cta 0451244973 CLABE 012180004512449814 de Bancomer (us)
                                         <br>*Toda devolución autorizada causará un cargo del 35%.
                                         <br>*No se aceptan cancelaciones.
                                         <br>*La empresa se reserva el derecho de hacer cargos por

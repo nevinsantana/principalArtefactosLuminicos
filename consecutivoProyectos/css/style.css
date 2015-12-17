@@ -897,8 +897,6 @@ header::before {
 	width: 5%;
 	max-width: 64px;
 	min-width: 48px;
-	height: auto;
-	max-height: 56px;
 	margin-left: 47.5%;
 	position: relative;
   top: 55%;
