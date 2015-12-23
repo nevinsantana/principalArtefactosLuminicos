@@ -76,5 +76,8 @@
   <script src="js/livePage.js"></script>
   <script src="js/datepicker/glDatePicker.js"></script>
   <script src="../resources/js-cookie-2.0.4/src/js.cookie.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.0/scrollreveal.min.js">
+  </script>
   </body>
 </html>

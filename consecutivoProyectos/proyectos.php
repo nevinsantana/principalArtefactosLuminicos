@@ -135,5 +135,44 @@
       <img src="images/iconoProyectosExistentes.png" width="254px"
         height="254px" alt="Ícono proyectos existentes">
     </div>
+    <section id="sectionAbierta2" class="sectionAbierta2">
+      <article id="topBar2" class="topBar2"></article>
+      <article id="contentSectionAbierta2" class="contentSectionAbierta2">
+        <div class="contentContent2">
+          <div class="tableContainerPE">
+            <table class="tablaPE">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Fecha</th>
+                  <th>Nombre</th>
+                  <th>acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>23/12/2015</td>
+                  <td>Artefactos Lumínicos S.A. de C.V.</td>
+                  <td><span>ver</span> <span>editar</span></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>15/09/2015</td>
+                  <td>Best Light México S.A. de C.V.</td>
+                  <td><span>ver</span> <span>editar</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>02/05/2015</td>
+                  <td>Best Energy S.A. de C.V.</td>
+                  <td><span>ver</span> <span>editar</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </section>
   </section>
 </section>

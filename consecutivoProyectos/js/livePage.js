@@ -5,8 +5,11 @@ var sectionAbierta, sectionIs,
 idUbicarBotones1= document.getElementById('ubicarBotones1'),
 idUbicarBotones2= document.getElementById('ubicarBotones2'),
 idSectionAbierta= document.getElementById('sectionAbierta'),
+idSectionAbierta2= document.getElementById('sectionAbierta2'),
 idTopBar= document.getElementById('topBar'),
+idTopBar2= document.getElementById('topBar2'),
 idCSA= document.getElementById('contentSectionAbierta'),
+idCSA2= document.getElementById('contentSectionAbierta2'),
 idProyectosExistentes= document.getElementById('proyectosExistentes'),
 idNuevoProyecto= document.getElementById('nuevoProyecto'),
 idNuevoCliente= document.getElementById('nuevoCliente'),
@@ -170,6 +173,7 @@ if ( typeof define === 'function' && define.amd ) {
 function onresizeAnimaciones() {
   normalSectionElements();
   normalAbreNP();
+  normalAbrePE();
   ajustaHeight();
 }
 
@@ -220,6 +224,10 @@ function cierraSection() {
       idIconoNuevoProyecto.style.marginLeft="43%";
       idIconoProyectosExistentes.style.marginLeft="43%";
     }
+    idNPGeneral.style.display="none";
+    idNPUbicacion.style.display="none";
+    idSectionAbierta.style.zIndex="-999";
+    idSectionAbierta.style.opacity="0";
   }
   if(sectionAbierta === true && sectionIs == "pPE") {
     idProyectosExistentes.style.position="absolute";
@@ -237,8 +245,22 @@ function cierraSection() {
     sectionAbierta = false;
     idNuevoProyecto.style.height="50%";
     idNuevoProyecto.style.display="block";
+    idNuevoProyecto.style.position="absolute";
     idNuevoProyecto.style.top="0";
     idNuevoProyecto.style.zIndex="1";
+    idSectionAbierta.style.zIndex="-999";
+    idSectionAbierta.style.opacity="0";
+    idSectionAbierta2.style.zIndex="-999";
+    idSectionAbierta2.style.opacity="0";
+    var width = (document.body.clientWidth);
+    if(width<500 &&
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent)) {
+      idTituloProyectosExistentes.style.fontSize="22px";
+      idTituloNuevoProyecto.style.fontSize="22px";
+      idIconoProyectosExistentes.style.marginLeft="43%";
+      idIconoNuevoProyecto.style.marginLeft="43%";
+    }
   }
   if(sectionAbierta === true && sectionIs == "cNC" && sectionColor === true) {
     idProyectosExistentes.style.position="absolute";
@@ -311,7 +333,7 @@ function abreNP() {
 
 function normalAbreNP() {
   var width = (document.body.clientWidth);
-  if (sectionAbierta === true) {
+  if (sectionAbierta === true && sectionIs == "pNP") {
     if(width>1124) {
       idTituloNuevoProyecto.style.top="110px";
       idIconoNuevoProyecto.style.top="68px";
@@ -331,59 +353,73 @@ function normalAbreNP() {
 }
 
 function abrePE() {
+  if(sectionAbierta!=true) {
+    var width = (document.body.clientWidth);
+    normalSectionElements();
+    idTituloProyectosExistentes.style.transform= "none";
+    idNuevoProyecto.style.position="absolute";
+    idNuevoProyecto.style.zIndex="-899";
+    idNuevoProyecto.style.top="40px";
+    idProyectosExistentes.style.position="absolute";
+    idProyectosExistentes.style.zIndex="899";
+    idProyectosExistentes.style.bottom="0";
+    idProyectosExistentes.style.height="100%";
+    idProyectosExistentes.style.cursor="default";
+    idIconoProyectosExistentes.style.marginLeft="3%";
+    idIconoProyectosExistentes.style.transform= "none";
+    idSectionAbierta2.style.zIndex="999";
+    idSectionAbierta2.style.opacity="1";
+    if(width>1124) {
+      idTituloProyectosExistentes.style.top="110px";
+      idIconoProyectosExistentes.style.top="68px";
+      idBotonRegresar.style.top="105px";
+      idBotonRegresar.style.opacity="1";
+      idTopBar2.style.marginTop = "170px";
+      idCSA2.style.padding="210px 0 18px 0";
+    }
+    else {
+      idTituloProyectosExistentes.style.top="70px";
+      idIconoProyectosExistentes.style.top="40px";
+      idBotonRegresar.style.top="60px";
+      idBotonRegresar.style.opacity="1";
+      idTopBar2.style.marginTop = "130px";
+      idCSA2.style.padding="170px 0 18px 0";
+    }
+    if(width<500) {
+      idTituloProyectosExistentes.style.fontSize="20px";
+    }
+    else {
+      idTituloProyectosExistentes.style.fontSize="25px";
+    }
+  }
   sectionAbierta = true;
   sectionIs = "pPE";
-  var width = (document.body.clientWidth);
-  idNuevoProyecto.style.height="0%";
-  idNuevoProyecto.style.display="none";
-  idProyectosExistentes.style.position="absolute";
-  idProyectosExistentes.style.bottom="0";
-  idProyectosExistentes.style.height="100%";
-  idProyectosExistentes.style.cursor="default";
-  if(width>950) {
-    idTituloProyectosExistentes.style.top="12.5%";
-    idTituloProyectosExistentes.style.transform= "translateY(-12.5%)";
-    idIconoProyectosExistentes.style.marginLeft="3%";
-    idIconoProyectosExistentes.style.top="7.5%";
-    idIconoProyectosExistentes.style.transform=
-      "translateY(-7.5%)";
-    idBotonRegresar.style.top="15%";
-    idBotonRegresar.style.opacity="1";
-  }
-  else {
-    idTituloProyectosExistentes.style.top="7.5%";
-    idTituloProyectosExistentes.style.transform=
-      "translateY(-7.5%)";
-    idIconoProyectosExistentes.style.marginLeft="3%";
-    idIconoProyectosExistentes.style.top="3.5%";
-    idIconoProyectosExistentes.style.transform=
-      "translateY(-3.5%)";
-    idBotonRegresar.style.top="5.5%";
-    idBotonRegresar.style.opacity="1";
-  }
 }
 
 function normalAbrePE() {
   var width = (document.body.clientWidth);
-  if (sectionAbierta === true) {
-    if(width>950) {
-      idTituloProyectosExistentes.style.top="12.5%";
-      idTituloProyectosExistentes.style.transform=
-        "translateY(-12.5%)";
-      idIconoProyectosExistentes.style.marginLeft="50%";
-      idIconoProyectosExistentes.style.marginLeft="3%";
-      idIconoProyectosExistentes.style.top="7.5%";
-      idIconoProyectosExistentes.style.transform=
-        "translateY(-7.5%)";
+  if (sectionAbierta === true && sectionIs == "pPE") {
+    if(width>1124) {
+      idTituloProyectosExistentes.style.top="110px";
+      idIconoProyectosExistentes.style.top="68px";
+      idBotonRegresar.style.top="105px";
+      idBotonRegresar.style.opacity="1";
+      idTopBar2.style.marginTop = "170px";
+      idCSA2.style.padding="210px 0 18px 0";
     }
     else {
-      idTituloProyectosExistentes.style.top="7.5%";
-      idTituloProyectosExistentes.style.transform=
-        "translateY(-7.5%)";
-      idIconoProyectosExistentes.style.marginLeft="3%";
-      idIconoProyectosExistentes.style.top="3.5%";
-      idIconoProyectosExistentes.style.transform=
-        "translateY(-3.5%)";
+      idTituloProyectosExistentes.style.top="70px";
+      idIconoProyectosExistentes.style.top="40px";
+      idBotonRegresar.style.top="60px";
+      idBotonRegresar.style.opacity="1";
+      idTopBar2.style.marginTop = "125px";
+      idCSA2.style.padding="170px 0 18px 0";
+    }
+    if(width<500) {
+      idTituloProyectosExistentes.style.fontSize="20px";
+    }
+    else {
+      idTituloProyectosExistentes.style.fontSize="25px";
     }
   }
 }
@@ -400,7 +436,8 @@ function showUbicacion() {
 
 function ajustaHeight() {
   var heightIcono = idIconoNuevoProyecto.offsetWidth;
-  idIconoNuevoProyecto.style.height=heightIcono + "px"
+  idIconoNuevoProyecto.style.height=heightIcono + "px";
+  idIconoProyectosExistentes.style.height=heightIcono + "px";
 }
 /*fProyectos.php***************************************************************/
 

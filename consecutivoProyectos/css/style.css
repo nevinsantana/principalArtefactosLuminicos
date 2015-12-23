@@ -924,8 +924,8 @@ header::before {
 .sectionContainer .horizontalVertical4 div {
 	width: 8%;
 }
-
-@media all and (orientation:portrait) {
+/*
+@media only screen and (orientation:portrait) {
 	.sectionContainer section div {
 		width: 15%;
 	}
@@ -933,7 +933,7 @@ header::before {
 	.sectionContainer .horizontalVertical4 div {
 		width: 15%;
 	}
-}
+}*/
 
 .cd-main-content h1 {
 	margin-top: 3%;
@@ -1128,6 +1128,17 @@ header::before {
 	transition: 1s;
 }
 
+.contentContent {
+	padding: 2% 4%;
+	width: 80%;
+	min-width: 80%;
+	height: 100%;
+	margin: auto;
+	border-radius: 10px;
+	background: #24426c;
+	overflow: auto;
+}
+
 .contentSectionAbierta {
 	padding: 0;
 	position: absolute;
@@ -1138,14 +1149,39 @@ header::before {
 	overflow: auto;
 }
 
-.contentContent {
+.sectionAbierta2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	top: 0;
+	opacity: 0;
+	transition: opacity 2s, margin 1s;
+}
+
+.sectionAbierta2 .topBar2 {
+	margin-top: 0px;
+	border-top: 20px solid #742331;
+	transition: 1s;
+}
+
+.contentContent2 {
 	padding: 2% 4%;
 	width: 80%;
 	min-width: 80%;
 	height: 100%;
 	margin: auto;
 	border-radius: 10px;
-	background: #24426c;
+	background: #742331;
+	overflow: auto;
+}
+
+.contentSectionAbierta2 {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
 	overflow: auto;
 }
 
@@ -1460,6 +1496,104 @@ header::before {
 .fecha .core {
 	background: blue;
 }
+
+.tableContainerPE {
+	width: 100%;
+	height: 100%;
+	overflow: inherit;
+}
+
+.tablaPE {
+	width: 100%;
+	min-width: 650px;
+}
+
+.tablaPE thead tr {
+	background: #2b3963;
+}
+
+.tablaPE thead tr th {
+	padding: 15px 0;
+	color: #eeeeee;
+}
+
+.tablaPE thead tr th:first-child {
+	border-radius: 10px 0 0 0;
+	width: 5%;
+}
+
+.tablaPE thead tr th:nth-child(2) {
+	width: 15%;
+}
+
+.tablaPE thead tr th:nth-child(3) {
+	width: 65%;
+}
+
+.tablaPE thead tr th:last-child {
+	border-radius: 0 10px 0 0;
+	width: 15%;
+}
+
+.tablaPE tbody tr td {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.tablaPE tbody tr td:first-child {
+	background: #3F2B70;
+	color: #d8d8d8;
+}
+
+.tablaPE tbody tr td:nth-child(2) {
+	background: #302F7A;
+	color: #d0d0d0;
+}
+
+.tablaPE tbody tr td:nth-child(3) {
+	background: #2F557A;
+	color: #c8c8c8;
+}
+
+.tablaPE tbody tr td:last-child {
+	background: #2B6070;
+	color: #c0c0c0;
+}
+
+.tablaPE tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+
+.tablaPE tbody tr:last-child td:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+.tablaPE tbody tr:hover {
+	opacity: 0.8;
+	transition: 0.1s;
+}
+
+.tablaPE tbody tr td:last-child span:first-child {
+	float: left;
+	margin-left: 10px;
+}
+
+.tablaPE tbody tr td:last-child span:last-child {
+	float: right;
+	margin-right: 10px;
+}
+
+.tablaPE tbody tr td:last-child span:first-child:hover {
+	color: #4a0000;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.tablaPE tbody tr td:last-child span:last-child:hover {
+	color: #3e3296;
+	transition: 0.2s;
+	cursor: pointer;
+}
 /*fProyectos.php***************************************************************/
 
 /*clientes.php*****************************************************************/
@@ -1482,113 +1616,113 @@ header::before {
 	}
 }
 
-.sectionContainer table {
+.sectionContainer .tablaCotizaciones {
 	position: relative;
 	width: 100%;
 }
 
-.sectionContainer table thead tr{
+.sectionContainer .tablaCotizaciones thead tr{
 	height: 50px;
 }
 
-.sectionContainer table thead tr th{
+.sectionContainer .tablaCotizaciones thead tr th{
 	vertical-align: middle;
 	font-size: 20px;
 	font-weight: bold;
 	background: #4c8ca3;
 }
 
-.sectionContainer table thead tr th:first-child {
+.sectionContainer .tablaCotizaciones thead tr th:first-child {
 	width: 4%;
 	min-width: 40px;
 }
 
-.sectionContainer table thead tr th:nth-child(2) {
+.sectionContainer .tablaCotizaciones thead tr th:nth-child(2) {
 	width: 10%;
 	min-width: 100px;
 }
 
-.sectionContainer table thead tr th:nth-child(3),
-.sectionContainer table thead tr th:nth-child(4) {
+.sectionContainer .tablaCotizaciones thead tr th:nth-child(3),
+.sectionContainer .tablaCotizaciones thead tr th:nth-child(4) {
 	width: 33%;
 	min-width: 250px;
 }
 
-.sectionContainer table thead tr th:last-child {
+.sectionContainer .tablaCotizaciones thead tr th:last-child {
 	width: 20%;
 	min-width: 200px;
 }
 
-.sectionContainer table tbody td table tr td {
+.sectionContainer .tablaCotizaciones tbody td table tr td {
 	width: 50%;
 	text-align: center;
 	vertical-align: middle;
 }
 
-.sectionContainer table tbody tr:nth-child(odd){
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(odd){
 	background-color: #599a9a;
 	color: black;
 }
 
-.sectionContainer table tbody tr:nth-child(even){
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(even){
 	background-color: #365757;
 	color: white;
 }
 
-.sectionContainer table tbody tr td div {
+.sectionContainer .tablaCotizaciones tbody tr td div {
 	cursor: pointer;
 	height: 100%;
 	width: 50%;
 	float: left;
 }
 
-.sectionContainer table tbody tr td .verP2 {
+.sectionContainer .tablaCotizaciones tbody tr td .verP2 {
 	cursor: pointer;
 	height: 100%;
 	width: 100%;
 	float: left;
 }
 
-.sectionContainer table tbody tr td div span {
+.sectionContainer .tablaCotizaciones tbody tr td div span {
 	position: relative;
   top: 25%;
   transform: translateY(-25%);
 }
 
-.sectionContainer table tbody tr:nth-child(odd) td div:first-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(odd) td div:first-child {
 	background: #62c18e;
 }
 
-.sectionContainer table tbody tr:nth-child(odd) td div:last-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(odd) td div:last-child {
 	background: #db7979;
 }
 
-.sectionContainer table tbody tr:nth-child(even) td div:first-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(even) td div:first-child {
 	background: #347853;
 	color: white;
 }
 
-.sectionContainer table tbody tr:nth-child(even) td div:last-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(even) td div:last-child {
 	background: #873333;
 	color: white;
 }
 
-.sectionContainer table tbody tr:nth-child(odd) td .verP2:last-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(odd) td .verP2:last-child {
 	background: #62c18e;
 }
 
-.sectionContainer table tbody tr:nth-child(even) td .verP2:last-child {
+.sectionContainer .tablaCotizaciones tbody tr:nth-child(even) td .verP2:last-child {
 	background: #347853;
 	color: white;
 }
 
-.sectionContainer table tbody tr td{
+.sectionContainer .tablaCotizaciones tbody tr td{
 	height: 40px;
 	vertical-align: middle;
 	text-align: center;
 }
 
-.sectionContainer table tr th:hover, .sectionContainer table tr td:hover {
+.sectionContainer .tablaCotizaciones tr th:hover, .sectionContainer .tablaCotizaciones tr td:hover {
 	transition: 0.5s;
 	opacity: 0.9;
 }

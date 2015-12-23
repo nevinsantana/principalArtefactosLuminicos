@@ -5,7 +5,7 @@
     </section>
   </section>
   <div class="tableContainer">
-    <table>
+    <table class="tablaCotizaciones">
       <thead>
         <tr>
           <th>No</th>
