@@ -1514,6 +1514,7 @@ header::before {
 
 .tablaPE thead tr th {
 	padding: 15px 0;
+	height: auto;
 	color: #eeeeee;
 }
 
@@ -1575,12 +1576,12 @@ header::before {
 
 .tablaPE tbody tr td:last-child span:first-child {
 	float: left;
-	margin-left: 10px;
+	margin-left: 10%;
 }
 
 .tablaPE tbody tr td:last-child span:last-child {
 	float: right;
-	margin-right: 10px;
+	margin-right: 10%;
 }
 
 .tablaPE tbody tr td:last-child span:first-child:hover {
