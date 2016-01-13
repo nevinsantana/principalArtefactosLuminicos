@@ -13,21 +13,21 @@
           <div class="dividerBar" onclick="showGeneral()">
             <i class="fa fa-dot-circle-o"></i><h1>General</h1>
           </div>
+          <form action="php/saver.php" method="POST" name="formNP">
           <div id="nPGeneral">
-            <form method="post" action="?sec=proyectos" id="npForm">
     				<span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                value="1 (ejemplo)" disabled />
+                value="<?php nProyecto(); ?>" disabled />
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-gear fa-spin icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
-                  Proyecto número
+                  No proyecto
                 </span>
     					</label>
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                value="Nevin (ejemplo)" disabled />
+                value="<?php nomUsuario(); ?>" disabled />
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-user icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -37,7 +37,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                 name="proyecto" required/>
+                 name="proyectoNP" oninput="cambiaGuardarNP()" required/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-home icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -47,7 +47,8 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                id="fechaDP" onfocus="abreDP()" onblur="cierraDP()"/>
+                id="fechaDP" onfocus="abreDP()" onblur="cierraDP()"
+                name="fechaNP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-calendar icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -61,7 +62,8 @@
             </div>
             <div id="nPUbicacion">
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="estadoNP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-globe icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -70,7 +72,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="municipioNP" />
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-map icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -79,7 +82,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="coloniaNP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-map-o icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -88,7 +92,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="calleNP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-road icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -97,7 +102,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="nINP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-street-view icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -106,7 +112,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="nENP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-building icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -115,7 +122,8 @@
     					</label>
     				</span>
             <span class="input input--kohana">
-    					<input class="input__field input__field--kohana" type="text"/>
+    					<input class="input__field input__field--kohana" type="text"
+                name="cPNP"/>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-hashtag icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -123,8 +131,15 @@
                 </span>
     					</label>
     				</span>
-          </form>
           </div>
+          <div class="saveBar" id="guardaNP" >
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-floppy-o fa-stack-1x"></i>
+            <i class="fa fa-ban fa-stack-2x text-danger" id="iconoBotonNP"></i>
+            </span>
+              <h1 id="textoBotonNP">Nombre el proyecto</h1>
+          </div>
+        </form>
         </div>
       </article>
     </section>
@@ -150,24 +165,7 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>0</td>
-                  <td>23/12/2015</td>
-                  <td>Artefactos Lumínicos S.A. de C.V.</td>
-                  <td><span>ver</span> <span>editar</span></td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>15/09/2015</td>
-                  <td>Best Light México S.A. de C.V.</td>
-                  <td><span>ver</span> <span>editar</span></td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>02/05/2015</td>
-                  <td>Best Energy S.A. de C.V.</td>
-                  <td><span>ver</span> <span>editar</span></td>
-                </tr>
+                <?php generaTablaPE(); ?>
               </tbody>
             </table>
           </div>

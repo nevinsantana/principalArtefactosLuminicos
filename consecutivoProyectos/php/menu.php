@@ -17,4 +17,6 @@
       require_once("eliminarCotizacion.php");
   if($seccion=="proyectos")
     require_once("botonesCrear.php");
+  if($seccion=="gestionProyecto")
+    require_once("gestionProyecto.php");
 ?>

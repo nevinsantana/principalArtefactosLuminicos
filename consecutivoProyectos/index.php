@@ -51,7 +51,7 @@
   		<a href="#" class="cd-nav-trigger">Menu<span></span></a>
   	</header>
 
-  	<main class="cd-main-content">
+  	<main class="cd-main-content" id="cd-main-content">
       <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
       <?php if(isset($_GET['errorLogin'])) { ?>
       <div class="errorLogin rojo">
@@ -79,5 +79,7 @@
   <script
     src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.0/scrollreveal.min.js">
   </script>
+  <script src="js/circleSelect/classie.js"></script>
+  
   </body>
 </html>

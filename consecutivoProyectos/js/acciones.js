@@ -12,9 +12,9 @@ vars[key] = value;
 });
 return vars;
 }
-
+/**********ejemplo: var ejemploVar = getUrlVars()['nombreVariable'];***********/
 function abreDP() {
-  $('#fechaDP').glDatePicker({});
+  $('#fechaDP').glDatePicker();
 }
 
 function cierraDP() {
@@ -64,6 +64,21 @@ function convert2Submit() {
   document.getElementById('npForm').submit();
 }
 /*fBotonesCrear.php************************************************************/
+
+/*proyectos.php****************************************************************/
+function gestionProyecto(idProyecto, accion) {
+  if(accion=="ver") {
+  var url = '?sec=gestionProyecto&accion=ver&idProyecto='+idProyecto,
+      win = window.open(url, '_self');
+  wind.focus();
+  }
+  if(accion=="editar") {
+  var url = '?sec=gestionProyecto&accion=editar&idProyecto='+idProyecto,
+      win = window.open(url, '_self');
+  wind.focus();
+  }
+}
+/*fProyectos.php***************************************************************/
 
 /*cotizaciones.php*************************************************************/
 function verCotizacion(noCotizacion) {

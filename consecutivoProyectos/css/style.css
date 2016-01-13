@@ -50,8 +50,8 @@ table {
 	outline:0px;
 }
 
-input:focus{
-      outline: none;
+input:focus, button:focus{
+	outline: none;
 }
 
 .noOpacity {
@@ -131,6 +131,275 @@ input:focus{
 }
 /*fQuicksand*/
 /*fFonts***********************************************************************/
+
+/*circularSelect***************************************************************/
+/* Default custom select styles */
+div.cs-select {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 100;
+	width: 100%;
+	max-width: 500px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+	display: none;
+}
+
+.cs-select span {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	padding: 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+	padding-right: 3em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+	speak: none;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.cs-select > span::after {
+	content: '\25BE';
+	right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+	content: '\2713';
+	margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+	z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+}
+
+.cs-select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.cs-select ul span {
+	padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+div.cs-skin-circular {
+	background: transparent;
+	font-size: 2em;
+	font-weight: 700;
+	width: auto;
+	left: 5%;
+}
+
+.cs-skin-circular > span {
+	background: transparent;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	padding: 0;
+	text-indent: 100%;
+	box-shadow: inset 0 0 0 5px #5d5b44;
+	border-radius: 50%;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+}
+
+@media screen and (max-width: 30em) {
+	.cs-skin-circular > span { width: 80px; height: 80px; }
+}
+
+.cs-skin-circular > span::after {
+	content: 'Tipo';
+	color: #5d5b44;
+	right: 0;
+	width: 100%;
+	text-indent: 0;
+}
+
+.cs-skin-circular.cs-active > span::after {
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.cs-skin-circular > span[style]::after {
+	content:'';
+}
+
+.cs-skin-circular .cs-selected span::after {
+	content: '';
+}
+
+.cs-skin-circular.cs-active > span {
+	-webkit-transform: scale3d(0.75,0.75,1);
+	transform: scale3d(0.75,0.75,1);
+}
+
+.cs-skin-circular .cs-options {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	color: #415c71;
+	background: transparent;
+	overflow: visible;
+	font-size: 50%;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+	transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+.cs-skin-circular.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.cs-skin-circular .cs-options ul,
+.cs-skin-circular .cs-options li  {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.cs-skin-circular .cs-options li {
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	border-radius: 50%;
+	opacity: 0;
+	cursor: pointer;
+	pointer-events: auto;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.1s;
+	transition: transform 0.3s, opacity 0.1s;
+}
+
+.cs-skin-circular.cs-active .cs-options li {
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cs-skin-circular.cs-active .cs-options li:hover {
+	opacity: 0.7;
+}
+
+.cs-skin-circular .cs-options li:first-child { background-image: url(../img/1.png); }
+.cs-skin-circular .cs-options li:nth-child(2) { background-image: url(../img/2.png); }
+.cs-skin-circular .cs-options li:nth-child(3) { background-image: url(../img/3.png); }
+.cs-skin-circular .cs-options li:nth-child(4) { background-image: url(../img/4.png); }
+.cs-skin-circular .cs-options li:nth-child(5) { background-image: url(../img/5.png); }
+.cs-skin-circular .cs-options li:nth-child(6) { background-image: url(../img/6.png); }
+.cs-skin-circular .cs-options li:nth-child(7) { background-image: url(../img/7.png); }
+.cs-skin-circular .cs-options li:nth-child(8) { background-image: url(../img/8.png); }
+
+.cs-skin-circular.cs-active .cs-options li:first-child {
+	-webkit-transform: translate3d(0, -160px, 0);
+	transform: translate3d(90px, 0, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(2) {
+	-webkit-transform: translate3d(113.14px, -113.14px, 0);
+	transform: translate3d(193px, 0px, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(3) {
+	-webkit-transform: translate3d(160px, 0, 0);
+	transform: translate3d(297px, 0, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(4) {
+	-webkit-transform: translate3d(113.14px, 113.14px, 0);
+	transform: translate3d(113.14px, 113.14px, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(5) {
+	-webkit-transform: translate3d(0, 160px, 0);
+	transform: translate3d(0, 160px, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(6) {
+	-webkit-transform: translate3d(-113.14px, 113.14px, 0);
+	transform: translate3d(-113.14px, 113.14px, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(7) {
+	-webkit-transform: translate3d(-160px, 0, 0);
+	transform: translate3d(-160px, 0, 0);
+}
+
+.cs-skin-circular.cs-active .cs-options li:nth-child(8) {
+	-webkit-transform: translate3d(-113.14px, -113.14px, 0);
+	transform: translate3d(-113.14px, -113.14px, 0);
+}
+
+.cs-skin-circular .cs-options li span {
+	display: none;
+}
+
+.cs-skin-circular .cs-options li.cs-focus {
+	background-color: transparent;
+	opacity: 0.7;
+}
+/*fCircularSelect**************************************************************/
 
 /*kohanaInputs*****************************************************************/
 .input {
@@ -217,6 +486,11 @@ input:focus{
 	background: #fff;
 }
 
+.input--kohana-eProyecto {
+	overflow: hidden;
+	background: #b9b69b;
+}
+
 .input__field--kohana {
 	width: 100%;
 	background: transparent;
@@ -231,6 +505,14 @@ input:focus{
 	text-align: left;
 	pointer-events: none;
 	color: #506d96;
+}
+
+.input__label--kohana-eProyecto {
+	position: absolute;
+	width: 100%;
+	text-align: left;
+	pointer-events: none;
+	color: #5d5b44;
 }
 
 .input__label-content--kohana {
@@ -251,7 +533,24 @@ input:focus{
 	transition: transform 0.3s;
 }
 
+.icon--kohana-eProyecto {
+	color: #5d5b44;
+	display: inline-block;
+	margin-top: 0.9em;
+	-webkit-transform: translate3d(-2.5em, 0, 0);
+	transform: translate3d(-2.5em, 0, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
 .input__field--kohana:focus + .input__label--kohana .input__label-content--kohana,
+.input--filled .input__label-content--kohana {
+	opacity: 0;
+	-webkit-transform: translate3d(100px, 0, 0);
+	transform: translate3d(100px, 0, 0);
+}
+
+.input__field--kohana:focus + .input__label--kohana-eProyecto .input__label-content--kohana,
 .input--filled .input__label-content--kohana {
 	opacity: 0;
 	-webkit-transform: translate3d(100px, 0, 0);
@@ -266,8 +565,22 @@ input:focus{
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+.input__label-content--kohana,
+.icon--kohana-eProyecto,
+.input__field--kohana:focus + .input__label--kohana-eProyecto .input__label-content--kohana,
+.input--filled .input__label-content--kohana {
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
 .input__field--kohana:focus + .input__label--kohana .icon--kohana,
 .input--filled  .icon--kohana {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.input__field--kohana:focus + .input__label--kohana-eProyecto .icon--kohana-eProyecto,
+.input--filled  .icon--kohana-eProyecto {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
@@ -872,7 +1185,7 @@ header::before {
   background-color: #f2f2f2;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
+  transition: transform 0.3s, background 0.5s;
 }
 
 .sectionContainer {
@@ -1252,6 +1565,25 @@ header::before {
 .dividerBar h1 {
 	margin: 0;
 }
+
+.saveBar {
+	width: 100%;
+	min-width: 100%;
+	background: #c14545;
+	padding: 6px;
+	border-radius: 10px;
+	margin: 20px 0;
+	transition: 0.5s;
+}
+
+.saveBar span:first-child {
+	font-size: 90%;
+	 margin-left: 48.5%;
+}
+
+.saveBar h1 {
+	margin: 0;
+}
 /*fIntoSections****************************************************************/
 
 /*filter***********************************************************************/
@@ -1596,6 +1928,149 @@ header::before {
 	cursor: pointer;
 }
 /*fProyectos.php***************************************************************/
+
+/*gestionProyecto.php**********************************************************/
+div.editaProyecto{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	transition: opacity 0.2s;
+}
+
+div.editaProyecto, div.editaPlano, div.editaLuminario {
+	background-color: #cfccaf;
+	padding: 3%;
+}
+
+hr.hrProyecto {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+hr.hrProyecto:after {
+	content: 'Proyecto';
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #cfccaf;
+	color: #5d5b44;
+	font-size: 18px;
+}
+
+hr.hrPlano {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+hr.hrPlano:after {
+	content: 'Planos';
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #cfccaf;
+	color: #5d5b44;
+	font-size: 18px;
+}
+
+hr.hrLuminario {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+}
+
+
+hr.hrLuminario:after {
+	content: 'Luminario';
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #cfccaf;
+	color: #5d5b44;
+	font-size: 18px;
+}
+
+hr.hrCreaPlano {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+}
+
+hr.hrCreaPlano:after {
+	content: 'Nuevo plano';
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #e9e9e9;
+	color: #5d5b44;
+	font-size: 18px;
+}
+
+.cuadroPrueba {
+	width: 100%;
+	height: 500px;
+	border: 1px solid green;
+}
+
+.botonEditaProyecto {
+	width: 100%;
+	padding: 5px;
+	border-radius: 10px;
+	background: #81b928;
+	font-size: 20px;
+	color: #395013;
+}
+
+.centerAbsolute {
+
+}
+
+.creaPlano {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #e9e9e9;
+	width: 80%;
+	height: 50%;
+  top: 80%;
+  transform: translateY(-80%);
+	border-radius: 30px 0 0 30px;
+	padding: 3%;
+	z-index: -9999;
+	opacity: 0;
+	transition: opacity 0.5s;
+	overflow: auto;
+}
+
+.centrarCS {
+	margin: auto;
+	overflow: auto;
+}
+
+.cierraCrearGP {
+	float: right;
+	position: relative;
+	top: -15px;
+	cursor: pointer;
+}
+/*fGestionProyecto.php*********************************************************/
 
 /*clientes.php*****************************************************************/
 /*fClientes.php****************************************************************/

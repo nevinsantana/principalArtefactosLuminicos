@@ -43,8 +43,10 @@
 
 <!--verificaSesionIniciada----------------------------------------------------->
 <?php
-  if(isset($_SESSION['user']) && $_GET['sec'] == 'login') {
-    if(isset($_GET['logout'])) {} else { header('Location: ?sec=principal'); }
+  if(isset($_GET['sec'])) { /*Para evitar mensaje de undefined sec*/
+    if(isset($_SESSION['user']) && $_GET['sec'] == 'login') {
+      if(isset($_GET['logout'])) {} else { header('Location: ?sec=principal'); }
+    }
   } /*Si se quiere entrar a login normal cuando hay sesion iniciada, redirigirá
       a sec=principal*/
 ?>
@@ -130,8 +132,80 @@
     }
   }
   else {}
+
+  function nProyecto() {
+    global $conexion;
+    $sql = "SELECT idProyecto FROM proyecto ORDER BY idProyecto DESC LIMIT 1";
+    $resultado = query($sql, $conexion);
+    $campo = mysql_fetch_row($resultado);
+    $idProyecto = $campo[0] + 1;
+
+    if ($idProyecto == "") {
+        $idProyecto = 1;
+    }
+    echo "Proyecto no. ".$idProyecto;
+  }
+
+  function nomUsuario() {
+    echo $_SESSION['user'];
+  }
+
+  function generaTablaPE() {
+    global $conexion;
+    if($_SESSION['permiso'] == 1) {
+      $sql = "SELECT * FROM proyecto ORDER BY idProyecto DESC";
+      $resultado = query($sql, $conexion);
+      while ($campo = mysql_fetch_array($resultado)) {
+        $idPE = $campo['idProyecto'];
+        $fechaPE = $campo['fecha'];
+        $nombrePE = $campo['nombreProyecto'];
+        ?>
+        <tr><!--Genera contenido de la tabla-->
+          <td><?php echo $idPE; ?></td>
+          <td><?php echo $fechaPE; ?></td>
+          <td><?php echo $nombrePE; ?></td>
+          <td>
+            <span onclick="gestionProyecto(<?php echo $idPE; ?>, 'ver')">
+              ver
+            </span>
+            <span onclick="gestionProyecto(<?php echo $idPE; ?>, 'editar')">
+              editar
+            </span>
+          </td>
+        </tr>
+        <?php
+      }
+    }
+    else {
+      $userPE = $_SESSION['user'];
+      $sql = "SELECT * FROM proyecto WHERE idUsuario = '$userPE'
+        ORDER BY idProyecto DESC";
+      $resultado = query($sql, $conexion);
+      while ($campo = mysql_fetch_array($resultado)) {
+        $idPE = $campo['idProyecto'];
+        $fechaPE = $campo['fecha'];
+        $nombrePE = $campo['nombreProyecto'];
+        ?>
+        <tr>
+          <td><?php echo $idPE; ?></td>
+          <td><?php echo $fechaPE; ?></td>
+          <td><?php echo $nombrePE; ?></td>
+          <td><span>ver</span><span>editar</span></td>
+        </tr>
+        <?php
+      }
+    }
+  }
 ?>
 <!--fProyectos.php------------------------------------------------------------->
+
+<!--gestionProyecto.php-------------------------------------------------------->
+<?php
+  function pGetIdProyecto() {
+    echo $_GET['idProyecto'];
+  }
+?>
+<!--fGestionProyecto.php------------------------------------------------------->
 
 <!--cotizaciones.php----------------------------------------------------------->
 <?php

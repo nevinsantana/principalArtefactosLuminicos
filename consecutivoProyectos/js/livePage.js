@@ -31,7 +31,9 @@ idIconoNuevoCliente= document.getElementById('iconoNuevoCliente'),
 idIconoEliminarCliente= document.getElementById('iconoEliminarCliente'),
 idIconoModificarCliente= document.getElementById('iconoModificarCliente'),
 idIconoListaClientes= document.getElementById('iconoListClientes'),
-idBotonRegresar= document.getElementById('botonRegresar');
+idBotonRegresar= document.getElementById('botonRegresar'),
+idGuardaNP= document.getElementById('guardaNP'),
+idGuardaPlano= document.getElementById('guardaPlano');
 /*fGlobalVariables*************************************************************/
 
 /*global***********************************************************************/
@@ -168,6 +170,10 @@ if ( typeof define === 'function' && define.amd ) {
   }
 })();
 /*fKohanaInputs****************************************************************/
+
+/*circleSelect*****************************************************************/
+
+/*fCircleSelect****************************************************************/
 
 /*index.php********************************************************************/
 function onresizeAnimaciones() {
@@ -439,6 +445,10 @@ function ajustaHeight() {
   idIconoNuevoProyecto.style.height=heightIcono + "px";
   idIconoProyectosExistentes.style.height=heightIcono + "px";
 }
+var np = getUrlVars()["NP"];
+if(np=="true") {
+  abrePE();
+}
 /*fProyectos.php***************************************************************/
 
 /*clientes.php*****************************************************************/
@@ -538,5 +548,59 @@ window.onload=function() {
   }).css({"color": "#C0C0C0"});
 }
 /*fFiltradorDatos**************************************************************/
+
+/*proyectos.php****************************************************************/
+function cambiaGuardarNP() {
+  if(document.formNP.proyectoNP.value!=''){
+  		document.getElementById("guardaNP").style.background="#329442";
+      document.getElementById("guardaNP").style.cursor="pointer";
+      document.getElementById("textoBotonNP").innerHTML="Guardar";
+      document.getElementById("guardaNP").
+        setAttribute("onClick", "javascript: this.parentNode.submit();" );
+      document.getElementById("iconoBotonNP").
+        setAttribute("class", "fa fa-floppy-o" );
+  		document.formNP.proyectoNP.focus();
+  		return false;
+  	}
+  else {
+    document.getElementById("guardaNP").style.background="#c14545";
+    document.getElementById("guardaNP").style.cursor="default";
+    document.getElementById("textoBotonNP").innerHTML="Nombre el proyecto";
+    document.getElementById("iconoBotonNP").
+      setAttribute("class", "fa fa-ban fa-stack-2x text-danger" );
+    document.getElementById("guardaNP").onclick= function () {};
+  }
+}
+/*fproyectos.php***************************************************************/
+
+/*gestionProyecto.php**********************************************************/
+function agregaPlano() {
+  document.getElementById('editaProyecto').style.opacity="0.2";
+  document.getElementById('cd-main-content').style.background="black";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('creaPlano').style.zIndex="9999";
+  document.getElementById('creaPlano').style.opacity="1";
+}
+
+function cierraCrearGP() {
+  document.getElementById('editaProyecto').style.opacity="1";
+  document.getElementById('cd-main-content').style.background="default";
+  document.getElementById('cd-main-content').disabled="false";
+  document.getElementById('creaPlano').style.zIndex="-9999";
+  document.getElementById('creaPlano').style.opacity="0";
+}
+
+function cambiaGuardarPlano() {
+  		idGuardaPlano.style.background="#64c273";
+      idGuardaPlano.style.cursor="pointer";
+      document.getElementById("textoBotonNP").innerHTML="Guardar plano";
+      idGuardaPlano.
+        setAttribute("onClick", "this.parentNode.submit();" );
+      document.getElementById("iconoBotonNP").
+        setAttribute("class", "fa fa-floppy-o" );
+  		/*document.formNP.proyectoNP.focus();*/
+  		return false;
+}
+/*fGestionProyecto.php*********************************************************/
 
   /*end**********************************************************************/
