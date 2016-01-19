@@ -43,7 +43,7 @@
 
 <?php
   /*start*******************************************************************/
-  
+
 /*proyectos.php****************************************************************/
 if(isset($_POST['proyectoNP'])) {
   $proyectoNP = $_POST['proyectoNP'];
@@ -87,6 +87,49 @@ if(isset($_POST['proyectoNP'])) {
 
 else { header('Location: ../?sec=login'); }
 /*fProyectos.php***************************************************************/
+
+/*gestionProyecto.php**********************************************************/
+if(isset($_GET['plano'])) {
+  $idProyecto = $_GET['idProyecto'];
+  global $conexion;
+  $sql = "SELECT idPlano FROM plano WHERE idProyecto = '$idProyecto'
+    ORDER BY idPlano DESC LIMIT 1";
+  $resultado = query($sql, $conexion);
+  $campo = mysql_fetch_row($resultado);
+  $idPlano = $campo[0] + 1;
+
+  if ($idPlano == "") {
+      $idPlano = 1;
+  }
+  $user = $_SESSION['user'];
+  if(isset($idPlano)) {
+    if(isset($_POST['tipoPlano'])) { $tipoPlano = $_POST['tipoPlano']; }
+    else{$tipoPlano="";}
+    if(isset($_POST['nivelRec'])) { $nivelRec = $_POST['nivelRec']; }
+    else{$nivelRec="";}
+    if(isset($_POST['ancho'])) { $ancho = $_POST['ancho']; }
+    else{$ancho="";}
+    if(isset($_POST['altura'])) { $altura = $_POST['altura']; }
+    else{$altura="";}
+    if(isset($_POST['anchoCamellon'])) { $anchoCamellon = $_POST['anchoCamellon']; }
+    else{$anchoCamellon="";}
+    if(isset($_POST['anchoAvenida'])) { $anchoAvenida = $_POST['anchoAvenida']; }
+    else{$anchoAvenida="";}
+    if(isset($_POST['distanciaInterpostal'])) { $distanciaInterpostal = $_POST['distanciaInterpostal']; }
+    else{$distanciaInterpostal="";}
+    if(isset($_POST['largo'])) { $largo = $_POST['largo']; }
+    else{$largo="";}
+    $sql = "INSERT INTO plano (idPlano, idProyecto, tipoPlano, nivelRec,
+    ancho, altura, anchoCamellon, anchoAvenida, distanciaInterpostal, largo)
+    VALUES ('$idPlano','$idProyecto','$tipoPlano','$nivelRec',
+      '$ancho','$altura','$anchoCamellon','$anchoAvenida','$distanciaInterpostal','$largo')";
+    $resultado = query($sql, $conexion);
+  }
+  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto=11');
+}
+
+else { header('Location: ../?sec=login'); }
+/*fGestionProyecto.php*********************************************************/
 
   /*end*********************************************************************/
 ?>

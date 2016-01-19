@@ -80,6 +80,6 @@
     src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.0/scrollreveal.min.js">
   </script>
   <script src="js/circleSelect/classie.js"></script>
-  
+
   </body>
 </html>

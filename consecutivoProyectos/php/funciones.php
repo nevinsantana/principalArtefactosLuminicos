@@ -38,30 +38,15 @@
   } /*Si sesion user no iniciado, evalua: si get sec==login evalua:
       si get logout=true cambia url a ?sec=login. si get sec != login, cabia url
       a ?sec=login*/
-?>
-<!--fVerificaSesionTerminada--------------------------------------------------->
 
-<!--verificaSesionIniciada----------------------------------------------------->
-<?php
+
   if(isset($_GET['sec'])) { /*Para evitar mensaje de undefined sec*/
     if(isset($_SESSION['user']) && $_GET['sec'] == 'login') {
       if(isset($_GET['logout'])) {} else { header('Location: ?sec=principal'); }
     }
   } /*Si se quiere entrar a login normal cuando hay sesion iniciada, redirigirá
       a sec=principal*/
-?>
-<!--fVerificaSesionIniciada---------------------------------------------------->
 
-<!--extractorDatosDB----------------------------------------------------------->
-<?php
-  function eCotizaciones() {
-
-  }
-?>
-<!--fExtractorDatosDB---------------------------------------------------------->
-
-<!--login.php------------------------------------------------------------------>
-<?php
   function loginin() { //Realizada al presionar boton Entrar en login
     if(isset($_GET['loginin'])) {
       global $conexion;
@@ -103,9 +88,6 @@
     }
   }
 ?>
-<!--fLogin.php----------------------------------------------------------------->
-
-<!--index.php------------------------------------------------------------------>
 <?php
   if(isset($_SESSION['permiso'])) {
     $logeado = 1;
@@ -203,6 +185,21 @@
 <?php
   function pGetIdProyecto() {
     echo $_GET['idProyecto'];
+  }
+
+  function generaNoPlano() {
+    $idProyecto = $_GET['idProyecto'];
+    global $conexion;
+    $sql = "SELECT idPlano FROM plano WHERE idProyecto = '$idProyecto'
+      ORDER BY idPlano DESC LIMIT 1";
+    $resultado = query($sql, $conexion);
+    $campo = mysql_fetch_row($resultado);
+    $idPlano = $campo[0] + 1;
+
+    if ($idPlano == "") {
+        $idPlano = 1;
+    }
+    return $idPlano;
   }
 ?>
 <!--fGestionProyecto.php------------------------------------------------------->

@@ -1,13 +1,15 @@
-<?php $idProyecto = $_GET['idProyecto']; ?>
+<?php $idProyecto = $_GET['idProyecto'];
+  $noPlano = generaNoPlano();?>
 <div class="creaPlano" id="creaPlano">
   <span class="fa-stack fa-lg cierraCrearGP" onclick="cierraCrearGP()">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-times fa-stack-1x fa-inverse"></i>
   </span>
   <hr class="hrCreaPlano">
-  <form method="POST" action="?sec=gestionProyecto&accion=editar&idProyecto=<?php echo $idProyecto ?>&plano=true">
+  <form method="POST" action="php/saver.php?idProyecto=<?php echo $idProyecto ?>&plano=true">
     <section class="centrarCS">
-      <select class="cs-select cs-skin-circular" onclick="cambiaGuardarPlano()">
+      <select class="cs-select cs-skin-circular" onclick="cambiaGuardarPlano()"
+        name="tipoPlano">
         <option value="" disabled selected>Tipe</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -16,7 +18,7 @@
     </section>
     <span class="input input--kohana-eProyecto">
       <input class="input__field input__field--kohana" type="text"
-        name="idPlano"/>
+        name="idPlano" value="<?php echo $noPlano ?>"/>
       <label class="input__label input__label--kohana-eProyecto" for="input-29">
         <i class="fa fa-fw fa-object-group icon icon--kohana-eProyecto"></i>
         <span class="input__label-content input__label-content--kohana">

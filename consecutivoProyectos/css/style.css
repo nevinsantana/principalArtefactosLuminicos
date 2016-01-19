@@ -2066,7 +2066,7 @@ hr.hrCreaPlano:after {
 
 .cierraCrearGP {
 	float: right;
-	position: relative;
+	position: fixed;
 	top: -15px;
 	cursor: pointer;
 }
