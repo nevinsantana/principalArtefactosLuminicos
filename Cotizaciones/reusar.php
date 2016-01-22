@@ -44,7 +44,7 @@ if (isset($_GET['cliente'])) {
     <div id="page">
         <div id="header">
             <h1>Artefactos Lumínicos SA de CV</h1>
-        </div> 
+        </div>
 
     </div>
 
@@ -76,11 +76,6 @@ if (isset($_GET['cliente'])) {
 
 if ($cliente == 1) {
 
-
-
-
-
-
 //inicio de captura de datos
     $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
     $resultado = query($sql, $con);
@@ -104,23 +99,15 @@ if ($cliente == 1) {
     $resultado = query($sql, $con);
 
 
-
-
     $sql = "SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$id_cotizacion'";
     $resultado = query($sql, $con);
     $datos_cotizacion = mysql_fetch_array($resultado);
-
     $datos_cliente = $datos_cotizacion['datos_cliente'];
     $datos_contacto = $datos_cotizacion['datos_contacto'];
     $datos_vendedor = $datos_cotizacion['datos_vendedor'];
 
     $sql = "INSERT INTO Datos_Cotizacion (id_cotizacion, datos_cliente, datos_contacto, datos_vendedor) VALUES ('$id_cotizacion2','$datos_cliente','$datos_contacto','$datos_vendedor')";
-
     $resultado = query($sql, $con);
-
-
-
-
 
     $sql = "SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'";
     $resultado = query($sql, $con);
@@ -138,10 +125,6 @@ if ($cliente == 1) {
         $resultado1 = query($sql, $con);
     }
 
-
-
-
-
     $sql = "SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";
     $resultado = query($sql, $con);
     while ($notas = mysql_fetch_array($resultado)) {
@@ -152,7 +135,13 @@ if ($cliente == 1) {
         $resultado1 = query($sql, $con);
     }
 
-    header("Location: editar_cotizacion.php?id_cotizacion=$id_cotizacion2");
+    $sql = "SELECT * FROM Clientes WHERE id_num_cliente='$id_num_cliente'";
+    $resultado = query($sql, $con);
+    $cotizaciones = mysql_fetch_array($resultado);
+
+    $empresa = $cotizaciones['empresa'];
+
+    header("Location: editar_cotizacion.php?id_cotizacion=$id_cotizacion2&empresa=$empresa");
 }
 
 if ($cliente == 0) {

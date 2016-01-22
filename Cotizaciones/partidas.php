@@ -22,6 +22,10 @@
 
                         header('Content-Type: text/html; charset=UTF-8');
 
+            if(isset($_GET['empresa'])) {
+              $_SESSION['empresa'] = $_GET['empresa'];
+            }
+
 						if (isset($_SESSION['empresa']))
 							{
                                 $empresa = $_SESSION['empresa'];

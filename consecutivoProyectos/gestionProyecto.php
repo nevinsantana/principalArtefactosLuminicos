@@ -16,7 +16,7 @@
         <option value="3">3</option>
       </select>
     </section>
-    <span class="input input--kohana-eProyecto">
+    <span class="input input--kohana">
       <input class="input__field input__field--kohana" type="text"
         name="idPlano" value="<?php echo $noPlano ?>"/>
       <label class="input__label input__label--kohana-eProyecto" for="input-29">
