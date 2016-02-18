@@ -109,14 +109,21 @@
                 <img src="images/LogoAEL.png" alt="Logo AEL">
               </a>
             </div>
+            <!--
             <div class="contUnLogo">
               <a href="http://hydrel.acuitybrands.com/" target="_blank">
                 <img src="images/LogoHYDREL.png" alt="Logo Hydrel">
               </a>
             </div>
+          -->
             <div class="contUnLogo">
               <a href="http://www.hubbell-killark.com/" target="_blank">
                 <img src="images/LogoKILLARK.png" alt="Logo Killark">
+              </a>
+            </div>
+            <div class="contUnLogo">
+              <a href="http://www.evluma.com/" target="_blank">
+                <img src="images/logoEvluma.png" alt="Logo Evluma">
               </a>
             </div>
           </div>

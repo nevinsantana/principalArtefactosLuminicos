@@ -22,11 +22,6 @@
       </div>
   		<nav class="cd-main-nav-wrapper">
   			<ul class="cd-main-nav">
-            <li>
-              <a href="../Cotizaciones" target="_blank">
-                Sistema de Cotizaciones
-              </a>
-            </li>
           <?php if(isset($_SESSION['user'])) { ?>
     				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
     				<li><a href="#" onclick="clientes()">Clientes</a></li>

@@ -8,7 +8,6 @@
 body {
     padding-bottom: 20px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: #F4F2F3;
     background: #F4F2F3;
 }
 
@@ -36,11 +35,9 @@ h1 {
     color: #F6F6DE;
 }
 
-h1 a, h1 a:hover {
-    text-decoration: none;
-    font-weight: normal;
-    color: #F6F6DE;
-}
+h1 a, h1 a:hover { text-decoration: none; font-weight: normal; color: #F6F6DE; }
+
+a:link{ text-decoration: none; }
 
 p {
     padding: 2px;
@@ -506,7 +503,7 @@ z.sign-up-button:hover {
     vertical-align: top;
     margin-left: 195px;
     width: 150px;
-    height: 100%;
+    height: auto;
     padding: 10px;
     font-size: 22px;
     color: #F4F2F3;
@@ -640,6 +637,7 @@ z.sign-up-button:hover {
     color: white;
     background-color: #0B4C5F;
     width: 550px;
+    max-width: 100%;
     border-radius: 5px;
 }
 
@@ -810,6 +808,10 @@ regresar.button:active{
     margin-left: 50px;
 }
 
+.minWidthBuscadores {
+  min-width: 500px;
+}
+
 /*fomr_cotizacion.php*/
 .divisa{
     font-size: 50px;
@@ -821,16 +823,10 @@ regresar.button:active{
 }
 
 #barra{
-    height:35em;
-    width:39.7em;
+    height:30em;
+    width:100%;
     max-height:700px;
     overflow:scroll;
-	overflow-x: hidden;
-    margin-left: -2.8em;
-	background: #B1DAD4;
-	padding: 0.5em;
-
-
 }
 
 .formu-button3 {
@@ -921,7 +917,6 @@ input[type=number]{
 select {
     background: -webkit-linear-gradient(white, #666);
     text-align: left;
-
     border: 1px solid #ccc;
     border-radius: 5px;
     color: black;
@@ -935,7 +930,6 @@ select {
     border-radius: 5px;
     color: black;
     -webkit-appearance: none;
-    width:100px;
 }
 
 
@@ -1460,7 +1454,8 @@ hr.raya:after { /* Not really supposed to work, but does */
   padding: 1em;
   width: 100%;
   float: left;
-  height: 4.8em;
+  height: 7em;
+  overflow-x: auto;
 }
 
 .alineaIzquierda {
@@ -1532,7 +1527,7 @@ hr.raya:after { /* Not really supposed to work, but does */
 .inputRadio {
   width: 2em;
 }
-
+/*
 section {
 margin: auto;
 margin: 3em 0 0 2em;
@@ -1545,7 +1540,7 @@ transition: 1s;
 box-sizing:border-box;
 overflow: scroll;
 overflow-x: hidden;
-}
+}*/
 
 section p {
   margin: 1em 0;

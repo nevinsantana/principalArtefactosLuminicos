@@ -1,33 +1,13 @@
-#hoja{
+#hoja{ height: auto; width: 1070px; background: #FFFFFF; }
 
-    height: auto;
-    width: 1070px;
+.h7 { color:black; }
 
-    background: #FFFFFF;
+#tablilla { width: 55em; }
 
-}
+.thead { font-size: 0.7em; }
 
-.h7{
-    color:black;  
-}
+.botmargin { margin: 1em; }
 
-#tablilla
-{
-	width: 55em;
-}
+.precios { font-size: 0.7em; text-align: right; }
 
-.thead
-{
-	font-size: 0.7em;
-}
-
-.botmargin
-{
-	margin: 1em;
-}
-
-.precios
-{
-	font-size: 0.7em;
-	text-align: right;
-}
+.fCDatos { font-size: 13px; }

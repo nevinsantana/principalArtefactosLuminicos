@@ -1,255 +1,119 @@
 <?php
-session_start();
-if ($_SESSION['permiso'] == 1) {
-    header('Location: administracion.php');
-}
-
-if (isset($_SESSION['cotizacion'])) {
-    $cotizacion = 1;
-} else {
-    $cotizacion = 0;
-}
-
-if (!isset($_GET['sec']))
-    $seccion = null;
-else
-    $seccion = $_GET['sec'];
-
-//Capturamos el usuario autenticado
-
-if (!isset($_SESSION['usuario'])) {
-    header('Location: log_in.php');
-}
-
-$id_usuario = $_SESSION['usuario'];
-
-
-
-
-//incluimos el archivo con las funciones
-include ("funciones_mysql.php");
-
-//Funcion que conecta la base de datos
-$conexion = conectar();
-
-//Seleccionamos el nombre de la persona que ingresó
-$sql = "SELECT `nombre`,`apellido_p` FROM `Usuarios` WHERE `id_usuario` = '$id_usuario'";
-$resultado = query($sql, $conexion);
-while ($campo = mysql_fetch_array($resultado)) {
-    $nombre = $campo['nombre'];
-    $apellido_p = $campo['apellido_p'];
-}
-
-$no_version = 1;
-
-$sql = "SELECT version FROM Version WHERE version_no='$no_version'";
-$resultado = query($sql, $conexion);
-while ($campo = mysql_fetch_array($resultado)) {
-    $version = $campo['version'];
-}
+  include 'php/funciones.php';
+  verificaVentas();
+  $nombre=cotizacionSecNombre()[1];
+  $apellido_p=cotizacionSecNombre()[2];
 ?>
-<!DOCTYPE html >
+<!doctype html>
 <html>
-    <head>
-        <title>Consecutivo de Cotizaciones</title>
-        <meta name="keywords" content="" />
-        <meta name="description" content="" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="en" />
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <link href="Fondo.css" rel="stylesheet" type="text/css" />
-    </head>
-
-    <script>
-        function agregar_c() {
-            location.href = "?sec=alta";
-        }
-        function eliminar_c() {
-            location.href = "?sec=baja";
-        }
-        function modificar_c() {
-            location.href = "?sec=cambio";
-        }
-        function visualizar_c() {
-            location.href = "cat_clientes.php";
-        }
-        function cotizaciones() {
-            location.href = "?sec=cotizaciones";
-        }
-        function cotizar() {
-            location.href = "?sec=cotizar";
-        }
-        function agregar_p() {
-            location.href = "?sec=alta_p";
-        }
-        function eliminar_p() {
-            location.href = "?sec=baja_p";
-        }
-        function modificar_p() {
-            location.href = "?sec=cambio_p";
-        }
-        function ver_p() {
-            location.href = "cat_prod.php";
-        }
-
-
-
-    </script>
-
-    <body>
-        <div id="page">
-            <div id="header">
-                <img id="alsa" src="images/alsa_principal.png" width="120px">
-                <h1> <style> h1 {margin-left: 200px;}</style>Artefactos Lumínicos SA de CV</h1>
-                <a  href="cerrar_sesion.php"><button id="boton_cerrar">Cerrar Sesión</button></a>
-            </div>
-
-            <div id="main">
-                <div class="ic"></div>
-
-
-
-
-                <!-- sidebar / IZQUIERDA -->
-                <div id="sidebar">
-                    <h2> Men&uacute;</h2>
-                    <div id="menu2" style="margin-top: 100px;">
-                        <ul>
-                            <li><img src="images/1clientes.svg" width="20px"><span>Clientes</span>
-                                <ul>
-                                    <li onclick="agregar_c()"><img src="images/2anadir.svg" width="20px"><span >Agregar cliente</span></li>
-                                    <li onclick="eliminar_c()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar cliente</span></li>
-                                    <li onclick="modificar_c()"><img src="images/1modificar.svg" width="20px"><span>Modificar cliente</span></li>
-                                    <li onclick="visualizar_c()"><img src="images/1ver.svg" width="20px"><span>Visualizar clientes</span></li>
-                                </ul>               
-                            </li>
-
-
-                            <li onclick="cotizaciones()"><img src="images/1cotizaciones.svg" width="20px"><span>Cotizaciones</span></li>
-
-                            <li onclick="cotizar()"><img src="images/1generar.svg" width="20px"><span>Generar cotizaci&oacute;n</span></li>
-
-
-
-
-                            <li><img src="images/1productos.svg" width="17px"><span>Productos</span>
-                                <ul>
-                                    <li onclick="agregar_p()"><img src="images/2anadir.svg" width="20px"><span>Agregar producto</span></li>
-                                    <li onclick="eliminar_p()"><img src="images/1eliminar.svg" width="20px"><span>Eliminar producto</span></li>
-                                    <li onclick="modificar_p()"><img src="images/1modificar.svg" width="20px"><span>Modificar producto</span></li>
-                                    <li onclick="ver_p()"><img src="images/1ver.svg" width="20px"><span>Visualizar productos</span></li>
-                                </ul>       
-                            </li>
-                        </ul>
-                    </div>
-
-
-
-                </div>
-                <!-- FIN sidebar / IZQUIERDA -->
-
-
-
-
-
-
-                <!-- content / DERECHA-->
-                <div id="content">
-                    <div class="post">
-                        <h2>Bienvenido <?php echo "$nombre " . "$apellido_p"; ?>  </h2>
-<?php
-if ($seccion == null) {
-    require_once("home.php");
-}
-
-if ($seccion == "alta") {
-    require_once("alta.php");
-}
-if ($seccion == "baja") {
-    require_once("baja.php");
-}
-if ($seccion == "cambio") {
-    require_once("cambio.php");
-}
-
-if ($seccion == "cotizaciones") {
-    require_once("cotizaciones.php");
-}
-
-if ($seccion == "cotizar") {
-    require_once("cotizar.php");
-}
-
-if ($seccion == "alta_p") {
-    require_once("alta_p.php");
-}
-if ($seccion == "baja_p") {
-    require_once("baja_p.php");
-}
-if ($seccion == "cambio_p") {
-    require_once("cambio_p.php");
-}
-
-if ($seccion == "creditos") {
-    require_once("creditos.php");
-}
-?>    		
-
-                    </div>
-                </div>
-                <!-- FIN content / DERECHA-->
-
-
-
-
-
-                <div class="clearing">&nbsp;</div>                
-            </div>
-            <!-- FIN main -->
-
-        </div><!--FIN page -->
-    </body>    
-    <div align="center">
-        <div  class="foot">
-            <br>Hecho en M&eacute;xico, todos los derechos reservados a Artefactos Lum&iacute;nicos S.A. de C.V. 2015<br> 
-            <a href="?sec=creditos" id="boton_creditos">Cr&eacute;ditos</a><br><br>
+  <head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="images/icono.png" sizes="64x64">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="html, css, php, javascript">
+		<meta name="description" content="Sistema de consecutivo de cotizaciones">
+		<meta name="author" content="Nevin Santana, Enrique Rodriguez">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Cotizaciones</title>
+  </head>
+  <body class="principalPage">
+    <header id="principalHeader">
+      <a href="../" target="_blank">
+        <img class="headerLogo" src="images/logo112x82.png" width="112px"
+          height="82px">
+      </a>
+      <a href="cerrar_sesion.php">
+        <button class="headerCSesion">Cerrar Sesión</button>
+      </a>
+    </header>
+    <main id="principalMain">
+      <aside id="mainLSide">
+        <div id="mainLSideDeployer" onclick="deployLSide()">
+          <img src="images/principalLSideDeployer.png" width="30px"
+            height="30px" class="principalLSideDeployer">
         </div>
-    </div>
-  <div id="letraversion">Versi&oacute;n <?php echo $version; ?></div>
-
-<?php
-if ($id_usuario == 'sistemas') {
-    ?>
-        <div id="boton_version"><a href="?sec=version" >Cambiar</a></div>
-
-<?php }
-?>
+        <div id="mainLSideMenu">
+          <ul>
+            <li class="primerLi">
+              <img src="images/principalMenuClientes.png" width="20px"
+                height="20px">
+              <span>Clientes</span>
+              <ul>
+                <li onclick="agregar_c()">
+                  <img src="images/principalMenuAniadir.png" width="20px"
+                    height="20px">
+                  <span>Agregar cliente</span>
+                </li>
+                <li onclick="eliminar_c()">
+                  <img src="images/principalMenuEliminar.png" width="20px"
+                    height="20px">
+                  <span>Eliminar cliente</span>
+                </li>
+                <li onclick="modificar_c()">
+                  <img src="images/principalMenuModificar.png" width="20px"
+                    height="20px">
+                  <span>Modificar cliente</span>
+                </li>
+                <li onclick="visualizar_c()">
+                  <img src="images/principalMenuVer.png" width="20px"
+                    height="20px">
+                  <span>Visualizar clientes</span>
+                </li>
+              </ul>
+            </li>
+            <li onclick="cotizaciones()">
+              <img src="images/principalMenuCotizaciones.png" width="20px"
+                height="20px">
+              <span>Cotizaciones</span>
+            </li>
+            <li onclick="cotizar()">
+              <img src="images/principalMenuGenerar.png" width="20px"
+                height="20px">
+              <span>Generar cotización</span>
+            </li>
+            <li class="ultimoLi">
+              <img src="images/principalMenuProductos.png" width="20px"
+                height="20px">
+              <span>Productos</span>
+              <ul>
+                <li onclick="agregar_p()">
+                  <img src="images/principalMenuAniadir.png" width="20px"
+                    height="20px">
+                  <span>Agregar producto</span>
+                </li>
+                <li onclick="modificar_p()">
+                  <img src="images/principalMenuModificar.png" width="20px"
+                    height="20px">
+                  <span>Modificar producto</span>
+                </li>
+                <li onclick="ver_p()">
+                  <img src="images/principalMenuVer.png" width="20px"
+                    height="20px">
+                  <span>Visualizar productos</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <aside id="mainRSide">
+        <div id="mainRSideContent">
+          <h2 class="contentWelcome">
+            Bienvenido <?php echo "$nombre "."$apellido_p"; ?>
+          </h2>
+          <?php selectSection(); ?>
+        </div>
+      </aside>
+    </main>
+    <footer id="principalPageFooter">
+      <span class="footerContent">
+        Hecho en México, todos los derechos reservados a Artefactos Lumínicos
+        S.A. de C.V. 2015
+      </span>
+      <a href="?sec=creditos" class="footerCreditos">Créditos</a>
+    </footer>
+    <script src="jquery/jquery-1.12.0.js"></script>
+    <script src="js/acciones.js"></script>
+  </body>
 </html>
-
-
-
-<?php
-if ($cotizacion == 1) {
-
-    echo'<script>';
-
-    echo'    var r = confirm("Hay una cotización pendiente y se ha guardado en su consecutivo de cotizaciones");';
-	$_SESSION['cotizacion']=null;
-    echo'</script>';
-}
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

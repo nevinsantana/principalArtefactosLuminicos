@@ -186,11 +186,13 @@ function onresizeAnimaciones() {
 function normalSectionElements() {
   var width = (document.body.clientWidth);
   if(width>1124) {
-    idTopBar.style.marginTop="170px";
+    if(idTopBar != "") {
+    idTopBar.style.marginTop="170px";}
     idCSA.style.padding="210px 0 20px 0";
   }
   else {
-    idTopBar.style.marginTop="120px";
+    if(idTopBar != "") {
+    idTopBar.style.marginTop="120px"; }
     idCSA.style.padding="160px 0 20px 0";
   }
 }
