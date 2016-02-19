@@ -123,6 +123,7 @@
     if($sec=="baja") require_once("baja.php");
     if($sec=="cambio") require_once("cambio.php");
     if($sec=="cotizaciones") require_once("cotizaciones-admin.php");
+    if($sec=="cotizacionesVentas") require_once("cotizaciones.php");
     if($sec=="orden") require_once("ordenes_admin.php");
     if($sec=="cotizar") require_once("cotizar_ad.php");
     if($sec=="altaus") require_once("altaus.php");

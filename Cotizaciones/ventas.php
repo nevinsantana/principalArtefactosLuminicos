@@ -1,8 +1,8 @@
 <?php
   include 'php/funciones.php';
   verificaVentas();
-  $nombre=cotizacionSecNombre()[1];
-  $apellido_p=cotizacionSecNombre()[2];
+  $nombre=cotizacionSecNombre($con)[1];
+  $apellido_p=cotizacionSecNombre($con)[2];
 ?>
 <!doctype html>
 <html>
@@ -62,7 +62,7 @@
                 </li>
               </ul>
             </li>
-            <li onclick="cotizaciones()">
+            <li onclick="cotizacionesVentas()">
               <img src="images/principalMenuCotizaciones.png" width="20px"
                 height="20px">
               <span>Cotizaciones</span>
@@ -102,7 +102,7 @@
           <h2 class="contentWelcome">
             Bienvenido <?php echo "$nombre "."$apellido_p"; ?>
           </h2>
-          <?php selectSection(); ?>
+          <?php selectSection($con); ?>
         </div>
       </aside>
     </main>
