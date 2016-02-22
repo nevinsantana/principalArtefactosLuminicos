@@ -17,6 +17,7 @@ function cotizaciones() { location.href="?sec=cotizaciones"; }
 function cotizacionesVentas() { location.href="?sec=cotizacionesVentas"; }
 function orden() { location.href="?sec=orden"; }
 function cotizar() { location.href="?sec=cotizar"; }
+function cotizarV() { location.href="?sec=cotizarV"; }
 function agregar_u() { location.href="?sec=altaus"; }
 function eliminar_u() { location.href="?sec=bajaus"; }
 function modificar_u() { location.href="?sec=cambious"; }

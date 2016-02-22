@@ -67,7 +67,7 @@
                 height="20px">
               <span>Cotizaciones</span>
             </li>
-            <li onclick="cotizar()">
+            <li onclick="cotizarV()">
               <img src="images/principalMenuGenerar.png" width="20px"
                 height="20px">
               <span>Generar cotización</span>
