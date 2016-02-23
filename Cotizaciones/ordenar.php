@@ -10,7 +10,8 @@
     if($cam=='cotizacion'){}
     else {
     $i++; $or=$_POST['orden'.$i];
-    $sql="UPDATE partidas SET no_partida='".$or."' WHERE id_partida='$val'";
+    $sql="UPDATE partidas SET no_partida='".$or."' WHERE id_partida='$val' AND
+    id_cotizacion = '$cot'";
     $res=query($sql, $con);
     }
   }
