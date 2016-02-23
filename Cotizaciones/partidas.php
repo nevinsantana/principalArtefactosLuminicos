@@ -10,6 +10,17 @@
   if(isset($_GET['empresa'])) $_SESSION['empresa']=$_GET['empresa'];
 	if(isset($_SESSION['empresa'])) $empresa=$_SESSION['empresa'];
 	else { $empresa=$_POST['empresa']; $_SESSION['empresa']=$empresa; }
+  if(isset($_SESSION['cotizacion'])) {
+    $cotizacion=$_SESSION['cotizacion'];
+    $sql="SELECT * FROM cotizaciones WHERE id_cotizacion='$cotizacion'";
+    $resultado=query($sql,$conexion);
+    $cam=mysql_fetch_assoc($resultado);
+    $id_cliente=$cam['id_cliente'];
+    $sql="SELECT * FROM clientes WHERE id_num_cliente='$id_cliente'";
+    $resultado=query($sql,$conexion);
+    $cam=mysql_fetch_assoc($resultado);
+    $empresa=$cam['empresa'];
+  }
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
   $resultado=query($sql,$conexion);
   while($campo=mysql_fetch_array($resultado)) {
@@ -116,22 +127,33 @@
         </div>
         <br>
         <div class="Tabla_Partidas">
-          <table  class="tablesorter" width="1000">
+          <table width="1000">
             <tr>
-              <td width="5%">Orden</td>
-              <td width="5%">Partida</td>
-              <td width="5%">Cantidad</td>
+              <td width="9%">Orden</td>
+              <td width="6%">Partida</td>
+              <td width="4%">Cant.</td>
               <td width="5%">Unidad</td>
-              <td width="10%">Catálogo</td>
-              <td width="40%">Descripción</td>
-              <td width="9%">Precio unitario</td>
-              <td width="8%">Precio total</td>
-              <td width="8%">Utilidades</td>
-              <td width="5%">Contador</td>
+              <td width="13%">Catálogo</td>
+              <td width="41%">Descripción</td>
+              <td width="5%">P.U.</td>
+              <td width="5%">P.T.</td>
+              <td width="11%">Utilidades</td>
             </tr>
-            <form action="ordenar.php" method="POST">
             <?php
               $siguiente=0;
+              $sql="SELECT id_partida FROM Partidas WHERE id_cotizacion='$id_cotizacion'
+                ORDER BY no_partida";
+              $resultado=query($sql,$conexion);
+              $campo=mysql_fetch_assoc($resultado);
+              echo "<form method='POST' id='ordenaForm'
+              action='ordenar.php?cotizacion=$cotizacion";
+              echo "&partida=".$campo['id_partida'];
+              while($campo=mysql_fetch_assoc($resultado)) {
+                foreach($campo as $cam => $val) {
+                  echo "&partida$val=$val";
+                }
+              }
+              echo "'>";
               $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'
                 ORDER BY no_partida";
               $resultado=query($sql,$conexion);
@@ -147,9 +169,9 @@
                 }
                 echo "<tr>
                   <td>
-                    <input type=text name='orden".$contador."'
-                      value=".$campo['no_partida']." style='text-align: center;'
-                      required>
+                    <input type=number name='orden".$contador."'
+                      value=".$campo['no_partida']." style='text-align: center;
+                      width: 60%;' onchange='ordena()' required>
                   </td>
                   <td>".$campo['partida']."</td>";
                   if($campo['cantidad'] == 0) echo "<td align='right'></td>";
@@ -183,11 +205,6 @@
                     </a>
                     <img src='images/delete.png'
                       onclick='Eliminar(".$id_partida.")'>
-                  </td>
-                  <td>
-                    <input type=text name='catalogoo".$contador."'
-                      value=".$campo['id_partida']." style='text-align: center;'
-                      required>
                   </td>
                 </tr>";
                 $siguiente=$siguiente + 1;
@@ -260,6 +277,9 @@
           var union=dir.concat(partida);
           window.location=union;
         }
+      }
+      function ordena() {
+        document.forms['ordenaForm'].submit();
       }
     </script>
   </body>
