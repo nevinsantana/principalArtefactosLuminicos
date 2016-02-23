@@ -1,5 +1,6 @@
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
+  header('Content-Type: text/html; charset=UTF-8');
   session_start();
   $id_usuario=$_SESSION['usuario'];
   $id_cotizacion=$_SESSION['cotizacion'];

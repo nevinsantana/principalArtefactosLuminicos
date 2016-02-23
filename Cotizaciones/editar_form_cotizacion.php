@@ -3,6 +3,7 @@
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   if(!isset($_SESSION['cotizacion']))
     header('Location: ventas.php?sec=cotizar');
+  header('Content-Type: text/html; charset=UTF-8');
   $id_usuario=$_SESSION['usuario'];
   $empresa=$_SESSION['empresa'];
   $id_cotizacion=$_SESSION['cotizacion'];

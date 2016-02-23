@@ -1,4 +1,5 @@
 <?php
+  header('Content-Type: text/html; charset=UTF-8');
   if(!isset($_GET['catalogo'])) $catalogo=null;
   else $catalogo=$_GET['catalogo'];
 ?>
