@@ -66,17 +66,17 @@
   $cp=$campo['cp'];
 ?>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="hoja_blanca.css" rel="stylesheet" type="text/css">
-    <title>Generador de cotizaciones</title>
-  </head>
   <body id="bodier" class="h7" style="color:black;">
     <div align="center">
       <div id="hoja">
         <br><br><br>
         <div id="imprimeme">
+          <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link href="style.css" rel="stylesheet" type="text/css">
+            <link href="hoja_blanca.css" rel="stylesheet" type="text/css">
+            <title>Generador de cotizaciones</title>
+          </head>
           <div id="page">
             <div align="center">
               <table border=0 cellspacing="2px" width="90%">
@@ -90,28 +90,28 @@
                     <div align="center">
                       <table>
                         <tr>
-                          <td width="50%" align=right class="h7">
+                          <td width="50%" align=right class="h7v">
                             No Cotización:
                           </td>
-                          <td align=center width="50px" class="h7">
+                          <td align=center width="50px" class="h7v">
                             <?php echo $id_cotizacion; ?>
                           </td>
                         </tr>
                         <tr>
-                          <td width="50%" align=right class="h7">Fecha:</td>
-                          <td align=center width="50px">
+                          <td width="50%" align=right class="h7v">Fecha:</td>
+                          <td align=center width="50px" class="h7v">
                             <?php echo $fecha; ?>
                           </td>
                         </tr>
                         <tr>
-                          <td width="50%" align=right class="h7">Vigencia:</td>
-                          <td align=center width="50px">
+                          <td width="50%" align=right class="h7v">Vigencia:</td>
+                          <td align=center width="50px" class="h7v">
                             <?php echo $vigencia; ?>
                           </td>
                         </tr>
                         <tr>
-                          <td width="50%" align=right class="h7">Partidas:</td>
-                          <td align=center width="50px">
+                          <td width="50%" align=right class="h7v">Partidas:</td>
+                          <td align=center width="50px" class="h7v">
                             <?php echo $no_partidas; ?>
                           </td>
                         </tr>
@@ -124,7 +124,7 @@
                     <div align="center">
                       <br><br>
                       <h3>Artefactos Lumínicos S.A.de C.V.</h3>
-                      <h5 class="h7">
+                      <span class="fCDatos">
                         Av.Juárez No.9-2, Col.San Mateo Ixtacalco,
                         <br>
                         Cuautitlán Izcalli, Estado de México, C.P.54713
@@ -132,13 +132,13 @@
                         ventas@artefactosluminicos.com.mx
                         <br>
                         www.artefactosluminicos.com.mx
-                      </h5>
+                      </span>
                     </div>
                   </td>
                   <td id="bordet"  align="left" class="h7">
                     <br>
                     <h3><div class="h7">Condiciones de venta</div></h3>
-                    <h5 class="h7">
+                    <span class="fCDatos">
                       *Precios sujetos a cambio sin previo aviso.
                       <br>
                       *Cta 4157180243 CLABE 002180024341571804 de Banamex(mx)
@@ -156,16 +156,16 @@
                       preparada.
                       <br>
                       *Cualquier modificación de este documento lo invalidará.
-                    </h5>
+                    </span>
                   </td>
                 </tr>
               </table>
-              <br><br>
-              <table border=0 cellspacing="2px" width="90%">
+              <br>
+              <table border="0" cellspacing="2px" width="90%">
                 <tr>
                   <td id="bordet" valign="top" class="h7">
                     <div align="center" class="h7">
-                      <div  class="h7" >Datos del cliente</div>
+                      <div  class="h7">Datos del cliente</div>
                       <div id="datos_coti"><?php echo $cliente; ?></div>
                     </div>
                     <br>
@@ -187,22 +187,22 @@
                 </tr>
               </table>
             </div>
-            <div class="h7" style="font-size: 15px" align="center">
+            <div class="h7" style="font-size: 13px" align="center">
               PONEMOS A SU AMABLE CONSIDERACIÓN EL SIGUIENTE PRESUPUESTO
             </div>
             <br>
             <div align="center">
-              <table border="4px" width="950" cellspacing="0"
-                class="h7 correccion">
+              <table border="1px solid black" width="950px" cellspacing="0"
+                class="h7 correccion tablaVC">
                 <thead>
                   <tr>
-                    <th width="7%">Partida</th>
-                    <th width="7%">Cantidad</th>
-                    <th width="7%">Unidad</th>
-                    <th width="7%">Catálogo</th>
-                    <th width="47%">Descripción</th>
-                    <th width="7%">Precio unitario</th>
-                    <th width="7%">Precio total</th>
+                    <th width="5%">Part</th>
+                    <th width="5%">Cant</th>
+                    <th width="5%">UND</th>
+                    <th width="15%">Catálogo</th>
+                    <th width="60%">Descripción</th>
+                    <th width="5%">P. unitario</th>
+                    <th width="5%">P. total</th>
                   </tr>
                 </thead>
                 <?php
@@ -215,19 +215,19 @@
                     $precio_uni=number_format($precio_uni, 2);
                     $precio_total=number_format($precio_total, 2);
                     echo "<tr>
-                      <td align='center' id='texto1'>"
+                      <td align='center'>"
                         .$campo['partida'].
                       "</td>";
                       if($campo['cantidad']==0)
-                        echo "<td align='center' id='texto1'></td>";
+                        echo "<td align='center'></td>";
                       else
-                        echo "<td align='center' id='texto1'>"
+                        echo "<td align='center'>"
                           .$campo['cantidad'].
                         "</td>";
                       echo
-                      "<td align='center' id='texto1'>".$campo['unidad']."</td>
-                      <td align='center' id='texto1'>".$campo['catalogo']."</td>
-                      <td align='justify' id='texto1'>"
+                      "<td align='center'>".$campo['unidad']."</td>
+                      <td align='center'>".$campo['catalogo']."</td>
+                      <td align='justify'>"
                         .$campo['descripcion'].
                       "</td>";
                       if($campo['precio_uni']==0)
@@ -240,8 +240,8 @@
                   }
                 ?>
                 <tr>
-                  <td style="border: hidden" colspan="5" ><br><b5>
-                    <table border="3px" width="500px" id="margen" class="h7">
+                  <td style="border: 0;" colspan="5" ><br>
+                    <table border="2px" width="95%" id="margen" class="h7">
                       <thead>
                         <tr>
                           <th width="20%" align="center" colspan="2"
@@ -277,6 +277,7 @@
                         }
                       ?>
                     </table>
+                    <br>
                   </td>
                   <td>
                     <br>
@@ -365,10 +366,10 @@
               </table>
             </div>
             <br><br><br>
-            <table border=1 cellspacing="2px">
+            <table border=1 cellspacing="2px" width="950px">
               <tr>
                 <td>
-                  <h5 class="h7">
+                  <h5 class="h7 h7v">
                     Condiciones de entrega
                     <br>
                     *El tiempo de entrega corre a partir de recibir su pedido
@@ -389,14 +390,14 @@
                     *No se liberan materiales sin el pago total de la mercancia.
                   </h5>
                 </td>
-                <td width="210px" class="h7">
+                <td width="210px" class="h7v">
                   <h3 align="center">Tiempo de entrega</h3>
                   <br><br>
                   <div align="center" valign="top">
                     <?php echo $t_entrega; ?>
                   </div>
                 </td>
-                <td width="210px" class="h7">
+                <td width="210px" class="h7v">
                   <h3 align="center">Condiciones de pago</h3>
                   <br><br>
                   <div align="center" valign="top"><?php echo $c_pago; ?></div>

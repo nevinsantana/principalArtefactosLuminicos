@@ -10,4 +10,10 @@
 
 .precios { font-size: 0.7em; text-align: right; }
 
-.fCDatos { font-size: 13px; }
+.fCDatos { font-size: 11px; }
+
+table.tablaVC thead tr th { font-size: 11px; }
+
+table.tablaVC tr td { font-size: 11px; }
+
+.h7v { font-size: 12px; }
