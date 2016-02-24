@@ -915,12 +915,9 @@ input[type=number]{
 
 /*  Select option partidas.php  */
 select {
-    background: -webkit-linear-gradient(white, #666);
-    text-align: left;
-    border: 1px solid #ccc;
+    text-align: center;
     border-radius: 5px;
     color: black;
-    -webkit-appearance: none;
 }
 
 #select1 {

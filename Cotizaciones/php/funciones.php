@@ -19,7 +19,7 @@
 
   function redireccionaUsuario($con) {
     $idUser=$_SESSION['usuario'];
-    $sql="SELECT permiso,activo FROM Usuarios WHERE id_usuario='$idUser'";
+    $sql="SELECT * FROM Usuarios WHERE id_usuario='$idUser'";
     $res= query($sql,$con);
     $cam=mysql_fetch_array($res);
     foreach ($cam as $camp => $value) { ${$camp}=$value; }
@@ -145,6 +145,7 @@
   if(isset($_GET['altaCliente'])) altaCliente($con, $admFF);
   function altaCliente($con, $adm) {
     $id_user=$_SESSION['usuario']; $i=0;
+    if(isset($_POST['usuario'])) $usuarioCA=$_POST['usuario'];
     foreach ($_POST as $rep => $val) { $i++; ${'aC'.$i}=$val; }
     $sql="SELECT * FROM Clientes ORDER BY id_num_cliente ASC";
     $res=query($sql,$con);
@@ -155,6 +156,11 @@
     $sql="SELECT * FROM Contacto ORDER BY id_contacto ASC";
     $res=query($sql,$con);
     while($cam=mysql_fetch_row($res)) { $idCon=$cam[0] + 1; }
+    if(isset($_POST['usuario']) && $_SESSION['permiso']==1)
+    $sql="INSERT INTO Clientes(id_num_cliente,id_cliente,empresa,id_direccion,
+      id_contacto,id_usuario,desactivado) VALUES('$idCli','$aC1','$aC2',
+      '$idDir','$idCon','$usuarioCA','0')";
+    else
     $sql="INSERT INTO Clientes(id_num_cliente,id_cliente,empresa,id_direccion,
       id_contacto,id_usuario,desactivado) VALUES('$idCli','$aC1','$aC2',
       '$idDir','$idCon','$id_user','0')";

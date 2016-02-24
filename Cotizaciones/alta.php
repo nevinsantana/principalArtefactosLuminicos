@@ -22,5 +22,23 @@
   <input type="text" class="formu" placeholder="Teléfono Alternativo"
     name="telefono2">
   <input type="text" class="formu" placeholder="E-mail" name="email">
+  <?php
+    if($_SESSION['permiso']==1) {
+      $sql="SELECT * FROM Usuarios ORDER BY nombre ASC";
+      $res=query($sql, $con);
+      $cam=mysql_fetch_assoc($res);
+  ?>
+    <select name="usuario">
+      <option disabled selected>Usuario:</option>
+      <?php
+        echo "<option>".$cam['id_usuario']."</option>";
+        while($cam=mysql_fetch_assoc($res)) {
+          foreach($cam as $camp => $val) {
+            if($camp=='id_usuario') echo "<option>".$val."</option>";
+          }
+        }
+      ?>
+    </select>
+  <?php } ?>
   <input type="submit" value="Agregar" class="formu-button">
 </form>
