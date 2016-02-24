@@ -31,10 +31,12 @@
     <select name="usuario">
       <option disabled selected>Usuario:</option>
       <?php
-        echo "<option>".$cam['id_usuario']."</option>";
+        echo "<option value='".$cam['id_usuario']."'>".$cam['id_usuario']."
+          </option>";
         while($cam=mysql_fetch_assoc($res)) {
           foreach($cam as $camp => $val) {
-            if($camp=='id_usuario') echo "<option>".$val."</option>";
+            if($camp=='id_usuario') echo "<option value='".$val."'>".$val."
+            </option>";
           }
         }
       ?>

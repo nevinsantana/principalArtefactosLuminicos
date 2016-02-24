@@ -59,7 +59,8 @@
         <div id="errorimg"><img src="images/error.png" margin-left="40px"></div>
       <?php } if(isset($_POST['empresa'])) {  ?>
         <br><br><br>
-        <form action="php/funciones.php?cambioCliente=<?php echo $id; ?>" method="POST">
+        <form action="php/funciones.php?cambioCliente=<?php echo $id; ?>"
+          method="POST">
           <div id="modificar">
             <div id="titulo">Modifique los apartados de la empresa:</div>
             <table align="center" border=0 cellspacing="5">
@@ -161,6 +162,36 @@
                     value="<?php echo $email; ?>" autofocus>
                 </td>
               </tr>
+              <?php
+                if($_SESSION['permiso']==1) {
+                  $sql="SELECT * FROM Usuarios ORDER BY nombre ASC";
+                  $res=query($sql, $con);
+                  $cam=mysql_fetch_assoc($res);
+              ?>
+                <tr>
+                  <td>
+                    Cambiar vendedor
+                    <br><br>
+                    <select name="usuario">
+                      <?php
+                        echo "<option";
+                          if($id_usuario==$cam['id_usuario']) echo "selected";
+                        echo " value='".$cam['id_usuario']."'>
+                          ".$cam['id_usuario']."</option>";
+                        while($cam=mysql_fetch_assoc($res)) {
+                          foreach($cam as $camp => $val) {
+                            if($camp=='id_usuario') {
+                              echo "<option ";
+                              if($id_usuario==$val) echo "selected";
+                              echo " value='".$val."'>".$val."</option>";
+                            }
+                          }
+                        }
+                      ?>
+                    </select>
+                  </td>
+                </tr>
+                <?php } ?>
             </table>
           </div>
           <div id=centrarcambio>

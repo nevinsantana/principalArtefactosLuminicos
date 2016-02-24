@@ -159,6 +159,8 @@ aside#mainRSide {
   border-radius: 0 10px 10px 0;
 }
 
+div#mainRSideContent { overflow: auto; max-height: 650px; padding: 0 0 20px 0; }
+
 div#mainLSideMenu { width: 90%; margin: auto; margin-top: 10%; }
 
 div#mainLSideMenu ul, li { list-style: none; margin: 0; padding: 0; }

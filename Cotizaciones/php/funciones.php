@@ -191,11 +191,18 @@
   if(isset($_GET['cambioCliente']))
     cambioCliente($con, $i="", $_GET['cambioCliente'], $admFF);
   function cambioCliente($con, $i, $id, $adm) {
+    if(isset($_POST['usuario'])) $usuarioCA=$_POST['usuario'];
+    $usuarioCA;
     $sql="SELECT * FROM clientes WHERE id_num_cliente='$id'";
     $res=query($sql,$con);
     $cam=mysql_fetch_assoc($res);
     $idD=$cam['id_direccion'];
     $idC=$cam['id_contacto'];
+    if(isset($_POST['usuario']) && $_SESSION['permiso']==1) {
+      $sql="UPDATE Clientes SET id_usuario='$usuarioCA' WHERE
+        id_num_cliente='$id'";
+      $res=query($sql, $con);
+    }
     $sql="SELECT * FROM Direcciones WHERE id_direccion=''";
     foreach ($_POST as $rep => $val) { $i++; ${'mC'.$i}=$val; ;}
     $sql="UPDATE Clientes SET id_cliente='$mC1',empresa='$mC2' WHERE
