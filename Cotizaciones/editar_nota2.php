@@ -1,10 +1,10 @@
 <?php
   session_start();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
+  include("funciones_mysql.php");
   $conexion=conectar();
   $id_cotizacion=$_SESSION['cotizacion'];
   $no_nota=$_SESSION['no_nota'];
-  include("funciones_mysql.php");
   $descripcion=$_POST['descripcion'];
   $eliminar=array("<!doctype html>", "<html>", "<head>", "</head>", "<body>",
     "</body>", "</html>", "  ");

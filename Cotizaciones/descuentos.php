@@ -39,7 +39,7 @@
       </div>
     </div>
     <script>
-      var r=confirm('Desea agregar un descuento especial a la cotizacion?');
+      var r=confirm('¿Desea agregar un descuento especial?');
       if(r==false) {
         if($cancelar==0) location.href='form_cotizacion.php';
         else location.href='editar_form_cotizacion.php';

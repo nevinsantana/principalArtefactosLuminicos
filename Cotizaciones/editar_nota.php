@@ -1,4 +1,5 @@
 <?php
+  header('Content-Type: text/html; charset=UTF-8');
   session_start();
   include("funciones_mysql.php");
   $con=conectar();
@@ -51,12 +52,10 @@
           <tr>
             <td width="80%">
               <div id="textBox" contenteditable="true" name="descripcion"></div>
-              <textarea rows=5 cols=60 name="descripcion"required>
-                <?php
+              <textarea rows=5 cols=60 name="descripcion"required><?php
                   if(isset($_GET['nota'])) echo $desplegar;
                   if(isset($_GET['no_nota'])) echo $descripcion;
-                ?>
-              </textarea>
+                ?></textarea>
             </td>
           </tr>
         </table>
