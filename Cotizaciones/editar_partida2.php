@@ -1,16 +1,11 @@
 <?php
   session_start();
   include ("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   header('Content-Type:text/html; charset=UTF-8');
   $id_cotizacion=$_SESSION['cotizacion'];
   $id_partida=$_GET['id_partida'];
-  $partida=$_POST['partida'];
-  $cantidad=$_POST['cantidad'];
-  $unidad=$_POST['unidad'];
-  $catalogo=$_POST['catalogo'];
-  $descripcion=$_POST['descripcion'];
-  $precio_uni=$_POST['precio_uni'];
+  foreach ($_POST as $camp => $value) { ${$camp}=$value; }
   $precio_total=$precio_uni * $cantidad;
   $partida=str_replace(
     array('�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�',
@@ -40,6 +35,6 @@
     unidad='$unidad', catalogo='$catalogo', descripcion='$descripcion',
     precio_uni='$precio_uni', precio_total='$precio_total' WHERE
     id_cotizacion='$id_cotizacion' and id_partida='$id_partida'";
-  $resultado=query($sql, $conexion);
+  $resultado=query($sql, $con);
   if ($resultado) header("Location:partidas.php");
 ?>

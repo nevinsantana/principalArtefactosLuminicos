@@ -3,67 +3,37 @@
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   $id_usuario=$_SESSION['usuario'];
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   $id_cotizacion=$_GET['id_cotizacion'];
   $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $fecha=$campo['fecha'];
-  $id_num_cliente=$campo['id_cliente'];
-  $id_usuario=$campo['id_usuario'];
-  $vigencia=$campo['vigencia'];
-  $no_partidas=$campo['no_partidas'];
-  $divisa=$campo['divisa'];
-  $subtotal=$campo['subtotal'];
-  $iva=$campo['iva'];
-  $total=$campo['total'];
-  $t_entrega=$campo['t_entrega'];
-  $c_pago=$campo['c_pago'];
-  $descuento=$campo['descuento'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $descuento2=$descuento * 100;
   $sub=$subtotal;
   $subtotal1=$subtotal * $descuento;
   $subtotal2=$subtotal - $subtotal1;
-  $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_num_cliente'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $id_direccion=$campo['id_direccion'];
+  $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_cliente'";
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $cliente=$campo['datos_cliente'];
-  $contacto=$campo['datos_contacto'];
-  $vendedor=$campo['datos_vendedor'];
-  $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_num_cliente'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $id_contacto=$campo['id_contacto'];
-  $empresa=$campo['empresa'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $nombre_c=$campo['nombre_c'];
-  $departamento=$campo['departamento'];
-  $telefono1=$campo['telefono1'];
-  $telefono2=$campo['telefono2'];
-  $e_mail_c=$campo['e_mail_c'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $nombre=$campo['nombre'];
-  $apellido_p=$campo['apellido_p'];
-  $apellido_m=$campo['apellido_m'];
-  $e_mail=$campo['e_mail'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $nombre="$nombre "."$apellido_p "."$apellido_m";
   $sql="SELECT * FROM Direcciones WHERE id_direccion=$id_direccion";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $calle=$campo['calle'];
-  $num_int=$campo['num_int'];
-  $num_ext=$campo['num_ext'];
-  $municipio=$campo['municipio'];
-  $estado=$campo['estado'];
-  $cp=$campo['cp'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
 ?>
 <html>
   <body id="bodier" class="h7" style="color:black;">
@@ -166,21 +136,21 @@
                   <td id="bordet" valign="top" class="h7">
                     <div align="center" class="h7">
                       <div  class="h7">Datos del cliente</div>
-                      <div id="datos_coti"><?php echo $cliente; ?></div>
+                      <div id="datos_coti"><?php echo $datos_cliente; ?></div>
                     </div>
                     <br>
                   </td>
                   <td id="bordet" valign="top" class="h7">
                     <div align="center">
                       <div class="h7">Datos de contacto</div>
-                      <div id="datos_coti"><?php echo $contacto; ?></div>
+                      <div id="datos_coti"><?php echo $datos_contacto; ?></div>
                     </div>
                     <br>
                   </td>
                   <td id="bordet"  valign="top" class="h7">
                     <div align="center">
                       <div class="h7" >Datos del vendedor</div>
-                      <div id="datos_coti"><?php echo $vendedor; ?></div>
+                      <div id="datos_coti"><?php echo $datos_vendedor; ?></div>
                     </div>
                     <br>
                   </td>
@@ -208,29 +178,29 @@
                 <?php
                   $sql="SELECT * FROM Partidas WHERE id_cotizacion=
                     '$id_cotizacion' ORDER BY no_partida";
-                  $resultado=query($sql, $conexion);
-                  while($campo=mysql_fetch_array($resultado)) {
-                    $precio_uni=$campo['precio_uni'];
-                    $precio_total=$campo['precio_total'];
+                  $res=query($sql, $con);
+                  while($cam=mysql_fetch_assoc($res)) {
+                    $precio_uni=$cam['precio_uni'];
+                    $precio_total=$cam['precio_total'];
                     $precio_uni=number_format($precio_uni, 2);
                     $precio_total=number_format($precio_total, 2);
                     echo "<tr>
                       <td align='center'>"
-                        .$campo['partida'].
+                        .$cam['partida'].
                       "</td>";
-                      if($campo['cantidad']==0)
+                      if($cam['cantidad']==0)
                         echo "<td align='center'></td>";
                       else
                         echo "<td align='center'>"
-                          .$campo['cantidad'].
+                          .$cam['cantidad'].
                         "</td>";
                       echo
-                      "<td align='center'>".$campo['unidad']."</td>
-                      <td align='center'>".$campo['catalogo']."</td>
+                      "<td align='center'>".$cam['unidad']."</td>
+                      <td align='center'>".$cam['catalogo']."</td>
                       <td align='justify'>"
-                        .$campo['descripcion'].
+                        .$cam['descripcion'].
                       "</td>";
-                      if($campo['precio_uni']==0)
+                      if($cam['precio_uni']==0)
                         echo "<td id='aligder'></td><td id='aligder'></td>";
                       else
                         echo
@@ -260,9 +230,9 @@
                       <?php
                         $sql="SELECT * FROM Notas WHERE id_cotizacion=
                           '$id_cotizacion'";
-                        $resultado=query($sql, $conexion);
+                        $res=query($sql, $con);
                         $i=1;
-                        while($campo=mysql_fetch_array($resultado)) {
+                        while($cam=mysql_fetch_assoc($res)) {
                           echo "<tr>
                             <td align='center' id='texto1' class='lenotas'
                               style='text-align: center; color: black;'>
@@ -270,7 +240,7 @@
                             </td>
                             <td align='center' id='texto1' class='lenotas'
                               style='text-align: center; color: black;'>"
-                              .$campo['descripcion'].
+                              .$cam['descripcion'].
                             "</td>
                           </tr>";
                           $i++;

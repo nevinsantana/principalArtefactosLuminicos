@@ -1,5 +1,5 @@
 <?php include 'php/funciones.php'; verificaIndex(); indexSesionUsuario(); ?>
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="UTF-8">

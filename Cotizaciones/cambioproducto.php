@@ -2,23 +2,19 @@
   session_start();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   include("funciones_mysql.php");
-  $conexion=conectar();
-  $id_usuario=$_SESSION['usuario'];
+  $con=conectar(); $id_usuario=$_SESSION['usuario'];
   $catalogo=$_POST['catalogo'];
   $sql="SELECT * FROM Catalogo WHERE id_catalogo='$catalogo'";
-  $resultado=query($sql, $conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $id_catalogo=$campo['id_catalogo'];
-    $unidad=$campo['unidad'];
-    $descripcion=$campo['descripcion'];
-  }
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   if($unidad=='PZA.') $i=1;
   if($unidad=='CJTO.') $i=2;
   if($unidad=='JGO.') $i=3;
   if($unidad=='ROLLO') $i=4;
   if($unidad=='METRO') $i=5;
 ?>
-<!doctype html >
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Type" charset="utf-8">
@@ -27,7 +23,6 @@
   </head>
   <body>
     <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
       <br><br><br>
       <div id="modificar">
         <div id="titulo2">Modifique los apartados del producto:</div>

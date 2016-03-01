@@ -11,29 +11,16 @@
         $sql="SELECT * FROM Clientes WHERE empresa='$emp'";
         $res=query($sql, $con);
         $cam=mysql_fetch_array($res);
-        $id_cliente=$cam['id_cliente'];
-        $id_direccion=$cam['id_direccion'];
-        $id_contacto=$cam['id_contacto'];
-        $id_usuario=$cam['id_usuario'];
+        foreach ($cam as $camp => $value) { ${$camp}=$value; }
         $id=$cam['id_num_cliente'];
         $sql="SELECT * FROM Direcciones WHERE id_direccion='$id_direccion'";
         $res=query($sql, $con);
         $cam=mysql_fetch_array($res);
-        $calle=$cam['calle'];
-        $num_int=$cam['num_int'];
-        $num_ext=$cam['num_ext'];
-        $colonia=$cam['colonia'];
-        $municipio=$cam['municipio'];
-        $estado=$cam['estado'];
-        $cp=$cam['cp'];
+        foreach ($cam as $camp => $value) { ${$camp}=$value; }
         $sql="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
         $res=query($sql, $con);
         $cam=mysql_fetch_array($res);
-        $nombre=$cam['nombre_c'];
-        $departamento=$cam['departamento'];
-        $telefono1=$cam['telefono1'];
-        $telefono2=$cam['telefono2'];
-        $email=$cam['e_mail_c'];
+        foreach ($cam as $camp => $value) { ${$camp}=$value; }
       }
       if($cont=1 && !isset($_POST['empresa'])) {
     ?>
@@ -42,21 +29,21 @@
     		<br><br><br>
         <form action="<?php echo $_SERVER['PHP_SELF'].'?sec=cambio'; ?>"
           method="POST">
-          <select id=cambioselect name=empresa>
-            <?php
-              $sql="SELECT * FROM Clientes WHERE id_usuario='$idUs' AND
-                desactivado=0 order by empresa ";
-              $res=query($sql, $con);
-              while($cam=mysql_fetch_array($res)) {
-                echo '<option>'.$cam["empresa"].'</option>';
-              }
-            ?>
-          </select>
-			    <br><br><br>
-          <input type="submit" value="Modificar" class="formu-button">
+        <select id=cambioselect name=empresa>
+          <?php
+            $sql="SELECT * FROM Clientes WHERE id_usuario='$idUs' AND
+              desactivado=0 order by empresa ";
+            $res=query($sql, $con);
+            while($cam=mysql_fetch_array($res)) {
+              echo '<option>'.$cam["empresa"].'</option>';
+            }
+          ?>
+        </select>
+		    <br><br><br>
+        <input type="submit" value="Modificar" class="formu-button">
         </form>
       <?php } if($cont=0) { ?>
-        <div id="errorimg"><img src="images/error.png" margin-left="40px"></div>
+        <div id="errorimg"><img src="images/error.png"></div>
       <?php } if(isset($_POST['empresa'])) {  ?>
         <br><br><br>
         <form action="php/funciones.php?cambioCliente=<?php echo $id; ?>"
@@ -131,7 +118,7 @@
                   Nombre del Contacto
                   <br>
                   <input type="text" class="formu" name="contacto" value=
-                  "<?php echo $nombre; ?>" autofocus>
+                  "<?php echo $nombre_c; ?>" autofocus>
                 </td>
               </tr>
               <tr>
@@ -159,7 +146,7 @@
                   E-mail
                   <br>
                   <input type="text" class="formu" name="email"
-                    value="<?php echo $email; ?>" autofocus>
+                    value="<?php echo $e_mail_c; ?>" autofocus>
                 </td>
               </tr>
               <?php
@@ -175,9 +162,9 @@
                     <select name="usuario">
                       <?php
                         echo "<option";
-                          if($id_usuario==$cam['id_usuario']) echo "selected";
-                        echo " value='".$cam['id_usuario']."'>
-                          ".$cam['id_usuario']."</option>";
+                        if($id_usuario==$cam['id_usuario']) echo "selected";
+                        echo " value='".$cam['id_usuario']."'>".
+                          $cam['id_usuario']."</option>";
                         while($cam=mysql_fetch_assoc($res)) {
                           foreach($cam as $camp => $val) {
                             if($camp=='id_usuario') {

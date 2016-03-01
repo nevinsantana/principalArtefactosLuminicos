@@ -12,23 +12,23 @@
         $buscarCliente=$_POST['buscarCliente'];
         $sql0="SELECT * FROM Clientes WHERE empresa like '%$buscarCliente%'";
         $resultado0=query($sql0, $conexion);
-        while($campo0=mysql_fetch_array($resultado0)) {
-          $id_num_cliente=$campo0['id_num_cliente'];
-          $empresa=$campo0['empresa'];
+        while($cam0=mysql_fetch_array($resultado0)) {
+          $id_num_cliente=$cam0['id_num_cliente'];
+          $empresa=$cam0['empresa'];
           $sql1="SELECT * FROM Cotizaciones WHERE id_cliente='$id_num_cliente'
             AND id_usuario='$id_usuario' AND activo='1' ORDER BY id_cotizacion
             ASC";
           $resultado1=query($sql1, $conexion);
-          while($campo1=mysql_fetch_array($resultado1)) {
-            $id_cliente=$campo1['id_cliente'];
-            $fecha=$campo1['fecha'];
-            $id_cotizacion=$campo1['id_cotizacion'];
-            $id_usuario=$campo1['id_usuario'];
-            $activo=$campo1['activo'];
+          while($cam1=mysql_fetch_array($resultado1)) {
+            $id_cliente=$cam1['id_cliente'];
+            $fecha=$cam1['fecha'];
+            $id_cotizacion=$cam1['id_cotizacion'];
+            $id_usuario=$cam1['id_usuario'];
+            $activo=$cam1['activo'];
             $sql2="SELECT * FROM `Usuarios` WHERE id_usuario='$id_usuario'";
             $resultado2=query($sql2, $conexion);
-            $campo2=mysql_fetch_array($resultado2);
-            $vendedor=$campo2['nombre'].' '.$campo2['apellido_p'];
+            $cam2=mysql_fetch_array($resultado2);
+            $vendedor=$cam2['nombre'].' '.$cam2['apellido_p'];
             echo "<tr id='tTextoTabla'>
               <td align='center'>".$id_cotizacion."</td>
               <td align='center'>".$fecha."</td>

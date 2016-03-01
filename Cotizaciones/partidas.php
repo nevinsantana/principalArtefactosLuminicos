@@ -1,7 +1,7 @@
 <?php
   header('Content-Type: text/html; charset=UTF-8');
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar(); $cotizacion="";
   session_start();
   if(isset($_SESSION['cancelar'])) $cancelar=$_SESSION['cancelar'];
   else $cancelar=0;
@@ -13,51 +13,29 @@
   if(isset($_SESSION['cotizacion'])) {
     $cotizacion=$_SESSION['cotizacion'];
     $sql="SELECT * FROM cotizaciones WHERE id_cotizacion='$cotizacion'";
-    $resultado=query($sql,$conexion);
-    $cam=mysql_fetch_assoc($resultado);
-    $id_cliente=$cam['id_cliente'];
+    $res=query($sql,$con);
+    $cam=mysql_fetch_assoc($res); $id_cliente=$cam['id_cliente'];
     $sql="SELECT * FROM clientes WHERE id_num_cliente='$id_cliente'";
-    $resultado=query($sql,$conexion);
-    $cam=mysql_fetch_assoc($resultado);
-    $empresa=$cam['empresa'];
+    $res=query($sql,$con);
+    $cam=mysql_fetch_assoc($res); $empresa=$cam['empresa'];
   }
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
-  $resultado=query($sql,$conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $id_direccion=$campo['id_direccion'];
-    $id_contacto=$campo['id_contacto'];
-    $id_num_cliente=$campo['id_num_cliente'];
-    $id_usuario=$campo['id_usuario'];
-  }
+  $res=query($sql,$con);
+  $cam=mysql_fetch_assoc($res);
+  foreach($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
-  $resultado=query($sql,$conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $nombre_c=$campo['nombre_c'];
-    $departamento=$campo['departamento'];
-    $telefono1=$campo['telefono1'];
-    $telefono2=$campo['telefono2'];
-    $e_mail_c=$campo['e_mail_c'];
-  }
+  $res=query($sql,$con);
+  $cam=mysql_fetch_assoc($res);
+  foreach($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
-  $resultado=query($sql,$conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $nombre=$campo['nombre'];
-    $apellido_p=$campo['apellido_p'];
-    $apellido_m=$campo['apellido_m'];
-    $e_mail=$campo['e_mail'];
-  }
+  $res=query($sql,$con);
+  $cam=mysql_fetch_assoc($res);
+  foreach($cam as $camp => $value) { ${$camp}=$value; }
   $nombre="$nombre "."$apellido_p "."$apellido_m";
   $sql="SELECT * FROM Direcciones WHERE id_direccion=$id_direccion";
-  $resultado=query($sql,$conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $calle=$campo['calle'];
-    $num_int=$campo['num_int'];
-    $num_ext=$campo['num_ext'];
-    $municipio=$campo['municipio'];
-    $estado=$campo['estado'];
-    $cp=$campo['cp'];
-    $colonia=$campo['colonia'];
-  }
+  $res=query($sql,$con);
+  $cam=mysql_fetch_assoc($res);
+  foreach($cam as $camp => $value) { ${$camp}=$value; }
   if(isset($_SESSION['cotiz_usuario'])) $cotUser=$_SESSION['cotiz_usuario'];
   $nombre="$nombre "."$apellido_p "."$apellido_m";
   $datos_cliente= $empresa." ".$num_int." ".$num_ext." ".$colonia." C.P".$cp." "
@@ -79,28 +57,25 @@
     else {
       $id_usuario=$_SESSION['usuario'];
       $sql="SELECT * FROM Cotizaciones ORDER BY id_cotizacion DESC LIMIT 1";
-      $resultado=query($sql,$conexion);
-      $campo=mysql_fetch_row($resultado);
-      $id_cotizacion=$campo[0] + 1;
+      $res=query($sql,$con);
+      $cam=mysql_fetch_row($res); $id_cotizacion=$cam[0] + 1;
       if($id_cotizacion == "") $id_cotizacion=1;
       $_SESSION['cotizacion']=$id_cotizacion;
       $fecha=date('y.m.d');
       $sql="INSERT INTO Cotizaciones(id_cotizacion,fecha,id_cliente,
         id_usuario) VALUES('$id_cotizacion','$fecha','$id_num_cliente',
         '$id_usuario')";
-      $resultado=query($sql,$conexion);
+      $res=query($sql,$con);
     }
   }
   $sql="SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql,$conexion);
-  while($campo=mysql_fetch_array($resultado)) {
-    $prueba=$campo['id_cotizacion'];
-  }
+  $res=query($sql,$con);
+  $cam=mysql_fetch_array($res); $prueba=$cam['id_cotizacion'];
   if(!isset($prueba)) {
     $sqla="INSERT INTO Datos_Cotizacion(id_cotizacion,datos_cliente,
       datos_contacto,datos_vendedor) VALUES('$id_cotizacion','$datos_cliente',
       '$datos_contacto','$datos_vendedor')";
-    $resultadoa=query($sqla,$conexion);
+    $resa=query($sqla,$con);
   }
 ?>
 <!doctype html >
@@ -113,7 +88,6 @@
   </head>
   <body>
     <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
       <br><br><br>
       <div id="modificar">
         <div id="titulo2">Generador de partidas para la cotización.</div>
@@ -137,31 +111,31 @@
               <td width="41%">Descripción</td>
               <td width="5%">P.U.</td>
               <td width="5%">P.T.</td>
-              <td width="11%">Utilidades</td>
+              <td width="12%">Utilidades</td>
             </tr>
             <?php
               $siguiente=0;
-              $sql="SELECT id_partida FROM Partidas WHERE id_cotizacion='$id_cotizacion'
+              $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'
                 ORDER BY no_partida";
-              $resultado=query($sql,$conexion);
-              $campo=mysql_fetch_assoc($resultado);
+              $res=query($sql,$con);
+              $cam=mysql_fetch_assoc($res);
               echo "<form method='POST' id='ordenaForm'
               action='ordenar.php?cotizacion=$cotizacion";
-              echo "&partida=".$campo['id_partida'];
-              while($campo=mysql_fetch_assoc($resultado)) {
-                foreach($campo as $cam => $val) {
-                  echo "&partida$val=$val";
+              echo "&partida=".$cam['id_partida'];
+              while($cam=mysql_fetch_assoc($res)) {
+                foreach($cam as $camp => $val) {
+                  if($camp=='id_partida') echo "&partida$val=$val";
                 }
               }
               echo "'>";
               $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'
                 ORDER BY no_partida";
-              $resultado=query($sql,$conexion);
+              $res=query($sql,$con);
               $contador=1;
-              while($campo=mysql_fetch_array($resultado)) {
-                $i=$campo['precio_uni'];
-                $j=$campo['precio_total'];
-                $id_partida=$campo['id_partida'];
+              while($cam=mysql_fetch_array($res)) {
+                $i=$cam['precio_uni'];
+                $j=$cam['precio_total'];
+                $id_partida=$cam['id_partida'];
                 if($i == 0 || $j == 0) {}
                 else {
                   $precio_unit=number_format("$i",2);
@@ -170,17 +144,17 @@
                 echo "<tr>
                   <td>
                     <input type=number name='orden".$contador."'
-                      value=".$campo['no_partida']." style='text-align: center;
+                      value=".$cam['no_partida']." style='text-align: center;
                       width: 60%;' onchange='ordena()' required>
                   </td>
-                  <td>".$campo['partida']."</td>";
-                  if($campo['cantidad'] == 0) echo "<td align='right'></td>";
-                  else echo "<td>".$campo['cantidad']."</td>";
-                  echo "<td>".$campo['unidad']."</td>
-                  <td>".$campo['catalogo']."</td>
+                  <td>".$cam['partida']."</td>";
+                  if($cam['cantidad'] == 0) echo "<td align='right'></td>";
+                  else echo "<td>".$cam['cantidad']."</td>";
+                  echo "<td>".$cam['unidad']."</td>
+                  <td>".$cam['catalogo']."</td>
                   <td>
                     <pre style='white-space: normal;'>"
-                      .$campo['descripcion'].
+                      .$cam['descripcion'].
                     "</pre>
                   </td>";
                   if($i == 0 || $j == 0) {
@@ -191,10 +165,10 @@
                   else {
                     echo
                     "<td align='right'>"
-                      .number_format($campo['precio_uni'],2).
+                      .number_format($cam['precio_uni'],2).
                     "</td>
                     <td align='right'>"
-                      .number_format($campo['precio_total'],2).
+                      .number_format($cam['precio_total'],2).
                     "</td>";
                   }
                   echo

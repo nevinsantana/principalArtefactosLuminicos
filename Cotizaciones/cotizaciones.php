@@ -1,26 +1,19 @@
 <link href="tabla2.css" rel="stylesheet" type="text/css">
-<style type="text/css" media="screen">
-  A:link, A:hover, A:visited {
-    color: black;
-    font-size: 8pt;
-    font-family: arial;
-    text-decoration: none
-  }
+<style>
+  a:link,a:hover,a:visited { color: black; text-decoration: none; }
 </style>
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
-  $conexion=conectar();
+  $con=conectar();
   $id_usuario=$_SESSION['usuario'];
-  if(!isset($_GET['opcion'])) $opcion="nada";
-  else $opcion=$_GET['opcion'];
-  if(!isset($_POST['rfc'])) $rfc="nada";
-  else $rfc=$_POST['rfc'];
+  if(!isset($_GET['opcion'])) $opcion="nada"; else $opcion=$_GET['opcion'];
+  if(!isset($_POST['rfc'])) $rfc="nada"; else $rfc=$_POST['rfc'];
   if(!isset($_POST['empresa'])) $empresa="nada";
   else $empresa=$_POST['empresa'];
   $cont=0;
   $sql="SELECT * FROM Cotizaciones";
-  $resultado=query($sql, $conexion);
-  while($campo=mysql_fetch_array($resultado)) { $cont=1; }
+  $res=query($sql, $con);
+  while($cam=mysql_fetch_array($res)) { $cont=1; }
   if($cont==1) {
     if(isset($_POST['buscarCotizacion']))
       $buscarCotizacion=$_POST['buscarCotizacion'];

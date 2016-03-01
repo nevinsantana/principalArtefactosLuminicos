@@ -1,33 +1,29 @@
 <?php
   session_start();
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   header('Content-Type:text/html; charset=UTF-8');
   $id_cotizacion=$_SESSION['cotizacion'];
   $id_partida=$_GET['id_partida'];
-  $sql1="SELECT * FROM Partidas where id_cotizacion='$id_cotizacion' AND
-    id_partida='$id_partida' ";
-  $resultado1=query($sql1, $conexion);
-  $campo1=mysql_fetch_array($resultado1);
-  $partida=$campo1['partida'];
-  $cantidad=$campo1['cantidad'];
-  $unidad=$campo1['unidad'];
-  $catalogo=$campo1['catalogo'];
-  $descripcion=$campo1['descripcion'];
-  $precio_uni=$campo1['precio_uni'];
+  $sql="SELECT * FROM Partidas where id_cotizacion='$id_cotizacion' AND
+    id_partida='$id_partida'";
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   if(isset($_POST['catalogon'])) {
     $catalogo2=$_POST['catalogon'];
-    if($catalogo2==$catalogo) { } else { $catalogo=$catalogo2; }
-    $sql2="SELECT * FROM Catalogo where id_catalogo='$catalogo2'";
-    $resultado2=query($sql2, $conexion);
-    $campo2=mysql_fetch_array($resultado2);
-    if($campo2['descripcion']=="")
-      $descripcion2="El catalogo ingresado no encontro ninguna descripcion";
-    else $descripcion2=$campo2['descripcion'];
+    if($catalogo2!=$catalogo) $catalogo=$catalogo2;
+    $sql="SELECT * FROM Catalogo WHERE id_catalogo='$catalogo2'";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_assoc($res);
+    if($catalogo2==$catalogo)
+    if($cam['descripcion']=="")
+      $descripcion2="Descripción no encontrada";
+    else $descripcion2=$cam['descripcion'];
   }
   else $descripcion2=$descripcion;
 ?>
-<!doctype html >
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Type" charset="utf-8">
@@ -36,19 +32,16 @@
   </head>
   <body>
     <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
       <br><br><br>
       <div id="grande">
-        <?php
-          echo "<form action='editar_partida.php?id_partida=$id_partida'
-            method='POST'>";
-        ?>
-            <div id="izq">Ingrese el catálogo nuevo:</div>
-            <input type="text" class="cajita" name="catalogon"
-              placeholder="Catálogo" size="60" id="catalogo"
-              value="<?php echo $catalogo; ?>">
-            <input name='car' type='submit' value='>>' id='boton_versionn'>
-          </form>
+      <form action='editar_partida.php?id_partida=<?php echo $id_partida; ?>'
+        method='POST'>
+      <div id="izq">Ingrese el catálogo nuevo:</div>
+      <input type="text" class="cajita" name="catalogon"
+        placeholder="Catálogo" size="60" id="catalogo"
+        value="<?php echo $catalogo; ?>">
+      <input name='car' type='submit' value='>>' id='boton_versionn'>
+      </form>
         <br>
         <hr>
         <br><br>

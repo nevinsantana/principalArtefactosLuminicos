@@ -2,13 +2,11 @@
   session_start();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   include("funciones_mysql.php");
-  $con=conectar();
-  $id_cotizacion=$_GET['id_cotizacion'];
+  $con=conectar(); $id_cotizacion=$_GET['id_cotizacion'];
   $id_usuario=$_SESSION['usuario'];
-  $sql="SELECT id_cotizacion FROM Cotizaciones ORDER BY id_cotizacion
-    DESC LIMIT 1";
-  $resultado=query($sql, $con);
-  $campo=mysql_fetch_row($resultado);
+  $sql="SELECT * FROM Cotizaciones ORDER BY id_cotizacion DESC LIMIT 1";
+  $res=query($sql, $con);
+  $campo=mysql_fetch_row($res);
   $id_cotizacion2=$campo[0] + 1;
   $permiso=$_SESSION['permiso'];
   if(isset($_GET['cliente'])) $cliente=$_GET['cliente']; else $cliente=2;
@@ -22,113 +20,83 @@
     <title>Consecutivo de cotizaciones</title>
   </head>
   <body>
-    <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
-    </div>
     <?php
       if($cliente==1) {
-        $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
-        $resultado=query($sql, $con);
-        $cotizaciones=mysql_fetch_array($resultado);
-        $fecha=$cotizaciones['fecha'];
-        $id_num_cliente=$cotizaciones['id_cliente'];
-        $id_usuario=$cotizaciones['id_usuario'];
-        $vigencia=$cotizaciones['vigencia'];
-        $no_partidas=$cotizaciones['no_partidas'];
-        $divisa=$cotizaciones['divisa'];
-        $subtotal=$cotizaciones['subtotal'];
-        $iva=$cotizaciones['iva'];
-        $total=$cotizaciones['total'];
-        $t_entrega=$cotizaciones['t_entrega'];
-        $c_pago=$cotizaciones['c_pago'];
-        $descuento=$cotizaciones['descuento'];
-        $activo=$cotizaciones['activo'];
-        $sql="INSERT INTO Cotizaciones(id_cotizacion, fecha, id_cliente,
-          id_usuario, vigencia, no_partidas, divisa, subtotal, iva, total,
-          t_entrega, c_pago, descuento, activo) VALUES('$id_cotizacion2',
-          '$fecha','$id_num_cliente','$id_usuario','$vigencia','$no_partidas',
-          '$divisa','$subtotal','$iva','$total','$t_entrega','$c_pago',
-          '$descuento','$activo')";
-        $resultado=query($sql, $con);
+        $vals='';
+        $sql="SELECT * FROM cotizaciones WHERE id_cotizacion='$id_cotizacion'";
+        $res=query($sql, $con); $cam=mysql_fetch_assoc($res);
+        $cam['id_cotizacion']=$id_cotizacion2; $id_cliente=$cam['id_cliente'];
+        foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
+        $vals=rtrim($vals, ",");
+        $sql="INSERT INTO cotizaciones(id_cotizacion,fecha,id_cliente,
+        id_usuario,vigencia,no_partidas,divisa,subtotal,iva,total,t_entrega,
+        c_pago,descuento,activo) VALUES($vals)"; $res=query($sql, $con);
+          $vals='';
         $sql="SELECT * FROM Datos_Cotizacion WHERE id_cotizacion=
           '$id_cotizacion'";
-        $resultado=query($sql, $con);
-        $datos_cotizacion=mysql_fetch_array($resultado);
-        $datos_cliente=$datos_cotizacion['datos_cliente'];
-        $datos_contacto=$datos_cotizacion['datos_contacto'];
-        $datos_vendedor=$datos_cotizacion['datos_vendedor'];
-        $sql="INSERT INTO Datos_Cotizacion(id_cotizacion, datos_cliente,
-          datos_contacto, datos_vendedor) VALUES('$id_cotizacion2',
-            '$datos_cliente','$datos_contacto','$datos_vendedor')";
-        $resultado=query($sql, $con);
-        $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'";
-        $resultado=query($sql, $con);
-        while($partidas=mysql_fetch_array($resultado)) {
-          $id_partida=$partidas['id_partida'];
-          $partida=$partidas['partida'];
-          $cantidad=$partidas['cantidad'];
-          $unidad=$partidas['unidad'];
-          $catalogo=$partidas['catalogo'];
-          $descripcion=$partidas['descripcion'];
-          $precio_uni=$partidas['precio_uni'];
-          $precio_total=$partidas['precio_total'];
-          $sql="INSERT INTO Partidas(id_partida, id_cotizacion, partida,
-            cantidad, unidad, catalogo, descripcion, precio_uni, precio_total)
-            VALUES('$id_partida','$id_cotizacion2','$partida','$cantidad',
-            '$unidad','$catalogo','$descripcion','$precio_uni',
-            '$precio_total')";
-          $resultado1=query($sql, $con);
-        }
+        $res=query($sql, $con);
+        $cam=mysql_fetch_assoc($res); $cam['id_cotizacion']=$id_cotizacion2;
+        foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
+        $vals=rtrim($vals, ",");
+        $sql="INSERT INTO datos_cotizacion(id_cotizacion,datos_cliente,
+          datos_contacto,datos_vendedor) VALUES($vals)"; $res=query($sql, $con);
+        $sql="SELECT * FROM partidas WHERE id_cotizacion='$id_cotizacion'";
+        $res=query($sql, $con);
+        while($cam=mysql_fetch_assoc($res)) {
+          $vals=''; $cam['id_cotizacion']=$id_cotizacion2;
+          foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
+          $vals=rtrim($vals, ",");
+          $sql="INSERT INTO partidas(no_partida,id_partida,id_cotizacion,
+            partida,cantidad,unidad,catalogo,descripcion,precio_uni,
+            precio_total,sumable) VALUES($vals)"; $res1=query($sql, $con); }
         $sql="SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";
-        $resultado=query($sql, $con);
-        while($notas=mysql_fetch_array($resultado)) {
-          $no_nota=$notas['no_nota'];
-          $descripcion_nota=$notas['descripcion'];
+        $res=query($sql, $con);
+        while($cam=mysql_fetch_assoc($res)) {
+          $no_nota=$cam['no_nota'];
+          $descripcion_nota=$cam['descripcion'];
           $sql="INSERT INTO Notas(id_cotizacion, no_nota, descripcion)
             VALUES('$id_cotizacion2','$no_nota','$descripcion_nota')";
-          $resultado1=query($sql, $con);
+          $res1=query($sql, $con);
         }
-        $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_num_cliente'";
-        $resultado=query($sql, $con);
-        $cotizaciones=mysql_fetch_array($resultado);
-        $empresa=$cotizaciones['empresa'];
-        header("Location:editar_cotizacion.php?id_cotizacion=$id_cotizacion2&empresa=$empresa");
+        $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_cliente'";
+        $res=query($sql, $con); $cam=mysql_fetch_assoc($res);
+        $empresa=$cam['empresa'];
+        header("Location:editar_cotizacion.php?id_cotizacion=".$id_cotizacion2.
+          "&empresa=$empresa");
       }
       if($cliente==0) {
     ?>
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-        <div id="addcliente3" align='center' style="margin-left:-5px">
-          Seleccione el cliente:
-        </div>
-        <?php
-          echo '<form
-            action="reusar2.php?id_cotizacion='.$id_cotizacion.'&id_cotizacion2='.$id_cotizacion2.'"
-            method="POST">';
-          if($permiso==1) {
-            $sql="SELECT * FROM Clientes WHERE  desactivado='0' ORDER BY
-              empresa";
-            $resultado=query($sql, $con);
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <div id="addcliente3" align='center' style="margin-left:-5px">
+      Seleccione el cliente:
+    </div>
+    <form action="reusar2.php?id_cotizacion=<?php echo $id_cotizacion;
+      ?>&id_cotizacion2=<?php echo $id_cotizacion2; ?>" method="POST">
+      <?php
+      if($permiso==1) {
+        $sql="SELECT * FROM Clientes WHERE  desactivado='0' ORDER BY empresa";
+        $res=query($sql, $con);
+      }
+      else {
+        $sql="SELECT * FROM Clientes WHERE id_usuario='$id_usuario' AND
+          desactivado='0' ORDER BY empresa";
+        $res=query($sql, $con);
+      }
+      echo '<div align="center">
+        <select id=cotizarselect name=empresa>';
+          while($campo=mysql_fetch_assoc($res)) {
+            echo '<option>'.$campo["empresa"].'</option>';
           }
-          else {
-            $sql="SELECT * FROM Clientes WHERE id_usuario='$id_usuario' AND
-              desactivado='0' ORDER BY empresa";
-            $resultado=query($sql, $con);
-          }
-          echo '<div align="center">
-            <select id=cotizarselect name=empresa>';
-              while($campo=mysql_fetch_array($resultado)) {
-                echo '<option >'.$campo["empresa"].'</option>';
-              }
-            echo '</select>
-          </div>';
-        ?>
-        <div align="center" style="margin-left:-200px">
-          <input type="submit" value="Cotizar" class="formu-button">
-        </div>
-          </form>
+        echo '</select>
+      </div>';
+    ?>
+    <div align="center" style="margin-left:-200px">
+      <input type="submit" value="Cotizar" class="formu-button">
+    </div>
+      </form>
       <?php } ?>
     <script>
-      var cliente="<?php echo $cliente ?>";
+    var cliente="<?php echo $cliente ?>";
       if(cliente==2) {
         (function(id_cotizacion) {
           var r=confirm('Desea cotizar al mismo cliente?');

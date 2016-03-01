@@ -7,22 +7,21 @@
     $no_nota=$_GET['no_nota'];
     $id_cotizacion=$_SESSION['cotizacion'];
     $_SESSION['no_nota']=$no_nota;
-    $sql1="SELECT * FROM Notas WHERE no_nota='$no_nota' AND
+    $sql="SELECT * FROM Notas WHERE no_nota='$no_nota' AND
       id_cotizacion='$id_cotizacion'";
-    $resultado1=query($sql1, $con);
-    $campo1=mysql_fetch_array($resultado1);
-    $descripcion=$campo1["descripcion"];
+    $res=query($sql, $con);
+    $cam=mysql_fetch_array($res); $descripcion=$cam["descripcion"];
   }
   if(isset($_GET['nota'])) {
     $nota=$_GET['nota'];
     $sql="SELECT * FROM Notas_Predef WHERE id_nota='$nota'";
-    $resultado=query($sql, $con);
-    $campo=mysql_fetch_array($resultado);
-    $desplegar=$campo["nota"];
+    $res=query($sql, $con);
+    $cam=mysql_fetch_array($res);
+    $desplegar=$cam["nota"];
   }
   else $nota=0;
 ?>
-<!doctype html >
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Type" charset="utf-8">
@@ -30,7 +29,7 @@
     <title>Consecutivo de cotizaciones</title>
   </head>
   <body>
-    <div style="margin:100px 0 0 700px;">
+    <div style="margin:100px 0 0 25%;">
       <div id="agregarnota">Agregar notas
         <br><br>
       </div>

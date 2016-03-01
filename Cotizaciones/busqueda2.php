@@ -1,8 +1,6 @@
 <?php
   if (!isset($_SESSION['usuario'])) header('Location: index.php');
   header('Content-Type: text/html; charset=UTF-8');
-  include ("funciones_mysql.php");
-  $conexion=conectar();
 ?>
 <div class="datagrid">
   <table width="1000px">
@@ -18,26 +16,26 @@
       $cont=2;
       $numero=1;
       $sql="SELECT * FROM Catalogo WHERE descripcion LIKE '%$descripcion%'";
-      $resultado=query($sql, $conexion);
+      $res=query($sql, $con);
       echo "<div align=center>
         <div id='caja_cat2'>Busqueda: '$descripcion'</div>
       </div>
       <br>";
-      while ($campo=mysql_fetch_array($resultado)) {
+      while ($cam=mysql_fetch_array($res)) {
         if ($cont % 2==0) {
           echo "<tr>".
             "<td id='sombra2'>".$numero."</td>".
-            "<td id='sombra2'>".$campo['id_catalogo']."</td>".
-            "<td id='sombra2'>".$campo['unidad']."</td>".
-            "<td id='sombra2'>".$campo['descripcion']."</td>".
+            "<td id='sombra2'>".$cam['id_catalogo']."</td>".
+            "<td id='sombra2'>".$cam['unidad']."</td>".
+            "<td id='sombra2'>".$cam['descripcion']."</td>".
           "<tr>";
         }
         else {
           echo "<tr>".
             "<td id='sombra'>".$numero."</td>".
-            "<td id='sombra'>".$campo['id_catalogo']."</td>".
-            "<td id='sombra'>".$campo['unidad']."</td>".
-            "<td id='sombra'>".$campo['descripcion']."</td>".
+            "<td id='sombra'>".$cam['id_catalogo']."</td>".
+            "<td id='sombra'>".$cam['unidad']."</td>".
+            "<td id='sombra'>".$cam['descripcion']."</td>".
           "<tr>";
         }
         $cont++;

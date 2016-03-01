@@ -24,6 +24,5 @@
       </ul>
     </div>
     <div id="detalles"></div>
-    <script src="ajax.js"></script>
   </body>
 </html>

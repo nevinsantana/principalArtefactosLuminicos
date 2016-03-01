@@ -6,7 +6,7 @@
 <html>
   <body>
     <div id="ven">
-      <table border="0px" cellpadding="0" cellspacing="0" >
+      <table border="0px" cellpadding="0" cellspacing="0">
         <tr>
           <td>
             <div id="ccliente">Agregar cliente</div>
@@ -36,6 +36,5 @@
       </table>
     </div>
     <div id="detalles"></div>
-    <script src="ajax.js"></script>
   </body>
 </html>

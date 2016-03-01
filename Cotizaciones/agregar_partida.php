@@ -25,9 +25,6 @@
   </head>
   <body>
     <div id="page">
-      <div id="header">
-        <h1>Artefactos Lumínicos SA de CV</h1>
-      </div>
       <br><br><br>
       <?php
         if($formu==1) echo '<form action="partidas2.php" method="POST">';

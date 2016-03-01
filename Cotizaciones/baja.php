@@ -1,10 +1,7 @@
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
-  $idUs=$_SESSION['usuario'];
-  $con=conectar();
-  $cont=0;
-  $sql="SELECT * FROM Clientes WHERE id_usuario='$idUs' AND
-    desactivado='0'";
+  $idUs=$_SESSION['usuario']; $con=conectar(); $cont=0;
+  $sql="SELECT * FROM Clientes WHERE id_usuario='$idUs' AND desactivado='0'";
   $res=query($sql, $con);
   while($cam=mysql_fetch_array($res)) { $cont=1; }
   if($cont=1 && !isset($_POST['empresa'])) {
@@ -19,7 +16,7 @@
       <select id=bajaselect name=empresa>
         <?php
           $sql="SELECT * FROM Clientes WHERE id_usuario='$idUs' AND
-            desactivado='0' order by empresa";
+            desactivado='0' ORDER BY empresa";
           $res=query($sql, $con);
           while($cam=mysql_fetch_array($res)) {
             echo '<option style="width:520px;">'.$cam["empresa"]."</option>";
@@ -29,16 +26,14 @@
       <br><br><br>
       <input type="submit" value="Eliminar" class="formu-button">
     </form>
-  <?php } if($cont=0) { ?>
-    <div id="errorimg"><img src="images/error.png" margin-left="40px"></div>
-  <?php } if(isset($_POST['empresa'])) { $emp=$_POST['empresa']; ?>
+    <?php } if($cont=0) { ?>
+      <div id="errorimg"><img src="images/error.png"></div>
+    <?php } if(isset($_POST['empresa'])) { $emp=$_POST['empresa']; ?>
     <div id="modificar">
       <div id="titulo">
         Realmente desea borrar el cliente
         <br>
-        <div id=empresadel>
-          <?php echo $emp; ?>
-        </div>
+        <div id=empresadel><?php echo $emp; ?></div>
       </div>
       <div id=centrarbaja>
         <a href="php/funciones.php?borrarEmpresa=<?php echo $emp; ?>">
@@ -52,14 +47,13 @@
           </button>
         </a>
       </div>
-  <?php } ?>
+    <?php } ?>
     </div>
     <script>
       function irAlIndice() {
-        if(confirm("¿Quieres Eliminarlo")) {
+        if(confirm("¿Quieres Eliminarlo"))
           document.location.href='bajausuario.php';
       }
-    }
     </script>
   </body>
 </html>

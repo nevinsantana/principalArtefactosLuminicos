@@ -1,8 +1,6 @@
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   header('Content-Type: text/html; charset=UTF-8');
-  include("funciones_mysql.php");
-  $conexion=conectar();
   $cont=2;
   $numero=1;
 ?>
@@ -20,7 +18,7 @@
         </tr>
         <?php
           $sql="SELECT * FROM Catalogo ";
-          $resultado=query($sql, $conexion);
+          $resultado=query($sql, $con);
           while($campo=mysql_fetch_array($resultado)) {
             if($cont % 2==0) {
               echo "<tr>".

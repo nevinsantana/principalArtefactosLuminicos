@@ -1,24 +1,21 @@
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   session_start();
-  $id_cotizacion=$_SESSION['cotizacion'];
   include("funciones_mysql.php");
-  $conexion=conectar();
-  $descripcion=$_POST['descripcion'];
+  $con=conectar(); $idCot=$_SESSION['cotizacion']; $des=$_POST['descripcion'];
   $eliminar=array("<!Doctype html>", "<html>", "<head>", "</head>", "<body>",
     "</body>", "</html>", "  ");
-  $descripcion=str_replace($eliminar, "", $descripcion);
-  trim($descripcion);
+  $des=str_replace($eliminar, "", $des);
+  trim($des);
   $eliminar=array("'");
-  $descripcion=str_replace($eliminar, "", $descripcion);
-  $sql="SELECT no_nota FROM Notas WHERE id_cotizacion=$id_cotizacion ORDER BY
-    no_nota DESC";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_row($resultado);
-  $no_nota=$campo[0] + 1;
+  $des=str_replace($eliminar, "", $des);
+  $sql="SELECT * FROM Notas WHERE id_cotizacion=$idCot ORDER BY no_nota DESC";
+  $res=query($sql, $con);
+  $cam=mysql_fetch_row($res);
+  $no_nota=$cam[0] + 1;
   if($no_nota=="") $no_nota=1;
   $sql="INSERT INTO Notas(id_cotizacion, no_nota, descripcion)
-    VALUES('$id_cotizacion','$no_nota','$descripcion')";
-  $resultado=query($sql, $conexion);
+    VALUES('$idCot','$no_nota','$des')";
+  $res=query($sql, $con);
   header("Location: notas.php");
 ?>

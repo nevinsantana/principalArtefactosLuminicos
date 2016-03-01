@@ -20,10 +20,8 @@
     <title>Consecutivo de cotizaciones</title>
   </head>
   <body>
-    <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
-    </div>
     <div align="center">
+      <br><br>
       <h2>Agregar notas</h2>
       <br><br>
       <select style="background-color:white;" id="nota" name="no_nota">

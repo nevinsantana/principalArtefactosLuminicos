@@ -11,23 +11,20 @@
       <?php
         $buscarCliente=$_POST['buscarCliente'];
         $sql0="SELECT * FROM Clientes WHERE empresa like '%$buscarCliente%'";
-        $resultado0=query($sql0, $conexion);
-        while($campo0=mysql_fetch_array($resultado0)) {
-          $id_num_cliente=$campo0['id_num_cliente'];
-          $empresa=$campo0['empresa'];
+        $res0=query($sql0, $con);
+        while($cam0=mysql_fetch_array($res0)) {
+          $id_num_cliente=$cam0['id_num_cliente'];
+          $empresa=$cam0['empresa'];
           $sql1="SELECT * FROM Cotizaciones WHERE id_cliente='$id_num_cliente'
             ORDER BY id_cotizacion ASC";
-          $resultado1=query($sql1, $conexion);
-          while($campo1=mysql_fetch_array($resultado1)) {
-            $id_cliente=$campo1['id_cliente'];
-            $fecha=$campo1['fecha'];
-            $id_cotizacion=$campo1['id_cotizacion'];
-            $id_usuario=$campo1['id_usuario'];
-            $activo=$campo1['activo'];
+          $res1=query($sql1, $con);
+          while($cam1=mysql_fetch_array($res1)) {
+            $id_cliente=$cam1['id_cliente'];
+            foreach ($cam1 as $camp => $value) { ${$camp}=$value; }
             $sql2="SELECT * FROM `Usuarios` WHERE id_usuario='$id_usuario'";
-            $resultado2=query($sql2, $conexion);
-            $campo2=mysql_fetch_array($resultado2);
-            $vendedor=$campo2['nombre'].' '.$campo2['apellido_p'];
+            $res2=query($sql2, $con);
+            $cam2=mysql_fetch_array($res2);
+            $vendedor=$cam2['nombre'].' '.$cam2['apellido_p'];
             echo "<tr id='tTextoTabla'>
               <td align='center'>".$id_cotizacion."</td>
               <td align='center'>".$fecha."</td>
@@ -40,7 +37,8 @@
               </td>
               <td height='35px'>
                 <a
-                  href='editar_cotizacion.php?id_cotizacion=".$id_cotizacion."&empresa=".$empresa."&cotiz_usuario=".$id_usuario."'>
+                  href='editar_cotizacion.php?id_cotizacion=".$id_cotizacion.
+                  "&empresa=".$empresa."&cotiz_usuario=".$id_usuario."'>
                   <div class='editar' align='center'>Editar</div>
                 </a>
                 <br>

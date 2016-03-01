@@ -1,5 +1,7 @@
 <?php
   session_start();
+  include("funciones_mysql.php");
+  $con=conectar();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   if(!isset($_GET['opcion'])) $opcion="nada"; else $opcion=$_GET['opcion'];
   if(!isset($_POST['rfc'])) $rfc="nada"; else $rfc=$_POST['rfc'];

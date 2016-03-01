@@ -17,7 +17,6 @@
   </head>
   <body>
     <div id="page">
-      <div id="header"><h1>Artefactos Lumínicos SA de CV</h1></div>
       <br><br><br>
       <div id="modificar">
       <div id="titulo2" style="margin-left: -30px; text-align: center;">
@@ -26,26 +25,26 @@
       <div class="tabla_notas">
         <table>
           <tr>
-            <td width="20%">No de nota</td>
-            <td width="60%">Descripción</td>
-            <td width="20%">Utilidades</td>
+            <td width="5%">No</td>
+            <td width="80%">Descripción</td>
+            <td width="20%">Util</td>
           </tr>
           <?php
             header('Content-Type: text/html; charset=UTF-8');
             $siguiente=1;
             $sql="SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";
-            $resultado=query($sql, $con);
-            while($campo=mysql_fetch_array($resultado)) {
+            $res=query($sql, $con);
+            while($cam=mysql_fetch_array($res)) {
               echo "<tr>
                 <td align='center'>".$siguiente."</td>
-                <td>".$campo['descripcion']."</td>
+                <td>".$cam['descripcion']."</td>
                 <td align='right'>
-                  <a href='editar_nota.php?no_nota=".$campo['no_nota']."'
+                  <a href='editar_nota.php?no_nota=".$cam['no_nota']."'
                     style='margin:0 10px 0 -10px;'>
                     <img src='images/edit.png'>
                   </a>
                   <img src='images/delete.png'
-                    onclick='Eliminar(".$campo['no_nota'].")'>
+                    onclick='Eliminar(".$cam['no_nota'].")'>
                 </td>
               </tr>";
               $siguiente++;

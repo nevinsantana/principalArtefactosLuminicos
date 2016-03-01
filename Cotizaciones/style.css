@@ -607,7 +607,7 @@ z.sign-up-button:hover {
 
 
 /* Select cambio.php */
-#cambioselect{
+#cambioselect {
     margin-bottom:30px;
     margin-left:10px;
     font-size: 17px;
@@ -619,14 +619,12 @@ z.sign-up-button:hover {
 
 
 /* Select baja.php */
-#bajaselect{
-    margin-bottom:30px;
-    margin-left:10px;
-    font-size: 17px;
-    color: white;
-    background-color: #f0776c;
-    width: 550px;
-    border-radius: 5px;
+#bajaselect {
+  font-size: 17px;
+  color: white;
+  background-color: #f0776c;
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* Select cotizar.php */
@@ -823,10 +821,10 @@ regresar.button:active{
 }
 
 #barra{
-    height:30em;
+    height:28.5em;
     width:100%;
     max-height:700px;
-    overflow:scroll;
+    overflow: auto;
 }
 
 .formu-button3 {
@@ -1448,11 +1446,17 @@ hr.raya:after { /* Not really supposed to work, but does */
 
 #buscadores {
   background-color: #5a8780;
-  padding: 1em;
+  padding: 10px;
   width: 100%;
   float: left;
-  height: 7em;
+  height: auto;
   overflow-x: auto;
+}
+
+.containerBuscadores {
+  width: 615px;
+  height: 65px;
+  margin: auto;
 }
 
 .alineaIzquierda {
@@ -1551,8 +1555,8 @@ section input, section select {
 }
 
 section input[type='submit'], select{
-    margin: 0 6em;
     width: auto;
+    text-align: center;
     border: 0;
     padding: 0.5em;
     border-radius: 0.25em;

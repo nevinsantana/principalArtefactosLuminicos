@@ -3,20 +3,13 @@
   header('Content-Type: text/html; charset=UTF-8');
   session_start();
   include("funciones_mysql.php");
-  $conexion=conectar();
-  $cotizacion=$_SESSION['cotizacion'];
+  $con=conectar(); $cotizacion=$_SESSION['cotizacion'];
   $sql="DELETE FROM Cotizaciones WHERE id_cotizacion='$cotizacion'";
-  $resultado=query($sql, $conexion);
+  $res=query($sql, $con);
   $sql1="DELETE FROM Partidas WHERE id_cotizacion='$cotizacion'";
-  $resultado1=query($sql1, $conexion);
+  $con1=query($sql1, $con);
   $sql2="DELETE FROM Notas WHERE id_cotizacion='$cotizacion'";
-  $resultado2=query($sql2, $conexion);
-  unset($_SESSION['cotizacion']);
-  unset($_SESSION['empresa']);
+  $con2=query($sql2, $con);
+  unset($_SESSION['cotizacion']); unset($_SESSION['empresa']);
 ?>
-<html>
-  <script>
-    function regresar() { document.location.href='log_in.php'; }
-    regresar();
-  </script>
-</html>
+<script>(function() { document.location.href='log_in.php'; })();</script>

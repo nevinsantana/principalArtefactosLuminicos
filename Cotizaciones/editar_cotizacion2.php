@@ -4,7 +4,7 @@
   $id_cotizacion=$_SESSION['cotizacion'];
   header('Content-Type: text/html; charset=UTF-8');
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   $no_partidas=$_SESSION['no_partidas'];
   $subtotal=$_SESSION['subtotal'];
   $iva=$_SESSION['iva'];
@@ -15,7 +15,7 @@
     no_partidas='$eC3', divisa='$eC7',subtotal='$subtotal',
     iva='$iva', total='$total',t_entrega='$eC8',c_pago='$eC9' WHERE
     id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $conexion);
+  $res=query($sql, $con);
   $eC4=str_replace(
     array('�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�',
     '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�',
@@ -32,7 +32,6 @@
     'i', 'i', '�', 'I', 'I', '�', 'o', 'o', '�', 'O', 'O', '�', 'u', 'u', '�',
     'U', 'U', ""), $eC5
   );
-
   $eC6=str_replace(
     array('�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�',
     '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�', '�',
@@ -44,7 +43,7 @@
   $sqla="UPDATE Datos_Cotizacion SET datos_cliente='$eC4',
     datos_contacto='$eC5',datos_vendedor='$eC6' WHERE
     id_cotizacion='$id_cotizacion'";
-  $resultadoa=query($sqla, $conexion);
+  $resa=query($sqla, $con);
   unset($_SESSION['cotizacion']);
   unset($_SESSION['empresa']);
   unset($_SESSION['subtotal']);

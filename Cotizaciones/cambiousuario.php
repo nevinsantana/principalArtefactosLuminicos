@@ -2,37 +2,24 @@
   session_start();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   $id_usuario=$_SESSION['usuario'];
   $empresa=$_POST['empresa'];
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $id_cliente=$campo['id_cliente'];
-  $id_direccion=$campo['id_direccion'];
-  $id_contacto=$campo['id_contacto'];
-  $id_usuario=$campo['id_usuario'];
-  $id=$campo['id_num_cliente'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_array($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
+  $id=$cam['id_num_cliente'];
   $sql="SELECT * FROM Direcciones WHERE id_direccion='$id_direccion'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $calle=$campo['calle'];
-  $num_int=$campo['num_int'];
-  $num_ext=$campo['num_ext'];
-  $colonia=$campo['colonia'];
-  $municipio=$campo['municipio'];
-  $estado=$campo['estado'];
-  $cp=$campo['cp'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_array($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $nombre=$campo['nombre_c'];
-  $departamento=$campo['departamento'];
-  $telefono1=$campo['telefono1'];
-  $telefono2=$campo['telefono2'];
-  $email=$campo['e_mail_c'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_array($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
 ?>
-<!doctype html >
+<!doctype html>
 <html>
   <head>
     <meta http-equiv="Content-Type" charset="utf-8">
@@ -60,7 +47,7 @@
                 Razon social
                 <br>
                 <input type="text" class="formu" name="empresa" value=
-                  "<?php echo$empresa; ?>" autofocus>
+                  "<?php echo$empresa; ?>">
               </td>
             </tr>
             <tr>
@@ -68,13 +55,13 @@
                 Calle
                 <br>
                 <input type="text" class="formu" name="calle" value=
-                  "<?php echo $calle; ?>" autofocus>
+                  "<?php echo $calle; ?>">
               </td>
               <td>
                 Numero Interior
                 <br>
                 <input type="text" class="formu" name="num_int" value=
-                  "<?php echo $num_int; ?>" autofocus>
+                  "<?php echo $num_int; ?>">
               </td>
             </tr>
             <tr>
@@ -82,13 +69,13 @@
                 Numero Exterior
                 <br>
                 <input type="text" class="formu" name="num_ext" value=
-                  "<?php echo $num_ext; ?>" autofocus>
+                  "<?php echo $num_ext; ?>">
               </td>
               <td>
                 Colonia
                 <br>
                 <input type="text" class="formu" name="colonia" value=
-                  "<?php echo $colonia; ?>" autofocus>
+                  "<?php echo $colonia; ?>">
               </td>
             </tr>
             <tr>
@@ -96,13 +83,13 @@
                 Municipio
                 <br>
                 <input type="text" class="formu" name="municipio" value=
-                  "<?php echo $municipio; ?>" autofocus>
+                  "<?php echo $municipio; ?>">
               </td>
               <td>
                 Estado
                 <br>
                 <input type="text" class="formu" name="estado" value=
-                  "<?php echo $estado; ?>" autofocus>
+                  "<?php echo $estado; ?>">
               </td>
             </tr>
             <tr>
@@ -110,13 +97,13 @@
                 Código Postal
                 <br>
                 <input type="text" class="formu" name="cp" value=
-                  "<?php echo $cp; ?>" autofocus>
+                  "<?php echo $cp; ?>">
               </td>
               <td>
                 Nombre del Contacto
                 <br>
                 <input type="text" class="formu" name="contacto" value=
-                "<?php echo $nombre; ?>" autofocus>
+                "<?php echo $nombre; ?>">
               </td>
             </tr>
             <tr>
@@ -124,13 +111,13 @@
                 Departamento
                 <br>
                 <input type="text" class="formu" name="departamento" value="
-                  <?php echo $departamento; ?>" autofocus>
+                  <?php echo $departamento; ?>">
               </td>
               <td>
                 Telefono Directo
                 <br>
                 <input type="text" class="formu" name="telefono1" value="
-                  <?php echo$telefono1; ?>" autofocus>
+                  <?php echo$telefono1; ?>">
               </td>
             </tr>
             <tr>
@@ -138,13 +125,13 @@
                 Telefono Alternativo
                 <br>
                 <input type="text" class="formu" name="telefono2" value="
-                  <?php echo$telefono2; ?>" autofocus>
+                  <?php echo$telefono2; ?>">
               </td>
               <td>
                 E-mail
                 <br>
                 <input type="text" class="formu" name="email" value="
-                <?php echo $email; ?>" autofocus>
+                <?php echo $email; ?>">
               </td>
             </tr>
           </table>

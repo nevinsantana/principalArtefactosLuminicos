@@ -12,28 +12,27 @@
       $buscarVend=$_POST['buscarVend'];
       $sql="SELECT * FROM Cotizaciones WHERE id_usuario='$buscarVend' ORDER BY
         id_cotizacion DESC";
-      $resultado=query($sql, $conexion);
-      while($campo=mysql_fetch_array($resultado)) {
-        $activo=$campo['activo'];
-        $id_cotizacion=$campo['id_cotizacion'];
-        $id_cliente=$campo['id_cliente'];
+      $res=query($sql, $con);
+      while($cam=mysql_fetch_array($res)) {
+        $activo=$cam['activo'];
+        foreach ($cam as $camp => $value) { ${$camp}=$value; }
         $sql3="SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
-        $resultado3=query($sql3, $conexion);
-        $campo3=mysql_fetch_array($resultado3);
-        $id_usuario=$campo3['id_usuario'];
+        $res3=query($sql3, $con);
+        $cam3=mysql_fetch_array($res3);
+        $id_usuario=$cam3['id_usuario'];
         $sql0="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
-        $resultado0=query($sql0, $conexion);
-        $campo0=mysql_fetch_array($resultado0);
-        $vendedor=$campo0['nombre'].' '.$campo0['apellido_p'];
-        $id_num_cliente=$campo['id_cliente'];
+        $res0=query($sql0, $con);
+        $cam0=mysql_fetch_array($res0);
+        $vendedor=$cam0['nombre'].' '.$cam0['apellido_p'];
+        $id_num_cliente=$cam['id_cliente'];
         $sql2="SELECT * FROM Clientes WHERE id_num_cliente='$id_cliente'";
-        $resultado2=query($sql2, $conexion);
-        $campo2=mysql_fetch_array($resultado2);
-        $empresa=$campo2['empresa'];
+        $res2=query($sql2, $con);
+        $cam2=mysql_fetch_array($res2);
+        $empresa=$cam2['empresa'];
         echo "<tr id='tTextoTabla'>
-          <td align='center'>".$campo['id_cotizacion']."</td>
-          <td align='center'>".$campo['fecha']."</td>
-          <td>".$campo2['empresa']."</td>
+          <td align='center'>".$cam['id_cotizacion']."</td>
+          <td align='center'>".$cam['fecha']."</td>
+          <td>".$cam2['empresa']."</td>
           <td>$vendedor</td>
           <td height='35px'>
             <a href='ver_cotizacion.php?id_cotizacion=".$id_cotizacion."'>
@@ -42,7 +41,8 @@
           </td>
           <td height='35px'>
             <a
-              href='editar_cotizacion.php?id_cotizacion=".$id_cotizacion."&empresa=".$empresa."&cotiz_usuario=".$id_usuario."'>
+              href='editar_cotizacion.php?id_cotizacion=".$id_cotizacion.
+                "&empresa=".$empresa."&cotiz_usuario=".$id_usuario."'>
               <div class='editar' align='center'>Editar</div>
             </a>
             <br>

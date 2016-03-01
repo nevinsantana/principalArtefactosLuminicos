@@ -7,61 +7,36 @@
   $id_cotizacion2=$_GET['id_cotizacion2'];
   $empresa=$_POST['empresa'];
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
-  $resultado=query($sql, $con);
-  $clientes=mysql_fetch_array($resultado);
-  $id_num_cliente=$clientes['id_num_cliente'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res); $id_num_cliente=$cam['id_num_cliente'];
   $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $con);
-  $cotizaciones=mysql_fetch_array($resultado);
-  $id_usuario=$cotizaciones['id_usuario'];
-  $fecha=$cotizaciones['fecha'];
-  $vigencia=$cotizaciones['vigencia'];
-  $no_partidas=$cotizaciones['no_partidas'];
-  $divisa=$cotizaciones['divisa'];
-  $subtotal=$cotizaciones['subtotal'];
-  $iva=$cotizaciones['iva'];
-  $total=$cotizaciones['total'];
-  $t_entrega=$cotizaciones['t_entrega'];
-  $c_pago=$cotizaciones['c_pago'];
-  $descuento=$cotizaciones['descuento'];
-  $activo=$cotizaciones['activo'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="INSERT INTO Cotizaciones(id_cotizacion, fecha, id_cliente, id_usuario,
     vigencia, no_partidas, divisa, subtotal, iva, total, t_entrega, c_pago,
     descuento, activo) VALUES('$id_cotizacion2','$fecha','$id_num_cliente',
     '$id_usuario','$vigencia','$no_partidas','$divisa','$subtotal','$iva',
     '$total','$t_entrega','$c_pago','$descuento','$activo')";
-  $resultado=query($sql, $con);
+  $res=query($sql, $con);
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
-  $resultado=query($sql, $con);
-  $campo=mysql_fetch_array($resultado);
-  $id_direccion=$campo['id_direccion'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  $id_direccion=$cam['id_direccion'];
   $sql="SELECT * FROM Direcciones WHERE id_direccion=$id_direccion";
-  $resultado=query($sql, $con);
-  $campo=mysql_fetch_array($resultado);
-  $calle=$campo['calle'];
-  $num_int=$campo['num_int'];
-  $num_ext=$campo['num_ext'];
-  $municipio=$campo['municipio'];
-  $estado=$campo['estado'];
-  $cp=$campo['cp'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Clientes WHERE empresa='$empresa'";
-  $resultado=query($sql, $con);
-  $campo=mysql_fetch_array($resultado);
-  $id_contacto=$campo['id_contacto'];
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res); $id_contacto=$cam['id_contacto'];
   $sql="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
-  $resultado=query($sql, $con);
-  $campo=mysql_fetch_array($resultado);
-  $nombre_c=$campo['nombre_c'];
-  $departamento=$campo['departamento'];
-  $telefono1=$campo['telefono1'];
-  $telefono2=$campo['telefono2'];
-  $e_mail_c=$campo['e_mail_c'];
-  $sql="SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $con);
-  $datos_cotizacion=mysql_fetch_array($resultado);
+  $res=query($sql, $con);
+  $cam=mysql_fetch_assoc($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $sql="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
-  $resultado=query($sql, $con);
-  $usuario=mysql_fetch_array($resultado);
+  $res=query($sql, $con);
+  $usuario=mysql_fetch_assoc($res);
   $nombre=$usuario['nombre'];
   $apellido_p=$usuario['apellido_p'];
   $e_mail=$usuario['e_mail'];
@@ -73,32 +48,25 @@
   $sql="INSERT INTO Datos_Cotizacion(id_cotizacion, datos_cliente,
     datos_contacto, datos_vendedor) VALUES('$id_cotizacion2','$datos_cliente',
     '$datos_contacto','$datos_vendedor')";
-  $resultado=query($sql, $con);
+  $res=query($sql, $con);
   $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $con);
-  while($partidas=mysql_fetch_array($resultado)) {
-    $id_partida=$partidas['id_partida'];
-    $partida=$partidas['partida'];
-    $cantidad=$partidas['cantidad'];
-    $unidad=$partidas['unidad'];
-    $catalogo=$partidas['catalogo'];
-    $descripcion=$partidas['descripcion'];
-    $precio_uni=$partidas['precio_uni'];
-    $precio_total=$partidas['precio_total'];
+  $res=query($sql, $con);
+  while($cam=mysql_fetch_assoc($res)) {
+    $id_partida=$cam['id_partida'];
+    foreach ($cam as $camp => $value) { ${$camp}=$value; }
     $sql="INSERT INTO Partidas(id_partida, id_cotizacion, partida, cantidad,
       unidad, catalogo, descripcion, precio_uni, precio_total)
       VALUES('$id_partida','$id_cotizacion2','$partida','$cantidad','$unidad',
       '$catalogo','$descripcion','$precio_uni','$precio_total')";
-    $resultado1=query($sql, $con);
+    $res1=query($sql, $con);
   }
   $sql="SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";
-  $resultado=query($sql, $con);
-  while($notas=mysql_fetch_array($resultado)) {
-    $no_nota=$notas['no_nota'];
-    $descripcion_nota=$notas['descripcion'];
+  $res=query($sql, $con);
+  while($cam=mysql_fetch_assoc($res)) {
+    $no_nota=$cam['no_nota']; $descripcion_nota=$cam['descripcion'];
     $sql="INSERT INTO Notas(id_cotizacion, no_nota, descripcion)
       VALUES('$id_cotizacion2','$no_nota','$descripcion_nota')";
-    $resultado1=query($sql, $con);
+    $res1=query($sql, $con);
   }
   header("Location: editar_cotizacion.php?id_cotizacion=$id_cotizacion2");
 ?>

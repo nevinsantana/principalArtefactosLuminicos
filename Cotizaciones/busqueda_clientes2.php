@@ -1,16 +1,10 @@
 <?php
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
-  header('Content-Type: text/html; charset=UTF-8');
-  include("funciones_mysql.php");
-  $conexion=conectar();
   $usuario=$_SESSION['usuario'];
-  $sql="SELECT nombre, apellido_p, apellido_m, permiso FROM Usuarios WHERE id_usuario='$usuario'";
-  $resultado=query($sql, $conexion);
-  $campo=mysql_fetch_array($resultado);
-  $permiso=$campo['permiso'];
-  $nombre=$campo['nombre'];
-  $apellido_p=$campo['apellido_p'];
-  $apellido_m=$campo['apellido_m'];
+  $sql="SELECT * FROM Usuarios WHERE id_usuario='$usuario'";
+  $res=query($sql, $con);
+  $cam=mysql_fetch_array($res);
+  foreach ($cam as $camp => $value) { ${$camp}=$value; }
 ?>
 <div class="datagrid">
   <table width="1000px">
@@ -41,41 +35,29 @@
         $sql="SELECT * FROM Clientes WHERE empresa LIKE '%$empresa%' AND
           desactivado=0 ORDER BY empresa";
       }
-      $resultado=query($sql, $conexion);
+      $res=query($sql, $con);
       echo "<div align='center'>
         <div id='caja_cat2'>Busqueda: $empresa</div>
       </div>
       <br>";
-      while($campo=mysql_fetch_array($resultado)) {
+      while($cam=mysql_fetch_array($res)) {
         if($cont % 2==0) {
-          $id_usuario=$campo['id_usuario'];
-          $id_direccion=$campo['id_direccion'];
+          foreach ($cam as $camp => $value) { ${$camp}=$value; }
           $sqla="SELECT * FROM Direcciones WHERE id_direccion='$id_direccion'";
-          $resultadoa=query($sqla, $conexion);
-          $campoa=mysql_fetch_array($resultadoa);
-          $calle=$campoa['calle'];
-          $num_int=$campoa['num_int'];
-          $num_ext=$campoa['num_ext'];
-          $colonia=$campoa['colonia'];
-          $municipio=$campoa['municipio'];
-          $estado=$campoa['estado'];
-          $cp=$campoa['cp'];
-          $id_contacto=$campo['id_contacto'];
+          $resa=query($sqla, $con);
+          $cama=mysql_fetch_array($resa);
+          foreach ($cama as $camp => $value) { ${$camp}=$value; }
           $sqlb="SELECT * FROM Contacto WHERE id_contacto='$id_contacto'";
-          $resultadob=query($sqlb, $conexion);
-          $campob=mysql_fetch_array($resultadob);
-          $nombre_c=$campob['nombre_c'];
-          $departamento=$campob['departamento'];
-          $telefono1=$campob['telefono1'];
-          $telefono2=$campob['telefono2'];
-          $e_mail_c=$campob['e_mail_c'];
+          $resb=query($sqlb, $con);
+          $camb=mysql_fetch_array($resb);
+          foreach ($camb as $camp => $value) { ${$camp}=$value; }
           $sql5="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
-          $resultado5=query($sql5, $conexion);
-          $campo5=mysql_fetch_array($resultado5);
-          $nombre_usuario="".$campo5['nombre']." ".$campo5['apellido_p'];
+          $res5=query($sql5, $con);
+          $cam5=mysql_fetch_array($res5);
+          $nombre_usuario="".$cam5['nombre']." ".$cam5['apellido_p'];
           echo "<tr>".
-            "<td id='sombra2'>".$campo['id_cliente']."</td>".
-            "<td id='sombra2'>".$campo['empresa']."</td>".
+            "<td id='sombra2'>".$cam['id_cliente']."</td>".
+            "<td id='sombra2'>".$cam['empresa']."</td>".
             "<td id='sombra2'>".$calle."--".$num_int."--".$num_ext."--".$colonia.
               "--".$municipio."--".$estado."--".$cp."</td>".
             "<td id='sombra2'>".$nombre_c."-".$departamento."--".$telefono1."--".
@@ -84,20 +66,14 @@
           echo "<tr>";
         }
         else {
-          $id_direccion=$campo['id_direccion'];
+          $id_direccion=$cam['id_direccion'];
           $sqla="SELECT * FROM Direcciones WHERE id_direccion='$id_direccion'";
-          $resultadoa=query($sqla, $conexion);
-          $campoa=mysql_fetch_array($resultadoa);
-          $calle=$campoa['calle'];
-          $num_int=$campoa['num_int'];
-          $num_ext=$campoa['num_ext'];
-          $colonia=$campoa['colonia'];
-          $municipio=$campoa['municipio'];
-          $estado=$campoa['estado'];
-          $cp=$campoa['cp'];
+          $resa=query($sqla, $con);
+          $cama=mysql_fetch_array($resa);
+          foreach ($cama as $camp => $value) { ${$camp}=$value; }
           echo "<tr>".
-            "<td id='sombra'>".$campo['id_cliente']."</td>".
-            "<td id='sombra'>".$campo['empresa']."</td>".
+            "<td id='sombra'>".$cam['id_cliente']."</td>".
+            "<td id='sombra'>".$cam['empresa']."</td>".
             "<td id='sombra'>".$calle."--".$num_int."--".$num_ext."--".$colonia.
               "--".$municipio."--".$estado."--".$cp."</td>".
             "<td id='sombra'>".$nombre_c."-".$departamento."--".$telefono1."--".

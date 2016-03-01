@@ -1,7 +1,7 @@
 <?php
   session_start();
   include("funciones_mysql.php");
-  $conexion=conectar();
+  $con=conectar();
   if(!isset($_GET['sec'])) $seccion=null;
   else $seccion=$_GET['sec'];
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
@@ -18,9 +18,6 @@
   </head>
   <body>
     <div id="page">
-      <div id="header">
-        <h1>Artefactos Lumínicos SA de CV</h1>
-      </div>
       <br><br><br>
       <div id="modificar">
         <div id="titulo">
@@ -44,17 +41,17 @@
           $activo=0;
           if($seccion=="borrar") {
             $catalogo=$_GET['catalogo'];
-            $sql="UPDATE Catalogo SET activo='$activo' WHERE id_catalogo='$catalogo'";
-            $resultado=query($sql, $conexion);
+            $sql="UPDATE Catalogo SET activo='$activo' WHERE
+              id_catalogo='$catalogo'";
+            $res=query($sql, $con);
         ?>
-            <script type="text/javascript">
-              function eliminado() {
-                alert("Se ha eliminado con Éxito");
-                document.location.href='index.php';
-              }
-              eliminado();
-            </script>
-          <?php } ?>
+        <script>
+          (function() {
+            alert("Se ha eliminado con Éxito");
+            document.location.href='index.php';
+          })();
+        </script>
+        <?php } ?>
       </div>
     </div>
   </body>
