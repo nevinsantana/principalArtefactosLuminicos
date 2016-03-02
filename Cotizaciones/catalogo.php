@@ -17,7 +17,7 @@
           </thead>
         </tr>
         <?php
-          $sql="SELECT * FROM Catalogo ";
+          $sql="SELECT * FROM Catalogo";
           $resultado=query($sql, $con);
           while($campo=mysql_fetch_array($resultado)) {
             if($cont % 2==0) {

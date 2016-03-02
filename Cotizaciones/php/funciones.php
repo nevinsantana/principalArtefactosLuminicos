@@ -61,8 +61,7 @@
       header("Location: ../index.php?op=mal");
     }
     else {
-      $query="SELECT permiso,activo FROM Usuarios WHERE
-        id_usuario='$id_usuario'";
+      $query="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
       $result=mysql_query($query);
       if($row=mysql_fetch_assoc($result)) {
         $permiso=$row['permiso'];
@@ -193,7 +192,7 @@
   function cambioCliente($con, $i, $id, $adm) {
     if(isset($_POST['usuario'])) $usuarioCA=$_POST['usuario'];
     $usuarioCA;
-    $sql="SELECT * FROM clientes WHERE id_num_cliente='$id'";
+    $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id'";
     $res=query($sql,$con);
     $cam=mysql_fetch_assoc($res);
     $idD=$cam['id_direccion'];
@@ -234,7 +233,7 @@
         apellido_m, e_mail, numero) VALUES('$aU1','$aU2','$aU3','$aU4','$aU5',
         '$aU6','$idNU')";
       $res=query($sql, $con);
-      $sql="INSERT INTO Log_in(id_usuario, password) VALUES('$aU1','$aU8')";
+      $sql="INSERT INTO Log_In(id_usuario, password) VALUES('$aU1','$aU8')";
       $res=query($sql, $con);
       header("Location: ../administracion.php?altausComplete=true");
     }

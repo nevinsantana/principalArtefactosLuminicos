@@ -23,12 +23,12 @@
     <?php
       if($cliente==1) {
         $vals='';
-        $sql="SELECT * FROM cotizaciones WHERE id_cotizacion='$id_cotizacion'";
+        $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$id_cotizacion'";
         $res=query($sql, $con); $cam=mysql_fetch_assoc($res);
         $cam['id_cotizacion']=$id_cotizacion2; $id_cliente=$cam['id_cliente'];
         foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
         $vals=rtrim($vals, ",");
-        $sql="INSERT INTO cotizaciones(id_cotizacion,fecha,id_cliente,
+        $sql="INSERT INTO Cotizaciones(id_cotizacion,fecha,id_cliente,
         id_usuario,vigencia,no_partidas,divisa,subtotal,iva,total,t_entrega,
         c_pago,descuento,activo) VALUES($vals)"; $res=query($sql, $con);
           $vals='';
@@ -38,7 +38,7 @@
         $cam=mysql_fetch_assoc($res); $cam['id_cotizacion']=$id_cotizacion2;
         foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
         $vals=rtrim($vals, ",");
-        $sql="INSERT INTO datos_cotizacion(id_cotizacion,datos_cliente,
+        $sql="INSERT INTO Datos_Cotizacion(id_cotizacion,datos_cliente,
           datos_contacto,datos_vendedor) VALUES($vals)"; $res=query($sql, $con);
         $sql="SELECT * FROM partidas WHERE id_cotizacion='$id_cotizacion'";
         $res=query($sql, $con);
@@ -46,7 +46,7 @@
           $vals=''; $cam['id_cotizacion']=$id_cotizacion2;
           foreach($cam as $camp => $val) { $vals=$vals."'".$val."',"; }
           $vals=rtrim($vals, ",");
-          $sql="INSERT INTO partidas(no_partida,id_partida,id_cotizacion,
+          $sql="INSERT INTO Partidas(no_partida,id_partida,id_cotizacion,
             partida,cantidad,unidad,catalogo,descripcion,precio_uni,
             precio_total,sumable) VALUES($vals)"; $res1=query($sql, $con); }
         $sql="SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";

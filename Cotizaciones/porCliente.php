@@ -21,7 +21,7 @@
           while($cam1=mysql_fetch_array($res1)) {
             $id_cliente=$cam1['id_cliente'];
             foreach ($cam1 as $camp => $value) { ${$camp}=$value; }
-            $sql2="SELECT * FROM `Usuarios` WHERE id_usuario='$id_usuario'";
+            $sql2="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
             $res2=query($sql2, $con);
             $cam2=mysql_fetch_array($res2);
             $vendedor=$cam2['nombre'].' '.$cam2['apellido_p'];

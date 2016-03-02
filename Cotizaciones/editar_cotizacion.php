@@ -10,7 +10,7 @@
   $res=query($sql, $con);
   $cam=mysql_fetch_assoc($res);
   $id_cliente=$cam['id_cliente'];
-  $sql="SELECT empresa FROM Clientes WHERE id_num_cliente='$id_cliente'";
+  $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_cliente'";
   $res=query($sql, $con);
   $cam=mysql_fetch_assoc($res); $empresa=$cam['empresa'];
   $_SESSION['cotizacion']=$id_cotizacion;

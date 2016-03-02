@@ -12,10 +12,10 @@
 	else { $empresa=$_POST['empresa']; $_SESSION['empresa']=$empresa; }
   if(isset($_SESSION['cotizacion'])) {
     $cotizacion=$_SESSION['cotizacion'];
-    $sql="SELECT * FROM cotizaciones WHERE id_cotizacion='$cotizacion'";
+    $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$cotizacion'";
     $res=query($sql,$con);
     $cam=mysql_fetch_assoc($res); $id_cliente=$cam['id_cliente'];
-    $sql="SELECT * FROM clientes WHERE id_num_cliente='$id_cliente'";
+    $sql="SELECT * FROM Clientes WHERE id_num_cliente='$id_cliente'";
     $res=query($sql,$con);
     $cam=mysql_fetch_assoc($res); $empresa=$cam['empresa'];
   }

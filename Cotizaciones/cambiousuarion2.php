@@ -8,7 +8,7 @@
   $sql="UPDATE Usuarios SET nombre='$nombre', apellido_p='$apellido_p',
     apellido_m='$apellido_m', e_mail='$e_mail', permiso='$permiso' WHERE
     id_usuario='$usuario'"; $res=query($sql, $conexion);
-  $sql="UPDATE Log_in SET password='$password' WHERE id_usuario='$usuario'";
+  $sql="UPDATE Log_In SET password='$password' WHERE id_usuario='$usuario'";
   $res=query($sql, $conexion);
 ?>
 <script>

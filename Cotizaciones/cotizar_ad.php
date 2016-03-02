@@ -4,8 +4,7 @@
     if(!isset($_SESSION['usuario'])) header('Location: index.php');
     $con=conectar();
     $id_usuario=$_SESSION['usuario'];
-    $sql="SELECT empresa FROM Clientes";
-    $res=query($sql, $con);
+    $sql="SELECT * FROM Clientes"; $res=query($sql, $con);
     while($cam=mysql_fetch_array($res)) { $cont=1; }
     if($cont==1) {
   ?>

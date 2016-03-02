@@ -8,7 +8,7 @@
   $res=query($sql, $con);
   $cam=mysql_fetch_assoc($res);
   foreach ($cam as $camp => $value) { ${$camp}=$value; }
-  $sql="SELECT * FROM Log_in WHERE id_usuario='$id_usuario'";
+  $sql="SELECT * FROM Log_In WHERE id_usuario='$id_usuario'";
   $res=query($sql, $con);
   $cam=mysql_fetch_assoc($res); $password=$cam['password'];
 ?>

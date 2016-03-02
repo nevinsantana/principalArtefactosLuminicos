@@ -8,7 +8,7 @@
       $con=conectar();
       $id_usuario=$_SESSION['usuario'];
       $cont=0;
-      $sql="SELECT empresa FROM Clientes";
+      $sql="SELECT Empresa FROM Clientes";
       $res=query($sql, $con);
       while($cam=mysql_fetch_array($res)) { $cont=1; }
       if($cont==1) {
@@ -17,7 +17,7 @@
         <form action="cambiousuario.php" method="POST">
           <select id=cambioselect name=empresa>
             <?php
-              $sql="SELECT empresa FROM Clientes ORDER BY empresa";
+              $sql="SELECT Empresa FROM Clientes ORDER BY empresa";
               $res=query($sql, $con);
               while($cam=mysql_fetch_array($res)) {
                 echo '<option>'.$cam["empresa"];

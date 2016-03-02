@@ -263,8 +263,8 @@
                       </tr>
                     </thead>
                     <?php
-                      $sql="SELECT no_nota,descripcion FROM Notas WHERE
-                        id_cotizacion='$id_cotizacion'";
+                      $sql="SELECT * FROM Notas WHERE id_cotizacion=
+                        '$id_cotizacion'";
                       $res=query($sql, $con);
                       $i=1;
                       while($cam=mysql_fetch_array($res)) {

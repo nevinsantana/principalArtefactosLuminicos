@@ -3,7 +3,7 @@
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   include("funciones_mysql.php");
   $con=conectar(); $id_usuario=$_SESSION['usuario']; $cont=0;
-  $sql="SELECT FROM Clientes ";
+  $sql="SELECT * FROM Clientes";
   $res=query($sql, $con);
   while($cam=mysql_fetch_array($res)) { $cont=1; }
   if($cont==1) {

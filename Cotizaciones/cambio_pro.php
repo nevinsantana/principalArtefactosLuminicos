@@ -13,8 +13,7 @@
     <form action="cambioproducto.php" method="POST">
     <select id=cambioselect name=catalogo>
       <?php
-        $sql="SELECT * FROM Catalogo WHERE activo='1' ORDER BY
-          id_catalogo";
+        $sql="SELECT * FROM Catalogo WHERE activo='1' ORDER BY id_catalogo";
         $res=query($sql, $con);
         while($cam=mysql_fetch_array($res)) {
           echo '<option>'.$cam["id_catalogo"].'</option>';

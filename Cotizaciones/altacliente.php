@@ -14,11 +14,21 @@
     $sql="SELECT * FROM Contacto ORDER BY id_contacto ASC";
     $res=query($sql,$con);
     while($cam=mysql_fetch_row($res)) { $idCon=$cam[0] + 1; }
+    if(isset($_POST['usuario'])) {
     $sql="INSERT INTO Clientes(id_num_cliente,id_cliente,empresa,id_direccion,
       id_contacto,id_usuario,desactivado) VALUES('$idCli','$ac1','$ac2',
       '$idDir','$idCon','$id_user','0')";
     $res=query($sql,$con);
-    $sql="INSERT INTO Direcciones(id_direccion,calle,num_int,num_ext,
+    }
+    else {
+      /*$sql="INSERT INTO Clientes(id_num_cliente,id_cliente,empresa,id_direccion,
+        id_contacto,desactivado) VALUES('$idCli','$ac1','$ac2',
+        '$idDir','$idCon','0')";
+      $res=query($sql,$con);*/
+
+      echo "si funciona";
+    }
+    /*$sql="INSERT INTO Direcciones(id_direccion,calle,num_int,num_ext,
       municipio,estado,cp,colonia) VALUES('$idDir','$ac3','$ac4',
       '$ac5','$ac7','$ac8','$ac9','$ac6')";
     $res=query($sql,$con);
@@ -26,6 +36,6 @@
       telefono2,e_mail_c) VALUES('$idCon','$ac10','$ac11',
       '$ac12','$ac13','$ac14')";
     $res=query($sql,$con);
-    header("Location: administracion.php?altaCliente=true");
+    header("Location: administracion.php?altaCliente=true");*/
   }
 ?>

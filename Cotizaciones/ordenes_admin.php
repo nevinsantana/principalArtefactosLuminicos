@@ -41,7 +41,7 @@
           $id_cotizacion=$campo['id_cotizacion'];
           $fecha_o=$campo['fecha_o'];
           $fecha_eo=$campo['fecha_eo'];
-          $sql3="SELECT id_usuario FROM Cotizaciones WHERE
+          $sql3="SELECT * FROM Cotizaciones WHERE
             id_cotizacion='$id_cotizacion'";
           $resultado3=query($sql3, $conexion);
           $campo3=mysql_fetch_array($resultado3);

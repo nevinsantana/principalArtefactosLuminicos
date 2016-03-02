@@ -25,7 +25,7 @@
             $id_cotizacion=$cam1['id_cotizacion'];
             $id_usuario=$cam1['id_usuario'];
             $activo=$cam1['activo'];
-            $sql2="SELECT * FROM `Usuarios` WHERE id_usuario='$id_usuario'";
+            $sql2="SELECT * FROM Usuarios WHERE id_usuario='$id_usuario'";
             $resultado2=query($sql2, $conexion);
             $cam2=mysql_fetch_array($resultado2);
             $vendedor=$cam2['nombre'].' '.$cam2['apellido_p'];
