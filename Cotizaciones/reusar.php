@@ -40,7 +40,7 @@
         $vals=rtrim($vals, ",");
         $sql="INSERT INTO Datos_Cotizacion(id_cotizacion,datos_cliente,
           datos_contacto,datos_vendedor) VALUES($vals)"; $res=query($sql, $con);
-        $sql="SELECT * FROM partidas WHERE id_cotizacion='$id_cotizacion'";
+        $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'";
         $res=query($sql, $con);
         while($cam=mysql_fetch_assoc($res)) {
           $vals=''; $cam['id_cotizacion']=$id_cotizacion2;

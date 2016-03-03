@@ -81,7 +81,7 @@
   function Eliminar(id_cotizacion) {
     var r=confirm("Esta seguro que desea eliminar la cotizacion?");
     if(r==true) {
-      dire="eliminar_cotizacion.php?id_cotizacion=";
+      dire="php/funciones.php?resCot=el&id_cotizacion=";
       var union=dire.concat(id_cotizacion);
       window.location=union;
     }
