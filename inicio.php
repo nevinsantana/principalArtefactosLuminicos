@@ -32,35 +32,6 @@
       </ul>
     </section>
     <div class="break"></div>
-    <!--<section class="contenidoSection">
-      <div class="divIzq">
-      <div class="centraEnSection" id="prueba">
-        <div class="vista">
-          <img src="images/biblioteca.jpg" >
-          <div class="mascara"></div>
-          <div class="contenido">
-            <h2>Biblioteca de iluminación</h2>
-            <p>Principios básicos de la iluminación, niveles de iluminación recomendados en México...</p>
-            <a href="#" class="informacion" onclick="BibliotecaIlu()">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="divDer">
-      <div class="centraEnSection" id="prueba2">
-        <div class="vista">
-          <img src="images/superposte.jpg" >
-          <div class="mascara"></div>
-          <div class="contenido">
-            <h2>Superpostes</h2>
-            <p>Ideal para zonas amplias que requieran de una gran iluminación...</p>
-            <a href="#" class="informacion">Ver más</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-    <div class="break"></div>-->
     <div class="separaSection"></div>
     <section class="gifContainer">
         <a href="http://iluminacion.mex.tl/915364_Productos.html"
@@ -68,6 +39,7 @@
           <img src="images/index-alsa_31.gif" class="gifProductos"
             alt="Productos">
         </a>
-    </section>
+    </section>    
+    <script src="js/analytics.js"></script>
   </body>
 </html>

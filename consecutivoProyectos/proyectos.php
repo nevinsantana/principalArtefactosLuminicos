@@ -13,7 +13,7 @@
           <div class="dividerBar" onclick="showGeneral()">
             <i class="fa fa-dot-circle-o"></i><h1>General</h1>
           </div>
-          <form action="php/saver.php" method="POST" name="formNP">
+          <form action="php/saver.php?NP=true" method="POST" name="formNP">
           <div id="nPGeneral">
     				<span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
@@ -164,9 +164,7 @@
                   <th>acciones</th>
                 </tr>
               </thead>
-              <tbody>
-                <?php generaTablaPE(); ?>
-              </tbody>
+              <tbody><?php generaTablaPE(); ?></tbody>
             </table>
           </div>
         </div>

@@ -3,7 +3,7 @@
 <html lang="es-mx" class="no-js">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="html, css, php, javascript">
     <meta name="description" content="Sistema de consecutivo de proyectos">
     <meta name="author" content="Nevin Santana">
@@ -32,37 +32,34 @@
   					<ul>
   						<li class="go-back"><a href="#">Regresa</a></li>
               <?php if(!isset($_SESSION['user'])) { ?>
-  						<li><a href="#" onclick="login()">Iniciar sesión</a></li>
-              <?php } ?>
-              <?php if(isset($_SESSION['user'])) { ?>
-  						<li><a href="#" onclick="logout()">Cerrar sesión</a></li>
+  						  <li><a href="#" onclick="login()">Iniciar sesión</a></li>
+              <?php } if(isset($_SESSION['user'])) { ?>
+  						  <li><a href="#" onclick="logout()">Cerrar sesión</a></li>
               <?php } ?>
   						<li><a href="#" class="placeholder">Placeholder</a></li>
   					</ul>
   				</li>
-  			</ul> <!-- .cd-main-nav -->
-  		</nav> <!-- .cd-main-nav-wrapper -->
-
-  		<a href="#" class="cd-nav-trigger">Menu<span></span></a>
+  			</ul>
+  		</nav>
+  		<a href="#" class="cd-nav-trigger"><span>Menú</span></a>
   	</header>
-
   	<main class="cd-main-content" id="cd-main-content">
-      <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
+      <?php include 'php/verificaSec.php'; ?>
       <?php if(isset($_GET['errorLogin'])) { ?>
-      <div class="errorLogin rojo">
-        <p>Error, usuario y/o contraseña incorrectos.</p>
-      </div>
+        <div class="errorLogin rojo">
+          <p>Error, usuario y/o contraseña incorrectos.</p>
+        </div>
       <?php } ?>
       <?php if(isset($_GET['errorLogin2'])) { ?>
-      <div class="errorLogin rojo">
-        <p>Usuario desactivado, consulte a un administrador.</p>
-      </div>
+        <div class="errorLogin rojo">
+          <p>Usuario desactivado, consulte a un administrador.</p>
+        </div>
       <?php } ?>
       <div id="botonRegresar" class="cerrarSection noOpacity"
         onclick="cierraSection()">
         x
       </div>
-      <?php include 'php/menu.php'; ?><!--Contenido de la página-->
+      <?php include 'php/menu.php'; ?>
   	</main>
   <script src="js/modernizr.js"></script>
   <script src="../js/jquery.js"></script>
@@ -75,6 +72,5 @@
     src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.0/scrollreveal.min.js">
   </script>
   <script src="js/circleSelect/classie.js"></script>
-
   </body>
 </html>

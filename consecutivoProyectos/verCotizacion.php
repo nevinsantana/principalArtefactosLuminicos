@@ -5,22 +5,14 @@
         <article class="datosCotizacion">
           <?php generaDatosCotizacion(); ?>
         </article>
-        <article class="datosVenClien">
-          <?php generaDatosVenClien(); ?>
-        </article>
+        <article class="datosVenClien"><?php generaDatosVenClien(); ?></article>
       </output>
       <output class="colFormCotizacion partidasCotizacion">
         <table>
           <thead>
-            <tr>
-              <th>Partida</th>
-              <th>Cantidad</th>
-              <th>Catálogo</th>
-            </tr>
+            <tr><th>Partida</th><th>Cantidad</th><th>Catálogo</th></tr>
           </thead>
-          <tbody id="fbody">
-            <?php generaTablaPartidas(); ?>
-          </tbody>
+          <tbody id="fbody"><?php generaTablaPartidas(); ?></tbody>
         </table>
       </output>
     </section>

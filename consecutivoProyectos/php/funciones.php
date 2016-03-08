@@ -1,27 +1,19 @@
-<?php
-  session_start();
-?>
+<?php session_start(); ?>
 <!--fSesiones------------------------------------------------------------------>
-
 <!--conexiónDB----------------------------------------------------------------->
 <?php
   function conectar() {
-    $link = mysql_connect("localhost", "artes_cotizacion", "Cotizaciones_1209");
+    $li=mysql_connect("localhost", "artes_cotizacion", "Cotizaciones_1209");
     mysql_set_charset('utf8');
-    mysql_select_db("artes01_Cotizaciones", $link) OR DIE("Conexión no hecha");
-    return $link;
-  }
-
-  $conexion = conectar();
-
+    mysql_select_db("artes01_Cotizaciones", $li) OR DIE("Conexión no hecha");
+    return $li;
+  } $con=conectar();
   function query($sql, $con) {
-    $result = mysql_query($sql, $con);
-    return $result;
+    $res=mysql_query($sql, $con);
+    return $res;
   }
-
 ?>
 <!--fConexiónDB---------------------------------------------------------------->
-
 <!--verificaSesionTerminada---------------------------------------------------->
 <?php
   if(!isset($_SESSION['user'])) {
@@ -35,50 +27,34 @@
         else { header('Location: ?sec=login'); }
       }
     }
-  } /*Si sesion user no iniciado, evalua: si get sec==login evalua:
-      si get logout=true cambia url a ?sec=login. si get sec != login, cabia url
-      a ?sec=login*/
-
-
+  }
   if(isset($_GET['sec'])) { /*Para evitar mensaje de undefined sec*/
     if(isset($_SESSION['user']) && $_GET['sec'] == 'login') {
       if(isset($_GET['logout'])) {} else { header('Location: ?sec=principal'); }
     }
   } /*Si se quiere entrar a login normal cuando hay sesion iniciada, redirigirá
       a sec=principal*/
-
   function loginin() { //Realizada al presionar boton Entrar en login
     if(isset($_GET['loginin'])) {
-      global $conexion;
-      $_SESSION['user'] = $_POST['user']; //Inicia sesion
-      $user = $_SESSION['user'];
-      $pass = $_POST['pass'];
-      $userTest = 1; //Verificará autentificación de datos ingresados
-      $sql = "SELECT id_usuario, password FROM Log_In WHERE id_usuario = '$user'
-       and password = '$pass'";
-      $result = query($sql, $conexion);
-      $campo = mysql_fetch_array($result);
-      if ($campo['id_usuario'] == $user) { $userTest = $campo['id_usuario']; }
-      //Si usuario ingresado coincide, $userTest obtendrá ese valor
+      global $con;
+      $_SESSION['user']=$_POST['user']; $user=$_SESSION['user'];
+      $pass=$_POST['pass']; $userTest=1;
+      $sql="SELECT * FROM Log_In WHERE id_usuario='$user' and password='$pass'";
+      $res=query($sql, $con);
+      $cam=mysql_fetch_array($res);
+      if ($cam['id_usuario'] == $user) { $userTest=$cam['id_usuario']; }
       if ($userTest == 1) {
         session_destroy();
         header("Location: ?sec=login&errorLogin=true");
-      } //Si no, destruye sesión y manda error
+      }
       else {
-        ?>
-        <?php
         $sql= "SELECT * FROM Usuarios WHERE id_usuario='$userTest'";
-        $result = query($sql, $conexion);
-        $campo = mysql_fetch_array($result);
-        $permiso = $campo['permiso']; //Verifica permisos
-        $activo = $campo['activo']; //Verifica si el usuario está activo
-        $_SESSION['nUser'] = $campo['nombre']; //Nombre para index
-        if ($permiso == '1' && $activo == '1') {
-          $_SESSION['permiso'] = '1';
-        }
-        if ($permiso == '2' && $activo == '1') {
-          $_SESSION['permiso'] = '2';
-        }
+        $res=query($sql, $con);
+        $cam=mysql_fetch_array($res);
+        $permiso=$cam['permiso']; $activo=$cam['activo'];
+        $_SESSION['nUser']=$cam['nombre'];
+        if ($permiso == '1' && $activo == '1') { $_SESSION['permiso']='1'; }
+        if ($permiso == '2' && $activo == '1') { $_SESSION['permiso']='2'; }
         if ($activo == 0) {
           session_destroy();
           header("Location: ?sec=login&errorLogin2=true");
@@ -87,15 +63,8 @@
       } //Si todo esta bien, manda a principal
     }
   }
-?>
-<?php
-  if(isset($_SESSION['permiso'])) {
-    $logeado = 1;
-  }
-  else {
-    $logeado = 2;
-  }
-
+  if(isset($_SESSION['permiso'])) { $logeado=1; }
+  else { $logeado=2; }
   if(isset($_GET['cerrarSesion'])) { //Cierra sesión con botón
     setcookie (session_id(), "", time() - 3600);
     session_destroy();
@@ -104,43 +73,30 @@
   }
 ?>
 <!--fIndex.php----------------------------------------------------------------->
-
 <!--proyectos.php-------------------------------------------------------------->
 <?php
   if(isset($_POST['proyecto'])) {
-    function guardaForm() {
-      $np = array($_POST);
-      echo $np[0];
-    }
+    function guardaForm() { $np=array($_POST); echo $np[0]; }
   }
-  else {}
-
   function nProyecto() {
-    global $conexion;
-    $sql = "SELECT idProyecto FROM proyecto ORDER BY idProyecto DESC LIMIT 1";
-    $resultado = query($sql, $conexion);
-    $campo = mysql_fetch_row($resultado);
-    $idProyecto = $campo[0] + 1;
-
-    if ($idProyecto == "") {
-        $idProyecto = 1;
-    }
+    global $con;
+    $sql="SELECT * FROM proyecto ORDER BY idProyecto DESC LIMIT 1";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_row($res);
+    $idProyecto=$cam[0] + 1;
+    if ($idProyecto == "") { $idProyecto=1; }
     echo "Proyecto no. ".$idProyecto;
   }
-
-  function nomUsuario() {
-    echo $_SESSION['user'];
-  }
-
+  function nomUsuario() { echo $_SESSION['user']; }
   function generaTablaPE() {
-    global $conexion;
+    global $con;
     if($_SESSION['permiso'] == 1) {
-      $sql = "SELECT * FROM proyecto ORDER BY idProyecto DESC";
-      $resultado = query($sql, $conexion);
-      while ($campo = mysql_fetch_array($resultado)) {
-        $idPE = $campo['idProyecto'];
-        $fechaPE = $campo['fecha'];
-        $nombrePE = $campo['nombreProyecto'];
+      $sql="SELECT * FROM proyecto ORDER BY idProyecto DESC";
+      $res=query($sql, $con);
+      while ($cam=mysql_fetch_array($res)) {
+        $idPE=$cam['idProyecto'];
+        $fechaPE=$cam['fecha'];
+        $nombrePE=$cam['nombreProyecto'];
         ?>
         <tr><!--Genera contenido de la tabla-->
           <td><?php echo $idPE; ?></td>
@@ -159,14 +115,14 @@
       }
     }
     else {
-      $userPE = $_SESSION['user'];
-      $sql = "SELECT * FROM proyecto WHERE idUsuario = '$userPE'
+      $userPE=$_SESSION['user'];
+      $sql="SELECT * FROM proyecto WHERE idUsuario='$userPE'
         ORDER BY idProyecto DESC";
-      $resultado = query($sql, $conexion);
-      while ($campo = mysql_fetch_array($resultado)) {
-        $idPE = $campo['idProyecto'];
-        $fechaPE = $campo['fecha'];
-        $nombrePE = $campo['nombreProyecto'];
+      $res=query($sql, $con);
+      while ($cam=mysql_fetch_array($res)) {
+        $idPE=$cam['idProyecto'];
+        $fechaPE=$cam['fecha'];
+        $nombrePE=$cam['nombreProyecto'];
         ?>
         <tr>
           <td><?php echo $idPE; ?></td>
@@ -180,56 +136,48 @@
   }
 ?>
 <!--fProyectos.php------------------------------------------------------------->
-
 <!--gestionProyecto.php-------------------------------------------------------->
 <?php
-  function pGetIdProyecto() {
-    echo $_GET['idProyecto'];
-  }
-
+  function pGetIdProyecto() { echo $_GET['idProyecto']; }
   function generaNoPlano() {
-    $idProyecto = $_GET['idProyecto'];
-    global $conexion;
-    $sql = "SELECT idPlano FROM plano WHERE idProyecto = '$idProyecto'
-      ORDER BY idPlano DESC LIMIT 1";
-    $resultado = query($sql, $conexion);
-    $campo = mysql_fetch_row($resultado);
-    $idPlano = $campo[0] + 1;
-
-    if ($idPlano == "") {
-        $idPlano = 1;
-    }
+    $idProyecto=$_GET['idProyecto'];
+    global $con;
+    $sql="SELECT * FROM plano WHERE idProyecto='$idProyecto' ORDER BY idPlano
+      DESC LIMIT 1";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_row($res);
+    $idPlano=$cam[0] + 1;
+    if ($idPlano == "") { $idPlano=1; }
+    echo "<script>window.alert('hola');</script>";
     return $idPlano;
   }
 ?>
 <!--fGestionProyecto.php------------------------------------------------------->
-
 <!--cotizaciones.php----------------------------------------------------------->
 <?php
   function generaTablaCotizaciones() {
-    global $conexion;
+    global $con;
     if($_SESSION['permiso'] == 1) {
-      $sql = "SELECT * FROM `Cotizaciones` ORDER BY id_cotizacion DESC";
-      $resultado = query($sql, $conexion);
-      while ($campo = mysql_fetch_array($resultado)) {
-        $activo = $campo['activo'];
-        $noCotizacion = $campo['id_cotizacion'];
-        $fecha = $campo['fecha'];
-        $idCliente = $campo['id_cliente']; //Termina FROM Cotizaciones
-        $sql2="SELECT * FROM `Cotizaciones` WHERE
-          id_cotizacion = '$noCotizacion'";
-        $resultado3 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado3);
-        $idUsuario = $campo['id_usuario']; //Termina FROM Cotizaciones 2
-        $sql2 = "SELECT * FROM `Usuarios` WHERE id_usuario = '$idUsuario'";
-        $resultado0 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado0);
-        $vendedor = $campo['nombre'] . ' ' . $campo['apellido_p'];
-        $sql2 = "SELECT * FROM `Clientes` WHERE id_num_cliente = '$idCliente'";
-        $resultado2 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado2);
-        $empresa = $campo['empresa']; //Termina FROM Clientes
-        ?>
+      $sql="SELECT * FROM Cotizaciones ORDER BY id_cotizacion DESC";
+      $res=query($sql, $con);
+      while ($cam=mysql_fetch_array($res)) {
+        $activo=$cam['activo'];
+        $noCotizacion=$cam['id_cotizacion'];
+        $fecha=$cam['fecha'];
+        $idCliente=$cam['id_cliente']; //Termina FROM Cotizaciones
+        $sql2="SELECT * FROM Cotizaciones WHERE id_cotizacion='$noCotizacion'";
+        $res3=query($sql2, $con);
+        $cam=mysql_fetch_array($res3);
+        $idUsuario=$cam['id_usuario']; //Termina FROM Cotizaciones 2
+        $sql2="SELECT * FROM Usuarios WHERE id_usuario='$idUsuario'";
+        $res0=query($sql2, $con);
+        $cam=mysql_fetch_array($res0);
+        $vendedor=$cam['nombre'] . ' ' . $cam['apellido_p'];
+        $sql2="SELECT * FROM Clientes WHERE id_num_cliente='$idCliente'";
+        $res2=query($sql2, $con);
+        $cam=mysql_fetch_array($res2);
+        $empresa=$cam['empresa']; //Termina FROM Clientes
+?>
         <tr><!--Gerena contenido de la tabla-->
           <td><?php echo $noCotizacion; ?></td>
           <td><?php echo $fecha; ?></td>
@@ -248,28 +196,27 @@
       }
     }
     else {
-      $sesionUsuario = $_SESSION['user'];
-      $sql = "SELECT * FROM `Cotizaciones` WHERE id_usuario = '$sesionUsuario'
+      $sesionUsuario=$_SESSION['user'];
+      $sql="SELECT * FROM Cotizaciones WHERE id_usuario='$sesionUsuario'
         ORDER BY id_cotizacion DESC";
-      $resultado = query($sql, $conexion);
-      while ($campo = mysql_fetch_array($resultado)) {
-        $activo = $campo['activo'];
-        $noCotizacion = $campo['id_cotizacion'];
-        $fecha = $campo['fecha'];
-        $idCliente = $campo['id_cliente']; //Termina FROM Cotizaciones
-        $sql2="SELECT * FROM `Cotizaciones` WHERE
-          id_cotizacion = '$noCotizacion'";
-        $resultado3 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado3);
-        $idUsuario = $campo['id_usuario']; //Termina FROM Cotizaciones 2
-        $sql2 = "SELECT * FROM `Usuarios` WHERE id_usuario = '$idUsuario'";
-        $resultado0 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado0);
-        $vendedor = $campo['nombre'] . ' ' . $campo['apellido_p'];
-        $sql2 = "SELECT * FROM `Clientes` WHERE id_num_cliente = '$idCliente'";
-        $resultado2 = query($sql2, $conexion);
-        $campo = mysql_fetch_array($resultado2);
-        $empresa = $campo['empresa']; //Termina FROM Clientes
+      $res=query($sql, $con);
+      while ($cam=mysql_fetch_array($res)) {
+        $activo=$cam['activo'];
+        $noCotizacion=$cam['id_cotizacion'];
+        $fecha=$cam['fecha'];
+        $idCliente=$cam['id_cliente']; //Termina FROM Cotizaciones
+        $sql2="SELECT * FROM Cotizaciones WHERE id_cotizacion='$noCotizacion'";
+        $res3=query($sql2, $con);
+        $cam=mysql_fetch_array($res3);
+        $idUsuario=$cam['id_usuario']; //Termina FROM Cotizaciones 2
+        $sql2="SELECT * FROM Usuarios WHERE id_usuario='$idUsuario'";
+        $res0=query($sql2, $con);
+        $cam=mysql_fetch_array($res0);
+        $vendedor=$cam['nombre'] . ' ' . $cam['apellido_p'];
+        $sql2="SELECT * FROM Clientes WHERE id_num_cliente='$idCliente'";
+        $res2=query($sql2, $con);
+        $cam=mysql_fetch_array($res2);
+        $empresa=$cam['empresa']; //Termina FROM Clientes
         ?>
         <tr>
           <td><?php echo $noCotizacion; ?></td>
@@ -289,19 +236,18 @@
   }
 ?>
 <!--fCotizaciones.php---------------------------------------------------------->
-
 <!--verCotizacion.php---------------------------------------------------------->
 <?php
   function generaDatosCotizacion() {
-    global $conexion;
-    $idCotizacion = $_GET['cotizacion'];
-    $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion = '$idCotizacion'";
-    $result = query($sql, $conexion);
-    $campo = mysql_fetch_array($result);
-    $idCotizacion = $campo['id_cotizacion'];
-    $fecha = $campo['fecha'];
-    $vigencia = $campo['vigencia'];
-    $noPartidas = $campo['no_partidas'];
+    global $con;
+    $idCotizacion=$_GET['cotizacion'];
+    $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$idCotizacion'";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_array($res);
+    $idCotizacion=$cam['id_cotizacion'];
+    $fecha=$cam['fecha'];
+    $vigencia=$cam['vigencia'];
+    $noPartidas=$cam['no_partidas'];
     ?>
     <h3>No Cotizacion:</h3>
     <span class="noCotizacion"><?php echo $idCotizacion; ?></span>
@@ -316,20 +262,19 @@
     <span><?php echo $noPartidas; ?></span>
     <?php
   }
-
   function generaDatosVenClien() {
-    global $conexion;
-    $idCotizacion = $_GET['cotizacion'];
-    $sql = "SELECT * FROM Cotizaciones WHERE id_cotizacion = '$idCotizacion'";
-    $result = query($sql, $conexion);
-    $campo = mysql_fetch_array($result);
-    $idCliente = $campo['id_cliente']; //TerminaCotizaciones
-    $sql = "SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$idCotizacion'";
-    $result = query($sql, $conexion);
-    $campo = mysql_fetch_array($result);
-    $dCliente = $campo['datos_cliente'];
-    $dContacto = $campo['datos_contacto'];
-    $dVendedor = $campo['datos_vendedor'];
+    global $con;
+    $idCotizacion=$_GET['cotizacion'];
+    $sql="SELECT * FROM Cotizaciones WHERE id_cotizacion='$idCotizacion'";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_array($res);
+    $idCliente=$cam['id_cliente']; //TerminaCotizaciones
+    $sql="SELECT * FROM Datos_Cotizacion WHERE id_cotizacion='$idCotizacion'";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_array($res);
+    $dCliente=$cam['datos_cliente'];
+    $dContacto=$cam['datos_contacto'];
+    $dVendedor=$cam['datos_vendedor'];
     ?>
     <h3>Cliente:</h3>
     <span><?php echo $dCliente; ?></span>
@@ -342,17 +287,16 @@
     <div class="break space20px"></div>
     <?php
   }
-
   function generaTablaPartidas() {
-    global $conexion;
-    $idCotizacion = $_GET['cotizacion'];
-    $sql = "SELECT * FROM Partidas WHERE id_cotizacion = '$idCotizacion'
-      ORDER BY no_partida ASC";
-    $resultado = query($sql, $conexion);
-    while ($campo = mysql_fetch_array($resultado)) {
-      $partida = $campo['no_partida'];
-      $cantidad = $campo['cantidad'];
-      $catalogo = $campo['catalogo'];
+    global $con;
+    $idCotizacion=$_GET['cotizacion'];
+    $sql="SELECT * FROM Partidas WHERE id_cotizacion='$idCotizacion' ORDER BY
+      no_partida ASC";
+    $res=query($sql, $con);
+    while ($cam=mysql_fetch_array($res)) {
+      $partida=$cam['no_partida'];
+      $cantidad=$cam['cantidad'];
+      $catalogo=$cam['catalogo'];
       ?>
       <tr>
         <td><?php echo $partida; ?></td>
@@ -364,14 +308,12 @@
   }
 ?>
 <!--fVerCotizacion.php--------------------------------------------------------->
-
 <!--index.php------------------------------------------------------------------>
 <script>
-  var logeado = <?php echo $logeado; ?>;
+  var logeado=<?php echo $logeado; ?>;
   if(logeado == 1) {
-    var user = "<?php if(isset($_SESSION['nUser']))echo $_SESSION['nUser'];?>";
+    var user="<?php if(isset($_SESSION['nUser']))echo $_SESSION['nUser'];?>";
   } //Para mostrar nombre en header
 </script>
 <!--fIndex.php----------------------------------------------------------------->
-
   <!--end-------------------------------------------------------------------->

@@ -45,5 +45,6 @@
         pagos@artefactosluminicos.com.mx
       </p>
     </section>
+    <script src="js/analytics.js"></script>
   </body>
 </html>

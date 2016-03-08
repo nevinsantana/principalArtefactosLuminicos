@@ -16,5 +16,6 @@
         </p>
       </div>
     </section>
+    <script src="js/analytics.js"></script>
   </body>
 </html>

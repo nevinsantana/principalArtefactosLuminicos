@@ -72,6 +72,7 @@
           </p>
         </dd>
       </dl>
-    </section>    
+    </section>
+    <script src="js/analytics.js"></script>
   </body>
 </html>

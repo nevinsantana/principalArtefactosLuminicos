@@ -98,5 +98,6 @@
 
 </form>
 </div>
+<script src="js/analytics.js"></script>
 </body>
 </html>
