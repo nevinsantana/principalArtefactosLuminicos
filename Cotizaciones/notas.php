@@ -34,7 +34,7 @@
             $siguiente=1;
             $sql="SELECT * FROM Notas WHERE id_cotizacion='$id_cotizacion'";
             $res=query($sql, $con);
-            while($cam=mysql_fetch_array($res)) {
+            while($cam=mysql_fetch_assoc($res)) {
               echo "<tr>
                 <td align='center'>".$siguiente."</td>
                 <td>".$cam['descripcion']."</td>

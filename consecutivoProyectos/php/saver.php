@@ -60,44 +60,27 @@ function proyectoNP() {
 }
 /*fProyectos.php***************************************************************/
 /*gestionProyecto.php**********************************************************/
-/*if(isset($_GET['plano'])) {
-  $idProyecto=$_GET['idProyecto'];
+if(isset($_GET['plano'])) {
   global $con;
-  $sql="SELECT * FROM plano WHERE idProyecto='$idProyecto' ORDER BY idPlano DESC
-    LIMIT 1";
-  $res=query($sql, $con);
-  $cam=mysql_fetch_row($res);
-  $idPlano=$cam[0] + 1;
-  if ($idPlano == "") { $idPlano=1; }
-  $user=$_SESSION['user'];
-  if(isset($idPlano)) {
-    if(isset($_POST['tipoPlano'])) { $tipoPlano=$_POST['tipoPlano']; }
-    else { $tipoPlano="";}
-    if(isset($_POST['nivelRec'])) { $nivelRec=$_POST['nivelRec']; }
-    else { $nivelRec="";}
-    if(isset($_POST['ancho'])) { $ancho=$_POST['ancho']; }
-    else { $ancho="";}
-    if(isset($_POST['altura'])) { $altura=$_POST['altura']; }
-    else { $altura="";}
-    if(isset($_POST['anchoCamellon'])) { $anchoCamellon=$_POST['anchoCamellon']; }
-    else { $anchoCamellon="";}
-    if(isset($_POST['anchoAvenida'])) { $anchoAvenida=$_POST['anchoAvenida']; }
-    else { $anchoAvenida="";}
-    if(isset($_POST['distanciaInterpostal'])) {
-      $distanciaInterpostal=$_POST['distanciaInterpostal'];
-    }
-    else { $distanciaInterpostal="";}
-    if(isset($_POST['largo'])) { $largo=$_POST['largo']; }
-    else { $largo="";}
-    $sql="INSERT INTO plano (idPlano, idProyecto, tipoPlano, nivelRec,
-    ancho, altura, anchoCamellon, anchoAvenida, distanciaInterpostal, largo)
-    VALUES ('$idPlano','$idProyecto','$tipoPlano','$nivelRec',
-      '$ancho','$altura','$anchoCamellon','$anchoAvenida','$distanciaInterpostal','$largo')";
-    $res=query($sql, $con);
+  $idProy=$_GET['idProyecto']; $plano=$_GET['plano']; $user=$_SESSION['user'];
+  foreach($_POST as $cam => $val) {
+    if(isset($cam)) ${$cam}=$val; else ${$cam}="";
   }
-  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto=11');
+  $sql="INSERT INTO plano (idPlano, idProyecto, tipoPlano, nivelRec,
+  ancho, altura, anchoCamellon, anchoAvenida, distanciaInterpostal, largo)
+  VALUES ('$plano','$idProy','$tipoPlano','$nivelRecomendado','$ancho','$alto',
+    '$anCame','$anAve','$disIn', '$largo')";
+  $res=query($sql, $con);
+  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto='
+    .$idProy);
 }
-else { header('Location: ../?sec=login'); }*/
-/*fGestionProyecto.php*********************************************************/
-  /*end*********************************************************************/
+if(isset($_GET['aLum'])) aLum(); function aLum() {
+  global $con;
+  foreach($_GET as $cam => $val) { ${$cam}=$val; }
+  $sql="INSERT INTO luminario VALUES ('$lum','$plan','$proy','$catLum','$watts',
+    '$lumens','$fDep','$aMont','$aPTra','$tMont','$lBra','$tilt')";
+  $res=query($sql,$con);
+  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto='
+    .$proy);
+}
 ?>

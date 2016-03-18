@@ -32,18 +32,21 @@ idIconoModificarCliente=document.getElementById('iconoModificarCliente'),
 idIconoListaClientes=document.getElementById('iconoListClientes'),
 idBotonRegresar=document.getElementById('botonRegresar'),
 idGuardaNP=document.getElementById('guardaNP'),
-idGuardaPlano=document.getElementById('guardaPlano');
+idGuardaPlano=document.getElementById('guardaPlano'),
+idGuardaLum=document.getElementById('guardaLum');
 /*fGlobalVariables*************************************************************/
 /*global***********************************************************************/
-var width=(document.body.clientWidth);
+var width=(document.body.clientWidth), prin=getUrlVars()['sec'];
+if(prin=="proyectos") {
 if(width<500 && /Android|webOS|iPhone|iPad|iPod|/i.test(navigator.userAgent)) {
   idTituloNuevoProyecto.style.fontSize="22px";
   idTituloProyectosExistentes.style.fontSize="22px";
   idIconoNuevoProyecto.style.marginLeft="43%";
   idIconoProyectosExistentes.style.marginLeft="43%";
 }
+}
 var prin=getUrlVars()['sec'];
-if(prin=="" || prin=="principal"){} else {
+if(prin=="proyectos") {
   var heightIcono=idIconoNuevoProyecto.offsetWidth;
   idIconoNuevoProyecto.style.height=heightIcono + "px";
   idIconoProyectosExistentes.style.height=heightIcono + "px";
@@ -113,10 +116,10 @@ if(prin=="" || prin=="principal"){} else {
 /*fCircleSelect****************************************************************/
 /*index.php********************************************************************/
 function onresizeAnimaciones() {
-  normalSectionElements();
+  var sec=getUrlVars()['sec'];
+  if(sec!="gestionProyecto") { normalSectionElements(); ajustaHeight(); }
   normalAbreNP();
   normalAbrePE();
-  ajustaHeight();
 }
 function normalSectionElements() {
   var width=(document.body.clientWidth);
@@ -482,6 +485,13 @@ function cierraCrearGP() {
   document.getElementById('creaPlano').style.zIndex="-9999";
   document.getElementById('creaPlano').style.opacity="0";
 }
+function cierraCrearGL() {
+  document.getElementById('editaProyecto').style.opacity="1";
+  document.getElementById('cd-main-content').style.background="default";
+  document.getElementById('cd-main-content').disabled="false";
+  document.getElementById('creaLum').style.zIndex="-9999";
+  document.getElementById('creaLum').style.opacity="0";
+}
 function cambiaGuardarPlano() {
 	idGuardaPlano.style.background="#64c273";
   idGuardaPlano.style.cursor="pointer";
@@ -489,8 +499,106 @@ function cambiaGuardarPlano() {
   idGuardaPlano.setAttribute("onClick", "this.parentNode.submit();");
   document.getElementById("iconoBotonNP").
     setAttribute("class", "fa fa-floppy-o");
+  desactivaInputsPlano();
 	return false;
 }
+function cambiaGuardarLum() {
+  var catLum=document.getElementById('catLum').value;
+  if($.trim( $('#catLum').val())=='') {
+    idGuardaLum.style.background="#c14545";
+    idGuardaLum.style.cursor="default";
+    document.getElementById("textoBotonNL").innerHTML="Inserte un catálogo";
+    idGuardaLum.setAttribute("onClick", "");
+    document.getElementById("iconoBotonNL").
+      setAttribute("class", "fa fa-ban fa-stack-2x text-danger");
+  }
+  else {
+    idGuardaLum.style.background="#64c273";
+    idGuardaLum.style.cursor="pointer";
+    document.getElementById("textoBotonNL").innerHTML="Guardar luminario";
+    //idGuardaLum.setAttribute("onClick", "this.parentNode.submit();");
+    document.getElementById("iconoBotonNL").
+      setAttribute("class", "fa fa-floppy-o");
+  }
+	return false;
+}
+function actNoLum() {
+  $("#lumNo").prop('disabled', false);
+}
+function desactivaInputsPlano() {
+  var e=document.getElementById("tPla"), val=e.options[e.selectedIndex].value,
+  aCa=document.getElementById("aCa"), aAv=document.getElementById("aAv"),
+  dIn=document.getElementById("dIn"), nRe=document.getElementById("nRe"),
+  anc=document.getElementById("anc"), lar=document.getElementById("lar"),
+  alt=document.getElementById("alt");
+  aCa.style.display="none"; aAv.style.display="none"; dIn.style.display="none";
+  nRe.style.display="none"; anc.style.display="none"; lar.style.display="none";
+  alt.style.display="none";
+  if(val==1) {
+    nRe.style.display="inline-block";
+    anc.style.display="inline-block";
+    lar.style.display="inline-block";
+    alt.style.display="inline-block";
+  }
+  if(val==2) {
+    nRe.style.display="inline-block";
+    anc.style.display="inline-block";
+    lar.style.display="inline-block";
+    dIn.style.display="inline-block";
+  }
+  if(val==3) {
+    nRe.style.display="inline-block";
+    anc.style.display="inline-block";
+    lar.style.display="inline-block";
+    aCa.style.display="inline-block";
+    aAv.style.display="inline-block";
+    dIn.style.display="inline-block";
+  }
+}
+function bPlano(idPlano) {
+  document.getElementById('editaProyecto').style.opacity="0.2";
+  document.getElementById('cd-main-content').style.background="black";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElPlano').style.zIndex="9999";
+  document.getElementById('pElPlano').style.opacity="1";
+  document.getElementById('advPlano').innerHTML=
+    "De verdad desea eliminar el plano ";
+  document.getElementById('bNoPlano').innerHTML=idPlano;
+}
+function dPlano(proy) {
+  var plan=document.getElementById('bNoPlano').innerHTML;
+  location.href="php/funciones.php?proy="+proy+"&plano="+plan+"&bPlano=true";
+}
+function cBPlano() {
+  document.getElementById('editaProyecto').style.opacity="1";
+  document.getElementById('cd-main-content').style.background="white";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElPlano').style.zIndex="-9999";
+  document.getElementById('pElPlano').style.opacity="0";
+  document.getElementById('advPlano').innerHTML="";
+}
+function aLum(plan, lum) {
+  document.getElementById('editaProyecto').style.opacity="0.2";
+  document.getElementById('cd-main-content').style.background="black";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('creaLum').style.zIndex="9999";
+  document.getElementById('creaLum').style.opacity="1";
+  document.getElementById('planNo').value=plan;
+  document.getElementById('lumNo').value=lum;
+}
+function gLumF(proy) {
+  var plan=document.getElementById('planNo').value,
+  lum=document.getElementById('lumNo').value,
+  catLum=document.getElementById('catLum').value,
+  watts=document.getElementById('watts').value,
+  lumens=document.getElementById('lumens').value,
+  fDep=document.getElementById('fDep').value,
+  aMont=document.getElementById('aMont').value,
+  aPTra=document.getElementById('aPTra').value,
+  tMont=document.getElementById('tMont').value,
+  lBra=document.getElementById('lBra').value,
+  tilt=document.getElementById('tilt').value;
+  location.href="php/saver.php?proy="+proy+"&plan="+plan+"&lum="+lum+"&catLum="+catLum+"&watts="+watts+"&lumens="+lumens+"&fDep="+fDep+"&aMont="+aMont+"&aPTra="+aPTra+"&tMont="+tMont+"&lBra="+lBra+"&tilt="+tilt+"&aLum=true";
+}
 /*fGestionProyecto.php*********************************************************/
-
   /*end**********************************************************************/

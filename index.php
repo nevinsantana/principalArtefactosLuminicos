@@ -142,7 +142,6 @@
         </div>
       </footer>
     </div>
-    <!---->
     <script src="js/jquery.js"></script>
     <script src="js/acciones.js"></script>
     <script src="js/animaciones.js"></script>

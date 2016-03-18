@@ -18,7 +18,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav,
 section, main { display: block; }
 
-body { line-height: 1; height: 100%; }
+body { line-height: 1; height: 100%; transition: opacity 0.3s; }
 
 ol, ul { list-style: none; }
 
@@ -42,6 +42,12 @@ input:focus, button:focus { outline: none; }
 .space20px { height: 20px }
 
 .centrar { margin: inherit auto; }
+
+.izq { float: left; }
+
+.der { float: right; }
+
+.poin { cursor: pointer; }
 /*fReset***********************************************************************/
 /*fonts************************************************************************/
 /*quicksand*/
@@ -357,13 +363,13 @@ div.cs-skin-circular {
 	z-index: 1;
 	display: inline-block;
 	margin: 10px 0;
-	width: 32.9%;
+	width: 31%;
 	vertical-align: top;
 	transition: 0.5s;
 	border-radius: 10px;
 }
 
-@media only screen and (max-width: 1125px) { .input { width: 49.5%; } }
+@media only screen and (max-width: 1125px) { .input { width: 45%; } }
 
 @media only screen and (max-width: 700px) { .input { width: 100%;	} }
 
@@ -415,11 +421,29 @@ div.cs-skin-circular {
 
 .input--kohana { overflow: hidden; background: #fff; }
 
+.input--kohana-eProyecto { overflow: hidden; background: #c2bfa2; }
+
 .input__field--kohana {
 	width: 100%;
 	background: transparent;
 	padding-left: 40px;
 	color: #6a7989;
+	font-weight: bold;
+}
+
+.input__field--kohana-eProyecto {
+	width: 100%;
+	background: transparent;
+	padding-left: 40px;
+	color: #706b32;
+	font-weight: bold;
+}
+
+.input__field--kohana-ePlano {
+	width: 100%;
+	background: transparent;
+	padding-left: 40px;
+	color: #192d38;
 	font-weight: bold;
 }
 
@@ -501,8 +525,8 @@ div.cs-skin-circular {
 	transform: translate3d(0, 0, 0);
 }
 
-.input__field--kohana:focus + .input__label--kohana-eProyecto .icon--kohana-eProyecto,
-.input--filled  .icon--kohana-eProyecto {
+.input__field--kohana:focus + .input__label--kohana-eProyecto
+.icon--kohana-eProyecto, .input--filled  .icon--kohana-eProyecto {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
@@ -1569,16 +1593,10 @@ header::before { display: none; content: 'mobile'; }
 
 .tablaPE tbody tr:hover { opacity: 0.8; transition: 0.1s; }
 
-.tablaPE tbody tr td:last-child span:first-child {
-	float: left;
+.tablaPE tbody tr td:last-child span {
 	margin-left: 10%;
+	text-align: center;
 }
-
-.tablaPE tbody tr td:last-child span:last-child {
-	float: right;
-	margin-right: 10%;
-}
-
 .tablaPE tbody tr td:last-child span:first-child:hover {
 	color: #4a0000;
 	transition: 0.2s;
@@ -1599,10 +1617,15 @@ div.editaProyecto {
 	transition: opacity 0.2s;
 }
 
-div.editaProyecto, div.editaPlano, div.editaLuminario {
+div.editaProyecto, div.editaPlano {
 	background-color: #cfccaf;
 	padding: 3%;
 }
+
+div.editaLuminario {
+	background-color: none;
+	padding: 2%;
+	}
 
 hr.hrProyecto {
 	border: none;
@@ -1653,7 +1676,7 @@ hr.hrLuminario {
 
 
 hr.hrLuminario:after {
-	content: 'Luminario';
+	content: 'Luminarios';
 	font-weight: bold;
 	display: inline-block;
 	position: relative;
@@ -1662,6 +1685,7 @@ hr.hrLuminario:after {
 	background: #cfccaf;
 	color: #5d5b44;
 	font-size: 18px;
+	border-radius: 10px;
 }
 
 hr.hrCreaPlano {
@@ -1671,7 +1695,7 @@ hr.hrCreaPlano {
 	text-align: center;
 }
 
-hr.hrCreaPlano:after {
+hr.hrCreaPlano:after, hr.hrCreaLum:after {
 	content: 'Nuevo plano';
 	font-weight: bold;
 	display: inline-block;
@@ -1682,6 +1706,15 @@ hr.hrCreaPlano:after {
 	color: #5d5b44;
 	font-size: 18px;
 }
+
+hr.hrCreaLum {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+}
+
+hr.hrCreaLum:after { content: 'Nuevo luminario'; }
 
 .cuadroPrueba { width: 100%; height: 500px; border: 1px solid green; }
 
@@ -1694,7 +1727,16 @@ hr.hrCreaPlano:after {
 	color: #395013;
 }
 
-.creaPlano {
+.botonGuardaTodo {
+	width: 100%;
+	padding: 5px;
+	border-radius: 10px;
+	background: #5d5b44;
+	font-size: 20px;
+	color: #cfccaf;
+}
+
+.creaPlano, .creaLum {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -1713,9 +1755,94 @@ hr.hrCreaPlano:after {
 	overflow: auto;
 }
 
+.pElPlano {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+	background: #33414a;
+	width: 60%;
+	height: 250px;
+  top: 30%;
+  transform: translateY(-30%);
+	border-radius: 10px;
+	padding: 3%;
+	z-index: -9999;
+	opacity: 0;
+	transition: opacity 0.5s;
+	font-size: 20px;
+	color: #ced2d4;
+	text-align: center;
+}
+
+.creaLuminario {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #e9e9e9;
+	width: 80%;
+	height: 50%;
+  top: 80%;
+  transform: translateY(-80%);
+	border-radius: 30px 0 0 30px;
+	padding: 3%;
+	z-index: -9999;
+	opacity: 0;
+	transition: opacity 0.5s;
+	overflow: auto;
+}
+
+table tr:nth-child(odd) {
+	background: #4E2646;
+}
+
+table tr:nth-child(even) {
+	background: yellow;
+}
+
 .centrarCS { margin: auto; overflow: auto; }
 
 .cierraCrearGP { float: right; position: fixed; top: -15px; cursor: pointer; }
+
+.disabled { display: none; }
+
+.sPlano1, .sPlano2, .sPlano3 {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 1%;
+}
+
+.sPlano1 { background: #53afb3; }
+
+.sPlano2 { background: #d64444; }
+
+.sPlano3 { background: #e8b220; }
+
+.taPlano { position: relative; float: right; right: 5%; cursor: pointer; }
+
+.palTa { width: 100%; height: 10px; padding: 80px 30%; }
+
+#aNota {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 10%;
+	background: #5d5b44;
+	color: #c2bfa2;
+	text-align: center;
+	cursor: pointer;
+}
+
+.vCIcon {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
 /*fGestionProyecto.php*********************************************************/
 /*clientes.php*****************************************************************/
 /*fClientes.php****************************************************************/

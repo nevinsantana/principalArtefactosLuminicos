@@ -103,9 +103,6 @@
           <td><?php echo $fechaPE; ?></td>
           <td><?php echo $nombrePE; ?></td>
           <td>
-            <span onclick="gestionProyecto(<?php echo $idPE; ?>, 'ver')">
-              ver
-            </span>
             <span onclick="gestionProyecto(<?php echo $idPE; ?>, 'editar')">
               editar
             </span>
@@ -138,7 +135,19 @@
 <!--fProyectos.php------------------------------------------------------------->
 <!--gestionProyecto.php-------------------------------------------------------->
 <?php
-  function pGetIdProyecto() { echo $_GET['idProyecto']; }
+  function pGetIdProyecto() {
+    if(isset($_GET['idProyecto'])) {
+      $cam=gDatosProyecto($_GET['idProyecto']);
+    }
+    return $cam;
+  }
+  function gDatosProyecto($idP) {
+    global $con;
+    $sql="SELECT * FROM proyecto WHERE idProyecto=$idP";
+    $res=query($sql,$con);
+    $cam=mysql_fetch_assoc($res);
+    return $cam;
+  }
   function generaNoPlano() {
     $idProyecto=$_GET['idProyecto'];
     global $con;
@@ -148,8 +157,248 @@
     $cam=mysql_fetch_row($res);
     $idPlano=$cam[0] + 1;
     if ($idPlano == "") { $idPlano=1; }
-    echo "<script>window.alert('hola');</script>";
     return $idPlano;
+  }
+  function generaPlanos($idProy) {
+    global $con;
+    $sql="SELECT * FROM plano WHERE idProyecto='$idProy'";
+    $res=query($sql,$con);
+    while($cam=mysql_fetch_assoc($res)) {
+      foreach($cam as $camp => $val) { ${$camp}=$val; }
+      echo "<section class='sPlano$tipoPlano'><div class='headerContainer'>";
+      if($tipoPlano==1) echo "<img src='img/1.png'>";
+      if($tipoPlano==2) echo "<img src='img/2.png'>";
+      if($tipoPlano==3) echo "<img src='img/3.png'>";
+      echo "
+      <div class='taPlano' onclick='bPlano($idPlano);'>
+        <span class='fa-stack fa-lg'>
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-times fa-stack-1x fa-inverse'></i>
+        </span>
+      </div>
+      </div>
+      <span class='input input--kohana-eProyecto'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          value='$idPlano' title='No de plano' disabled>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-object-group icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            No plano
+          </span>
+        </label>
+      </span>
+      <span class='input input--kohana-eProyecto' id='nRe'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='nivelRecomendado' value='$nivelRec' title='Nivel recomendado'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-list-ol icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Nivel recomendado
+          </span>
+        </label>
+      </span>
+      <span class='input input--kohana-eProyecto' id='anc'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='ancho' value='$ancho' title='Ancho'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-arrows-h icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Ancho
+          </span>
+        </label>
+      </span>
+      <span class='input input--kohana-eProyecto' id='lar'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='largo' value='$largo' title='Largo'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-long-arrow-right icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Largo
+          </span>
+        </label>
+      </span>
+      ";
+      if($tipoPlano==1){
+      echo "
+      <span class='input input--kohana-eProyecto' id='alt'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='alto' value='$altura' title='Alto'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-long-arrow-up icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Alto
+          </span>
+        </label>
+      </span>
+      "; }
+      if($tipoPlano==3){
+      echo "
+      <span class='input input--kohana-eProyecto' id='aCa'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='anCame' value='$anchoCamellon' title='Ancho de camellón'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-sort-numeric-asc icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Ancho de camellón
+          </span>
+        </label>
+      </span>
+      <span class='input input--kohana-eProyecto' id='aAv'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='anAve' value='$anchoAvenida' title='Ancho de avenida'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-road icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Ancho de avenida
+          </span>
+        </label>
+      </span>
+      "; }
+      if($tipoPlano!=1){
+      echo "
+      <span class='input input--kohana-eProyecto' id='dIn'>
+        <input class='input__field input__field--kohana-eProyecto' type='text'
+          name='disIn' value='$distanciaInterpostal' title='Distancia interpostal'>
+        <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+          <i class='fa fa-fw fa-random icon icon--kohana-eProyecto'></i>
+          <span class='input__label-content input__label-content--kohana'>
+            Distancia interpostal
+          </span>
+        </label>
+      </span>
+      ";}
+      $sql="SELECT * FROM luminario WHERE idProyecto='$idProy' AND
+        idPlano='$idPlano' ORDER BY idLuminario DESC LIMIT 1";
+      $res1=query($sql, $con); $cam=mysql_fetch_row($res1); $idLum=$cam[0] + 1;
+      if($idLum=="") { $idLum=1; }
+      echo '
+      <div class="editaLuminario">
+        <hr class="hrLuminario">';
+      $sql="SELECT * FROM luminario WHERE idProyecto='$idProy' AND
+      idPlano='$idPlano'";
+      $res1=query($sql,$con);
+      while($cam1=mysql_fetch_assoc($res1)) {
+      foreach ($cam1 as $camf => $valf) {
+        if($valf=="") ${$camf}="Sin asignar";
+        else ${$camf}=$valf; }
+        echo "Luminario ".$idLuminario."<br><br>";
+        echo "
+        <div>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Catálogo' id='catLum' name='cat' value='".$idCatalogo."'
+            disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-lightbulb-o icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Catálogo
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Watts' name='watts' id='watts' value='".$watts."'
+            disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-flash icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Watts
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Lumens iniciales' name='lumens' id='lumens' value='".
+            $lumensIniciales."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-sun-o icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Lumens iniciales
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Factor depreciación' name='dep' id='fDep' value='".
+            $factorDepreciacion."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-hand-o-down icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Factor depreciación
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Altura montaje' name='altMont' id='aMont' value='".
+            $alturaMontaje."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-arrows-v icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Altura montaje
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Altura plano trabajo' name='altPlan' id='aPTra' value='".
+            $alturaPlanoTrabajo."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-hospital-o icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Altura plano trabajo
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Tipo montaje' alt='tipoMont' id='tMont' value='".
+            $tipoMontaje."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-legal icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Tipo montaje
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Largo brazo' name='laBrazo' id='lBra' value='".$largoBrazo."'
+            disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-long-arrow-right icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Largo brazo
+            </span>
+          </label>
+        </span>
+        <span class='input input--kohana-eProyecto'>
+          <input class='input__field input__field--kohana-eProyecto' type='text'
+            title='Tilt' name='tilt' id='tilt' value='".$tilt."' disabled>
+          <label class='input__label input__label--kohana-eProyecto' for='input-29'>
+            <i class='fa fa-fw fa-undo icon icon--kohana-eProyecto'></i>
+            <span class='input__label-content input__label-content--kohana'>
+              Tilt
+            </span>
+          </label>
+        </span></div>
+        ";
+      }
+      echo '
+        <button class="botonEditaProyecto" onclick="aLum('.$idPlano.','.
+          $idLum.')">
+          <i class="fa fa-fw fa-plus-circle"></i>
+        </button>
+      </div>
+      </section>';
+    }
+  }
+  if(isset($_GET['bPlano'])) bPlano(); function bPlano() {
+    global $con;
+    foreach($_GET as $cam => $val) { ${$cam}=$val; }
+    $sql="DELETE FROM plano WHERE idPlano='$plano' AND idProyecto='$proy'";
+    $res=query($sql,$con);
+    header("location:../?sec=gestionProyecto&idProyecto=$proy");
   }
 ?>
 <!--fGestionProyecto.php------------------------------------------------------->

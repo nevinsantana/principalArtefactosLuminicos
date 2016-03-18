@@ -34,6 +34,10 @@
   $res=query($sql, $con);
   $cam=mysql_fetch_assoc($res);
   foreach ($cam as $camp => $value) { ${$camp}=$value; }
+  $cont=0;
+  $sql="SELECT * FROM partidas WHERE id_cotizacion='$id_cotizacion'";
+  $res=query($sql,$con);
+  while($cam=mysql_fetch_assoc($res)) { $cont++; }
 ?>
 <html>
   <body id="bodier" class="h7" style="color:black;">
@@ -82,7 +86,7 @@
                         <tr>
                           <td width="50%" align=right class="h7v">Partidas:</td>
                           <td align=center width="50px" class="h7v">
-                            <?php echo $no_partidas; ?>
+                            <?php echo $cont; ?>
                           </td>
                         </tr>
                       </table>

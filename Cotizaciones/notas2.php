@@ -12,8 +12,9 @@
   $sql="SELECT * FROM Notas WHERE id_cotizacion=$idCot ORDER BY no_nota DESC";
   $res=query($sql, $con);
   $cam=mysql_fetch_row($res);
-  $no_nota=$cam[0] + 1;
+  $no_nota=$cam[1];
   if($no_nota=="") $no_nota=1;
+  else $no_nota=$no_nota + 1;
   $sql="INSERT INTO Notas(id_cotizacion, no_nota, descripcion)
     VALUES('$idCot','$no_nota','$des')";
   $res=query($sql, $con);
