@@ -83,4 +83,27 @@ if(isset($_GET['aLum'])) aLum(); function aLum() {
   header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto='
     .$proy);
 }
+
+if(isset($_GET['gNota'])) gNota($_GET['nota']); function gNota($nota) {
+  global $con;
+  $nota=str_replace("'",'´',$nota);
+  $proy=$_GET['proy'];
+  $sql="SELECT * FROM notasp ORDER BY idNota DESC LIMIT 1";
+  $res=query($sql, $con); $cam=mysql_fetch_row($res); $idNota=$cam[0] + 1;
+  if($idNota == "") $idNota=1;
+  $sql="INSERT INTO notasp VALUES ('$idNota','$proy','$nota')";
+  $res=query($sql,$con);
+  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto='.$proy);
+}
+if(isset($_GET['gDProy'])) gDProy(); function gDProy() {
+  global $con;
+  foreach($_POST as $cam => $val) { ${$cam}=$val; }
+  $proy=$_GET['proy'];
+  $sql="UPDATE proyecto SET idCotizacion='$noCot', idNumCliente='$clien',
+    nombreProyecto='$nomPr', fecha='$fecha', estado='$estad',
+    municipio='$munic', colonia='$colon', calle='$calle', numInt='$noInt',
+    numExt='$noExt', cp='$cp' WHERE idProyecto='$proy'";
+  $res=query($sql,$con);
+  header('Location: ../?sec=gestionProyecto&accion=editar&idProyecto='.$proy);
+}
 ?>

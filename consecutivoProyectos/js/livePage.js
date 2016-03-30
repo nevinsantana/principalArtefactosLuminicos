@@ -555,6 +555,26 @@ function desactivaInputsPlano() {
     dIn.style.display="inline-block";
   }
 }
+function bLum(idLum, idPla) {
+  document.getElementById('editaProyecto').style.opacity="0.2";
+  document.getElementById('cd-main-content').style.background="black";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElLum').style.zIndex="9999";
+  document.getElementById('pElLum').style.opacity="1";
+  document.getElementById('advLum').innerHTML=
+    "De verdad desea eliminar el luminario ";
+  document.getElementById('bNoLum').innerHTML=idLum;
+  document.getElementById('advNotaL').innerHTML=" del plano ";
+  document.getElementById('noNotaL').innerHTML=idPla;
+}
+function cBLum() {
+  document.getElementById('editaProyecto').style.opacity="1";
+  document.getElementById('cd-main-content').style.background="white";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElLum').style.zIndex="-9999";
+  document.getElementById('pElLum').style.opacity="0";
+  document.getElementById('advLum').innerHTML="";
+}
 function bPlano(idPlano) {
   document.getElementById('editaProyecto').style.opacity="0.2";
   document.getElementById('cd-main-content').style.background="black";
@@ -569,12 +589,30 @@ function dPlano(proy) {
   var plan=document.getElementById('bNoPlano').innerHTML;
   location.href="php/funciones.php?proy="+proy+"&plano="+plan+"&bPlano=true";
 }
+function dNota(proy) {
+  var nota=document.getElementById('bNoNota').innerHTML;
+  location.href="php/funciones.php?proy="+proy+"&nota="+nota+"&bNota=true";
+}
+function dLum(proy) {
+  var lum=document.getElementById('bNoLum').innerHTML,
+  pla=document.getElementById('noNotaL').innerHTML;
+  location.href="php/funciones.php?proy="+proy+"&plano="+pla+"&lum="+lum
+  +"&bLum=true";
+}
 function cBPlano() {
   document.getElementById('editaProyecto').style.opacity="1";
   document.getElementById('cd-main-content').style.background="white";
   document.getElementById('cd-main-content').disabled="true";
   document.getElementById('pElPlano').style.zIndex="-9999";
   document.getElementById('pElPlano').style.opacity="0";
+  document.getElementById('advPlano').innerHTML="";
+}
+function cBNota() {
+  document.getElementById('editaProyecto').style.opacity="1";
+  document.getElementById('cd-main-content').style.background="white";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElNota').style.zIndex="-9999";
+  document.getElementById('pElNota').style.opacity="0";
   document.getElementById('advPlano').innerHTML="";
 }
 function aLum(plan, lum) {
@@ -599,6 +637,13 @@ function gLumF(proy) {
   lBra=document.getElementById('lBra').value,
   tilt=document.getElementById('tilt').value;
   location.href="php/saver.php?proy="+proy+"&plan="+plan+"&lum="+lum+"&catLum="+catLum+"&watts="+watts+"&lumens="+lumens+"&fDep="+fDep+"&aMont="+aMont+"&aPTra="+aPTra+"&tMont="+tMont+"&lBra="+lBra+"&tilt="+tilt+"&aLum=true";
+}
+function cBotonG() {
+  var catLum=document.getElementById('gNota').value,
+  aNota=document.getElementById("aNota");
+  if($.trim( $('#gNota').val())=='') { aNota.style.width="0"; }
+  else { aNota.style.width="10%"; }
+  return false;
 }
 /*fGestionProyecto.php*********************************************************/
   /*end**********************************************************************/

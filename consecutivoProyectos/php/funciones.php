@@ -135,6 +135,38 @@
 <!--fProyectos.php------------------------------------------------------------->
 <!--gestionProyecto.php-------------------------------------------------------->
 <?php
+  function gTablaNotas($proy) {
+    global $con;
+    $i="";
+    $sql="SELECT * FROM notasp WHERE idProyecto=$proy";
+    $res=query($sql,$con);
+    $res2=query($sql,$con);
+    if($cam=mysql_fetch_assoc($res)) {
+      echo "<hr class='hrNota'><table class='tNotas'>";
+      while($cam2=mysql_fetch_assoc($res2)) {
+        $i++;
+        $idNota=$cam2['idNota']; $nota=$cam2['nota'];
+        echo "<tr>
+          <td width='10%'>$i</td>
+          <td width='75%'>$nota</td>
+          <td width='15%'>
+            <span class='fa-stack fa-lg eNota' onclick='eNota($idNota,$proy)'>
+              <i class='fa fa-circle fa-stack-2x'></i>
+              <i class='fa fa-times fa-stack-1x fa-inverse'></i>
+            </span>
+          </td>
+        </tr>";
+      }
+      echo "</table>";
+    }
+  }
+  if(isset($_GET['eNota'])) eNota($_GET['nota']); function eNota($idNota) {
+    global $con;
+    $proy=$_GET['proy'];
+    $sql="DELETE FROM notasp WHERE idNota='$idNota' AND idProyecto='$proy'";
+    $res=query($sql,$con);
+    header("location:../?sec=gestionProyecto&idProyecto=$proy");
+  }
   function pGetIdProyecto() {
     if(isset($_GET['idProyecto'])) {
       $cam=gDatosProyecto($_GET['idProyecto']);
@@ -164,6 +196,7 @@
     $sql="SELECT * FROM plano WHERE idProyecto='$idProy'";
     $res=query($sql,$con);
     while($cam=mysql_fetch_assoc($res)) {
+      $i="";
       foreach($cam as $camp => $val) { ${$camp}=$val; }
       echo "<section class='sPlano$tipoPlano'><div class='headerContainer'>";
       if($tipoPlano==1) echo "<img src='img/1.png'>";
@@ -278,11 +311,17 @@
       idPlano='$idPlano'";
       $res1=query($sql,$con);
       while($cam1=mysql_fetch_assoc($res1)) {
+      $i++;
       foreach ($cam1 as $camf => $valf) {
         if($valf=="") ${$camf}="Sin asignar";
         else ${$camf}=$valf; }
-        echo "Luminario ".$idLuminario."<br><br>";
-        echo "
+        echo "<span class='tLum'>Luminario ".$i."</span>
+        <div class='taPlano'>
+          <span class='fa-stack fa-lg' onclick='bLum($idLuminario, $idPlano)'>
+            <i class='fa fa-circle fa-stack-2x'></i>
+            <i class='fa fa-times fa-stack-1x fa-inverse'></i>
+          </span>
+        </div>
         <div>
         <span class='input input--kohana-eProyecto'>
           <input class='input__field input__field--kohana-eProyecto' type='text'
@@ -397,6 +436,40 @@
     global $con;
     foreach($_GET as $cam => $val) { ${$cam}=$val; }
     $sql="DELETE FROM plano WHERE idPlano='$plano' AND idProyecto='$proy'";
+    $res=query($sql,$con);
+    header("location:../?sec=gestionProyecto&idProyecto=$proy");
+  }
+  if(isset($_GET['bNota'])) bNota(); function bNota() {
+    global $con;
+    foreach($_GET as $cam => $val) { ${$cam}=$val; }
+    $sql="DELETE FROM notasp WHERE idNota='$nota' AND idProyecto='$proy'";
+    $res=query($sql,$con);
+    header("location:../?sec=gestionProyecto&idProyecto=$proy");
+  }
+  function oClientesS($proy) {
+    global $con;
+    $user=$_SESSION['user'];
+    $sql="SELECT * FROM proyecto WHERE idProyecto='$proy'";
+    $res=query($sql,$con);
+    $cam=mysql_fetch_assoc($res);
+    $cliente=$cam['idNumCliente'];
+    $sql="SELECT * FROM Clientes WHERE id_usuario='$user'";
+    $res=query($sql,$con);
+    echo "<option disabled "; if($cliente=='') echo "selected";
+    echo ">Cliente</option>";
+    while($cam=mysql_fetch_assoc($res)) {
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+    }
+  }
+  if(isset($_GET['bLum'])) bLum(); function bLum() {
+    global $con;
+    foreach($_GET as $cam => $val) { ${$cam}=$val; }
+    $sql="DELETE FROM luminario WHERE idProyecto='$proy' AND idPlano='$plano'
+      AND idLuminario='$lum'";
+      echo $sql;
     $res=query($sql,$con);
     header("location:../?sec=gestionProyecto&idProyecto=$proy");
   }

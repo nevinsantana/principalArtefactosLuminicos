@@ -53,5 +53,21 @@ function eliminarCotizacion(noCotizacion) {
   location.href="?sec=cotizaciones&cotizacion="+noCotizacion;
 }
 /*fCotizaciones.php************************************************************/
-
+/*gestionProyecto.php**********************************************************/
+function gNota(proy) {
+  var valANota=document.getElementById('gNota');
+  location.href="php/saver.php?gNota=true&nota="+valANota.value+"&proy="+proy;
+}
+function eNota(idNota, proy) {
+  document.getElementById('editaProyecto').style.opacity="0.2";
+  document.getElementById('cd-main-content').style.background="black";
+  document.getElementById('cd-main-content').disabled="true";
+  document.getElementById('pElNota').style.zIndex="9999";
+  document.getElementById('pElNota').style.opacity="1";
+  document.getElementById('advNota').innerHTML=
+    "De verdad desea eliminar la nota ";
+  document.getElementById('bNoNota').innerHTML=idNota;
+    //location.href="php/funciones.php?eNota=true&nota="+idNota+"&proy="+proy;
+}
+/*fGestionProyecto.php*********************************************************/
   /*end**********************************************************************/

@@ -48,6 +48,8 @@ input:focus, button:focus { outline: none; }
 .der { float: right; }
 
 .poin { cursor: pointer; }
+
+.fColorFont { color: #65634c;  float: left; width: 31%; margin: 0 7px 0 0; transition: 0.5s;}
 /*fReset***********************************************************************/
 /*fonts************************************************************************/
 /*quicksand*/
@@ -105,7 +107,7 @@ input:focus, button:focus { outline: none; }
 .blueFont {	color: #24426c; }
 /*fQuicksand*/
 /*fFonts***********************************************************************/
-/*circularSelect***************************************************************/
+/*csSkinBorder*****************************************************************/
 /* Default custom select styles */
 div.cs-select {
 	display: inline-block;
@@ -113,6 +115,185 @@ div.cs-select {
 	position: relative;
 	text-align: left;
 	background: #fff;
+	z-index: 100;
+	width: 100%;
+	max-width: 500px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+.cs-select select {
+	display: none;
+}
+
+.cs-select span {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	padding: 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Placeholder and selected option */
+.cs-select > span {
+	padding-right: 3em;
+}
+
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+	speak: none;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.cs-select > span::after {
+	content: '\25BE';
+	right: 1em;
+}
+
+.cs-select .cs-selected span::after {
+	content: '\2713';
+	margin-left: 1em;
+}
+
+.cs-select.cs-active > span::after {
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+div.cs-active {
+	z-index: 200;
+}
+
+/* Options */
+.cs-select .cs-options {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	background: #fff;
+	visibility: hidden;
+}
+
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+}
+
+.cs-select ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.cs-select ul span {
+	padding: 1em;
+}
+
+.cs-select ul li.cs-focus span {
+	background-color: #ddd;
+}
+
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+	padding-left: 1em;
+}
+
+.cs-select li.cs-optgroup > span {
+	cursor: default;
+}
+
+div.cs-skin-border {
+	border-radius: 10px;
+	background: transparent;
+	font-weight: 700;
+	max-width: 600px;
+}
+
+@media screen and (max-width: 30em) {
+	div.cs-skin-border { font-size: 1em; }
+}
+
+.cs-skin-border > span {
+	border: none;
+	border-color: inherit;
+	-webkit-transition: background 0.2s, border-color 0.2s;
+	transition: background 0.2s, border-color 0.2s;
+}
+
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+	font-family: 'icomoon';
+	content: '\e000';
+}
+
+.cs-skin-border ul span::after {
+	content: '';
+	opacity: 0;
+}
+
+.cs-skin-border .cs-selected span::after {
+	content: '\e00e';
+	color: #ddd9c9;
+	font-size: 1.5em;
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.cs-skin-border.cs-active > span {
+	background: #C2BFA2;
+	border-color: #fff;
+	color: #33414A;
+}
+
+.cs-skin-border .cs-options {
+	color: #65634c;
+	font-size: 0.75em;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+	transition: opacity 0.2s, visibility 0s 0.2s;
+}
+
+.cs-skin-border.cs-active .cs-options {
+	opacity: 1;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.cs-skin-border ul span {
+	padding: 1em 2em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+	background: #f5f3ec;
+}
+
+/*fCsSkinBorder****************************************************************/
+/*circularSelect***************************************************************/
+/* Default custom select styles */
+div.cs-select {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #c2bfa2;
 	z-index: 100;
 	width: 100%;
 	max-width: 500px;
@@ -152,7 +333,11 @@ div.cs-select:focus { outline: none; }
 
 .cs-select > span::after { content: '\25BE'; right: 1em; }
 
-.cs-select .cs-selected span::after { content: '\2713'; margin-left: 1em; }
+.cs-select .cs-selected span::after {
+	content: '\2713';
+	margin-left: 1em;
+	color: #81b928;
+}
 
 .cs-select.cs-active > span::after {
 	-webkit-transform: translateY(-50%) rotate(180deg);
@@ -163,6 +348,7 @@ div.cs-active { z-index: 200; }
 
 /* Options */
 .cs-select .cs-options {
+	height: auto;
 	position: absolute;
 	overflow: hidden;
 	width: 100%;
@@ -170,7 +356,13 @@ div.cs-active { z-index: 200; }
 	visibility: hidden;
 }
 
-.cs-select.cs-active .cs-options { visibility: visible; }
+.cs-select.cs-active .cs-options {
+	visibility: visible;
+	overflow: auto;
+	max-height: 289px;
+	background: #DCDACA;
+	border-radius: 0 0 0 10px;
+}
 
 .cs-select ul { list-style: none; margin: 0; padding: 0; width: 100%; }
 
@@ -369,9 +561,9 @@ div.cs-skin-circular {
 	border-radius: 10px;
 }
 
-@media only screen and (max-width: 1125px) { .input { width: 45%; } }
+@media only screen and (max-width: 1125px) { .input, .fColorFont { width: 45%; } }
 
-@media only screen and (max-width: 700px) { .input { width: 100%;	} }
+@media only screen and (max-width: 700px) { .input, .fColorFont { width: 100%;	} }
 
 .input__field {
 	position: relative;
@@ -1716,6 +1908,26 @@ hr.hrCreaLum {
 
 hr.hrCreaLum:after { content: 'Nuevo luminario'; }
 
+hr.hrNota {
+	border: none;
+	border-top: 3px solid #5d5b44;
+	border-radius: 3px;
+	text-align: center;
+	margin: 30px 0 10px 0;
+}
+
+hr.hrNota:after {
+	content: 'Notas';
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #cfccaf;
+	color: #5d5b44;
+	font-size: 18px;
+}
+
 .cuadroPrueba { width: 100%; height: 500px; border: 1px solid green; }
 
 .botonEditaProyecto {
@@ -1732,6 +1944,16 @@ hr.hrCreaLum:after { content: 'Nuevo luminario'; }
 	padding: 5px;
 	border-radius: 10px;
 	background: #5d5b44;
+	font-size: 20px;
+	color: #cfccaf;
+}
+
+.bGDProy {
+	margin: 20px 10%;
+	width: 80%;
+	padding: 5px;
+	border-radius: 10px;
+	background: #33414a;
 	font-size: 20px;
 	color: #cfccaf;
 }
@@ -1755,7 +1977,7 @@ hr.hrCreaLum:after { content: 'Nuevo luminario'; }
 	overflow: auto;
 }
 
-.pElPlano {
+.pElPlano, .pElNota, .pElLum {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -1775,6 +1997,8 @@ hr.hrCreaLum:after { content: 'Nuevo luminario'; }
 	color: #ced2d4;
 	text-align: center;
 }
+
+.tLum { font-size: 22px; font-weight: bold; margin: 10px;}
 
 .creaLuminario {
 	position: absolute;
@@ -1807,6 +2031,12 @@ table tr:nth-child(even) {
 
 .cierraCrearGP { float: right; position: fixed; top: -15px; cursor: pointer; }
 
+.eNota { cursor: pointer; margin-right: -10px; }
+
+.eNota i:first-child { cursor: pointer; color: #cfccaf; }
+
+.eNota i:last-child { cursor: pointer; color: #5d5b44; }
+
 .disabled { display: none; }
 
 .sPlano1, .sPlano2, .sPlano3 {
@@ -1831,18 +2061,33 @@ table tr:nth-child(even) {
 	position: absolute;
 	right: 0;
 	height: 100%;
-	width: 10%;
+	width: 0;
 	background: #5d5b44;
 	color: #c2bfa2;
 	text-align: center;
 	cursor: pointer;
+	transition: 0.5s;
 }
 
-.vCIcon {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
+#aNota:hover { background: #c2bfa2; color: #5d5b44; }
+
+.vCIcon { position: relative; top: 50%; transform: translateY(-50%); }
+
+table.tNotas { margin: auto; width: 70%; height: auto; }
+
+table.tNotas tr td { text-align: center; padding: 10px; }
+
+table.tNotas tr:first-child td:first-child { border-radius: 5px 0 0 0; }
+
+table.tNotas tr:first-child td:last-child { border-radius: 0 5px 0 0; }
+
+table.tNotas tr:last-child td:first-child { border-radius: 0 0 0 5px; }
+
+table.tNotas tr:last-child td:last-child { border-radius: 0 0 5px 0; }
+
+table.tNotas tr:nth-child(odd) { color: #ffffff; background: #33414a; }
+
+table.tNotas tr:nth-child(even) { color: #33414a; background: #ffffff; }
 /*fGestionProyecto.php*********************************************************/
 /*clientes.php*****************************************************************/
 /*fClientes.php****************************************************************/
