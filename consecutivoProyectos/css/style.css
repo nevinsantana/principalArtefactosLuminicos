@@ -266,12 +266,15 @@ div.cs-skin-border {
 	opacity: 0;
 	-webkit-transition: opacity 0.2s, visibility 0s 0.2s;
 	transition: opacity 0.2s, visibility 0s 0.2s;
+	max-height: 289px;
+	border-radius: 0 0 0 10px;
 }
 
 .cs-skin-border.cs-active .cs-options {
 	opacity: 1;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
+	overflow: auto;
 }
 
 .cs-skin-border ul span {
@@ -358,10 +361,12 @@ div.cs-active { z-index: 200; }
 
 .cs-select.cs-active .cs-options {
 	visibility: visible;
-	overflow: auto;
 	max-height: 289px;
-	background: #DCDACA;
 	border-radius: 0 0 0 10px;
+}
+
+.cs-select.cs-active .cs-activa {
+	overflow: auto;
 }
 
 .cs-select ul { list-style: none; margin: 0; padding: 0; width: 100%; }

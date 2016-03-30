@@ -462,6 +462,34 @@
         if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
         $cam['empresa']
       ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
+      echo "<option value='".$cam['id_num_cliente']."'";
+        if($cliente==$cam['id_num_cliente']) echo "selected"; echo ">".
+        $cam['empresa']
+      ."</option>";
     }
   }
   if(isset($_GET['bLum'])) bLum(); function bLum() {
