@@ -55,8 +55,9 @@
 <html>
   <script>
     (function () {
+      var idCotizacion="<?php echo $id_cotizacion; ?>";
       alert("La cotizacion ha finalizado con exito");
-      document.location.href='index.php';
+      document.location.href='ver_cotizacion.php?id_cotizacion='+idCotizacion;
     })();
   </script>
 </html>
