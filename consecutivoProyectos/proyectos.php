@@ -4,7 +4,7 @@
     <p id="tituloNuevoProyecto">Nuevo proyecto</p>
     <div id="iconoNuevoProyecto" class="iconoSection">
       <img src="images/iconoNuevoProyecto.png" width="254px" height="254px"
-        alt="Ícono nuevo proyecto">
+        title="Ícono nuevo proyecto">
     </div>
     <section id="sectionAbierta" class="sectionAbierta">
       <article id="topBar" class="topBar"></article>
@@ -17,7 +17,7 @@
           <div id="nPGeneral">
     				<span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                value="<?php nProyecto(); ?>" disabled />
+                value="<?php nProyecto(); ?>" disabled title="No de proyecto">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-gear fa-spin icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -27,7 +27,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                value="<?php nomUsuario(); ?>" disabled />
+                value="<?php nomUsuario(); ?>" disabled title="Usuario">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-user icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -37,18 +37,19 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                 name="proyectoNP" oninput="cambiaGuardarNP()" required/>
+                 name="proyectoNP" oninput="cambiaGuardarNP()" required
+                 title="Nombre del proyecto" id="iNomProy">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-home icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
-                  Proyecto
+                  Nombre del proyecto
                 </span>
     					</label>
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
                 id="fechaDP" onfocus="abreDP()" onblur="cierraDP()"
-                name="fechaNP"/>
+                name="fechaNP" title="Fecha">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-calendar icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -63,7 +64,7 @@
             <div id="nPUbicacion">
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="estadoNP"/>
+                name="estadoNP" title="Estado">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-globe icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -73,7 +74,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="municipioNP" />
+                name="municipioNP" title="Municipio">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-map icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -83,7 +84,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="coloniaNP"/>
+                name="coloniaNP" title="Colonia">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-map-o icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -93,7 +94,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="calleNP"/>
+                name="calleNP" title="Calle">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-road icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -103,7 +104,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="nINP"/>
+                name="nINP" title="Número interior">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-street-view icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -113,7 +114,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="nENP"/>
+                name="nENP" title="Número exterior">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-building icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -123,7 +124,7 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="cPNP"/>
+                name="cPNP" title="Código postal">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-hashtag icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -137,7 +138,7 @@
             <i class="fa fa-floppy-o fa-stack-1x"></i>
             <i class="fa fa-ban fa-stack-2x text-danger" id="iconoBotonNP"></i>
             </span>
-              <h1 id="textoBotonNP">Nombre el proyecto</h1>
+              <h1 id="textoBotonNP">Nombra el proyecto</h1>
           </div>
         </form>
         </div>
@@ -148,7 +149,7 @@
     <p id="tituloProyectosExistentes">Proyectos existentes</p>
     <div id="iconoProyectosExistentes" class="iconoSection">
       <img src="images/iconoProyectosExistentes.png" width="254px"
-        height="254px" alt="Ícono proyectos existentes">
+        height="254px" title="Ícono proyectos existentes">
     </div>
     <section id="sectionAbierta2" class="sectionAbierta2">
       <article id="topBar2" class="topBar2"></article>

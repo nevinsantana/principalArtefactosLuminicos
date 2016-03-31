@@ -449,24 +449,24 @@ window.onload=function() {
 /*fFiltradorDatos**************************************************************/
 /*proyectos.php****************************************************************/
 function cambiaGuardarNP() {
-  if(document.formNP.proyectoNP.value!='') {
-  		document.getElementById("guardaNP").style.background="#329442";
-      document.getElementById("guardaNP").style.cursor="pointer";
-      document.getElementById("textoBotonNP").innerHTML="Guardar";
-      document.getElementById("guardaNP").
-        setAttribute("onClick", "javascript: this.parentNode.submit();");
-      document.getElementById("iconoBotonNP").
-        setAttribute("class", "fa fa-floppy-o");
-  		document.formNP.proyectoNP.focus();
-  		return false;
-  	}
-  else {
+  if($.trim( $('#iNomProy').val())=='') {
     document.getElementById("guardaNP").style.background="#c14545";
     document.getElementById("guardaNP").style.cursor="default";
     document.getElementById("textoBotonNP").innerHTML="Nombre el proyecto";
     document.getElementById("iconoBotonNP").
       setAttribute("class", "fa fa-ban fa-stack-2x text-danger");
     document.getElementById("guardaNP").onclick=function() {};
+    return false;
+  	}
+  else {
+    document.getElementById("guardaNP").style.background="#329442";
+    document.getElementById("guardaNP").style.cursor="pointer";
+    document.getElementById("textoBotonNP").innerHTML="Guardar";
+    document.getElementById("guardaNP").
+      setAttribute("onClick", "javascript: this.parentNode.submit();");
+    document.getElementById("iconoBotonNP").
+      setAttribute("class", "fa fa-floppy-o");
+    document.formNP.proyectoNP.focus();
   }
 }
 /*fproyectos.php***************************************************************/
