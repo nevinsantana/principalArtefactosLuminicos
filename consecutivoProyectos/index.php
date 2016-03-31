@@ -24,8 +24,6 @@
   			<ul class="cd-main-nav">
           <?php if(isset($_SESSION['user'])) { ?>
     				<li><a href="#" onclick="proyectos()">Proyectos</a></li>
-    				<li><a href="#" onclick="clientes()">Clientes</a></li>
-    				<li><a href="#" onclick="cotizaciones()">Cotizaciones</a></li>
           <?php } ?>
   				<li>
   					<a class="cd-subnav-trigger"><span id="usuarioInicia"></span></a>

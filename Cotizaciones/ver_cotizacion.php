@@ -35,9 +35,9 @@
   $cam=mysql_fetch_assoc($res);
   foreach ($cam as $camp => $value) { ${$camp}=$value; }
   $cont=0;
-  $sql="SELECT * FROM partidas WHERE id_cotizacion='$id_cotizacion'";
+  $sql="SELECT * FROM Partidas WHERE id_cotizacion='$id_cotizacion'";
   $res=query($sql,$con);
-  while($cam=mysql_fetch_assoc($res)) { $cont++; }
+  while($cam=mysql_fetch_row($res)) { $cont++; }
 ?>
 <html>
   <body id="bodier" class="h7" style="color:black;">

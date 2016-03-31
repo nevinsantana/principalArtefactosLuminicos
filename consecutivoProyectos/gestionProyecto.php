@@ -521,7 +521,7 @@
     Guardar todo
   </button>-->
 </div>
-<script src="js/circleSelect/selectFX.js"></script>
+<script src="js/circleSelect/selectFx.js"></script>
 <script>
   (function() {
     [].slice.call(document.querySelectorAll('select.cs-select')).forEach(

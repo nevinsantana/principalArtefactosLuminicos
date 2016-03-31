@@ -636,7 +636,9 @@ function gLumF(proy) {
   tMont=document.getElementById('tMont').value,
   lBra=document.getElementById('lBra').value,
   tilt=document.getElementById('tilt').value;
-  location.href="php/saver.php?proy="+proy+"&plan="+plan+"&lum="+lum+"&catLum="+catLum+"&watts="+watts+"&lumens="+lumens+"&fDep="+fDep+"&aMont="+aMont+"&aPTra="+aPTra+"&tMont="+tMont+"&lBra="+lBra+"&tilt="+tilt+"&aLum=true";
+  location.href="php/saver.php?proy="+proy+"&plan="+plan+"&lum="+lum+"&catLum="+
+    catLum+"&watts="+watts+"&lumens="+lumens+"&fDep="+fDep+"&aMont="+aMont
+    +"&aPTra="+aPTra+"&tMont="+tMont+"&lBra="+lBra+"&tilt="+tilt+"&aLum=true";
 }
 function cBotonG() {
   var catLum=document.getElementById('gNota').value,
