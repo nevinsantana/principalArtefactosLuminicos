@@ -469,6 +469,12 @@ function cambiaGuardarNP() {
     document.formNP.proyectoNP.focus();
   }
 }
+function cCP(e) {
+  var keynum=window.event?window.event.keyCode:e.which;
+  if((keynum==8)||(keynum==46))
+  return true;
+  return /\d/.test(String.fromCharCode(keynum));
+}
 /*fproyectos.php***************************************************************/
 /*gestionProyecto.php**********************************************************/
 function agregaPlano() {
@@ -625,6 +631,8 @@ function aLum(plan, lum) {
   document.getElementById('lumNo').value=lum;
 }
 function gLumF(proy) {
+  var catLum=document.getElementById('catLum').value;
+  if(!catLum) return;
   var plan=document.getElementById('planNo').value,
   lum=document.getElementById('lumNo').value,
   catLum=document.getElementById('catLum').value,

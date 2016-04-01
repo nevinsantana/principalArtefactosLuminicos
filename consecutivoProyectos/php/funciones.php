@@ -12,6 +12,18 @@
     $res=mysql_query($sql, $con);
     return $res;
   }
+  function rText($var) {
+    $var=str_replace(array('�','�','�','�','�','�','�','�','�','�','�','�','�',
+      '�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�',
+      "'"),array('�','a','a','a','�','A','A','�','e','e','�','E','E','�','i',
+      'i','�','I','I','�','o','o','�','O','O','�','u','u','�','U','U',"`"),
+    $var);
+    return $var;
+  }
+  function dText($var) {
+    $var=str_replace("`","'",$var);
+    return $var;
+  }
 ?>
 <!--fConexiónDB---------------------------------------------------------------->
 <!--verificaSesionTerminada---------------------------------------------------->
@@ -51,7 +63,7 @@
         $sql= "SELECT * FROM Usuarios WHERE id_usuario='$userTest'";
         $res=query($sql, $con);
         $cam=mysql_fetch_array($res);
-        $permiso=$cam['permiso']; $activo=$cam['activo'];
+        $permiso=$cam['permisoProyecto']; $activo=$cam['activo'];
         $_SESSION['nUser']=$cam['nombre'];
         if ($permiso == '1' && $activo == '1') { $_SESSION['permiso']='1'; }
         if ($permiso == '2' && $activo == '1') { $_SESSION['permiso']='2'; }
@@ -103,7 +115,7 @@
           <td><?php echo $fechaPE; ?></td>
           <td><?php echo $nombrePE; ?></td>
           <td>
-            <span onclick="gestionProyecto(<?php echo $idPE; ?>, 'editar')">
+            <span onclick="gestionProyecto(<?php echo $idPE; ?>)">
               editar
             </span>
           </td>
@@ -125,7 +137,11 @@
           <td><?php echo $idPE; ?></td>
           <td><?php echo $fechaPE; ?></td>
           <td><?php echo $nombrePE; ?></td>
-          <td><span>ver</span><span>editar</span></td>
+          <td>
+            <span onclick="gestionProyecto(<?php echo $idPE; ?>)">
+              editar
+            </span>
+          </td>
         </tr>
         <?php
       }
@@ -145,7 +161,7 @@
       echo "<hr class='hrNota'><table class='tNotas'>";
       while($cam2=mysql_fetch_assoc($res2)) {
         $i++;
-        $idNota=$cam2['idNota']; $nota=$cam2['nota'];
+        $idNota=$cam2['idNota']; $nota=$cam2['nota']; $nota=dText($nota);
         echo "<tr>
           <td width='10%'>$i</td>
           <td width='75%'>$nota</td>
@@ -181,8 +197,14 @@
     return $cam;
   }
   function generaNoPlano() {
-    $idProyecto=$_GET['idProyecto'];
     global $con;
+    $idProyecto=$_GET['idProyecto'];
+    if($idProyecto=="") header("location:index.php");
+    $sql="SELECT * FROM proyecto WHERE idProyecto='$idProyecto'";
+    $res=query($sql, $con);
+    $cam=mysql_fetch_assoc($res);
+    if($_SESSION['permiso']!=1) {
+    if($_SESSION['user']!=$cam['idUsuario']) header("location:index.php"); }
     $sql="SELECT * FROM plano WHERE idProyecto='$idProyecto' ORDER BY idPlano
       DESC LIMIT 1";
     $res=query($sql, $con);

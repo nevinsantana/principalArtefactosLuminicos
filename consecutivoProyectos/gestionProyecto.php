@@ -1,6 +1,6 @@
 <?php
   $cam=pGetIdProyecto(); $noPlano=generaNoPlano();
-  foreach($cam as $camp => $val) { ${$camp}=$val; }
+  foreach($cam as $camp => $val) {  $val=dText($val); ${$camp}=$val; }
 ?>
 <div class="pElPlano" id="pElPlano">
   <span id="advPlano"></span><span id="bNoPlano"></span>
@@ -375,11 +375,12 @@
     </span>
     <span class="input input--kohana-eProyecto">
       <input class="input__field input__field--kohana-eProyecto" type="text"
-        name="noCot" title="Referencia a cotización">
+        name="noCot" value="<?php echo $idCotizacion; ?>"
+        title="Referencia a cotización">
       <label class="input__label input__label--kohana-eProyecto" for="input-29">
         <i class="fa fa-fw fa-th-list icon icon--kohana-eProyecto"></i>
         <span class="input__label-content input__label-content--kohana">
-          No cotizacion
+          No cotización
         </span>
       </label>
     </span>
@@ -482,7 +483,8 @@
     </span>
     <span class="input input--kohana-eProyecto">
       <input class="input__field input__field--kohana-eProyecto" type="text"
-        name="cp" value="<?php echo $cp; ?>" title="Código postal">
+        name="cp" value="<?php echo $cp; ?>" title="Código postal" maxlength="5"
+        onkeypress="return cCP(event);">
       <label class="input__label input__label--kohana-eProyecto" for="input-29">
         <i class="fa fa-fw fa-hashtag icon icon--kohana-eProyecto"></i>
         <span class="input__label-content input__label-content--kohana">

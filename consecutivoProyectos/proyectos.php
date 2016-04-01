@@ -49,7 +49,7 @@
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
                 id="fechaDP" onfocus="abreDP()" onblur="cierraDP()"
-                name="fechaNP" title="Fecha">
+                name="fechaNP" title="Fecha" readonly>
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-calendar icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">
@@ -124,7 +124,8 @@
     				</span>
             <span class="input input--kohana">
     					<input class="input__field input__field--kohana" type="text"
-                name="cPNP" title="Código postal">
+                name="cPNP" title="Código postal" maxlength="5"
+                onkeypress="return cCP(event);">
     					<label class="input__label input__label--kohana" for="input-29">
     						<i class="fa fa-fw fa-hashtag icon icon--kohana"></i>
     						<span class="input__label-content input__label-content--kohana">

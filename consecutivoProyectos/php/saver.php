@@ -10,6 +10,14 @@
   }
   $con=conectar();
   function query($sql, $con) { $res=mysql_query($sql, $con); return $res; }
+  function rText($var) {
+    $var=str_replace(array('�','�','�','�','�','�','�','�','�','�','�','�','�',
+      '�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�','�',
+      "'"),array('�','a','a','a','�','A','A','�','e','e','�','E','E','�','i',
+      'i','�','I','I','�','o','o','�','O','O','�','u','u','�','U','U',"`"),
+    $var);
+    return $var;
+  }
 ?>
 <!--fConexiónDB---------------------------------------------------------------->
 <!--verificaSesionTerminada---------------------------------------------------->
@@ -45,6 +53,7 @@ function proyectoNP() {
     if ($idProyecto == "") $idProyecto=1;
     $user=$_SESSION['user'];
       foreach($_POST as $cam => $val) {
+        $val=rText($val);
         if(isset($cam)) ${$cam}=$val; else ${$cam}="";
       }
       $date=str_replace('/', '-', $fechaNP);
@@ -64,6 +73,7 @@ if(isset($_GET['plano'])) {
   global $con;
   $idProy=$_GET['idProyecto']; $plano=$_GET['plano']; $user=$_SESSION['user'];
   foreach($_POST as $cam => $val) {
+    $val=rText($val);
     if(isset($cam)) ${$cam}=$val; else ${$cam}="";
   }
   $sql="INSERT INTO plano (idPlano, idProyecto, tipoPlano, nivelRec,
@@ -76,7 +86,7 @@ if(isset($_GET['plano'])) {
 }
 if(isset($_GET['aLum'])) aLum(); function aLum() {
   global $con;
-  foreach($_GET as $cam => $val) { ${$cam}=$val; }
+  foreach($_GET as $cam => $val) { $val=rText($val); ${$cam}=$val; }
   $sql="INSERT INTO luminario VALUES ('$lum','$plan','$proy','$catLum','$watts',
     '$lumens','$fDep','$aMont','$aPTra','$tMont','$lBra','$tilt')";
   $res=query($sql,$con);
@@ -86,7 +96,7 @@ if(isset($_GET['aLum'])) aLum(); function aLum() {
 
 if(isset($_GET['gNota'])) gNota($_GET['nota']); function gNota($nota) {
   global $con;
-  $nota=str_replace("'",'´',$nota);
+  $nota=rText($nota);
   $proy=$_GET['proy'];
   $sql="SELECT * FROM notasp ORDER BY idNota DESC LIMIT 1";
   $res=query($sql, $con); $cam=mysql_fetch_row($res); $idNota=$cam[0] + 1;
@@ -97,7 +107,9 @@ if(isset($_GET['gNota'])) gNota($_GET['nota']); function gNota($nota) {
 }
 if(isset($_GET['gDProy'])) gDProy(); function gDProy() {
   global $con;
-  foreach($_POST as $cam => $val) { ${$cam}=$val; }
+  foreach($_POST as $cam => $val) {
+    $val=rText($val);
+    ${$cam}=$val; }
   $proy=$_GET['proy'];
   $sql="UPDATE proyecto SET idCotizacion='$noCot', idNumCliente='$clien',
     nombreProyecto='$nomPr', fecha='$fecha', estado='$estad',

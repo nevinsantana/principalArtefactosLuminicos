@@ -301,7 +301,7 @@
 
 				// Selectable (constants)
 				var selectableMonths = getSelectableList(0, 11, options.selectableMonths);
-				var selectableYears = getSelectableList(todayVal.year - 5, todayVal.year + 5, options.selectableYears);
+				var selectableYears = getSelectableList(todayVal.year - 30, todayVal.year + 10, options.selectableYears);
 				var selectableDOW = getSelectableList(0, 6, options.selectableDOW);
 				var dowNames = options.dowNames || [ 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab', 'Dom' ];
 				var monthNames = options.monthNames || [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre' ];
