@@ -62,7 +62,7 @@
       else {
         $sql= "SELECT * FROM Usuarios WHERE id_usuario='$userTest'";
         $res=query($sql, $con);
-        $cam=mysql_fetch_array($res);
+        $cam=mysql_fetch_assoc($res);
         $permiso=$cam['permisoProyecto']; $activo=$cam['activo'];
         $_SESSION['nUser']=$cam['nombre'];
         if ($permiso == '1' && $activo == '1') { $_SESSION['permiso']='1'; }
