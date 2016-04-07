@@ -359,7 +359,10 @@
   </form>
 </div>
 <div class="editaProyecto" id="editaProyecto">
-  <hr class="hrProyecto" id="cContainer">
+  <div id="cContainer">
+    <hr class="hrProyecto">
+    <div id="iPContainer" class="center"><i class="fa fa-chevron-down"></i></div>
+  </div>
   <div id="pContainer">
   <form action="php/saver.php?gDProy=true&proy=<?php echo $idProyecto ?>"
     method="POST">
@@ -541,10 +544,18 @@
           };
         }
     });});})();
-  $(function(){$("#cContainer").click(function(){
+  $(function(){$("#iPContainer").click(function(){
     $("#pContainer").toggle(500, function(){
-      if($(this).is(":visible")) $("#cContainer").css("background-color","black");
-      else $("#cContainer").css("background-color","white");
+      if($(this).is(":visible")) {
+        $("#cContainer").removeClass("pCerrado");
+        $("#cContainer").addClass("pAbierto");
+        $("#iPContainer").css("transform","rotate(0deg)");
+      }
+      else {
+        $("#cContainer").removeClass("pAbierto");
+        $("#cContainer").addClass("pCerrado");
+        $("#iPContainer").css("transform","rotate(180deg)");
+      }
     });
   });});
 </script>

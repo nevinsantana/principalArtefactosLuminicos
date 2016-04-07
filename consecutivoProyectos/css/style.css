@@ -101,10 +101,11 @@ input:focus, button:focus { outline: none; }
 	font-weight: bold;
 	font-style: italic;
 }
-
 .redFont { color: #a62a2a; }
 
 .blueFont {	color: #24426c; }
+
+.center { cursor: pointer; text-align: center;}
 /*fQuicksand*/
 /*fFonts***********************************************************************/
 /*csSkinBorder*****************************************************************/
@@ -1807,6 +1808,18 @@ header::before { display: none; content: 'mobile'; }
 }
 /*fProyectos.php***************************************************************/
 /*gestionProyecto.php**********************************************************/
+.pCerrado {
+	transition: 0.5s;
+	background: #beba98;
+}
+.pAbierto {
+	transition: 0.5s;
+	background: #cfccaf;
+}
+#iPContainer {
+	transition: 0.5s;
+	width: 100%;
+}
 div.editaProyecto {
 	width: 100%;
 	height: 100%;
@@ -1829,7 +1842,7 @@ hr.hrProyecto {
 	border-top: 3px solid #5d5b44;
 	border-radius: 3px;
 	text-align: center;
-	cursor: pointer;
+	margin-bottom: -15px;
 }
 
 
