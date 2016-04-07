@@ -1829,6 +1829,7 @@ hr.hrProyecto {
 	border-top: 3px solid #5d5b44;
 	border-radius: 3px;
 	text-align: center;
+	cursor: pointer;
 }
 
 

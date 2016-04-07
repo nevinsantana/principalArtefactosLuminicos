@@ -145,7 +145,13 @@
   function altaCliente($con, $adm) {
     $id_user=$_SESSION['usuario']; $i=0;
     if(isset($_POST['usuario'])) $usuarioCA=$_POST['usuario'];
-    foreach ($_POST as $rep => $val) { $i++; ${'aC'.$i}=$val; }
+    foreach ($_POST as $rep => $val) {
+      while($j-1>0) {
+        $j=explode("  ",$val);
+        $j=count($j);
+        $val=str_replace("  "," ",$val);
+      }
+      $i++; ${'aC'.$i}=$val; }
     $sql="SELECT * FROM Clientes ORDER BY id_num_cliente ASC";
     $res=query($sql,$con);
     while($cam=mysql_fetch_row($res)) { $idCli=$cam[0] + 1; }

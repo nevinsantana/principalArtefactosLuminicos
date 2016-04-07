@@ -359,7 +359,8 @@
   </form>
 </div>
 <div class="editaProyecto" id="editaProyecto">
-  <hr class="hrProyecto">
+  <hr class="hrProyecto" id="cContainer">
+  <div id="pContainer">
   <form action="php/saver.php?gDProy=true&proy=<?php echo $idProyecto ?>"
     method="POST">
     <span class="input input--kohana-eProyecto">
@@ -510,6 +511,7 @@
       Guardar datos
     </button>
   </form>
+</div>
   <?php gTablaNotas($idProyecto); ?>
   <div class="editaPlano">
     <hr class="hrPlano">
@@ -539,4 +541,10 @@
           };
         }
     });});})();
+  $(function(){$("#cContainer").click(function(){
+    $("#pContainer").toggle(500, function(){
+      if($(this).is(":visible")) $("#cContainer").css("background-color","black");
+      else $("#cContainer").css("background-color","white");
+    });
+  });});
 </script>

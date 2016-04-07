@@ -14,6 +14,7 @@
     <link href="js/datepicker/styles/glDatePicker.default.css" rel="stylesheet"
       type="text/css">
   	<title>Consecutivo de Proyectos</title>
+    <script src="../js/jquery.js"></script>
   </head>
   <body onresize="onresizeAnimaciones()">
   	<header>
@@ -60,7 +61,6 @@
       <?php include 'php/menu.php'; ?>
   	</main>
   <script src="js/modernizr.js"></script>
-  <script src="../js/jquery.js"></script>
   <script src="js/main.js"></script>
   <script src="js/acciones.js"></script>
   <script src="js/livePage.js"></script>

@@ -10,6 +10,7 @@
     <title>Artefatos Lumínicos</title>
     <link rel="icon" type="image/png" href="images/icono.png" sizes="64x64">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
   </head>
   <body onresize="normaliza()">
     <?php include 'php/verificaSec.php'; ?><!-- Verifica sección-->
@@ -142,7 +143,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/jquery.js"></script>
     <script src="js/acciones.js"></script>
     <script src="js/animaciones.js"></script>
     <script src="js/externo.js"></script>
