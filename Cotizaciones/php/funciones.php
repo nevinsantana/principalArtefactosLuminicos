@@ -146,9 +146,10 @@
     $id_user=$_SESSION['usuario']; $i=0;
     if(isset($_POST['usuario'])) $usuarioCA=$_POST['usuario'];
     foreach ($_POST as $rep => $val) {
-      while($j-1>0) {
+      $j=2;
+      while($j>0) {
         $j=explode("  ",$val);
-        $j=count($j);
+        $j=count($j); $j=$j -1;
         $val=str_replace("  "," ",$val);
       }
       $i++; ${'aC'.$i}=$val; }
