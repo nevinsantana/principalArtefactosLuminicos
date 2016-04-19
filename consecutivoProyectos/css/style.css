@@ -1810,11 +1810,13 @@ header::before { display: none; content: 'mobile'; }
 /*gestionProyecto.php**********************************************************/
 .pCerrado {
 	transition: 0.5s;
-	background: #beba98;
+	background: #33414a;
+	color: #fff;
 }
 .pAbierto {
 	transition: 0.5s;
-	background: #cfccaf;
+	background: transparent;
+	color: #33414a;
 }
 #iPContainer {
 	transition: 0.5s;
@@ -1824,7 +1826,7 @@ div.editaProyecto {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	transition: opacity 0.2s;
+	transition: opacity 0.2s, transform 0.5s;
 }
 
 div.editaProyecto, div.editaPlano {
@@ -1863,6 +1865,7 @@ hr.hrPlano {
 	border-top: 3px solid #5d5b44;
 	border-radius: 3px;
 	text-align: center;
+	margin-bottom: -15px;
 }
 
 
@@ -1883,8 +1886,12 @@ hr.hrLuminario {
 	border-top: 3px solid #5d5b44;
 	border-radius: 3px;
 	text-align: center;
+	margin-bottom: -15px;
 }
 
+.lCMargin {
+	margin-top: 10px;
+}
 
 hr.hrLuminario:after {
 	content: 'Luminarios';
@@ -1932,7 +1939,7 @@ hr.hrNota {
 	border-top: 3px solid #5d5b44;
 	border-radius: 3px;
 	text-align: center;
-	margin: 30px 0 10px 0;
+	margin: 30px 0 -15px 0;
 }
 
 hr.hrNota:after {
@@ -2107,6 +2114,8 @@ table.tNotas tr:last-child td:last-child { border-radius: 0 0 5px 0; }
 table.tNotas tr:nth-child(odd) { color: #ffffff; background: #33414a; }
 
 table.tNotas tr:nth-child(even) { color: #33414a; background: #ffffff; }
+
+#nContainer { padding-top: 10px; }
 /*fGestionProyecto.php*********************************************************/
 /*clientes.php*****************************************************************/
 /*fClientes.php****************************************************************/

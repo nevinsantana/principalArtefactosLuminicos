@@ -158,7 +158,16 @@
     $res=query($sql,$con);
     $res2=query($sql,$con);
     if($cam=mysql_fetch_assoc($res)) {
-      echo "<hr class='hrNota'><table class='tNotas'>";
+      echo "<div id='cContainer2'>
+        <hr class='hrNota'>
+        <div id='iPContainer2' class='center'
+        onclick=toggleIt("."'nContainer'".",2)>
+          <i class='fa fa-chevron-down'></i>
+        </div>
+      </div>
+      <div id='nContainer'>
+      <table class='tNotas'>
+      ";
       while($cam2=mysql_fetch_assoc($res2)) {
         $i++;
         $idNota=$cam2['idNota']; $nota=$cam2['nota']; $nota=dText($nota);
@@ -173,7 +182,7 @@
           </td>
         </tr>";
       }
-      echo "</table>";
+      echo "</table></div>";
     }
   }
   if(isset($_GET['eNota'])) eNota($_GET['nota']); function eNota($idNota) {
@@ -328,7 +337,14 @@
       if($idLum=="") { $idLum=1; }
       echo '
       <div class="editaLuminario">
-        <hr class="hrLuminario">';
+      <div id="cContainerl'.$idPlano.'">
+        <hr class="hrLuminario">
+        <div id="iPContainerl'.$idPlano.'" class="center"
+        onclick=toggleIt('."'lContainer".$idPlano."','l".$idPlano."'".')>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="lContainer'.$idPlano.'" class="lCMargin">';
       $sql="SELECT * FROM luminario WHERE idProyecto='$idProy' AND
       idPlano='$idPlano'";
       $res1=query($sql,$con);
@@ -442,7 +458,7 @@
               Tilt
             </span>
           </label>
-        </span></div>
+        </span></div></div>
         ";
       }
       echo '

@@ -655,5 +655,20 @@ function cBotonG() {
   else { aNota.style.width="10%"; }
   return false;
 }
+function toggleIt(dTToggle,i) {
+$('#'+dTToggle).toggle(500, function() {
+  $("#iPContainer"+i).css("transition","0.5s");
+  if($(this).is(":visible")) {
+    $("#cContainer"+i).removeClass("pCerrado");
+    $("#cContainer"+i).addClass("pAbierto");
+    $("#iPContainer"+i).css("transform","rotate(0deg)");
+  }
+  else {
+    $("#cContainer"+i).removeClass("pAbierto");
+    $("#cContainer"+i).addClass("pCerrado");
+    $("#iPContainer"+i).css("transform","rotate(180deg)");
+  }
+});
+}
 /*fGestionProyecto.php*********************************************************/
   /*end**********************************************************************/

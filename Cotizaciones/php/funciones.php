@@ -2,7 +2,8 @@
   @session_start();
   $indexFF='Location: ../index.php'; $index='Location: index.php';
   $admFF='Location: ../administracion.php'; $adm='Location: administracion.php';
-
+  if(file_exists("../php/crypt.php")) include("../php/crypt.php");
+  else include("../../php/crypt.php");
   function conectar() {
     $link=mysql_connect("localhost","artes_cotizacion","Cotizaciones_1209");
     mysql_set_charset('utf8');
@@ -41,7 +42,8 @@
   if(isset($_GET['validar']) && $_GET['validar']==true) validarUsuario();
   function validarUsuario($con) {
     $_SESSION['usuario']=$_POST['id_usuario'];
-    $_SESSION['password']=$_POST['password'];
+    $pasCrypt=cryptRS($_POST['id_usuario'],$_POST['password']);
+    $_SESSION['password']=$pasCrypt;
     $id_usuario=$_SESSION['usuario'];
     $password=$_SESSION['password'];
     $usuario='ninguno';

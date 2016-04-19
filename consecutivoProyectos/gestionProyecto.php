@@ -359,9 +359,11 @@
   </form>
 </div>
 <div class="editaProyecto" id="editaProyecto">
-  <div id="cContainer">
+  <div id="cContainer1">
     <hr class="hrProyecto">
-    <div id="iPContainer" class="center"><i class="fa fa-chevron-down"></i></div>
+    <div id="iPContainer1" class="center" onclick="toggleIt('pContainer',1)">
+      <i class="fa fa-chevron-down"></i>
+    </div>
   </div>
   <div id="pContainer">
   <form action="php/saver.php?gDProy=true&proy=<?php echo $idProyecto ?>"
@@ -515,18 +517,20 @@
     </button>
   </form>
 </div>
-  <?php gTablaNotas($idProyecto); ?>
+<?php gTablaNotas($idProyecto); ?>
   <div class="editaPlano">
-    <hr class="hrPlano">
+    <div id="cContainer3">
+      <hr class="hrPlano">
+      <div id="iPContainer3" class="center" onclick="toggleIt('plContainer',3)">
+        <i class="fa fa-chevron-down"></i>
+      </div>
+    </div>
+    <div id="plContainer">
     <section class="tPlanos"><?php generaPlanos($idProyecto); ?></section>
     <button class="botonEditaProyecto" onclick="agregaPlano()">
       <i class="fa fa-fw fa-plus-circle"></i>
     </button>
   </div>
-  <!--<button class="botonGuardaTodo" onclick="agregaPlano()">
-    <i class="fa fa-fw fa-floppy-o"></i>
-    Guardar todo
-  </button>-->
 </div>
 <script src="js/circleSelect/selectFx.js"></script>
 <script>
@@ -544,18 +548,4 @@
           };
         }
     });});})();
-  $(function(){$("#iPContainer").click(function(){
-    $("#pContainer").toggle(500, function(){
-      if($(this).is(":visible")) {
-        $("#cContainer").removeClass("pCerrado");
-        $("#cContainer").addClass("pAbierto");
-        $("#iPContainer").css("transform","rotate(0deg)");
-      }
-      else {
-        $("#cContainer").removeClass("pAbierto");
-        $("#cContainer").addClass("pCerrado");
-        $("#iPContainer").css("transform","rotate(180deg)");
-      }
-    });
-  });});
 </script>
