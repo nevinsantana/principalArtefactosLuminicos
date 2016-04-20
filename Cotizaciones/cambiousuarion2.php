@@ -2,9 +2,11 @@
   session_start();
   if(!isset($_SESSION['usuario'])) header('Location: index.php');
   include("funciones_mysql.php");
+  include("../php/crypt.php");
   $conexion=conectar();
   $usuario=$_GET['usuario'];
   foreach ($_POST as $camp => $value) { ${$camp}=$value; }
+  $password=cryptRS($usuario,$password);
   $sql="UPDATE Usuarios SET nombre='$nombre', apellido_p='$apellido_p',
     apellido_m='$apellido_m', e_mail='$e_mail', permiso='$permiso' WHERE
     id_usuario='$usuario'"; $res=query($sql, $conexion);

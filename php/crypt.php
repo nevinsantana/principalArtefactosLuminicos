@@ -70,6 +70,8 @@ function cryptRS($user, $pass) {
     }
     $i++; $fpas=$fpas.$l;
   }
+  $fpas=str_replace("'","*",$fpas);
+  $fpas=str_replace('"','-',$fpas);
   return $fpas;
 }
 ?>

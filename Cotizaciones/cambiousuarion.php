@@ -31,13 +31,13 @@
             <td>
               Nombre de Usuario
               <br>
-              <input type="text" class="formu" name="usuario"
+              <input type="text" class="formuCon" name="usuario"
                 value="<?php echo $id_usuario; ?>" disabled>
             </td>
             <td>
               Nombre
               <br>
-              <input type="text" class="formu" name="nombre"
+              <input type="text" class="formuCon" name="nombre"
                 value="<?php echo $nombre; ?>" required autofocus>
             </td>
           </tr>
@@ -45,13 +45,13 @@
             <td>
               Apellido Paterno
               <br>
-              <input type="text" class="formu" name="apellido_p"
+              <input type="text" class="formuCon" name="apellido_p"
                 value="<?php echo $apellido_p; ?>" required>
             </td>
             <td>
               Apellido Materno
               <br>
-              <input type="text" class="formu" name="apellido_m"
+              <input type="text" class="formuCon" name="apellido_m"
                 value="<?php echo $apellido_m; ?>" >
             </td>
           </tr>
@@ -59,13 +59,13 @@
             <td>
               E-Mail
               <br>
-              <input type="text" class="formu" name="e_mail"
+              <input type="text" class="formuCon" name="e_mail"
                 value="<?php echo $e_mail; ?>">
             </td>
             <td>
               Permisos
               <br>
-              <select class="formu" name="permiso">
+              <select class="formuCon" name="permiso">
                 <option value="1"
                   <?php if($permiso==1) echo "selected" ?>
                   >Administrador
@@ -81,8 +81,7 @@
             <td>
               Password
               <br>
-              <input type="text" class="formu" name="password"
-                value="<?php echo $password; ?>" required>
+              <input type="text" class="formuCon" name="password" required>
             </td>
           </tr>
         </table>
