@@ -1,9 +1,13 @@
 <?php
 include("funciones.php");
-$us=" ";
-$us1=substr($us,0,1).substr($us,-1);
-$pas=" ";
-$pas=cryptRS($us,$pas);
-$pas=crypt($pas,$us1).crypt($pas,$us1);
-echo $pas;
+$sql="SELECT * FROM Log_In";
+$res=query($sql,$con);
+while($cam=mysql_fetch_assoc($res)) {
+  $user=$cam['id_usuario'];
+  $nPass=$cam['password'];
+  $nPass=str_replace("'","*",$nPass);
+  $nPass=str_replace('"','-',$nPass);
+  $sql="UPDATE Log_In SET password='$nPass' WHERE id_usuario='$user'";
+  $resa=query($sql,$con);
+}
 ?>
