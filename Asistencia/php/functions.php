@@ -93,6 +93,7 @@ function reporteMen($idUsuario) {
 }
 function gTReporte($fIni,$fFin,$idUsuario) {
 $cPag=1;
+$fAct=$fIni;
 $sql = "SELECT * FROM usuarios WHERE idUsuario = '$idUsuario'";
 $res = qry($sql); $cam = mysql_fetch_assoc($res); $unir = $cam['unir'];
 $sql = "SELECT * FROM usuarios WHERE unir = '$unir'";
@@ -100,9 +101,10 @@ $ress=qry($sql);
 $i=1;
 while($cam1 = mysql_fetch_assoc($ress)) {
   $idUsuario=$cam1['idUsuario'];
+while(strtotime("$fAct")<=strtotime("$fFin")){
 $sql="SELECT * FROM checkinout WHERE idUsuario='$idUsuario'
-AND fecha BETWEEN '$fIni' AND '$fFin'"; $res=qry($sql);
-$j=0; $fAnt=0;
+AND fecha='$fAct'"; $res=qry($sql); $resu=qry($sql);
+$j=0; $fAnt=0; $x2=1;
 while ($cam=mysql_fetch_assoc($res))
 {
   foreach ($cam as $camp => $val){ ${$camp}=$val; }
@@ -144,17 +146,17 @@ while ($cam=mysql_fetch_assoc($res))
     if($dia=='Viernes'){echo "cViernes";}
      echo "'>";
   $i = 1; $cPag++;}
-  if($j!=0){ echo "<td rowspan=$j>$dia</td>"; /*$j = $g;*/ $j = 0;}
-  echo "<td>$idUsuario</td><td>$nombre Tayde Romo</td><td>$fecha</td><td>$hora</td><td>";
-
+  if($j!=0){echo "<td rowspan=$j>$dia</td>"; /*$j = $g;*/ $j = 0;}
+  echo "<td>$idUsuario</td><td>$nombre</td><td>$fecha</td><td>$hora</td><td>";
   $hora = strtotime( $hora );
-      $hora1 = strtotime("11:30");
-      if($hora<=$hora1){
-        if($hora>=strtotime("09:11") && $hora<strtotime( "09:31" ))echo "1/2 hora";
-        elseif($hora>=strtotime("09:31") && $hora<strtotime( "10:01" ))echo "1 hora";
-        elseif($hora>=strtotime("10:01"))echo "FALTA";
-        else {echo "-";}
-      }
+  if($x2==1){
+    if($hora>=strtotime("09:11") && $hora<strtotime( "09:31" ))echo "1/2 hora";
+    elseif($hora>=strtotime("09:31") && $hora<strtotime( "10:01" ))echo "1 hora";
+    elseif($hora>=strtotime("10:01"))echo "FALTA";
+    else {echo "-";}
+  }
+  if($hora>=strtotime("14:45") && $hora<=strtotime("15:00")){echo "-";}
+  if($hora>=strtotime("15:01") && $hora<strtotime("16:30")){echo "*";}
       echo "</td></tr>";
   echo "</td></tr>";
   if($i == 26) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
@@ -167,8 +169,16 @@ while ($cam=mysql_fetch_assoc($res))
   </tr></thead><tbody>";
   $i = 1; $cPag++;}
   $i++;
-
-      $fAnt=$fecha1;
+  $x2++;
+  $fAnt=$fecha1;
+}
+$dias = array('','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo');
+$dia = $dias[date('N', strtotime($fAct))];
+if(!$cam=mysql_fetch_assoc($resu)){
+  if($dia!="Sabado" && $dia!="Domingo")
+    echo "<tr><td colspan=6' class='falta'>FALTA: $dia $fAct</td></tr>";
+  }
+$fAct = date('Y-m-d',strtotime('1 day',strtotime($fAct)));
 }
 }
 return $cPag;
