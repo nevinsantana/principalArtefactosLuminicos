@@ -148,9 +148,9 @@ while ($cam=mysql_fetch_assoc($res))
     if($hora>=strtotime("09:11") && $hora<strtotime( "09:31" ))echo "1/2 hora";
     elseif($hora>=strtotime("09:31") && $hora<strtotime( "10:01" ))echo "1 hora";
     elseif($hora>=strtotime("10:01"))echo "FALTA";
-    else {echo "-";}
+    else {echo "";}
   }
-  if($hora>=strtotime("14:45") && $hora<=strtotime("15:00")){echo "-";}
+  if($hora>=strtotime("14:45") && $hora<=strtotime("15:00")){echo "";}
   if($hora>=strtotime("15:01") && $hora<strtotime("16:30")){echo "*";}
       echo "</td></tr>";
   echo "</td></tr>";
