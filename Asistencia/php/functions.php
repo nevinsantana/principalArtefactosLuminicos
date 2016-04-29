@@ -94,13 +94,8 @@ function reporteMen($idUsuario) {
 function gTReporte($fIni,$fFin,$idUsuario) {
 $cPag=1;
 $fAct=$fIni;
-$sql = "SELECT * FROM usuarios WHERE idUsuario = '$idUsuario'";
-$res = qry($sql); $cam = mysql_fetch_assoc($res); $unir = $cam['unir'];
-$sql = "SELECT * FROM usuarios WHERE unir = '$unir'";
-$ress=qry($sql);
+
 $i=1;
-while($cam1 = mysql_fetch_assoc($ress)) {
-  $idUsuario=$cam1['idUsuario'];
 while(strtotime("$fAct")<=strtotime("$fFin")){
 $sql="SELECT * FROM checkinout WHERE idUsuario='$idUsuario'
 AND fecha='$fAct'"; $res=qry($sql); $resu=qry($sql);
@@ -159,7 +154,7 @@ while ($cam=mysql_fetch_assoc($res))
   if($hora>=strtotime("15:01") && $hora<strtotime("16:30")){echo "*";}
       echo "</td></tr>";
   echo "</td></tr>";
-  if($i == 26) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
+  if($i+$j > 27) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
     <th></th>
     <th>No</th>
     <th>Nombre</th>
@@ -174,13 +169,17 @@ while ($cam=mysql_fetch_assoc($res))
 }
 $dias = array('','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo');
 $dia = $dias[date('N', strtotime($fAct))];
+
 if(!$cam=mysql_fetch_assoc($resu)){
-  if($dia!="Sabado" && $dia!="Domingo")
-    echo "<tr><td colspan=6' class='falta'>FALTA: $dia $fAct</td></tr>";
+  if($dia!="Sabado" && $dia!="Domingo"){
+    $fAct2=date_format(date_create($fAct),'d-m-Y');
+    echo "<tr><td colspan=6' class='falta'>FALTA: $dia $fAct2</td></tr>";
+    $i++;
+  }
   }
 $fAct = date('Y-m-d',strtotime('1 day',strtotime($fAct)));
 }
-}
+
 return $cPag;
 }
 
@@ -192,6 +191,8 @@ function gHeader($user) {
 }
 
 function gRango($x, $y) {
+  $x=date_format(date_create($x),'d-m-Y');
+  $y=date_format(date_create($y),'d-m-Y');
   echo "<p>Del: $x al: $y</p>";
 }
 //fReporte
