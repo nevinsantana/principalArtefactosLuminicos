@@ -151,11 +151,11 @@ input:focus,button:focus { outline: none; }
 
 #hContainer {
 	width: 100%;
-	height: 110px;
+	height: 70px;
 }
 
 .lContainer {
-	width: 150px;
+	width: 120px;
 	float: left;
 	height: 113px;
 }
@@ -166,7 +166,7 @@ input:focus,button:focus { outline: none; }
 	width: 540px;
 	float: right;
 	height: 113px;
-	padding-top: 80px;
+	padding-top: 55px;
 	text-align: right;
 }
 
@@ -187,11 +187,11 @@ hr.infSep {
 
 #tAsistencia { width: 100%; }
 
-#tAsistencia * { vertical-align: middle; }
+#tAsistencia * { vertical-align: middle; font-size: 12px;}
 
 #tAsistencia tbody tr td, #tAsistencia thead tr th {
 	border: 1px solid black;
-	padding: 5px 0;
+	padding: 2px 0;
 }
 .cLunes{ background-color: #dea0a0; }
 
@@ -210,6 +210,7 @@ hr.infSep {
 #tAsistencia thead tr th:nth-child(n+2) {
 	border: 3px solid black;
 }
+.tAReporte{ margin: 0px; height: 80px; width: 699px; border: 2px solid black;}
 
 #tAsistencia thead tr th:first-child {
 	border-top: 0px solid black;

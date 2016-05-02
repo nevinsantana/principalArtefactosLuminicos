@@ -41,7 +41,7 @@
                   <th>Nombre</th>
                   <th>Fecha</th>
                   <th>Hora</th>
-                  <th>Descuento<br>(Horas)</th>
+                  <th>Descuento</th>
                 </tr>
               </thead>
               <tbody>
@@ -52,7 +52,9 @@
                 ?>
               </tbody>
             </table>
-            <div class='fPage'><?php echo $cPag; ?></div>
+            <br>Observaciones<br>
+            <textarea class='tAReporte'></textarea>
+            <?php //echo "<br>".$cPag; ?>
           </main>
         </div>
       </section>

@@ -116,7 +116,7 @@ while ($cam=mysql_fetch_assoc($res))
   $sql1="SELECT * FROM usuarios WHERE idUsuario='$idUsuario'";
   $res1=qry($sql1); $cam1=mysql_fetch_assoc($res1);
   $nombre=$cam1['nombre']." ".$cam1['apellidoPaterno']." ".$cam1['apellidoMaterno'];
-  if($i+$j <= 27) {
+  if($i+$j <= 44) {
   echo
   "<tr class='"; if($x==1){ $x=0; echo "linea ";}
   if($dia=='Lunes'){ echo "cLunes"; }
@@ -125,7 +125,7 @@ while ($cam=mysql_fetch_assoc($res))
   if($dia=='Jueves'){echo "cJueves";}
   if($dia=='Viernes'){echo "cViernes";}
    echo "'>";}
-  if($i+$j > 27) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
+  if($i+$j > 44) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
     <th></th>
     <th>No</th>
     <th>Nombre</th>
@@ -154,7 +154,7 @@ while ($cam=mysql_fetch_assoc($res))
   if($hora>=strtotime("15:01") && $hora<strtotime("16:30")){echo "*";}
       echo "</td></tr>";
   echo "</td></tr>";
-  if($i+$j > 27) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
+  if($i+$j > 44) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
     <th></th>
     <th>No</th>
     <th>Nombre</th>
