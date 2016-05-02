@@ -71,10 +71,12 @@ $idUsuario = $_GET['idUsuario']; $x = $_GET['x'];
 if(isset($_GET['fIni'])) { $fIni = $_GET['fIni']; $fFin = $_GET['fFin']; }
 function reporteQuin($idUsuario) {
   $dia = date("d");
+  $anio = date("Y");
+  $mes = date("m");
   if($dia <= 15) {
     $fIni = date('Y-m-d',strtotime('-1month',strtotime(date('Y-m-16'))));
     $dia = date("d",(mktime(0,0,0,substr($fIni,5,2)+1,1,substr($fIni,0,4))-1));
-    $fFin = date("$anio-$mes-$dia");
+    $fFin = date('Y-m-d',strtotime('-1month',strtotime(date("Y-m-$dia"))));
   }
   else { $fIni = date('Y-m-01'); $fFin = date('Y-m-15'); }
   gRango($fIni, $fFin);
