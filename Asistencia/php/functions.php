@@ -47,7 +47,8 @@ function qry($sql) {
 //index
 function gTUsuarios(){
   $x=0;
-  $sql = "SELECT * FROM usuarios WHERE old = 0"; $res = qry($sql);
+  $sql = "SELECT * FROM usuarios WHERE old = 0 ORDER BY numero ASC";
+  $res = qry($sql);
   while($cam = mysql_fetch_assoc($res)) {
     foreach ($cam as $camp => $val){ ${$camp} = $val; }
     $nombre = "$nombre $apellidoPaterno $apellidoMaterno";
@@ -117,6 +118,7 @@ while ($cam=mysql_fetch_assoc($res))
   }
   $sql1="SELECT * FROM usuarios WHERE idUsuario='$idUsuario'";
   $res1=qry($sql1); $cam1=mysql_fetch_assoc($res1);
+  $numero=$cam1['numero'];
   $nombre=$cam1['nombre']." ".$cam1['apellidoPaterno']." ".$cam1['apellidoMaterno'];
   if($i+$j <= 44) {
   echo
@@ -144,7 +146,7 @@ while ($cam=mysql_fetch_assoc($res))
      echo "'>";
   $i = 1; $cPag++;}
   if($j!=0){echo "<td rowspan=$j>$dia</td>"; /*$j = $g;*/ $j = 0;}
-  echo "<td>$idUsuario</td><td>$nombre</td><td>$fecha</td><td>$hora</td><td>";
+  echo "<td>$numero</td><td>$nombre</td><td>$fecha</td><td>$hora</td><td>";
   $hora = strtotime( $hora );
   if($x2==1){
     if($hora>=strtotime("09:11") && $hora<strtotime( "09:31" ))echo "1/2 hora";
@@ -189,7 +191,7 @@ return $cPag;
 function gHeader($user) {
   $sql = "SELECT * FROM usuarios WHERE idUsuario = '$user'";
   $res=qry($sql); $cam=mysql_fetch_assoc($res);
-  echo "$cam[idUsuario] - $cam[nombre] $cam[apellidoPaterno]";
+  echo "$cam[numero] - $cam[nombre] $cam[apellidoPaterno]";
 }
 
 function gRango($x, $y) {
