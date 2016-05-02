@@ -215,4 +215,22 @@ hr.infSep {
 	border-top: 0px solid black;
 	border-left: 0px solid black;
 }
+
+.tablaUsers { width: 100%; text-align: center; }
+
+.tablaUsers thead { font-size: 20px; padding: 10px; }
+
+.tablaUsers th { padding: 20px; }
+
+.tablaUsers td { padding: 5px; }
+
+.tablaUsers tr th:nth-child(1) { width: 30px; }
+
+.acomoda div {
+	float: left;
+  width: 50%;
+  padding: 10px;
+	text-align: center;
+}
+
 /*fReporte*/
