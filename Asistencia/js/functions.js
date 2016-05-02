@@ -45,3 +45,13 @@ function cDate(y) {
   i++;
   }
 }
+
+function toggler(toTog) {
+  $('#'+toTog).toggle(350, function() {
+    var hider = toTog.slice(-1);
+    if(hider==1) var x=2, y=3;
+    if(hider==2) var x=1, y=3;
+    if(hider==3) var x=1, y=2;
+    $('#toggler'+x).hide(350);
+    $('#toggler'+y).hide(350);
+});}
