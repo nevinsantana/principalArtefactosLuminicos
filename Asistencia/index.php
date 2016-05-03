@@ -81,15 +81,18 @@
         </div>
       </section>
       <section id='tUsersContainer'>
-        <form method='POST' action='reporte.php'>
         <!--<input type='button' value='Invertir selección'>
         <input type='button' value='Imprimir todo'>-->
-
-      </form>
       </section>
     </main>
     <script src='js/functions.js'></script>
     <script>var y=<?php echo $y; ?></script>
     <?php verSession(); ?>
+    <?php
+    if(isset($_GET['errorF'])){
+      echo "<script>alerta('Selecciona un rango de fechas');</script>";
+    }
+    ?>
+>>>>>>> origin/master
   </body>
 </html>

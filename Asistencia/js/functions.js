@@ -83,7 +83,6 @@ function cDate(y) {
   i++;
   }
 }
-
 function toggler(toTog, i) {
   $('#'+toTog).toggle(350, function() {
     var hider = toTog.slice(-1);
@@ -93,3 +92,6 @@ function toggler(toTog, i) {
     $('#toggler'+x).hide(350);
     $('#toggler'+y).hide(350);
 });}
+function alerta(msg){
+  window.alert(msg);
+}

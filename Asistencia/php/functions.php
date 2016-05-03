@@ -217,5 +217,13 @@ function gRango($x, $y) {
   $y=date_format(date_create($y),'d-m-Y');
   echo "<p>Del: $x al: $y</p>";
 }
+
+function errorF($x) {
+  if($x==3){
+    if(!isset($_GET['fIni']) || !isset($_GET['fFin'])){
+      header('Location: index.php?errorF=1');
+    }
+  }
+}
 //fReporte
 ?>
