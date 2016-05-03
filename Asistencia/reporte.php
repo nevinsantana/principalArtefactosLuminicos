@@ -1,4 +1,6 @@
-<?php include('php/functions.php'); ?>
+<?php include('php/functions.php');
+  errorF($x);
+?>
 <!doctype html>
 <html lang='es-mx' class='no-js'>
   <head>

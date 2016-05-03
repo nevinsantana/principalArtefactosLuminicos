@@ -1,4 +1,3 @@
-
 <?php include('php/functions.php'); ?>
 <!doctype html>
 <html lang='es-mx' class='no-js'>
@@ -82,14 +81,16 @@
         </div>
       </section>
       <section id='tUsersContainer'>
-        <form method='POST' action='reporte.php'>
         <!--<input type='button' value='Invertir selección'>
         <input type='button' value='Imprimir todo'>-->
-
-      </form>
       </section>
     </main>
     <script>var y=<?php echo $y; ?></script>
     <script src='js/functions.js'></script>
+    <?php
+    if(isset($_GET['errorF'])){
+      echo "<script>alerta('Selecciona un rango de fechas');</script>";
+    }
+    ?>
   </body>
 </html>
