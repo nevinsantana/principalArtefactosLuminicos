@@ -1,5 +1,5 @@
 <?php include('php/functions.php');
-  errorF($x);
+  if(isset($x)) errorF($x);
 ?>
 <!doctype html>
 <html lang='es-mx' class='no-js'>
