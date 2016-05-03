@@ -45,7 +45,7 @@ function qry($sql) {
 //fConexiónDB
 
 //index
-function gTUsuarios(){
+function gTUsuarios($f){
   $x=0;
   $sql = "SELECT * FROM usuarios WHERE old = 0 ORDER BY numero ASC";
   $res = qry($sql);
@@ -56,7 +56,7 @@ function gTUsuarios(){
       <td>$numero</td>
       <td>$nombre</td>
       <td><a href='reporte.php?idUsuario=$idUsuario&x='
-      rel='reporte.php?idUsuario=$idUsuario&x=' class='bPrint'>
+      rel='reporte.php?idUsuario=$idUsuario&x=' class='bPrint$f'>
       <i class='fa fa-print' aria-hidden='true'></i>
       </a></td>
     </tr>";

@@ -24,7 +24,9 @@
       <main id='persTUsersContainer'>
       <section id='persContainer'>
         <div class="toggleContainer">
-          <button type="button" class='button' onclick='toggler("toggler1")'>Quincena anterior</button>
+          <button type="button" class='button' onclick='toggler("toggler1", y)'>
+            Quincena anterior
+          </button>
           <div id="toggler1">
             <div>
                 <table class='tablaUsers'>
@@ -32,7 +34,7 @@
                     <tr><th>No</th><th>Nombre</th></tr>
                   </thead>
                   <tbody>
-                  <?php $y=gTUsuarios(); ?>
+                  <?php $y=gTUsuarios(1); ?>
                 </tbody>
                 </table>
             </div>
@@ -40,7 +42,7 @@
         </div>
 
         <div class="toggleContainer">
-          <button type="button" onclick="toggler('toggler2')">Mes anterior</button>
+          <button type="button" onclick="toggler('toggler2', y)">Mes anterior</button>
           <div id="toggler2">
             <div>
               <table class='tablaUsers'>
@@ -48,7 +50,7 @@
                   <tr><th>No</th><th>Nombre</th></tr>
                 </thead>
                 <tbody>
-                <?php $y=gTUsuarios(); ?>
+                <?php $y=gTUsuarios(2); ?>
               </tbody>
               </table>
             </div>
@@ -56,16 +58,24 @@
         </div>
 
         <div class="toggleContainer">
-          <button type="button" onclick='toggler("toggler3")'>Personalizar</button>
+          <button type="button" onclick='toggler("toggler3", y)'>Personalizar</button>
           <div id="toggler3">
-            <div><p>Fecha inicial</p><br><input type='date' id='fDate' name='fDate' onchange='cDate(y)'></div>
-            <div><p>Fecha final</p><br><input type='date' id='lDate' name='lDate' onchange='cDate(y)'></div>
+            <div>
+              <p>Fecha inicial</p>
+              <br>
+              <input type='date' id='fDate' name='fDate' onchange='cDate(y)'>
+            </div>
+            <div>
+              <p>Fecha final</p>
+              <br>
+              <input type='date' id='lDate' name='lDate' onchange='cDate(y)'>
+            </div>
             <table class='tablaUsers'>
               <thead>
                 <tr><th>No</th><th>Nombre</th></tr>
               </thead>
               <tbody>
-              <?php $y=gTUsuarios(); ?>
+              <?php $y=gTUsuarios(3); ?>
             </tbody>
             </table>
           </div>

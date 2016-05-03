@@ -1,7 +1,7 @@
 function aTabla1(y) {
   var i=0;
   while(i<y) {
-  var bPrint=document.getElementsByClassName('bPrint')[i];
+  var bPrint=document.getElementsByClassName('bPrint1')[i];
   nLink=bPrint.rel+'1';
   bPrint.href=nLink;
   i++;
@@ -13,7 +13,7 @@ function aTabla1(y) {
 function aTabla2(y) {
   var i=0;
   while(i<y) {
-  var bPrint=document.getElementsByClassName('bPrint')[i];
+  var bPrint=document.getElementsByClassName('bPrint2')[i];
   nLink=bPrint.rel+'2';
   bPrint.href=nLink;
   i++;
@@ -25,7 +25,7 @@ function aTabla2(y) {
 function aTabla3(y) {
   var i=0;
   while(i<y) {
-  var bPrint=document.getElementsByClassName('bPrint')[i];
+  var bPrint=document.getElementsByClassName('bPrint3')[i];
   nLink=bPrint.rel+'3';
   bPrint.href=nLink;
   i++;
@@ -39,19 +39,19 @@ function cDate(y) {
   var i=0, fDate = document.getElementById('fDate').value,
   lDate = document.getElementById('lDate').value;
   while(i<y) {
-  var bPrint=document.getElementsByClassName('bPrint')[i];
+  var bPrint=document.getElementsByClassName('bPrint3')[i];
   nLink=bPrint.rel+'3&fIni='+fDate+'&fFin='+lDate;
   bPrint.href=nLink;
   i++;
   }
 }
 
-function toggler(toTog) {
+function toggler(toTog, i) {
   $('#'+toTog).toggle(350, function() {
     var hider = toTog.slice(-1);
-    if(hider==1) var x=2, y=3;
-    if(hider==2) var x=1, y=3;
-    if(hider==3) var x=1, y=2;
+    if(hider==1) { var x=2, y=3; aTabla1(i); }
+    if(hider==2) { var x=1, y=3; aTabla2(i); }
+    if(hider==3) { var x=1, y=2; aTabla3(i); }
     $('#toggler'+x).hide(350);
     $('#toggler'+y).hide(350);
 });}
