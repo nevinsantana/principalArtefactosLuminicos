@@ -38,6 +38,46 @@ table { border-collapse: collapse; border-spacing: 0; }
 input:focus,button:focus { outline: none; }
 /*fGeneral*/
 
+/*frameLogin*/
+.login {
+	background: #414141;
+	width: 60%;
+	height: 600px;
+	position: absolute;
+	top: 100px;
+	left: 20%;
+}
+
+.titleLogin {
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin: 75px 0 50px 0;
+}
+
+.lInput {
+	text-align: center;
+	width: 50%;
+	margin: 50px 25%;
+	height: 30px;
+}
+
+.lSubmit {
+	text-align: center;
+	width: 35%;
+	margin: 50px 32.5%;
+	height: 30px;
+	background: #1f787e;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.lSubmit:hover {
+	background: #309198;
+}
+/*fFrameLogin*/
+
 /*index*/
 #hPrincipal { width: 100%; height: 50px; background: #414141; }
 

@@ -13,9 +13,9 @@
     <script src="../js/jquery.js"></script>
   </head>
   <body>
-  	<header></header>
   	<main>
-  </main>
+      <a href="javascript:q=(document.location.href);void(open('http://example.com/submit.php?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));">click here</a>
+    </main>
   <script src="js/functions.js"></script>
   </body>
 </html>

@@ -1,28 +1,8 @@
 <?php
-//includes
-include("../php/crypt.php");
-//fIncludes
 
 //sesiones
 session_start();
 //fSesiones
-
-//general
-function remText($str) {
-  $aSust = array("á","é","í","ó","ú","Á","É","Í","Ó","Ú","ñ","À","Ã","Ì","Ò",
-  "Ù","Ã™","Ã ","Ã¨","Ã¬","Ã²","Ã¹","ç","Ç","Ã¢","ê","Ã®","Ã´","Ã»","Ã‚","ÃŠ",
-  "ÃŽ","Ã”","Ã›","ü","Ã¶","Ã–","Ã¯","Ã¤","«","Ò","Ã","Ã„","Ã‹");
-  $sust = array("a","e","i","o","u","A","E","I","O","U","n","N","A","E","I","O",
-  "U","a","e","i","o","u","c","C","a","e","i","o","u","A","E","I","O","U","u",
-  "o","O","i","a","e","U","I","A","E");
-  $var = str_replace($aSust,$sust,$var);
-  return $str;
-}
-
-function remTextSql($str) {
-  $str = str_replace(array("'"," ",'"'),array("`","","`"),$str); return $str;
-}
-//fGeneral
 
 //conexiónDB
 function conG($db,$servidor,$usuario,$pass) {
@@ -43,6 +23,44 @@ function qry($sql) {
   return $res;
 }
 //fConexiónDB
+
+function verSession() {
+  if(!isset($_SESSION['user'])) echo '<script> errorSesion(); </script>';
+}
+
+if(isset($_GET['cSesion'])) { unset($_SESSION['user']); header('Location: ../index.php'); }
+
+if(isset($_GET['sesion'])) iSesion();
+function iSesion() {
+  include("../../php/crypt.php");
+  foreach($_POST as $cam => $val) { ${$cam} = $val; }
+  $pCrypt=cryptRS($user, $pass);
+  $sql="SELECT * FROM login WHERE usuario = '$user' AND password = '$pCrypt'";
+  echo $sql;
+  $res = qry($sql); $cam=mysql_fetch_assoc($res);
+  if($cam) {
+    $_SESSION['user'] = $user;
+    header('Location: ../index.php');
+  }
+  else { echo "eres un tonto"; }
+}
+
+//general
+function remText($str) {
+  $aSust = array("á","é","í","ó","ú","Á","É","Í","Ó","Ú","ñ","À","Ã","Ì","Ò",
+  "Ù","Ã™","Ã ","Ã¨","Ã¬","Ã²","Ã¹","ç","Ç","Ã¢","ê","Ã®","Ã´","Ã»","Ã‚","ÃŠ",
+  "ÃŽ","Ã”","Ã›","ü","Ã¶","Ã–","Ã¯","Ã¤","«","Ò","Ã","Ã„","Ã‹");
+  $sust = array("a","e","i","o","u","A","E","I","O","U","n","N","A","E","I","O",
+  "U","a","e","i","o","u","c","C","a","e","i","o","u","A","E","I","O","U","u",
+  "o","O","i","a","e","U","I","A","E");
+  $var = str_replace($aSust,$sust,$var);
+  return $str;
+}
+
+function remTextSql($str) {
+  $str = str_replace(array("'"," ",'"'),array("`","","`"),$str); return $str;
+}
+//fGeneral
 
 //index
 function gTUsuarios($f){

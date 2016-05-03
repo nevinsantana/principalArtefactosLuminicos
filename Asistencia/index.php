@@ -1,4 +1,3 @@
-
 <?php include('php/functions.php'); ?>
 <!doctype html>
 <html lang='es-mx' class='no-js'>
@@ -18,7 +17,7 @@
       <header id='hPrincipal'>
       <section id='titulo'><h1>Asistencia</h1></section>
       <section id='loginout'>
-        <button><i class="fa fa-power-off"></i></button>
+        <button onclick='window.location.replace("php/functions.php?cSesion=true");'><i class="fa fa-power-off"></i></button>
       </section>
     </header>
       <main id='persTUsersContainer'>
@@ -89,7 +88,8 @@
       </form>
       </section>
     </main>
-    <script>var y=<?php echo $y; ?></script>
     <script src='js/functions.js'></script>
+    <script>var y=<?php echo $y; ?></script>
+    <?php verSession(); ?>
   </body>
 </html>

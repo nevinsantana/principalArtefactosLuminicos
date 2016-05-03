@@ -1,3 +1,41 @@
+var lo=document.getElementById('logout');
+lo.addEventListener('click',function(){});
+
+function errorSesion() {
+  var log = document.createElement('div'),
+  main = document.getElementsByTagName('main')[0],
+  title = document.createElement('h1'),
+  iUser = document.createElement('input'),
+  iPass = document.createElement('input'),
+  iButton = document.createElement('input'),
+  lForm = document.createElement('form');
+  lForm.setAttribute("action", "php/functions.php?sesion=true");
+  lForm.setAttribute("method", "POST");
+  main.style.opacity = '0.5'; main.style.display = 'none';
+  document.body.appendChild(log);
+  log.setAttribute("class", "login");
+  log.style.opacity = '1';
+  log.appendChild(title);
+  title.setAttribute("class", "titleLogin");
+  title.innerHTML='Inicie sesión';
+  log.appendChild(lForm);
+  lForm.appendChild(iUser);
+  iUser.setAttribute('type','text');
+  iUser.setAttribute('name','user');
+  iUser.setAttribute('class','lInput');
+  iUser.setAttribute('placeholder','Usuario');
+  iUser.setAttribute('required','required');
+  lForm.appendChild(iPass);
+  iPass.setAttribute('type','password');
+  iPass.setAttribute('name','pass');
+  iPass.setAttribute('class','lInput');
+  iPass.setAttribute('placeholder','Contraseña');
+  iPass.setAttribute('required','required');
+  lForm.appendChild(iButton);
+  iButton.setAttribute("type", "submit");
+  iButton.setAttribute("class", "lSubmit");
+}
+
 function aTabla1(y) {
   var i=0;
   while(i<y) {

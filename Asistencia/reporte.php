@@ -17,7 +17,7 @@
   	<header id='hPrincipal'>
       <section id='titulo'><h1>Asistencia</h1></section>
       <section id='loginout'>
-        <button><i class="fa fa-power-off"></i></button>
+        <button onclick='window.location.replace("php/functions.php?cSesion=true");'><i class="fa fa-power-off"></i></button>
       </section>
     </header>
   	<main>
@@ -63,5 +63,6 @@
       </button>
     </main>
     <script src='js/functions.js'></script>
+    <?php verSession(); ?>
   </body>
 </html>
