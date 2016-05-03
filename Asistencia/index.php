@@ -93,6 +93,5 @@
       echo "<script>alerta('Selecciona un rango de fechas');</script>";
     }
     ?>
->>>>>>> origin/master
   </body>
 </html>
