@@ -8,7 +8,7 @@ session_start();
 function conG($db,$servidor,$usuario,$pass) {
   $conecta = mysql_connect($servidor,$usuario,$pass);
   mysql_set_charset('utf8');
-  mysql_select_db($db, $conecta) OR DIE("Error de conexión");
+  mysql_select_db($db, $conecta) OR DIE ("Error de conexión");
   return $conecta;
 }
 
@@ -36,13 +36,12 @@ function iSesion() {
   foreach($_POST as $cam => $val) { ${$cam} = $val; }
   $pCrypt=cryptRS($user, $pass);
   $sql="SELECT * FROM login WHERE usuario = '$user' AND password = '$pCrypt'";
-  echo $sql;
   $res = qry($sql); $cam=mysql_fetch_assoc($res);
   if($cam) {
     $_SESSION['user'] = $user;
     header('Location: ../index.php');
   }
-  else { echo "eres un tonto"; }
+  else { header('Location: ../index.php?error=0'); }
 }
 
 //general
@@ -147,7 +146,7 @@ while ($cam=mysql_fetch_assoc($res))
   if($dia=='Jueves'){echo "cJueves";}
   if($dia=='Viernes'){echo "cViernes";}
    echo "'>";}
-  if($i+$j > 44) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
+  if($i+$j > 44) { echo "</tbody></table><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
     <th></th>
     <th>No</th>
     <th>Nombre</th>
@@ -176,7 +175,7 @@ while ($cam=mysql_fetch_assoc($res))
   if($hora>=strtotime("15:01") && $hora<strtotime("16:30")){echo "*";}
       echo "</td></tr>";
   echo "</td></tr>";
-  if($i+$j > 44) { echo "</tbody></table><div class='fPage'>$cPag</div><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
+  if($i+$j > 44) { echo "</tbody></table><div class='salto'></div><table id='tAsistencia'><thead id='printable'><tr>
     <th></th>
     <th>No</th>
     <th>Nombre</th>
@@ -221,7 +220,7 @@ function gRango($x, $y) {
 function errorF($x) {
   if($x==3){
     if(!isset($_GET['fIni']) || !isset($_GET['fFin'])){
-      header('Location: index.php?errorF=1');
+      header('Location: index.php?error=1');
     }
   }
 }

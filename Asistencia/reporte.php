@@ -60,9 +60,11 @@
           </main>
         </div>
       </section>
-      <button onclick='window.print()' class='example'>
-        <i class='fa fa-print' aria-hidden='true'></i>
-      </button>
+      <div class='cpReporte'>
+        <button onclick='window.print()' class='pReporte'>
+          <i class='fa fa-print' aria-hidden='true'></i>
+        </button>
+      </div>
     </main>
     <script src='js/functions.js'></script>
     <?php verSession(); ?>

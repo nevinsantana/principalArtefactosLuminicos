@@ -1,5 +1,22 @@
-var lo=document.getElementById('logout');
-lo.addEventListener('click',function(){});
+function getUrlVars() {
+  var vars={},
+  parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(m,key,value) {
+  vars[key]=value;
+  });
+  return vars;
+}
+
+var e = getUrlVars()['error'];
+if(e != null) error(e);
+
+function error(e) {
+  if(e == '0') e='Error: Usuario y/o contraseña incorrectos';
+  if(e == '1') e='Error: Selecciona un rango de fechas';
+  var dive = document.getElementById('error');
+  dive.style.opacity = '1';
+  dive.style.top = '50px';
+  dive.innerHTML = e;
+}
 
 function errorSesion() {
   var log = document.createElement('div'),

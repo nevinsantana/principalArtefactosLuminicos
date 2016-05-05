@@ -20,7 +20,8 @@
         <button onclick='window.location.replace("php/functions.php?cSesion=true");'><i class="fa fa-power-off"></i></button>
       </section>
     </header>
-      <main id='persTUsersContainer'>
+    <div id='error'></div>
+    <main id='persTUsersContainer'>
       <section id='persContainer'>
         <div class="toggleContainer">
           <button type="button" class='button' onclick='toggler("toggler1", y)'>
@@ -88,10 +89,5 @@
     <script src='js/functions.js'></script>
     <script>var y=<?php echo $y; ?></script>
     <?php verSession(); ?>
-    <?php
-    if(isset($_GET['errorF'])){
-      echo "<script>alerta('Selecciona un rango de fechas');</script>";
-    }
-    ?>
   </body>
 </html>
